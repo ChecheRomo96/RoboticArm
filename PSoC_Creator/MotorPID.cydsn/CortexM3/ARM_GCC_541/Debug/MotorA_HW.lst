@@ -1,0 +1,1192 @@
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"MotorA_HW.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.MotorA_ISR,"ax",%progbits
+  20              		.align	2
+  21              		.global	MotorA_ISR
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	MotorA_ISR, %function
+  25              	MotorA_ISR:
+  26              	.LFB63:
+  27              		.file 1 "MotorA_HW.c"
+   1:MotorA_HW.c   **** /* ========================================
+   2:MotorA_HW.c   ****  *
+   3:MotorA_HW.c   ****  * Copyright YOUR COMPANY, THE YEAR
+   4:MotorA_HW.c   ****  * All Rights Reserved
+   5:MotorA_HW.c   ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:MotorA_HW.c   ****  *
+   7:MotorA_HW.c   ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:MotorA_HW.c   ****  * WHICH IS THE PROPERTY OF your company.
+   9:MotorA_HW.c   ****  *
+  10:MotorA_HW.c   ****  * ========================================
+  11:MotorA_HW.c   **** */
+  12:MotorA_HW.c   ****     #include "MotorA_HW.h"
+  13:MotorA_HW.c   ****     
+  14:MotorA_HW.c   ****     CY_ISR(MotorA_ISR){
+  28              		.loc 1 14 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 08B5     		push	{r3, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  15:MotorA_HW.c   ****         
+  16:MotorA_HW.c   ****         uint8_t mask = MotorA_QuadDec_GetEvents();
+  36              		.loc 1 16 0
+  37 0002 FFF7FEFF 		bl	MotorA_QuadDec_GetEvents
+  38              	.LVL0:
+  39 0006 08BD     		pop	{r3, pc}
+  40              		.cfi_endproc
+  41              	.LFE63:
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 2
+
+
+  42              		.size	MotorA_ISR, .-MotorA_ISR
+  43              		.section	.text.MotorA_Start,"ax",%progbits
+  44              		.align	2
+  45              		.global	MotorA_Start
+  46              		.thumb
+  47              		.thumb_func
+  48              		.type	MotorA_Start, %function
+  49              	MotorA_Start:
+  50              	.LFB64:
+  17:MotorA_HW.c   ****         
+  18:MotorA_HW.c   ****         if(mask & MotorA_QuadDec_COUNTER_OVERFLOW){
+  19:MotorA_HW.c   ****             
+  20:MotorA_HW.c   ****         }
+  21:MotorA_HW.c   ****         else if(mask & MotorA_QuadDec_COUNTER_UNDERFLOW){
+  22:MotorA_HW.c   ****             
+  23:MotorA_HW.c   ****         }
+  24:MotorA_HW.c   ****         
+  25:MotorA_HW.c   ****         if(mask & MotorA_QuadDec_INVALID_IN){
+  26:MotorA_HW.c   ****             
+  27:MotorA_HW.c   ****         }
+  28:MotorA_HW.c   ****     }
+  29:MotorA_HW.c   ****     
+  30:MotorA_HW.c   ****     void MotorA_Start(){
+  51              		.loc 1 30 0
+  52              		.cfi_startproc
+  53              		@ args = 0, pretend = 0, frame = 0
+  54              		@ frame_needed = 0, uses_anonymous_args = 0
+  55 0000 08B5     		push	{r3, lr}
+  56              		.cfi_def_cfa_offset 8
+  57              		.cfi_offset 3, -8
+  58              		.cfi_offset 14, -4
+  31:MotorA_HW.c   ****         
+  32:MotorA_HW.c   ****         MotorA_PWM_Start();
+  59              		.loc 1 32 0
+  60 0002 FFF7FEFF 		bl	MotorA_PWM_Start
+  61              	.LVL1:
+  33:MotorA_HW.c   ****         
+  34:MotorA_HW.c   ****         MotorA_QuadDec_Start();
+  62              		.loc 1 34 0
+  63 0006 FFF7FEFF 		bl	MotorA_QuadDec_Start
+  64              	.LVL2:
+  35:MotorA_HW.c   ****         MotorA_QuadDec_SetInterruptMask(
+  65              		.loc 1 35 0
+  66 000a 0B20     		movs	r0, #11
+  67 000c FFF7FEFF 		bl	MotorA_QuadDec_SetInterruptMask
+  68              	.LVL3:
+  36:MotorA_HW.c   ****             MotorA_QuadDec_COUNTER_OVERFLOW|
+  37:MotorA_HW.c   ****             MotorA_QuadDec_COUNTER_UNDERFLOW|
+  38:MotorA_HW.c   ****             MotorA_QuadDec_INVALID_IN
+  39:MotorA_HW.c   ****         );
+  40:MotorA_HW.c   ****         
+  41:MotorA_HW.c   ****         MotorA_ISR_StartEx(MotorA_ISR);
+  69              		.loc 1 41 0
+  70 0010 0148     		ldr	r0, .L5
+  71 0012 FFF7FEFF 		bl	MotorA_ISR_StartEx
+  72              	.LVL4:
+  73 0016 08BD     		pop	{r3, pc}
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 3
+
+
+  74              	.L6:
+  75              		.align	2
+  76              	.L5:
+  77 0018 00000000 		.word	MotorA_ISR
+  78              		.cfi_endproc
+  79              	.LFE64:
+  80              		.size	MotorA_Start, .-MotorA_Start
+  81              		.section	.text.MotorA_GetPosition,"ax",%progbits
+  82              		.align	2
+  83              		.global	MotorA_GetPosition
+  84              		.thumb
+  85              		.thumb_func
+  86              		.type	MotorA_GetPosition, %function
+  87              	MotorA_GetPosition:
+  88              	.LFB65:
+  42:MotorA_HW.c   ****         
+  43:MotorA_HW.c   ****     }
+  44:MotorA_HW.c   ****     
+  45:MotorA_HW.c   ****     uint16_t MotorA_GetPosition(){
+  89              		.loc 1 45 0
+  90              		.cfi_startproc
+  91              		@ args = 0, pretend = 0, frame = 0
+  92              		@ frame_needed = 0, uses_anonymous_args = 0
+  93 0000 08B5     		push	{r3, lr}
+  94              		.cfi_def_cfa_offset 8
+  95              		.cfi_offset 3, -8
+  96              		.cfi_offset 14, -4
+  46:MotorA_HW.c   ****         return MotorA_QuadDec_GetCounter();
+  97              		.loc 1 46 0
+  98 0002 FFF7FEFF 		bl	MotorA_QuadDec_GetCounter
+  99              	.LVL5:
+  47:MotorA_HW.c   ****     }
+ 100              		.loc 1 47 0
+ 101 0006 80B2     		uxth	r0, r0
+ 102 0008 08BD     		pop	{r3, pc}
+ 103              		.cfi_endproc
+ 104              	.LFE65:
+ 105              		.size	MotorA_GetPosition, .-MotorA_GetPosition
+ 106              		.section	.text.MotorA_SetPWM,"ax",%progbits
+ 107              		.align	2
+ 108              		.global	MotorA_SetPWM
+ 109              		.thumb
+ 110              		.thumb_func
+ 111              		.type	MotorA_SetPWM, %function
+ 112              	MotorA_SetPWM:
+ 113              	.LFB66:
+  48:MotorA_HW.c   ****     
+  49:MotorA_HW.c   ****     void MotorA_SetPWM(uint16_t value){
+ 114              		.loc 1 49 0
+ 115              		.cfi_startproc
+ 116              		@ args = 0, pretend = 0, frame = 0
+ 117              		@ frame_needed = 0, uses_anonymous_args = 0
+ 118              	.LVL6:
+ 119 0000 08B5     		push	{r3, lr}
+ 120              		.cfi_def_cfa_offset 8
+ 121              		.cfi_offset 3, -8
+ 122              		.cfi_offset 14, -4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 4
+
+
+  50:MotorA_HW.c   ****         MotorA_PWM_WriteCompare(value);
+ 123              		.loc 1 50 0
+ 124 0002 FFF7FEFF 		bl	MotorA_PWM_WriteCompare
+ 125              	.LVL7:
+ 126 0006 08BD     		pop	{r3, pc}
+ 127              		.cfi_endproc
+ 128              	.LFE66:
+ 129              		.size	MotorA_SetPWM, .-MotorA_SetPWM
+ 130              		.section	.text.MotorA_ReadPWM,"ax",%progbits
+ 131              		.align	2
+ 132              		.global	MotorA_ReadPWM
+ 133              		.thumb
+ 134              		.thumb_func
+ 135              		.type	MotorA_ReadPWM, %function
+ 136              	MotorA_ReadPWM:
+ 137              	.LFB67:
+  51:MotorA_HW.c   ****     }
+  52:MotorA_HW.c   ****     
+  53:MotorA_HW.c   ****     uint16_t MotorA_ReadPWM(){
+ 138              		.loc 1 53 0
+ 139              		.cfi_startproc
+ 140              		@ args = 0, pretend = 0, frame = 0
+ 141              		@ frame_needed = 0, uses_anonymous_args = 0
+ 142 0000 08B5     		push	{r3, lr}
+ 143              		.cfi_def_cfa_offset 8
+ 144              		.cfi_offset 3, -8
+ 145              		.cfi_offset 14, -4
+  54:MotorA_HW.c   ****         return MotorA_PWM_ReadCompare();
+ 146              		.loc 1 54 0
+ 147 0002 FFF7FEFF 		bl	MotorA_PWM_ReadCompare
+ 148              	.LVL8:
+  55:MotorA_HW.c   ****     }
+ 149              		.loc 1 55 0
+ 150 0006 08BD     		pop	{r3, pc}
+ 151              		.cfi_endproc
+ 152              	.LFE67:
+ 153              		.size	MotorA_ReadPWM, .-MotorA_ReadPWM
+ 154              		.section	.text.MotorA_SetDirection,"ax",%progbits
+ 155              		.align	2
+ 156              		.global	MotorA_SetDirection
+ 157              		.thumb
+ 158              		.thumb_func
+ 159              		.type	MotorA_SetDirection, %function
+ 160              	MotorA_SetDirection:
+ 161              	.LFB68:
+  56:MotorA_HW.c   ****     
+  57:MotorA_HW.c   ****     void MotorA_SetDirection(bool dir){
+ 162              		.loc 1 57 0
+ 163              		.cfi_startproc
+ 164              		@ args = 0, pretend = 0, frame = 0
+ 165              		@ frame_needed = 0, uses_anonymous_args = 0
+ 166              	.LVL9:
+ 167 0000 08B5     		push	{r3, lr}
+ 168              		.cfi_def_cfa_offset 8
+ 169              		.cfi_offset 3, -8
+ 170              		.cfi_offset 14, -4
+  58:MotorA_HW.c   ****         if(dir){
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 5
+
+
+ 171              		.loc 1 58 0
+ 172 0002 18B1     		cbz	r0, .L14
+  59:MotorA_HW.c   ****             MotorA_Dir_Write(1); // CW
+ 173              		.loc 1 59 0
+ 174 0004 0120     		movs	r0, #1
+ 175              	.LVL10:
+ 176 0006 FFF7FEFF 		bl	MotorA_Dir_Write
+ 177              	.LVL11:
+ 178 000a 08BD     		pop	{r3, pc}
+ 179              	.LVL12:
+ 180              	.L14:
+  60:MotorA_HW.c   ****         } else {
+  61:MotorA_HW.c   ****             MotorA_Dir_Write(0); // CCWW
+ 181              		.loc 1 61 0
+ 182 000c 0020     		movs	r0, #0
+ 183              	.LVL13:
+ 184 000e FFF7FEFF 		bl	MotorA_Dir_Write
+ 185              	.LVL14:
+ 186 0012 08BD     		pop	{r3, pc}
+ 187              		.cfi_endproc
+ 188              	.LFE68:
+ 189              		.size	MotorA_SetDirection, .-MotorA_SetDirection
+ 190              		.text
+ 191              	.Letext0:
+ 192              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 193              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 194              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 195              		.file 5 "Generated_Source\\PSoC5/MotorA_QuadDec.h"
+ 196              		.file 6 "Generated_Source\\PSoC5/MotorA_PWM.h"
+ 197              		.file 7 "Generated_Source\\PSoC5/MotorA_ISR.h"
+ 198              		.file 8 "Generated_Source\\PSoC5/MotorA_Dir.h"
+ 199              		.file 9 "Generated_Source\\PSoC5/core_cm3.h"
+ 200              		.section	.debug_info,"",%progbits
+ 201              	.Ldebug_info0:
+ 202 0000 87020000 		.4byte	0x287
+ 203 0004 0400     		.2byte	0x4
+ 204 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 205 000a 04       		.byte	0x4
+ 206 000b 01       		.uleb128 0x1
+ 207 000c CC000000 		.4byte	.LASF37
+ 208 0010 0C       		.byte	0xc
+ 209 0011 5A010000 		.4byte	.LASF38
+ 210 0015 00000000 		.4byte	.LASF39
+ 211 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 212 001d 00000000 		.4byte	0
+ 213 0021 00000000 		.4byte	.Ldebug_line0
+ 214 0025 02       		.uleb128 0x2
+ 215 0026 01       		.byte	0x1
+ 216 0027 06       		.byte	0x6
+ 217 0028 F4020000 		.4byte	.LASF0
+ 218 002c 03       		.uleb128 0x3
+ 219 002d 3D000000 		.4byte	.LASF3
+ 220 0031 02       		.byte	0x2
+ 221 0032 1D       		.byte	0x1d
+ 222 0033 37000000 		.4byte	0x37
+ 223 0037 02       		.uleb128 0x2
+ 224 0038 01       		.byte	0x1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 6
+
+
+ 225 0039 08       		.byte	0x8
+ 226 003a BE000000 		.4byte	.LASF1
+ 227 003e 02       		.uleb128 0x2
+ 228 003f 02       		.byte	0x2
+ 229 0040 05       		.byte	0x5
+ 230 0041 BF020000 		.4byte	.LASF2
+ 231 0045 03       		.uleb128 0x3
+ 232 0046 9E010000 		.4byte	.LASF4
+ 233 004a 02       		.byte	0x2
+ 234 004b 2B       		.byte	0x2b
+ 235 004c 50000000 		.4byte	0x50
+ 236 0050 02       		.uleb128 0x2
+ 237 0051 02       		.byte	0x2
+ 238 0052 07       		.byte	0x7
+ 239 0053 66010000 		.4byte	.LASF5
+ 240 0057 03       		.uleb128 0x3
+ 241 0058 4D000000 		.4byte	.LASF6
+ 242 005c 02       		.byte	0x2
+ 243 005d 3F       		.byte	0x3f
+ 244 005e 62000000 		.4byte	0x62
+ 245 0062 02       		.uleb128 0x2
+ 246 0063 04       		.byte	0x4
+ 247 0064 05       		.byte	0x5
+ 248 0065 D2020000 		.4byte	.LASF7
+ 249 0069 02       		.uleb128 0x2
+ 250 006a 04       		.byte	0x4
+ 251 006b 07       		.byte	0x7
+ 252 006c F2010000 		.4byte	.LASF8
+ 253 0070 02       		.uleb128 0x2
+ 254 0071 08       		.byte	0x8
+ 255 0072 05       		.byte	0x5
+ 256 0073 83020000 		.4byte	.LASF9
+ 257 0077 02       		.uleb128 0x2
+ 258 0078 08       		.byte	0x8
+ 259 0079 07       		.byte	0x7
+ 260 007a 11020000 		.4byte	.LASF10
+ 261 007e 04       		.uleb128 0x4
+ 262 007f 04       		.byte	0x4
+ 263 0080 05       		.byte	0x5
+ 264 0081 696E7400 		.ascii	"int\000"
+ 265 0085 02       		.uleb128 0x2
+ 266 0086 04       		.byte	0x4
+ 267 0087 07       		.byte	0x7
+ 268 0088 04020000 		.4byte	.LASF11
+ 269 008c 03       		.uleb128 0x3
+ 270 008d 28020000 		.4byte	.LASF12
+ 271 0091 03       		.byte	0x3
+ 272 0092 18       		.byte	0x18
+ 273 0093 2C000000 		.4byte	0x2c
+ 274 0097 03       		.uleb128 0x3
+ 275 0098 C9020000 		.4byte	.LASF13
+ 276 009c 03       		.byte	0x3
+ 277 009d 24       		.byte	0x24
+ 278 009e 45000000 		.4byte	0x45
+ 279 00a2 03       		.uleb128 0x3
+ 280 00a3 B7020000 		.4byte	.LASF14
+ 281 00a7 03       		.byte	0x3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 7
+
+
+ 282 00a8 2C       		.byte	0x2c
+ 283 00a9 57000000 		.4byte	0x57
+ 284 00ad 05       		.uleb128 0x5
+ 285 00ae 7A000000 		.4byte	.LASF15
+ 286 00b2 04       		.byte	0x4
+ 287 00b3 E901     		.2byte	0x1e9
+ 288 00b5 37000000 		.4byte	0x37
+ 289 00b9 02       		.uleb128 0x2
+ 290 00ba 04       		.byte	0x4
+ 291 00bb 04       		.byte	0x4
+ 292 00bc A0000000 		.4byte	.LASF16
+ 293 00c0 02       		.uleb128 0x2
+ 294 00c1 08       		.byte	0x8
+ 295 00c2 04       		.byte	0x4
+ 296 00c3 73000000 		.4byte	.LASF17
+ 297 00c7 02       		.uleb128 0x2
+ 298 00c8 01       		.byte	0x1
+ 299 00c9 08       		.byte	0x8
+ 300 00ca 91020000 		.4byte	.LASF18
+ 301 00ce 02       		.uleb128 0x2
+ 302 00cf 08       		.byte	0x8
+ 303 00d0 04       		.byte	0x4
+ 304 00d1 DB020000 		.4byte	.LASF19
+ 305 00d5 02       		.uleb128 0x2
+ 306 00d6 04       		.byte	0x4
+ 307 00d7 07       		.byte	0x7
+ 308 00d8 7A020000 		.4byte	.LASF20
+ 309 00dc 06       		.uleb128 0x6
+ 310 00dd 79010000 		.4byte	.LASF21
+ 311 00e1 01       		.byte	0x1
+ 312 00e2 0E       		.byte	0xe
+ 313 00e3 00000000 		.4byte	.LFB63
+ 314 00e7 08000000 		.4byte	.LFE63-.LFB63
+ 315 00eb 01       		.uleb128 0x1
+ 316 00ec 9C       		.byte	0x9c
+ 317 00ed 06010000 		.4byte	0x106
+ 318 00f1 07       		.uleb128 0x7
+ 319 00f2 57000000 		.4byte	.LASF40
+ 320 00f6 01       		.byte	0x1
+ 321 00f7 10       		.byte	0x10
+ 322 00f8 8C000000 		.4byte	0x8c
+ 323 00fc 08       		.uleb128 0x8
+ 324 00fd 06000000 		.4byte	.LVL0
+ 325 0101 27020000 		.4byte	0x227
+ 326 0105 00       		.byte	0
+ 327 0106 09       		.uleb128 0x9
+ 328 0107 E7020000 		.4byte	.LASF41
+ 329 010b 01       		.byte	0x1
+ 330 010c 1E       		.byte	0x1e
+ 331 010d 00000000 		.4byte	.LFB64
+ 332 0111 1C000000 		.4byte	.LFE64-.LFB64
+ 333 0115 01       		.uleb128 0x1
+ 334 0116 9C       		.byte	0x9c
+ 335 0117 54010000 		.4byte	0x154
+ 336 011b 08       		.uleb128 0x8
+ 337 011c 06000000 		.4byte	.LVL1
+ 338 0120 32020000 		.4byte	0x232
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 8
+
+
+ 339 0124 08       		.uleb128 0x8
+ 340 0125 0A000000 		.4byte	.LVL2
+ 341 0129 3D020000 		.4byte	0x23d
+ 342 012d 0A       		.uleb128 0xa
+ 343 012e 10000000 		.4byte	.LVL3
+ 344 0132 48020000 		.4byte	0x248
+ 345 0136 40010000 		.4byte	0x140
+ 346 013a 0B       		.uleb128 0xb
+ 347 013b 01       		.uleb128 0x1
+ 348 013c 50       		.byte	0x50
+ 349 013d 01       		.uleb128 0x1
+ 350 013e 3B       		.byte	0x3b
+ 351 013f 00       		.byte	0
+ 352 0140 0C       		.uleb128 0xc
+ 353 0141 16000000 		.4byte	.LVL4
+ 354 0145 53020000 		.4byte	0x253
+ 355 0149 0B       		.uleb128 0xb
+ 356 014a 01       		.uleb128 0x1
+ 357 014b 50       		.byte	0x50
+ 358 014c 05       		.uleb128 0x5
+ 359 014d 03       		.byte	0x3
+ 360 014e 00000000 		.4byte	MotorA_ISR
+ 361 0152 00       		.byte	0
+ 362 0153 00       		.byte	0
+ 363 0154 0D       		.uleb128 0xd
+ 364 0155 41020000 		.4byte	.LASF23
+ 365 0159 01       		.byte	0x1
+ 366 015a 2D       		.byte	0x2d
+ 367 015b 97000000 		.4byte	0x97
+ 368 015f 00000000 		.4byte	.LFB65
+ 369 0163 0A000000 		.4byte	.LFE65-.LFB65
+ 370 0167 01       		.uleb128 0x1
+ 371 0168 9C       		.byte	0x9c
+ 372 0169 77010000 		.4byte	0x177
+ 373 016d 08       		.uleb128 0x8
+ 374 016e 06000000 		.4byte	.LVL5
+ 375 0172 5E020000 		.4byte	0x25e
+ 376 0176 00       		.byte	0
+ 377 0177 06       		.uleb128 0x6
+ 378 0178 96020000 		.4byte	.LASF22
+ 379 017c 01       		.byte	0x1
+ 380 017d 31       		.byte	0x31
+ 381 017e 00000000 		.4byte	.LFB66
+ 382 0182 08000000 		.4byte	.LFE66-.LFB66
+ 383 0186 01       		.uleb128 0x1
+ 384 0187 9C       		.byte	0x9c
+ 385 0188 A5010000 		.4byte	0x1a5
+ 386 018c 0E       		.uleb128 0xe
+ 387 018d 47000000 		.4byte	.LASF26
+ 388 0191 01       		.byte	0x1
+ 389 0192 31       		.byte	0x31
+ 390 0193 97000000 		.4byte	0x97
+ 391 0197 00000000 		.4byte	.LLST0
+ 392 019b 08       		.uleb128 0x8
+ 393 019c 06000000 		.4byte	.LVL7
+ 394 01a0 69020000 		.4byte	0x269
+ 395 01a4 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 9
+
+
+ 396 01a5 0D       		.uleb128 0xd
+ 397 01a6 A9010000 		.4byte	.LASF24
+ 398 01aa 01       		.byte	0x1
+ 399 01ab 35       		.byte	0x35
+ 400 01ac 97000000 		.4byte	0x97
+ 401 01b0 00000000 		.4byte	.LFB67
+ 402 01b4 08000000 		.4byte	.LFE67-.LFB67
+ 403 01b8 01       		.uleb128 0x1
+ 404 01b9 9C       		.byte	0x9c
+ 405 01ba C8010000 		.4byte	0x1c8
+ 406 01be 08       		.uleb128 0x8
+ 407 01bf 06000000 		.4byte	.LVL8
+ 408 01c3 74020000 		.4byte	0x274
+ 409 01c7 00       		.byte	0
+ 410 01c8 06       		.uleb128 0x6
+ 411 01c9 D1010000 		.4byte	.LASF25
+ 412 01cd 01       		.byte	0x1
+ 413 01ce 39       		.byte	0x39
+ 414 01cf 00000000 		.4byte	.LFB68
+ 415 01d3 14000000 		.4byte	.LFE68-.LFB68
+ 416 01d7 01       		.uleb128 0x1
+ 417 01d8 9C       		.byte	0x9c
+ 418 01d9 0F020000 		.4byte	0x20f
+ 419 01dd 0F       		.uleb128 0xf
+ 420 01de 64697200 		.ascii	"dir\000"
+ 421 01e2 01       		.byte	0x1
+ 422 01e3 39       		.byte	0x39
+ 423 01e4 0F020000 		.4byte	0x20f
+ 424 01e8 21000000 		.4byte	.LLST1
+ 425 01ec 0A       		.uleb128 0xa
+ 426 01ed 0A000000 		.4byte	.LVL11
+ 427 01f1 7F020000 		.4byte	0x27f
+ 428 01f5 FF010000 		.4byte	0x1ff
+ 429 01f9 0B       		.uleb128 0xb
+ 430 01fa 01       		.uleb128 0x1
+ 431 01fb 50       		.byte	0x50
+ 432 01fc 01       		.uleb128 0x1
+ 433 01fd 31       		.byte	0x31
+ 434 01fe 00       		.byte	0
+ 435 01ff 0C       		.uleb128 0xc
+ 436 0200 12000000 		.4byte	.LVL14
+ 437 0204 7F020000 		.4byte	0x27f
+ 438 0208 0B       		.uleb128 0xb
+ 439 0209 01       		.uleb128 0x1
+ 440 020a 50       		.byte	0x50
+ 441 020b 01       		.uleb128 0x1
+ 442 020c 30       		.byte	0x30
+ 443 020d 00       		.byte	0
+ 444 020e 00       		.byte	0
+ 445 020f 02       		.uleb128 0x2
+ 446 0210 01       		.byte	0x1
+ 447 0211 02       		.byte	0x2
+ 448 0212 00030000 		.4byte	.LASF27
+ 449 0216 10       		.uleb128 0x10
+ 450 0217 E5010000 		.4byte	.LASF42
+ 451 021b 09       		.byte	0x9
+ 452 021c 1207     		.2byte	0x712
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 10
+
+
+ 453 021e 22020000 		.4byte	0x222
+ 454 0222 11       		.uleb128 0x11
+ 455 0223 A2000000 		.4byte	0xa2
+ 456 0227 12       		.uleb128 0x12
+ 457 0228 B8010000 		.4byte	.LASF28
+ 458 022c B8010000 		.4byte	.LASF28
+ 459 0230 05       		.byte	0x5
+ 460 0231 4B       		.byte	0x4b
+ 461 0232 12       		.uleb128 0x12
+ 462 0233 30020000 		.4byte	.LASF29
+ 463 0237 30020000 		.4byte	.LASF29
+ 464 023b 06       		.byte	0x6
+ 465 023c 92       		.byte	0x92
+ 466 023d 12       		.uleb128 0x12
+ 467 023e 65020000 		.4byte	.LASF30
+ 468 0242 65020000 		.4byte	.LASF30
+ 469 0246 05       		.byte	0x5
+ 470 0247 48       		.byte	0x48
+ 471 0248 12       		.uleb128 0x12
+ 472 0249 80000000 		.4byte	.LASF31
+ 473 024d 80000000 		.4byte	.LASF31
+ 474 0251 05       		.byte	0x5
+ 475 0252 4C       		.byte	0x4c
+ 476 0253 12       		.uleb128 0x12
+ 477 0254 A4020000 		.4byte	.LASF32
+ 478 0258 A4020000 		.4byte	.LASF32
+ 479 025c 07       		.byte	0x7
+ 480 025d 18       		.byte	0x18
+ 481 025e 12       		.uleb128 0x12
+ 482 025f 84010000 		.4byte	.LASF33
+ 483 0263 84010000 		.4byte	.LASF33
+ 484 0267 05       		.byte	0x5
+ 485 0268 4E       		.byte	0x4e
+ 486 0269 12       		.uleb128 0x12
+ 487 026a A6000000 		.4byte	.LASF34
+ 488 026e A6000000 		.4byte	.LASF34
+ 489 0272 06       		.byte	0x6
+ 490 0273 C3       		.byte	0xc3
+ 491 0274 12       		.uleb128 0x12
+ 492 0275 5C000000 		.4byte	.LASF35
+ 493 0279 5C000000 		.4byte	.LASF35
+ 494 027d 06       		.byte	0x6
+ 495 027e C5       		.byte	0xc5
+ 496 027f 12       		.uleb128 0x12
+ 497 0280 54020000 		.4byte	.LASF36
+ 498 0284 54020000 		.4byte	.LASF36
+ 499 0288 08       		.byte	0x8
+ 500 0289 2F       		.byte	0x2f
+ 501 028a 00       		.byte	0
+ 502              		.section	.debug_abbrev,"",%progbits
+ 503              	.Ldebug_abbrev0:
+ 504 0000 01       		.uleb128 0x1
+ 505 0001 11       		.uleb128 0x11
+ 506 0002 01       		.byte	0x1
+ 507 0003 25       		.uleb128 0x25
+ 508 0004 0E       		.uleb128 0xe
+ 509 0005 13       		.uleb128 0x13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 11
+
+
+ 510 0006 0B       		.uleb128 0xb
+ 511 0007 03       		.uleb128 0x3
+ 512 0008 0E       		.uleb128 0xe
+ 513 0009 1B       		.uleb128 0x1b
+ 514 000a 0E       		.uleb128 0xe
+ 515 000b 55       		.uleb128 0x55
+ 516 000c 17       		.uleb128 0x17
+ 517 000d 11       		.uleb128 0x11
+ 518 000e 01       		.uleb128 0x1
+ 519 000f 10       		.uleb128 0x10
+ 520 0010 17       		.uleb128 0x17
+ 521 0011 00       		.byte	0
+ 522 0012 00       		.byte	0
+ 523 0013 02       		.uleb128 0x2
+ 524 0014 24       		.uleb128 0x24
+ 525 0015 00       		.byte	0
+ 526 0016 0B       		.uleb128 0xb
+ 527 0017 0B       		.uleb128 0xb
+ 528 0018 3E       		.uleb128 0x3e
+ 529 0019 0B       		.uleb128 0xb
+ 530 001a 03       		.uleb128 0x3
+ 531 001b 0E       		.uleb128 0xe
+ 532 001c 00       		.byte	0
+ 533 001d 00       		.byte	0
+ 534 001e 03       		.uleb128 0x3
+ 535 001f 16       		.uleb128 0x16
+ 536 0020 00       		.byte	0
+ 537 0021 03       		.uleb128 0x3
+ 538 0022 0E       		.uleb128 0xe
+ 539 0023 3A       		.uleb128 0x3a
+ 540 0024 0B       		.uleb128 0xb
+ 541 0025 3B       		.uleb128 0x3b
+ 542 0026 0B       		.uleb128 0xb
+ 543 0027 49       		.uleb128 0x49
+ 544 0028 13       		.uleb128 0x13
+ 545 0029 00       		.byte	0
+ 546 002a 00       		.byte	0
+ 547 002b 04       		.uleb128 0x4
+ 548 002c 24       		.uleb128 0x24
+ 549 002d 00       		.byte	0
+ 550 002e 0B       		.uleb128 0xb
+ 551 002f 0B       		.uleb128 0xb
+ 552 0030 3E       		.uleb128 0x3e
+ 553 0031 0B       		.uleb128 0xb
+ 554 0032 03       		.uleb128 0x3
+ 555 0033 08       		.uleb128 0x8
+ 556 0034 00       		.byte	0
+ 557 0035 00       		.byte	0
+ 558 0036 05       		.uleb128 0x5
+ 559 0037 16       		.uleb128 0x16
+ 560 0038 00       		.byte	0
+ 561 0039 03       		.uleb128 0x3
+ 562 003a 0E       		.uleb128 0xe
+ 563 003b 3A       		.uleb128 0x3a
+ 564 003c 0B       		.uleb128 0xb
+ 565 003d 3B       		.uleb128 0x3b
+ 566 003e 05       		.uleb128 0x5
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 12
+
+
+ 567 003f 49       		.uleb128 0x49
+ 568 0040 13       		.uleb128 0x13
+ 569 0041 00       		.byte	0
+ 570 0042 00       		.byte	0
+ 571 0043 06       		.uleb128 0x6
+ 572 0044 2E       		.uleb128 0x2e
+ 573 0045 01       		.byte	0x1
+ 574 0046 3F       		.uleb128 0x3f
+ 575 0047 19       		.uleb128 0x19
+ 576 0048 03       		.uleb128 0x3
+ 577 0049 0E       		.uleb128 0xe
+ 578 004a 3A       		.uleb128 0x3a
+ 579 004b 0B       		.uleb128 0xb
+ 580 004c 3B       		.uleb128 0x3b
+ 581 004d 0B       		.uleb128 0xb
+ 582 004e 27       		.uleb128 0x27
+ 583 004f 19       		.uleb128 0x19
+ 584 0050 11       		.uleb128 0x11
+ 585 0051 01       		.uleb128 0x1
+ 586 0052 12       		.uleb128 0x12
+ 587 0053 06       		.uleb128 0x6
+ 588 0054 40       		.uleb128 0x40
+ 589 0055 18       		.uleb128 0x18
+ 590 0056 9742     		.uleb128 0x2117
+ 591 0058 19       		.uleb128 0x19
+ 592 0059 01       		.uleb128 0x1
+ 593 005a 13       		.uleb128 0x13
+ 594 005b 00       		.byte	0
+ 595 005c 00       		.byte	0
+ 596 005d 07       		.uleb128 0x7
+ 597 005e 34       		.uleb128 0x34
+ 598 005f 00       		.byte	0
+ 599 0060 03       		.uleb128 0x3
+ 600 0061 0E       		.uleb128 0xe
+ 601 0062 3A       		.uleb128 0x3a
+ 602 0063 0B       		.uleb128 0xb
+ 603 0064 3B       		.uleb128 0x3b
+ 604 0065 0B       		.uleb128 0xb
+ 605 0066 49       		.uleb128 0x49
+ 606 0067 13       		.uleb128 0x13
+ 607 0068 00       		.byte	0
+ 608 0069 00       		.byte	0
+ 609 006a 08       		.uleb128 0x8
+ 610 006b 898201   		.uleb128 0x4109
+ 611 006e 00       		.byte	0
+ 612 006f 11       		.uleb128 0x11
+ 613 0070 01       		.uleb128 0x1
+ 614 0071 31       		.uleb128 0x31
+ 615 0072 13       		.uleb128 0x13
+ 616 0073 00       		.byte	0
+ 617 0074 00       		.byte	0
+ 618 0075 09       		.uleb128 0x9
+ 619 0076 2E       		.uleb128 0x2e
+ 620 0077 01       		.byte	0x1
+ 621 0078 3F       		.uleb128 0x3f
+ 622 0079 19       		.uleb128 0x19
+ 623 007a 03       		.uleb128 0x3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 13
+
+
+ 624 007b 0E       		.uleb128 0xe
+ 625 007c 3A       		.uleb128 0x3a
+ 626 007d 0B       		.uleb128 0xb
+ 627 007e 3B       		.uleb128 0x3b
+ 628 007f 0B       		.uleb128 0xb
+ 629 0080 11       		.uleb128 0x11
+ 630 0081 01       		.uleb128 0x1
+ 631 0082 12       		.uleb128 0x12
+ 632 0083 06       		.uleb128 0x6
+ 633 0084 40       		.uleb128 0x40
+ 634 0085 18       		.uleb128 0x18
+ 635 0086 9742     		.uleb128 0x2117
+ 636 0088 19       		.uleb128 0x19
+ 637 0089 01       		.uleb128 0x1
+ 638 008a 13       		.uleb128 0x13
+ 639 008b 00       		.byte	0
+ 640 008c 00       		.byte	0
+ 641 008d 0A       		.uleb128 0xa
+ 642 008e 898201   		.uleb128 0x4109
+ 643 0091 01       		.byte	0x1
+ 644 0092 11       		.uleb128 0x11
+ 645 0093 01       		.uleb128 0x1
+ 646 0094 31       		.uleb128 0x31
+ 647 0095 13       		.uleb128 0x13
+ 648 0096 01       		.uleb128 0x1
+ 649 0097 13       		.uleb128 0x13
+ 650 0098 00       		.byte	0
+ 651 0099 00       		.byte	0
+ 652 009a 0B       		.uleb128 0xb
+ 653 009b 8A8201   		.uleb128 0x410a
+ 654 009e 00       		.byte	0
+ 655 009f 02       		.uleb128 0x2
+ 656 00a0 18       		.uleb128 0x18
+ 657 00a1 9142     		.uleb128 0x2111
+ 658 00a3 18       		.uleb128 0x18
+ 659 00a4 00       		.byte	0
+ 660 00a5 00       		.byte	0
+ 661 00a6 0C       		.uleb128 0xc
+ 662 00a7 898201   		.uleb128 0x4109
+ 663 00aa 01       		.byte	0x1
+ 664 00ab 11       		.uleb128 0x11
+ 665 00ac 01       		.uleb128 0x1
+ 666 00ad 31       		.uleb128 0x31
+ 667 00ae 13       		.uleb128 0x13
+ 668 00af 00       		.byte	0
+ 669 00b0 00       		.byte	0
+ 670 00b1 0D       		.uleb128 0xd
+ 671 00b2 2E       		.uleb128 0x2e
+ 672 00b3 01       		.byte	0x1
+ 673 00b4 3F       		.uleb128 0x3f
+ 674 00b5 19       		.uleb128 0x19
+ 675 00b6 03       		.uleb128 0x3
+ 676 00b7 0E       		.uleb128 0xe
+ 677 00b8 3A       		.uleb128 0x3a
+ 678 00b9 0B       		.uleb128 0xb
+ 679 00ba 3B       		.uleb128 0x3b
+ 680 00bb 0B       		.uleb128 0xb
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 14
+
+
+ 681 00bc 27       		.uleb128 0x27
+ 682 00bd 19       		.uleb128 0x19
+ 683 00be 49       		.uleb128 0x49
+ 684 00bf 13       		.uleb128 0x13
+ 685 00c0 11       		.uleb128 0x11
+ 686 00c1 01       		.uleb128 0x1
+ 687 00c2 12       		.uleb128 0x12
+ 688 00c3 06       		.uleb128 0x6
+ 689 00c4 40       		.uleb128 0x40
+ 690 00c5 18       		.uleb128 0x18
+ 691 00c6 9742     		.uleb128 0x2117
+ 692 00c8 19       		.uleb128 0x19
+ 693 00c9 01       		.uleb128 0x1
+ 694 00ca 13       		.uleb128 0x13
+ 695 00cb 00       		.byte	0
+ 696 00cc 00       		.byte	0
+ 697 00cd 0E       		.uleb128 0xe
+ 698 00ce 05       		.uleb128 0x5
+ 699 00cf 00       		.byte	0
+ 700 00d0 03       		.uleb128 0x3
+ 701 00d1 0E       		.uleb128 0xe
+ 702 00d2 3A       		.uleb128 0x3a
+ 703 00d3 0B       		.uleb128 0xb
+ 704 00d4 3B       		.uleb128 0x3b
+ 705 00d5 0B       		.uleb128 0xb
+ 706 00d6 49       		.uleb128 0x49
+ 707 00d7 13       		.uleb128 0x13
+ 708 00d8 02       		.uleb128 0x2
+ 709 00d9 17       		.uleb128 0x17
+ 710 00da 00       		.byte	0
+ 711 00db 00       		.byte	0
+ 712 00dc 0F       		.uleb128 0xf
+ 713 00dd 05       		.uleb128 0x5
+ 714 00de 00       		.byte	0
+ 715 00df 03       		.uleb128 0x3
+ 716 00e0 08       		.uleb128 0x8
+ 717 00e1 3A       		.uleb128 0x3a
+ 718 00e2 0B       		.uleb128 0xb
+ 719 00e3 3B       		.uleb128 0x3b
+ 720 00e4 0B       		.uleb128 0xb
+ 721 00e5 49       		.uleb128 0x49
+ 722 00e6 13       		.uleb128 0x13
+ 723 00e7 02       		.uleb128 0x2
+ 724 00e8 17       		.uleb128 0x17
+ 725 00e9 00       		.byte	0
+ 726 00ea 00       		.byte	0
+ 727 00eb 10       		.uleb128 0x10
+ 728 00ec 34       		.uleb128 0x34
+ 729 00ed 00       		.byte	0
+ 730 00ee 03       		.uleb128 0x3
+ 731 00ef 0E       		.uleb128 0xe
+ 732 00f0 3A       		.uleb128 0x3a
+ 733 00f1 0B       		.uleb128 0xb
+ 734 00f2 3B       		.uleb128 0x3b
+ 735 00f3 05       		.uleb128 0x5
+ 736 00f4 49       		.uleb128 0x49
+ 737 00f5 13       		.uleb128 0x13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 15
+
+
+ 738 00f6 3F       		.uleb128 0x3f
+ 739 00f7 19       		.uleb128 0x19
+ 740 00f8 3C       		.uleb128 0x3c
+ 741 00f9 19       		.uleb128 0x19
+ 742 00fa 00       		.byte	0
+ 743 00fb 00       		.byte	0
+ 744 00fc 11       		.uleb128 0x11
+ 745 00fd 35       		.uleb128 0x35
+ 746 00fe 00       		.byte	0
+ 747 00ff 49       		.uleb128 0x49
+ 748 0100 13       		.uleb128 0x13
+ 749 0101 00       		.byte	0
+ 750 0102 00       		.byte	0
+ 751 0103 12       		.uleb128 0x12
+ 752 0104 2E       		.uleb128 0x2e
+ 753 0105 00       		.byte	0
+ 754 0106 3F       		.uleb128 0x3f
+ 755 0107 19       		.uleb128 0x19
+ 756 0108 3C       		.uleb128 0x3c
+ 757 0109 19       		.uleb128 0x19
+ 758 010a 6E       		.uleb128 0x6e
+ 759 010b 0E       		.uleb128 0xe
+ 760 010c 03       		.uleb128 0x3
+ 761 010d 0E       		.uleb128 0xe
+ 762 010e 3A       		.uleb128 0x3a
+ 763 010f 0B       		.uleb128 0xb
+ 764 0110 3B       		.uleb128 0x3b
+ 765 0111 0B       		.uleb128 0xb
+ 766 0112 00       		.byte	0
+ 767 0113 00       		.byte	0
+ 768 0114 00       		.byte	0
+ 769              		.section	.debug_loc,"",%progbits
+ 770              	.Ldebug_loc0:
+ 771              	.LLST0:
+ 772 0000 00000000 		.4byte	.LVL6
+ 773 0004 05000000 		.4byte	.LVL7-1
+ 774 0008 0100     		.2byte	0x1
+ 775 000a 50       		.byte	0x50
+ 776 000b 05000000 		.4byte	.LVL7-1
+ 777 000f 08000000 		.4byte	.LFE66
+ 778 0013 0400     		.2byte	0x4
+ 779 0015 F3       		.byte	0xf3
+ 780 0016 01       		.uleb128 0x1
+ 781 0017 50       		.byte	0x50
+ 782 0018 9F       		.byte	0x9f
+ 783 0019 00000000 		.4byte	0
+ 784 001d 00000000 		.4byte	0
+ 785              	.LLST1:
+ 786 0021 00000000 		.4byte	.LVL9
+ 787 0025 06000000 		.4byte	.LVL10
+ 788 0029 0100     		.2byte	0x1
+ 789 002b 50       		.byte	0x50
+ 790 002c 06000000 		.4byte	.LVL10
+ 791 0030 0C000000 		.4byte	.LVL12
+ 792 0034 0400     		.2byte	0x4
+ 793 0036 F3       		.byte	0xf3
+ 794 0037 01       		.uleb128 0x1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 16
+
+
+ 795 0038 50       		.byte	0x50
+ 796 0039 9F       		.byte	0x9f
+ 797 003a 0C000000 		.4byte	.LVL12
+ 798 003e 0E000000 		.4byte	.LVL13
+ 799 0042 0100     		.2byte	0x1
+ 800 0044 50       		.byte	0x50
+ 801 0045 0E000000 		.4byte	.LVL13
+ 802 0049 14000000 		.4byte	.LFE68
+ 803 004d 0400     		.2byte	0x4
+ 804 004f F3       		.byte	0xf3
+ 805 0050 01       		.uleb128 0x1
+ 806 0051 50       		.byte	0x50
+ 807 0052 9F       		.byte	0x9f
+ 808 0053 00000000 		.4byte	0
+ 809 0057 00000000 		.4byte	0
+ 810              		.section	.debug_aranges,"",%progbits
+ 811 0000 44000000 		.4byte	0x44
+ 812 0004 0200     		.2byte	0x2
+ 813 0006 00000000 		.4byte	.Ldebug_info0
+ 814 000a 04       		.byte	0x4
+ 815 000b 00       		.byte	0
+ 816 000c 0000     		.2byte	0
+ 817 000e 0000     		.2byte	0
+ 818 0010 00000000 		.4byte	.LFB63
+ 819 0014 08000000 		.4byte	.LFE63-.LFB63
+ 820 0018 00000000 		.4byte	.LFB64
+ 821 001c 1C000000 		.4byte	.LFE64-.LFB64
+ 822 0020 00000000 		.4byte	.LFB65
+ 823 0024 0A000000 		.4byte	.LFE65-.LFB65
+ 824 0028 00000000 		.4byte	.LFB66
+ 825 002c 08000000 		.4byte	.LFE66-.LFB66
+ 826 0030 00000000 		.4byte	.LFB67
+ 827 0034 08000000 		.4byte	.LFE67-.LFB67
+ 828 0038 00000000 		.4byte	.LFB68
+ 829 003c 14000000 		.4byte	.LFE68-.LFB68
+ 830 0040 00000000 		.4byte	0
+ 831 0044 00000000 		.4byte	0
+ 832              		.section	.debug_ranges,"",%progbits
+ 833              	.Ldebug_ranges0:
+ 834 0000 00000000 		.4byte	.LFB63
+ 835 0004 08000000 		.4byte	.LFE63
+ 836 0008 00000000 		.4byte	.LFB64
+ 837 000c 1C000000 		.4byte	.LFE64
+ 838 0010 00000000 		.4byte	.LFB65
+ 839 0014 0A000000 		.4byte	.LFE65
+ 840 0018 00000000 		.4byte	.LFB66
+ 841 001c 08000000 		.4byte	.LFE66
+ 842 0020 00000000 		.4byte	.LFB67
+ 843 0024 08000000 		.4byte	.LFE67
+ 844 0028 00000000 		.4byte	.LFB68
+ 845 002c 14000000 		.4byte	.LFE68
+ 846 0030 00000000 		.4byte	0
+ 847 0034 00000000 		.4byte	0
+ 848              		.section	.debug_line,"",%progbits
+ 849              	.Ldebug_line0:
+ 850 0000 02020000 		.section	.debug_str,"MS",%progbits,1
+ 850      02009501 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 17
+
+
+ 850      00000201 
+ 850      FB0E0D00 
+ 850      01010101 
+ 851              	.LASF39:
+ 852 0000 433A5C55 		.ascii	"C:\\Users\\PC\\Documents\\PSoC Creator\\RoboticArm\\"
+ 852      73657273 
+ 852      5C50435C 
+ 852      446F6375 
+ 852      6D656E74 
+ 853 002e 4D6F746F 		.ascii	"MotorPID.cydsn\000"
+ 853      72504944 
+ 853      2E637964 
+ 853      736E00
+ 854              	.LASF3:
+ 855 003d 5F5F7569 		.ascii	"__uint8_t\000"
+ 855      6E74385F 
+ 855      7400
+ 856              	.LASF26:
+ 857 0047 76616C75 		.ascii	"value\000"
+ 857      6500
+ 858              	.LASF6:
+ 859 004d 5F5F696E 		.ascii	"__int32_t\000"
+ 859      7433325F 
+ 859      7400
+ 860              	.LASF40:
+ 861 0057 6D61736B 		.ascii	"mask\000"
+ 861      00
+ 862              	.LASF35:
+ 863 005c 4D6F746F 		.ascii	"MotorA_PWM_ReadCompare\000"
+ 863      72415F50 
+ 863      574D5F52 
+ 863      65616443 
+ 863      6F6D7061 
+ 864              	.LASF17:
+ 865 0073 646F7562 		.ascii	"double\000"
+ 865      6C6500
+ 866              	.LASF15:
+ 867 007a 75696E74 		.ascii	"uint8\000"
+ 867      3800
+ 868              	.LASF31:
+ 869 0080 4D6F746F 		.ascii	"MotorA_QuadDec_SetInterruptMask\000"
+ 869      72415F51 
+ 869      75616444 
+ 869      65635F53 
+ 869      6574496E 
+ 870              	.LASF16:
+ 871 00a0 666C6F61 		.ascii	"float\000"
+ 871      7400
+ 872              	.LASF34:
+ 873 00a6 4D6F746F 		.ascii	"MotorA_PWM_WriteCompare\000"
+ 873      72415F50 
+ 873      574D5F57 
+ 873      72697465 
+ 873      436F6D70 
+ 874              	.LASF1:
+ 875 00be 756E7369 		.ascii	"unsigned char\000"
+ 875      676E6564 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 18
+
+
+ 875      20636861 
+ 875      7200
+ 876              	.LASF37:
+ 877 00cc 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 877      43313120 
+ 877      352E342E 
+ 877      31203230 
+ 877      31363036 
+ 878 00ff 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 878      20726576 
+ 878      6973696F 
+ 878      6E203233 
+ 878      37373135 
+ 879 0132 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 879      66756E63 
+ 879      74696F6E 
+ 879      2D736563 
+ 879      74696F6E 
+ 880              	.LASF38:
+ 881 015a 4D6F746F 		.ascii	"MotorA_HW.c\000"
+ 881      72415F48 
+ 881      572E6300 
+ 882              	.LASF5:
+ 883 0166 73686F72 		.ascii	"short unsigned int\000"
+ 883      7420756E 
+ 883      7369676E 
+ 883      65642069 
+ 883      6E7400
+ 884              	.LASF21:
+ 885 0179 4D6F746F 		.ascii	"MotorA_ISR\000"
+ 885      72415F49 
+ 885      535200
+ 886              	.LASF33:
+ 887 0184 4D6F746F 		.ascii	"MotorA_QuadDec_GetCounter\000"
+ 887      72415F51 
+ 887      75616444 
+ 887      65635F47 
+ 887      6574436F 
+ 888              	.LASF4:
+ 889 019e 5F5F7569 		.ascii	"__uint16_t\000"
+ 889      6E743136 
+ 889      5F7400
+ 890              	.LASF24:
+ 891 01a9 4D6F746F 		.ascii	"MotorA_ReadPWM\000"
+ 891      72415F52 
+ 891      65616450 
+ 891      574D00
+ 892              	.LASF28:
+ 893 01b8 4D6F746F 		.ascii	"MotorA_QuadDec_GetEvents\000"
+ 893      72415F51 
+ 893      75616444 
+ 893      65635F47 
+ 893      65744576 
+ 894              	.LASF25:
+ 895 01d1 4D6F746F 		.ascii	"MotorA_SetDirection\000"
+ 895      72415F53 
+ 895      65744469 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 19
+
+
+ 895      72656374 
+ 895      696F6E00 
+ 896              	.LASF42:
+ 897 01e5 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 897      52784275 
+ 897      66666572 
+ 897      00
+ 898              	.LASF8:
+ 899 01f2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 899      20756E73 
+ 899      69676E65 
+ 899      6420696E 
+ 899      7400
+ 900              	.LASF11:
+ 901 0204 756E7369 		.ascii	"unsigned int\000"
+ 901      676E6564 
+ 901      20696E74 
+ 901      00
+ 902              	.LASF10:
+ 903 0211 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 903      206C6F6E 
+ 903      6720756E 
+ 903      7369676E 
+ 903      65642069 
+ 904              	.LASF12:
+ 905 0228 75696E74 		.ascii	"uint8_t\000"
+ 905      385F7400 
+ 906              	.LASF29:
+ 907 0230 4D6F746F 		.ascii	"MotorA_PWM_Start\000"
+ 907      72415F50 
+ 907      574D5F53 
+ 907      74617274 
+ 907      00
+ 908              	.LASF23:
+ 909 0241 4D6F746F 		.ascii	"MotorA_GetPosition\000"
+ 909      72415F47 
+ 909      6574506F 
+ 909      73697469 
+ 909      6F6E00
+ 910              	.LASF36:
+ 911 0254 4D6F746F 		.ascii	"MotorA_Dir_Write\000"
+ 911      72415F44 
+ 911      69725F57 
+ 911      72697465 
+ 911      00
+ 912              	.LASF30:
+ 913 0265 4D6F746F 		.ascii	"MotorA_QuadDec_Start\000"
+ 913      72415F51 
+ 913      75616444 
+ 913      65635F53 
+ 913      74617274 
+ 914              	.LASF20:
+ 915 027a 73697A65 		.ascii	"sizetype\000"
+ 915      74797065 
+ 915      00
+ 916              	.LASF9:
+ 917 0283 6C6F6E67 		.ascii	"long long int\000"
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccVGtQPR.s 			page 20
+
+
+ 917      206C6F6E 
+ 917      6720696E 
+ 917      7400
+ 918              	.LASF18:
+ 919 0291 63686172 		.ascii	"char\000"
+ 919      00
+ 920              	.LASF22:
+ 921 0296 4D6F746F 		.ascii	"MotorA_SetPWM\000"
+ 921      72415F53 
+ 921      65745057 
+ 921      4D00
+ 922              	.LASF32:
+ 923 02a4 4D6F746F 		.ascii	"MotorA_ISR_StartEx\000"
+ 923      72415F49 
+ 923      53525F53 
+ 923      74617274 
+ 923      457800
+ 924              	.LASF14:
+ 925 02b7 696E7433 		.ascii	"int32_t\000"
+ 925      325F7400 
+ 926              	.LASF2:
+ 927 02bf 73686F72 		.ascii	"short int\000"
+ 927      7420696E 
+ 927      7400
+ 928              	.LASF13:
+ 929 02c9 75696E74 		.ascii	"uint16_t\000"
+ 929      31365F74 
+ 929      00
+ 930              	.LASF7:
+ 931 02d2 6C6F6E67 		.ascii	"long int\000"
+ 931      20696E74 
+ 931      00
+ 932              	.LASF19:
+ 933 02db 6C6F6E67 		.ascii	"long double\000"
+ 933      20646F75 
+ 933      626C6500 
+ 934              	.LASF41:
+ 935 02e7 4D6F746F 		.ascii	"MotorA_Start\000"
+ 935      72415F53 
+ 935      74617274 
+ 935      00
+ 936              	.LASF0:
+ 937 02f4 7369676E 		.ascii	"signed char\000"
+ 937      65642063 
+ 937      68617200 
+ 938              	.LASF27:
+ 939 0300 5F426F6F 		.ascii	"_Bool\000"
+ 939      6C00
+ 940              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
