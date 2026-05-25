@@ -6,8 +6,8 @@
     <Toolchain Name="ARM GCC Generic" Selected="True">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="arm-none-eabi-as.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
-      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-      <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -l Foundation_d -L Generated_Source\PSoC5 -L ..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\lib -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -u _printf_float -Wl,--gc-sections -lstdc++ -lsupc++ -lm -g -ffunction-sections -Og -ffat-lto-objects" />
+      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+      <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -l Foundation_d -L Generated_Source\PSoC5 -L ..\..\libs\Foundation\dist\psoc\lib -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -u _printf_float -Wl,--gc-sections -lstdc++ -lsupc++ -lm -g -ffunction-sections -Og -ffat-lto-objects" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
     <Toolchain Name="ARM MDK Generic" Selected="False">
@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="MotorPID" Path="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" Version="6.10" Type="Normal">
+  <Project Name="MotorPID" Path="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" Version="6.10" Type="Normal">
     <CMSIS_SVD_File>MotorPID.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -34,16 +34,16 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\Cm3Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="STRICT" Path="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn">
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn">
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">MotorA_HW.c</File>
           <File BuildType="BUILD" Toolchain="">MotorA_HW.h</File>
           <File BuildType="BUILD" Toolchain="">MotorTypes.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn\Generated_Source\PSoC5">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Generated_Source\PSoC5">
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn">
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cymetadata.c</File>
@@ -154,54 +154,52 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_3_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_3.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_3.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_5.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_5.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn\Export\ARM_GCC_Generic">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Export\ARM_GCC_Generic">
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn\Export\ARM_MDK_Generic">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Export\ARM_MDK_Generic">
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn">
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn\Export\ARM_IAR_Generic">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Export\ARM_IAR_Generic">
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn">
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" />
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" />
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" />
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_952">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" />
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" />
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" />
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" />
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" />
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM4">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" />
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
-        <Files Root="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn" />
+        <Files Root="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn" />
       </Folder>
     </Folders>
   </Project>

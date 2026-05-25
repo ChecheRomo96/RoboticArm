@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="RoboticArm">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="RoboticArm\MotorPID">
 <ExpandedNodeIds>
 <v>RoboticArm</v>
 <v>RoboticArm\MotorPID</v>
@@ -97,7 +97,6 @@
 <v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
 <v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_3.lst</v>
 <v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_4.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_5.lst</v>
 <v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>

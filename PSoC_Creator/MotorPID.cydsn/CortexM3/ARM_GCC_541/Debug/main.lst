@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
   24:main.cpp      **** static void PrintRatio(
   25:main.cpp      ****     const char* label,
   26:main.cpp      ****     const Math::Ratio& ratio
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 2
 
 
   27:main.cpp      **** ) {
@@ -81,48 +81,48 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
   48              	.LVL1:
   49              	.LBB75:
   50              	.LBB76:
-  51              		.file 2 "..\\..\\..\\..\\Downloads\\Core_base\\Foundation\\dist\\psoc\\include\\Foundation-/Founda
-   1:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** #ifndef FOUNDATION_MATH_RATIO_H
-   2:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** #define FOUNDATION_MATH_RATIO_H
-   3:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-   4:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****     #include <stdint.h>
-   5:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****     #include <Foundation/Math/Arithmetic.h>
-   6:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-   7:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****     namespace Foundation{
-   8:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****         namespace Math{
-   9:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  10:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****             class Ratio {
-  11:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                 private:
-  12:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     uint32_t _num;
-  13:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     uint32_t _den;
-  14:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     int8_t _sign;
-  15:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  16:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                 public:
-  17:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  18:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr Ratio(
-  19:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         int32_t num = 0,
-  20:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         int32_t den = 1
-  21:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     )
-  22:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         : _num(0),
-  23:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den(1),
-  24:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _sign(1)
-  25:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     {
-  26:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         Set(num, den);
-  27:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
-  28:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  29:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr uint32_t Num() const {
-  30:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return _num;
-  31:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
-  32:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  33:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr uint32_t Den() const {
-  34:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return _den;
-  35:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
-  36:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 3
+  51              		.file 2 "..\\..\\libs\\Foundation\\dist\\psoc\\include\\Foundation-/Foundation/Math/Ratio.h"
+   1:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** #ifndef FOUNDATION_MATH_RATIO_H
+   2:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** #define FOUNDATION_MATH_RATIO_H
+   3:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+   4:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****     #include <stdint.h>
+   5:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****     #include <Foundation/Math/Arithmetic.h>
+   6:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+   7:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****     namespace Foundation{
+   8:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****         namespace Math{
+   9:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  10:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****             class Ratio {
+  11:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                 private:
+  12:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     uint32_t _num;
+  13:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     uint32_t _den;
+  14:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     int8_t _sign;
+  15:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  16:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                 public:
+  17:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  18:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr Ratio(
+  19:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         int32_t num = 0,
+  20:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         int32_t den = 1
+  21:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     )
+  22:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         : _num(0),
+  23:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den(1),
+  24:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _sign(1)
+  25:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     {
+  26:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         Set(num, den);
+  27:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  28:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  29:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr uint32_t Num() const {
+  30:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return _num;
+  31:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  32:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  33:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr uint32_t Den() const {
+  34:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return _den;
+  35:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  36:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 3
 
 
-  37:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr int8_t Sign() const {
-  38:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return _sign;
+  37:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr int8_t Sign() const {
+  38:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return _sign;
   52              		.loc 2 38 0
   53 0008 91F90860 		ldrsb	r6, [r1, #8]
   54              	.LVL2:
@@ -130,7 +130,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
   56              	.LBE75:
   57              	.LBB77:
   58              	.LBB78:
-  30:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  30:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
   59              		.loc 2 30 0
   60 000c 0C68     		ldr	r4, [r1]
   61              	.LVL3:
@@ -138,7 +138,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
   63              	.LBE77:
   64              	.LBB79:
   65              	.LBB80:
-  34:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  34:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
   66              		.loc 2 34 0
   67 000e 4D68     		ldr	r5, [r1, #4]
   68              	.LVL4:
@@ -148,37 +148,37 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
   72              	.LBB82:
   73              	.LBB83:
   74              	.LBB84:
-  39:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
-  40:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  41:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     void SetNum(uint32_t num) {
-  42:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _num = num;
-  43:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
-  44:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  45:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     void SetDen(uint32_t den) {
-  46:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = den;
-  47:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
-  48:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  49:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     void Set(
-  50:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         int32_t num,
-  51:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         int32_t den
-  52:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     ) {
-  53:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         if (num < 0) {
-  54:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _sign = -_sign;
-  55:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             num = -num;
-  56:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
-  57:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  58:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         if (den < 0) {
-  59:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _sign = -_sign;
-  60:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             den = -den;
-  61:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
-  62:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  63:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _num = static_cast<uint32_t>(num);
-  64:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
-  65:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
-  66:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  67:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr bool IsValid() const {
-  68:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return (_num > 0) &&
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 4
+  39:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  40:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  41:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     void SetNum(uint32_t num) {
+  42:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _num = num;
+  43:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  44:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  45:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     void SetDen(uint32_t den) {
+  46:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = den;
+  47:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  48:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  49:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     void Set(
+  50:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         int32_t num,
+  51:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         int32_t den
+  52:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     ) {
+  53:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         if (num < 0) {
+  54:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _sign = -_sign;
+  55:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             num = -num;
+  56:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
+  57:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  58:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         if (den < 0) {
+  59:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _sign = -_sign;
+  60:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             den = -den;
+  61:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
+  62:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  63:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _num = static_cast<uint32_t>(num);
+  64:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
+  65:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  66:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  67:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr bool IsValid() const {
+  68:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return (_num > 0) &&
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 4
 
 
   75              		.loc 2 68 0
@@ -195,18 +195,18 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
   86              	.LVL5:
   87              	.LBE84:
   88              	.LBE83:
-  69:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             (_den > 0);
-  70:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
-  71:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  72:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr float ToFloat() const {
-  73:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return IsValid()
-  74:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             ? static_cast<float>(_sign) *
-  75:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                                 static_cast<float>(_num) /
-  76:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                                 static_cast<float>(_den)
-  77:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             : 0.0f;
+  69:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             (_den > 0);
+  70:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  71:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  72:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     constexpr float ToFloat() const {
+  73:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return IsValid()
+  74:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             ? static_cast<float>(_sign) *
+  75:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                                 static_cast<float>(_num) /
+  76:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                                 static_cast<float>(_den)
+  77:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             : 0.0f;
   89              		.loc 2 77 0
   90 001e 9BB1     		cbz	r3, .L6
-  74:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                                 static_cast<float>(_num) /
+  74:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                                 static_cast<float>(_num) /
   91              		.loc 2 74 0
   92 0020 3046     		mov	r0, r6
   93              	.LVL6:
@@ -221,7 +221,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  102 0032 FFF7FEFF 		bl	__aeabi_fmul
  103              	.LVL9:
  104 0036 8046     		mov	r8, r0
-  75:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                                 static_cast<float>(_den)
+  75:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                                 static_cast<float>(_den)
  105              		.loc 2 75 0
  106 0038 2846     		mov	r0, r5
  107 003a FFF7FEFF 		bl	__aeabi_ui2f
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  118              	.LVL13:
  119              	.L3:
  120              	.LBE82:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 5
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 5
 
 
  121              	.LBE81:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
   43:main.cpp      **** 
   44:main.cpp      **** int main(void)
   45:main.cpp      **** {
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 6
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 6
 
 
  160              		.loc 1 45 0
@@ -345,40 +345,40 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  193              	.L12:
  194              	.LBB131:
  195              	.LBB132:
- 196              		.file 3 "..\\..\\..\\..\\Downloads\\Core_base\\Foundation\\dist\\psoc\\include\\Foundation-/Founda
-   1:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** #ifndef FOUNDATION_MATH_ARITHMETIC_H
-   2:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** #define FOUNDATION_MATH_ARITHMETIC_H
-   3:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
-   4:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****     #include <stdint.h>
-   5:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
-   6:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****     namespace Foundation {
-   7:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****         namespace Math {
-   8:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
-   9:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****             constexpr uint32_t GCD(
-  10:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                 uint32_t a,
-  11:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                 uint32_t b
-  12:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****             ) {
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 7
+ 196              		.file 3 "..\\..\\libs\\Foundation\\dist\\psoc\\include\\Foundation-/Foundation/Math/Arithmetic.h"
+   1:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** #ifndef FOUNDATION_MATH_ARITHMETIC_H
+   2:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** #define FOUNDATION_MATH_ARITHMETIC_H
+   3:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+   4:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****     #include <stdint.h>
+   5:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+   6:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****     namespace Foundation {
+   7:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****         namespace Math {
+   8:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+   9:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****             constexpr uint32_t GCD(
+  10:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                 uint32_t a,
+  11:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                 uint32_t b
+  12:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****             ) {
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 7
 
 
-  13:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                 while (b != 0) {
+  13:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                 while (b != 0) {
  197              		.loc 3 13 0
  198 001c 33B1     		cbz	r3, .L27
  199              	.LVL23:
  200              	.LBB133:
-  14:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
-  15:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                     uint32_t temp = b;
-  16:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
-  17:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                     b = a % b;
+  14:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  15:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                     uint32_t temp = b;
+  16:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  17:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                     b = a % b;
  201              		.loc 3 17 0
  202 001e B2FBF3F1 		udiv	r1, r2, r3
  203 0022 03FB1121 		mls	r1, r3, r1, r2
  204              	.LVL24:
-  18:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
-  19:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                     a = temp;
+  18:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  19:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h ****                     a = temp;
  205              		.loc 3 19 0
  206 0026 1A46     		mov	r2, r3
-  17:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  17:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
  207              		.loc 3 17 0
  208 0028 0B46     		mov	r3, r1
  209              	.LVL25:
@@ -386,7 +386,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  211              	.LVL26:
  212              	.L27:
  213              	.LBE133:
-  13:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  13:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
  214              		.loc 3 13 0
  215 002c 4AF64443 		movw	r3, #44100
  216              	.LVL27:
@@ -400,14 +400,14 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  224 0034 33B1     		cbz	r3, .L13
  225              	.LVL29:
  226              	.LBB136:
-  17:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  17:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
  227              		.loc 3 17 0
  228 0036 B4FBF3F1 		udiv	r1, r4, r3
  229 003a 03FB1141 		mls	r1, r3, r1, r4
  230              	.LVL30:
  231              		.loc 3 19 0
  232 003e 1C46     		mov	r4, r3
-  17:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  17:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
  233              		.loc 3 17 0
  234 0040 0B46     		mov	r3, r1
  235              	.LVL31:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  240              	.LBE135:
  241              	.LBE134:
   54:main.cpp      **** 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 8
 
 
   55:main.cpp      ****     uint32_t gcd1 = Math::GCD(48, 18);
@@ -458,18 +458,18 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  264              	.LVL37:
  265              	.LBB137:
  266              	.LBB138:
-  24:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     {
+  24:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     {
  267              		.loc 2 24 0
  268 0068 0124     		movs	r4, #1
  269 006a 8DF85440 		strb	r4, [sp, #84]
  270              	.LVL38:
  271              	.LBB139:
  272              	.LBB140:
-  63:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
+  63:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
  273              		.loc 2 63 0
  274 006e 0322     		movs	r2, #3
  275 0070 1392     		str	r2, [sp, #76]
-  64:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  64:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
  276              		.loc 2 64 0
  277 0072 0423     		movs	r3, #4
  278 0074 1493     		str	r3, [sp, #80]
@@ -478,22 +478,22 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  281              	.LBE139:
  282              	.LBE138:
  283              	.LBE137:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 9
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 9
 
 
  284              	.LBB141:
  285              	.LBB142:
  286              	.LBB143:
  287              	.LBB144:
-  54:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             num = -num;
+  54:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             num = -num;
  288              		.loc 2 54 0
  289 0076 FF21     		movs	r1, #255
  290 0078 8DF84810 		strb	r1, [sp, #72]
  291              	.LVL40:
-  63:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
+  63:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
  292              		.loc 2 63 0
  293 007c 1092     		str	r2, [sp, #64]
-  64:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  64:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
  294              		.loc 2 64 0
  295 007e 1193     		str	r3, [sp, #68]
  296              	.LVL41:
@@ -505,14 +505,14 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  302              	.LBB146:
  303              	.LBB147:
  304              	.LBB148:
-  59:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             den = -den;
+  59:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             den = -den;
  305              		.loc 2 59 0
  306 0080 8DF83C10 		strb	r1, [sp, #60]
  307              	.LVL42:
-  63:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
+  63:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
  308              		.loc 2 63 0
  309 0084 0D92     		str	r2, [sp, #52]
-  64:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  64:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
  310              		.loc 2 64 0
  311 0086 0E93     		str	r3, [sp, #56]
  312              	.LVL43:
@@ -524,21 +524,21 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  318              	.LBB150:
  319              	.LBB151:
  320              	.LBB152:
-  59:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             den = -den;
+  59:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             den = -den;
  321              		.loc 2 59 0
  322 0088 8DF83040 		strb	r4, [sp, #48]
  323              	.LVL44:
-  63:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
+  63:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
  324              		.loc 2 63 0
  325 008c 0A92     		str	r2, [sp, #40]
-  64:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  64:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
  326              		.loc 2 64 0
  327 008e 0B93     		str	r3, [sp, #44]
  328              	.LVL45:
  329              	.LBE152:
  330              	.LBE151:
  331              	.LBE150:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 10
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 10
 
 
  332              	.LBE149:
@@ -580,17 +580,17 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  356              	.LVL50:
  357              	.LBB153:
  358              	.LBB154:
-  24:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     {
+  24:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     {
  359              		.loc 2 24 0
  360 00b6 8DF82440 		strb	r4, [sp, #36]
  361              	.LVL51:
  362              	.LBB155:
  363              	.LBB156:
-  63:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
+  63:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
  364              		.loc 2 63 0
  365 00ba 3023     		movs	r3, #48
  366 00bc 0793     		str	r3, [sp, #28]
-  64:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  64:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
  367              		.loc 2 64 0
  368 00be 1223     		movs	r3, #18
  369 00c0 0893     		str	r3, [sp, #32]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  371              	.LBE156:
  372              	.LBE155:
  373              	.LBE154:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 11
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 11
 
 
  374              	.LBE153:
@@ -615,14 +615,14 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  381              	.LBB158:
  382              	.LBB159:
  383              	.LBB160:
-  68:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             (_den > 0);
+  68:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             (_den > 0);
  384              		.loc 2 68 0
  385 00ca 079B     		ldr	r3, [sp, #28]
  386 00cc 13B1     		cbz	r3, .L28
-  69:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  69:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
  387              		.loc 2 69 0
  388 00ce 089A     		ldr	r2, [sp, #32]
-  68:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             (_den > 0);
+  68:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             (_den > 0);
  389              		.loc 2 68 0
  390 00d0 12B9     		cbnz	r2, .L29
  391 00d2 02E0     		b	.L14
@@ -635,16 +635,16 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  398              	.LVL54:
  399              	.LBE160:
  400              	.LBE159:
-  78:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
-  79:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  80:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     Ratio Reduced() const {
-  81:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         if (!IsValid()) {
+  78:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  79:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  80:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     Ratio Reduced() const {
+  81:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         if (!IsValid()) {
  401              		.loc 2 81 0
  402 00da 32B9     		cbnz	r2, .L15
  403              	.LVL55:
  404              	.LBB161:
  405              	.LBB162:
-  24:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     {
+  24:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     {
  406              		.loc 2 24 0
  407 00dc 0023     		movs	r3, #0
  408 00de 0493     		str	r3, [sp, #16]
@@ -656,13 +656,13 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  414              	.L15:
  415              	.LBE162:
  416              	.LBE161:
-  82:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             return Ratio(0, 1);
-  83:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 12
+  82:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             return Ratio(0, 1);
+  83:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 12
 
 
-  84:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  85:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         uint32_t gcd = Math::GCD(_num, _den);
+  84:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  85:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         uint32_t gcd = Math::GCD(_num, _den);
  417              		.loc 2 85 0
  418 00ea 089A     		ldr	r2, [sp, #32]
  419              	.LVL57:
@@ -672,19 +672,19 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  423              	.L18:
  424              	.LBB163:
  425              	.LBB164:
-  13:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  13:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
  426              		.loc 3 13 0
  427 00f0 30B1     		cbz	r0, .L17
  428              	.LVL59:
  429              	.LBB165:
-  17:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  17:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
  430              		.loc 3 17 0
  431 00f2 B1FBF0F4 		udiv	r4, r1, r0
  432 00f6 00FB1414 		mls	r4, r0, r4, r1
  433              	.LVL60:
  434              		.loc 3 19 0
  435 00fa 0146     		mov	r1, r0
-  17:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  17:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
  436              		.loc 3 17 0
  437 00fc 2046     		mov	r0, r4
  438              	.LVL61:
@@ -694,53 +694,53 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  442              	.LBE165:
  443              	.LBE164:
  444              	.LBE163:
-  86:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  87:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         Ratio result(
-  88:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             static_cast<int32_t>(_num / gcd),
+  86:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  87:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         Ratio result(
+  88:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             static_cast<int32_t>(_num / gcd),
  445              		.loc 2 88 0
  446 0100 B3FBF1F3 		udiv	r3, r3, r1
-  89:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             static_cast<int32_t>(_den / gcd)
+  89:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             static_cast<int32_t>(_den / gcd)
  447              		.loc 2 89 0
  448 0104 B2FBF1F2 		udiv	r2, r2, r1
  449              	.LVL63:
  450              	.LBB166:
  451              	.LBB167:
-  24:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     {
+  24:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     {
  452              		.loc 2 24 0
  453 0108 0121     		movs	r1, #1
  454 010a 8DF80C10 		strb	r1, [sp, #12]
  455              	.LVL64:
  456              	.LBB168:
  457              	.LBB169:
-  53:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _sign = -_sign;
+  53:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _sign = -_sign;
  458              		.loc 2 53 0
  459 010e 002B     		cmp	r3, #0
  460 0110 03DA     		bge	.L19
-  54:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             num = -num;
+  54:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             num = -num;
  461              		.loc 2 54 0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 13
 
 
  462 0112 FF21     		movs	r1, #255
  463 0114 8DF80C10 		strb	r1, [sp, #12]
-  55:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
+  55:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
  464              		.loc 2 55 0
  465 0118 5B42     		negs	r3, r3
  466              	.LVL65:
  467              	.L19:
-  58:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _sign = -_sign;
+  58:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _sign = -_sign;
  468              		.loc 2 58 0
  469 011a 002A     		cmp	r2, #0
  470 011c 00DA     		bge	.L20
-  60:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
+  60:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
  471              		.loc 2 60 0
  472 011e 5242     		negs	r2, r2
  473              	.LVL66:
  474              	.L20:
-  63:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
+  63:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den = static_cast<uint32_t>(den);
  475              		.loc 2 63 0
  476 0120 0193     		str	r3, [sp, #4]
-  64:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  64:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
  477              		.loc 2 64 0
  478 0122 0292     		str	r2, [sp, #8]
  479              	.LVL67:
@@ -748,14 +748,14 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  481              	.LBE168:
  482              	.LBE167:
  483              	.LBE166:
-  90:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         );
-  91:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  92:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         result._sign = _sign;
+  90:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         );
+  91:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  92:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         result._sign = _sign;
  484              		.loc 2 92 0
  485 0124 9DF92430 		ldrsb	r3, [sp, #36]
  486 0128 8DF80C30 		strb	r3, [sp, #12]
-  93:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  94:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return result;
+  93:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  94:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         return result;
  487              		.loc 2 94 0
  488 012c 04AB     		add	r3, sp, #16
  489 012e 01AA     		add	r2, sp, #4
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
   88:main.cpp      ****     UART_PutString("\r\n=== IN-PLACE REDUCE TEST ===\r\n");
  501              		.loc 1 88 0
  502 013e 2648     		ldr	r0, .L33+44
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 14
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 14
 
 
  503 0140 FFF7FEFF 		bl	UART_PutString
@@ -787,14 +787,14 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  506              	.LBB171:
  507              	.LBB172:
  508              	.LBB173:
-  68:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             (_den > 0);
+  68:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             (_den > 0);
  509              		.loc 2 68 0
  510 0144 079A     		ldr	r2, [sp, #28]
  511 0146 12B1     		cbz	r2, .L30
-  69:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  69:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
  512              		.loc 2 69 0
  513 0148 089B     		ldr	r3, [sp, #32]
-  68:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             (_den > 0);
+  68:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             (_den > 0);
  514              		.loc 2 68 0
  515 014a 13B9     		cbnz	r3, .L31
  516 014c 02E0     		b	.L21
@@ -807,24 +807,24 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  523              	.LVL71:
  524              	.LBE173:
  525              	.LBE172:
-  95:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
-  96:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
-  97:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     void Reduce() {
-  98:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         if (!IsValid()) {
+  95:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     }
+  96:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h **** 
+  97:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                     void Reduce() {
+  98:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         if (!IsValid()) {
  526              		.loc 2 98 0
  527 0154 1BB9     		cbnz	r3, .L22
-  99:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _num = 0;
+  99:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _num = 0;
  528              		.loc 2 99 0
  529 0156 0793     		str	r3, [sp, #28]
- 100:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _den = 1;
+ 100:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             _den = 1;
  530              		.loc 2 100 0
  531 0158 0123     		movs	r3, #1
  532 015a 0893     		str	r3, [sp, #32]
  533 015c 10E0     		b	.L23
  534              	.L22:
- 101:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             return;
- 102:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
- 103:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         uint32_t gcd = Math::GCD(_num, _den);
+ 101:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                             return;
+ 102:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         }
+ 103:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         uint32_t gcd = Math::GCD(_num, _den);
  535              		.loc 2 103 0
  536 015e 0898     		ldr	r0, [sp, #32]
  537              	.LVL72:
@@ -834,22 +834,22 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  541              	.L25:
  542              	.LBB174:
  543              	.LBB175:
-  13:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  13:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
  544              		.loc 3 13 0
  545 0164 31B1     		cbz	r1, .L24
  546              	.LVL74:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 15
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 15
 
 
  547              	.LBB176:
-  17:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  17:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
  548              		.loc 3 17 0
  549 0166 B3FBF1F4 		udiv	r4, r3, r1
  550 016a 01FB1434 		mls	r4, r1, r4, r3
  551              	.LVL75:
  552              		.loc 3 19 0
  553 016e 0B46     		mov	r3, r1
-  17:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
+  17:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Arithmetic.h **** 
  554              		.loc 3 17 0
  555 0170 2146     		mov	r1, r4
  556              	.LVL76:
@@ -859,11 +859,11 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  560              	.LBE176:
  561              	.LBE175:
  562              	.LBE174:
- 104:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _num /= gcd;
+ 104:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _num /= gcd;
  563              		.loc 2 104 0
  564 0174 B2FBF3F2 		udiv	r2, r2, r3
  565 0178 0792     		str	r2, [sp, #28]
- 105:..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den /= gcd;
+ 105:..\..\libs\Foundation\dist\psoc\include\Foundation-/Foundation/Math/Ratio.h ****                         _den /= gcd;
  566              		.loc 2 105 0
  567 017a B0FBF3F3 		udiv	r3, r0, r3
  568 017e 0893     		str	r3, [sp, #32]
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  587              	.LVL81:
   99:main.cpp      ****         x++;
  588              		.loc 1 99 0 discriminator 1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 16
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 16
 
 
  589 0198 631C     		adds	r3, r4, #1
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  630      0D0A00
  631 004b 00       		.space	1
  632              	.LC3:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 17
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 17
 
 
  633 004c 47434428 		.ascii	"GCD(48000,44100) = %lu\015\012\000"
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  668              		.file 7 "Generated_Source\\PSoC5/UART.h"
  669              		.file 8 "Generated_Source\\PSoC5/Servo_PWM.h"
  670              		.file 9 "Generated_Source\\PSoC5/ServoAB.h"
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 18
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 18
 
 
  671              		.file 10 "Generated_Source\\PSoC5/core_cm3.h"
@@ -1029,108 +1029,108 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  676 0006 00000000 		.4byte	.Ldebug_abbrev0
  677 000a 04       		.byte	0x4
  678 000b 01       		.uleb128 0x1
- 679 000c 59020000 		.4byte	.LASF55
+ 679 000c 67020000 		.4byte	.LASF55
  680 0010 04       		.byte	0x4
- 681 0011 67040000 		.4byte	.LASF56
- 682 0015 30010000 		.4byte	.LASF57
+ 681 0011 75040000 		.4byte	.LASF56
+ 682 0015 00010000 		.4byte	.LASF57
  683 0019 00000000 		.4byte	.Ldebug_ranges0+0
  684 001d 00000000 		.4byte	0
  685 0021 00000000 		.4byte	.Ldebug_line0
  686 0025 02       		.uleb128 0x2
  687 0026 08       		.byte	0x8
  688 0027 07       		.byte	0x7
- 689 0028 E1010000 		.4byte	.LASF0
+ 689 0028 EF010000 		.4byte	.LASF0
  690 002c 02       		.uleb128 0x2
  691 002d 04       		.byte	0x4
  692 002e 07       		.byte	0x7
- 693 002f 01020000 		.4byte	.LASF1
+ 693 002f 0F020000 		.4byte	.LASF1
  694 0033 03       		.uleb128 0x3
- 695 0034 AE000000 		.4byte	.LASF6
+ 695 0034 A0000000 		.4byte	.LASF6
  696 0038 04       		.byte	0x4
  697 0039 1B       		.byte	0x1b
  698 003a 3E000000 		.4byte	0x3e
  699 003e 02       		.uleb128 0x2
  700 003f 01       		.byte	0x1
  701 0040 06       		.byte	0x6
- 702 0041 D5010000 		.4byte	.LASF2
+ 702 0041 E3010000 		.4byte	.LASF2
  703 0045 02       		.uleb128 0x2
  704 0046 01       		.byte	0x1
  705 0047 08       		.byte	0x8
- 706 0048 BF010000 		.4byte	.LASF3
+ 706 0048 CD010000 		.4byte	.LASF3
  707 004c 02       		.uleb128 0x2
  708 004d 02       		.byte	0x2
  709 004e 05       		.byte	0x5
- 710 004f 3F000000 		.4byte	.LASF4
+ 710 004f 31000000 		.4byte	.LASF4
  711 0053 02       		.uleb128 0x2
  712 0054 02       		.byte	0x2
  713 0055 07       		.byte	0x7
- 714 0056 46020000 		.4byte	.LASF5
+ 714 0056 54020000 		.4byte	.LASF5
  715 005a 03       		.uleb128 0x3
- 716 005b DD030000 		.4byte	.LASF7
+ 716 005b EB030000 		.4byte	.LASF7
  717 005f 04       		.byte	0x4
  718 0060 3F       		.byte	0x3f
  719 0061 65000000 		.4byte	0x65
  720 0065 02       		.uleb128 0x2
  721 0066 04       		.byte	0x4
  722 0067 05       		.byte	0x5
- 723 0068 F3000000 		.4byte	.LASF8
+ 723 0068 E5000000 		.4byte	.LASF8
  724 006c 03       		.uleb128 0x3
- 725 006d 6B000000 		.4byte	.LASF9
+ 725 006d 5D000000 		.4byte	.LASF9
  726 0071 04       		.byte	0x4
  727 0072 41       		.byte	0x41
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 19
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 19
 
 
  728 0073 77000000 		.4byte	0x77
  729 0077 02       		.uleb128 0x2
  730 0078 04       		.byte	0x4
  731 0079 07       		.byte	0x7
- 732 007a 34020000 		.4byte	.LASF10
+ 732 007a 42020000 		.4byte	.LASF10
  733 007e 02       		.uleb128 0x2
  734 007f 08       		.byte	0x8
  735 0080 05       		.byte	0x5
- 736 0081 E5000000 		.4byte	.LASF11
+ 736 0081 D7000000 		.4byte	.LASF11
  737 0085 04       		.uleb128 0x4
  738 0086 04       		.byte	0x4
  739 0087 05       		.byte	0x5
  740 0088 696E7400 		.ascii	"int\000"
  741 008c 03       		.uleb128 0x3
- 742 008d 19000000 		.4byte	.LASF12
+ 742 008d 0B000000 		.4byte	.LASF12
  743 0091 05       		.byte	0x5
  744 0092 14       		.byte	0x14
  745 0093 33000000 		.4byte	0x33
  746 0097 03       		.uleb128 0x3
- 747 0098 23030000 		.4byte	.LASF13
+ 747 0098 31030000 		.4byte	.LASF13
  748 009c 05       		.byte	0x5
  749 009d 2C       		.byte	0x2c
  750 009e 5A000000 		.4byte	0x5a
  751 00a2 03       		.uleb128 0x3
- 752 00a3 F8010000 		.4byte	.LASF14
+ 752 00a3 06020000 		.4byte	.LASF14
  753 00a7 05       		.byte	0x5
  754 00a8 30       		.byte	0x30
  755 00a9 6C000000 		.4byte	0x6c
  756 00ad 02       		.uleb128 0x2
  757 00ae 04       		.byte	0x4
  758 00af 04       		.byte	0x4
- 759 00b0 DF000000 		.4byte	.LASF15
+ 759 00b0 D1000000 		.4byte	.LASF15
  760 00b4 02       		.uleb128 0x2
  761 00b5 08       		.byte	0x8
  762 00b6 04       		.byte	0x4
- 763 00b7 2B040000 		.4byte	.LASF16
+ 763 00b7 39040000 		.4byte	.LASF16
  764 00bb 02       		.uleb128 0x2
  765 00bc 01       		.byte	0x1
  766 00bd 08       		.byte	0x8
- 767 00be 0E030000 		.4byte	.LASF17
+ 767 00be 1C030000 		.4byte	.LASF17
  768 00c2 02       		.uleb128 0x2
  769 00c3 08       		.byte	0x8
  770 00c4 04       		.byte	0x4
- 771 00c5 5F000000 		.4byte	.LASF18
+ 771 00c5 51000000 		.4byte	.LASF18
  772 00c9 05       		.uleb128 0x5
- 773 00ca 20000000 		.4byte	.LASF58
+ 773 00ca 12000000 		.4byte	.LASF58
  774 00ce 02       		.uleb128 0x2
  775 00cf 04       		.byte	0x4
  776 00d0 07       		.byte	0x7
- 777 00d1 51000000 		.4byte	.LASF19
+ 777 00d1 43000000 		.4byte	.LASF19
  778 00d5 06       		.uleb128 0x6
  779 00d6 04       		.byte	0x4
  780 00d7 DB000000 		.4byte	0xdb
@@ -1138,45 +1138,45 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  782 00dc BB000000 		.4byte	0xbb
  783 00e0 08       		.uleb128 0x8
  784 00e1 00000000 		.4byte	.LASF59
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 20
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 20
 
 
  785 00e5 03       		.byte	0x3
  786 00e6 06       		.byte	0x6
  787 00e7 98020000 		.4byte	0x298
  788 00eb 09       		.uleb128 0x9
- 789 00ec CE030000 		.4byte	.LASF60
+ 789 00ec DC030000 		.4byte	.LASF60
  790 00f0 03       		.byte	0x3
  791 00f1 07       		.byte	0x7
  792 00f2 0A       		.uleb128 0xa
- 793 00f3 91040000 		.4byte	.LASF23
+ 793 00f3 9F040000 		.4byte	.LASF23
  794 00f7 0C       		.byte	0xc
  795 00f8 02       		.byte	0x2
  796 00f9 0A       		.byte	0xa
  797 00fa 77020000 		.4byte	0x277
  798 00fe 0B       		.uleb128 0xb
- 799 00ff 8D000000 		.4byte	.LASF20
+ 799 00ff 7F000000 		.4byte	.LASF20
  800 0103 02       		.byte	0x2
  801 0104 0C       		.byte	0xc
  802 0105 A2000000 		.4byte	0xa2
  803 0109 00       		.byte	0
  804 010a 0B       		.uleb128 0xb
- 805 010b 5A000000 		.4byte	.LASF21
+ 805 010b 4C000000 		.4byte	.LASF21
  806 010f 02       		.byte	0x2
  807 0110 0D       		.byte	0xd
  808 0111 A2000000 		.4byte	0xa2
  809 0115 04       		.byte	0x4
  810 0116 0B       		.uleb128 0xb
- 811 0117 61040000 		.4byte	.LASF22
+ 811 0117 6F040000 		.4byte	.LASF22
  812 011b 02       		.byte	0x2
  813 011c 0E       		.byte	0xe
  814 011d 8C000000 		.4byte	0x8c
  815 0121 08       		.byte	0x8
  816 0122 0C       		.uleb128 0xc
- 817 0123 91040000 		.4byte	.LASF23
+ 817 0123 9F040000 		.4byte	.LASF23
  818 0127 02       		.byte	0x2
  819 0128 12       		.byte	0x12
- 820 0129 AE030000 		.4byte	.LASF27
+ 820 0129 BC030000 		.4byte	.LASF27
  821 012d 98020000 		.4byte	0x298
  822 0131 01       		.byte	0x1
  823 0132 3A010000 		.4byte	0x13a
@@ -1192,13 +1192,13 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  833 014b 4E756D00 		.ascii	"Num\000"
  834 014f 02       		.byte	0x2
  835 0150 1D       		.byte	0x1d
- 836 0151 2B030000 		.4byte	.LASF24
+ 836 0151 39030000 		.4byte	.LASF24
  837 0155 A2000000 		.4byte	0xa2
  838 0159 01       		.byte	0x1
  839 015a 62010000 		.4byte	0x162
  840 015e 68010000 		.4byte	0x168
  841 0162 0D       		.uleb128 0xd
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 21
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 21
 
 
  842 0163 9E020000 		.4byte	0x29e
@@ -1207,7 +1207,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  845 0169 44656E00 		.ascii	"Den\000"
  846 016d 02       		.byte	0x2
  847 016e 21       		.byte	0x21
- 848 016f 32040000 		.4byte	.LASF25
+ 848 016f 40040000 		.4byte	.LASF25
  849 0173 A2000000 		.4byte	0xa2
  850 0177 01       		.byte	0x1
  851 0178 80010000 		.4byte	0x180
@@ -1216,10 +1216,10 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  854 0181 9E020000 		.4byte	0x29e
  855 0185 00       		.byte	0
  856 0186 0C       		.uleb128 0xc
- 857 0187 76040000 		.4byte	.LASF26
+ 857 0187 84040000 		.4byte	.LASF26
  858 018b 02       		.byte	0x2
  859 018c 25       		.byte	0x25
- 860 018d BC000000 		.4byte	.LASF28
+ 860 018d AE000000 		.4byte	.LASF28
  861 0191 8C000000 		.4byte	0x8c
  862 0195 01       		.byte	0x1
  863 0196 9E010000 		.4byte	0x19e
@@ -1228,10 +1228,10 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  866 019f 9E020000 		.4byte	0x29e
  867 01a3 00       		.byte	0
  868 01a4 10       		.uleb128 0x10
- 869 01a5 1D040000 		.4byte	.LASF29
+ 869 01a5 2B040000 		.4byte	.LASF29
  870 01a9 02       		.byte	0x2
  871 01aa 29       		.byte	0x29
- 872 01ab 9B010000 		.4byte	.LASF31
+ 872 01ab A9010000 		.4byte	.LASF31
  873 01af 01       		.byte	0x1
  874 01b0 B8010000 		.4byte	0x1b8
  875 01b4 C3010000 		.4byte	0x1c3
@@ -1241,10 +1241,10 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  879 01be A2000000 		.4byte	0xa2
  880 01c2 00       		.byte	0
  881 01c3 10       		.uleb128 0x10
- 882 01c4 A7030000 		.4byte	.LASF30
+ 882 01c4 B5030000 		.4byte	.LASF30
  883 01c8 02       		.byte	0x2
  884 01c9 2D       		.byte	0x2d
- 885 01ca 52030000 		.4byte	.LASF32
+ 885 01ca 60030000 		.4byte	.LASF32
  886 01ce 01       		.byte	0x1
  887 01cf D7010000 		.4byte	0x1d7
  888 01d3 E2010000 		.4byte	0x1e2
@@ -1257,8 +1257,8 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  895 01e3 53657400 		.ascii	"Set\000"
  896 01e7 02       		.byte	0x2
  897 01e8 31       		.byte	0x31
- 898 01e9 0E010000 		.4byte	.LASF61
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 22
+ 898 01e9 4B010000 		.4byte	.LASF61
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 22
 
 
  899 01ed 01       		.byte	0x1
@@ -1272,10 +1272,10 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  907 0201 97000000 		.4byte	0x97
  908 0205 00       		.byte	0
  909 0206 0C       		.uleb128 0xc
- 910 0207 49000000 		.4byte	.LASF33
+ 910 0207 3B000000 		.4byte	.LASF33
  911 020b 02       		.byte	0x2
  912 020c 43       		.byte	0x43
- 913 020d 0E020000 		.4byte	.LASF34
+ 913 020d 1C020000 		.4byte	.LASF34
  914 0211 A4020000 		.4byte	0x2a4
  915 0215 01       		.byte	0x1
  916 0216 1E020000 		.4byte	0x21e
@@ -1284,10 +1284,10 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  919 021f 9E020000 		.4byte	0x29e
  920 0223 00       		.byte	0
  921 0224 0C       		.uleb128 0xc
- 922 0225 32000000 		.4byte	.LASF35
+ 922 0225 24000000 		.4byte	.LASF35
  923 0229 02       		.byte	0x2
  924 022a 48       		.byte	0x48
- 925 022b 6D010000 		.4byte	.LASF36
+ 925 022b 7B010000 		.4byte	.LASF36
  926 022f AD000000 		.4byte	0xad
  927 0233 01       		.byte	0x1
  928 0234 3C020000 		.4byte	0x23c
@@ -1296,10 +1296,10 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  931 023d 9E020000 		.4byte	0x29e
  932 0241 00       		.byte	0
  933 0242 0C       		.uleb128 0xc
- 934 0243 76000000 		.4byte	.LASF37
+ 934 0243 68000000 		.4byte	.LASF37
  935 0247 02       		.byte	0x2
  936 0248 50       		.byte	0x50
- 937 0249 E7030000 		.4byte	.LASF38
+ 937 0249 F5030000 		.4byte	.LASF38
  938 024d F2000000 		.4byte	0xf2
  939 0251 01       		.byte	0x1
  940 0252 5A020000 		.4byte	0x25a
@@ -1308,17 +1308,17 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  943 025b 9E020000 		.4byte	0x29e
  944 025f 00       		.byte	0
  945 0260 12       		.uleb128 0x12
- 946 0261 24040000 		.4byte	.LASF62
+ 946 0261 32040000 		.4byte	.LASF62
  947 0265 02       		.byte	0x2
  948 0266 61       		.byte	0x61
- 949 0267 76030000 		.4byte	.LASF63
+ 949 0267 84030000 		.4byte	.LASF63
  950 026b 01       		.byte	0x1
  951 026c 70020000 		.4byte	0x270
  952 0270 0D       		.uleb128 0xd
  953 0271 98020000 		.4byte	0x298
  954 0275 00       		.byte	0
  955 0276 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 23
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 23
 
 
  956 0277 07       		.uleb128 0x7
@@ -1327,7 +1327,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  959 027d 47434400 		.ascii	"GCD\000"
  960 0281 03       		.byte	0x3
  961 0282 09       		.byte	0x9
- 962 0283 92000000 		.4byte	.LASF64
+ 962 0283 84000000 		.4byte	.LASF64
  963 0287 A2000000 		.4byte	0xa2
  964 028b 0E       		.uleb128 0xe
  965 028c A2000000 		.4byte	0xa2
@@ -1345,7 +1345,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  977 02a4 02       		.uleb128 0x2
  978 02a5 01       		.byte	0x1
  979 02a6 02       		.byte	0x2
- 980 02a7 B7000000 		.4byte	.LASF39
+ 980 02a7 A9000000 		.4byte	.LASF39
  981 02ab 14       		.uleb128 0x14
  982 02ac 01       		.byte	0x1
  983 02ad 16       		.byte	0x16
@@ -1356,7 +1356,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  988 02b8 C0020000 		.4byte	0x2c0
  989 02bc E0020000 		.4byte	0x2e0
  990 02c0 16       		.uleb128 0x16
- 991 02c1 4D030000 		.4byte	.LASF40
+ 991 02c1 5B030000 		.4byte	.LASF40
  992 02c5 E0020000 		.4byte	0x2e0
  993 02c9 17       		.uleb128 0x17
  994 02ca 6E756D00 		.ascii	"num\000"
@@ -1377,8 +1377,8 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1009 02eb F3020000 		.4byte	0x2f3
  1010 02ef FD020000 		.4byte	0x2fd
  1011 02f3 16       		.uleb128 0x16
- 1012 02f4 4D030000 		.4byte	.LASF40
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 24
+ 1012 02f4 5B030000 		.4byte	.LASF40
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 24
 
 
  1013 02f8 FD020000 		.4byte	0x2fd
@@ -1391,7 +1391,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1020 0308 10030000 		.4byte	0x310
  1021 030c 1A030000 		.4byte	0x31a
  1022 0310 16       		.uleb128 0x16
- 1023 0311 4D030000 		.4byte	.LASF40
+ 1023 0311 5B030000 		.4byte	.LASF40
  1024 0315 FD020000 		.4byte	0x2fd
  1025 0319 00       		.byte	0
  1026 031a 15       		.uleb128 0x15
@@ -1400,7 +1400,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1029 0320 28030000 		.4byte	0x328
  1030 0324 32030000 		.4byte	0x332
  1031 0328 16       		.uleb128 0x16
- 1032 0329 4D030000 		.4byte	.LASF40
+ 1032 0329 5B030000 		.4byte	.LASF40
  1033 032d FD020000 		.4byte	0x2fd
  1034 0331 00       		.byte	0
  1035 0332 15       		.uleb128 0x15
@@ -1409,7 +1409,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1038 0338 40030000 		.4byte	0x340
  1039 033c 4A030000 		.4byte	0x34a
  1040 0340 16       		.uleb128 0x16
- 1041 0341 4D030000 		.4byte	.LASF40
+ 1041 0341 5B030000 		.4byte	.LASF40
  1042 0345 FD020000 		.4byte	0x2fd
  1043 0349 00       		.byte	0
  1044 034a 15       		.uleb128 0x15
@@ -1418,7 +1418,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1047 0350 58030000 		.4byte	0x358
  1048 0354 62030000 		.4byte	0x362
  1049 0358 16       		.uleb128 0x16
- 1050 0359 4D030000 		.4byte	.LASF40
+ 1050 0359 5B030000 		.4byte	.LASF40
  1051 035d FD020000 		.4byte	0x2fd
  1052 0361 00       		.byte	0
  1053 0362 15       		.uleb128 0x15
@@ -1427,7 +1427,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1056 0368 70030000 		.4byte	0x370
  1057 036c 90030000 		.4byte	0x390
  1058 0370 16       		.uleb128 0x16
- 1059 0371 4D030000 		.4byte	.LASF40
+ 1059 0371 5B030000 		.4byte	.LASF40
  1060 0375 E0020000 		.4byte	0x2e0
  1061 0379 17       		.uleb128 0x17
  1062 037a 6E756D00 		.ascii	"num\000"
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1067 0385 64656E00 		.ascii	"den\000"
  1068 0389 02       		.byte	0x2
  1069 038a 14       		.byte	0x14
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 25
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 25
 
 
  1070 038b 97000000 		.4byte	0x97
@@ -1459,7 +1459,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1085 03a8 A2000000 		.4byte	0xa2
  1086 03ac 19       		.uleb128 0x19
  1087 03ad 1A       		.uleb128 0x1a
- 1088 03ae 3A000000 		.4byte	.LASF41
+ 1088 03ae 2C000000 		.4byte	.LASF41
  1089 03b2 03       		.byte	0x3
  1090 03b3 0F       		.byte	0xf
  1091 03b4 A2000000 		.4byte	0xa2
@@ -1471,7 +1471,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1097 03c0 C8030000 		.4byte	0x3c8
  1098 03c4 DD030000 		.4byte	0x3dd
  1099 03c8 16       		.uleb128 0x16
- 1100 03c9 4D030000 		.4byte	.LASF40
+ 1100 03c9 5B030000 		.4byte	.LASF40
  1101 03cd E0020000 		.4byte	0x2e0
  1102 03d1 1B       		.uleb128 0x1b
  1103 03d2 67636400 		.ascii	"gcd\000"
@@ -1480,7 +1480,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1106 03d8 A2000000 		.4byte	0xa2
  1107 03dc 00       		.byte	0
  1108 03dd 1C       		.uleb128 0x1c
- 1109 03de FC000000 		.4byte	.LASF65
+ 1109 03de EE000000 		.4byte	.LASF65
  1110 03e2 01       		.byte	0x1
  1111 03e3 18       		.byte	0x18
  1112 03e4 00000000 		.4byte	.LFB78
@@ -1489,22 +1489,22 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1115 03ed 9C       		.byte	0x9c
  1116 03ee F6040000 		.4byte	0x4f6
  1117 03f2 1D       		.uleb128 0x1d
- 1118 03f3 70040000 		.4byte	.LASF42
+ 1118 03f3 7E040000 		.4byte	.LASF42
  1119 03f7 01       		.byte	0x1
  1120 03f8 19       		.byte	0x19
  1121 03f9 D5000000 		.4byte	0xd5
  1122 03fd 00000000 		.4byte	.LLST0
  1123 0401 1D       		.uleb128 0x1d
- 1124 0402 9A030000 		.4byte	.LASF43
+ 1124 0402 A8030000 		.4byte	.LASF43
  1125 0406 01       		.byte	0x1
  1126 0407 1A       		.byte	0x1a
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 26
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 26
 
 
  1127 0408 FC040000 		.4byte	0x4fc
  1128 040c 42000000 		.4byte	.LLST1
  1129 0410 1E       		.uleb128 0x1e
- 1130 0411 A0030000 		.4byte	.LASF47
+ 1130 0411 AE030000 		.4byte	.LASF47
  1131 0415 01       		.byte	0x1
  1132 0416 1D       		.byte	0x1d
  1133 0417 01050000 		.4byte	0x501
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1181 0493 E5020000 		.4byte	0x2e5
  1182 0497 10000000 		.4byte	.LBB83
  1183 049b 0E000000 		.4byte	.LBE83-.LBB83
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 27
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 27
 
 
  1184 049f 02       		.byte	0x2
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1238 04ee 01       		.uleb128 0x1
  1239 04ef 50       		.byte	0x50
  1240 04f0 03       		.uleb128 0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 28
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 28
 
 
  1241 04f1 91       		.byte	0x91
@@ -1643,7 +1643,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1260 0517 1F050000 		.4byte	0x51f
  1261 051b 3F050000 		.4byte	0x53f
  1262 051f 16       		.uleb128 0x16
- 1263 0520 4D030000 		.4byte	.LASF40
+ 1263 0520 5B030000 		.4byte	.LASF40
  1264 0524 FD020000 		.4byte	0x2fd
  1265 0528 1B       		.uleb128 0x1b
  1266 0529 67636400 		.ascii	"gcd\000"
@@ -1651,13 +1651,13 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1268 052e 55       		.byte	0x55
  1269 052f A2000000 		.4byte	0xa2
  1270 0533 1A       		.uleb128 0x1a
- 1271 0534 07010000 		.4byte	.LASF44
+ 1271 0534 F9000000 		.4byte	.LASF44
  1272 0538 02       		.byte	0x2
  1273 0539 57       		.byte	0x57
  1274 053a F2000000 		.4byte	0xf2
  1275 053e 00       		.byte	0
  1276 053f 28       		.uleb128 0x28
- 1277 0540 13030000 		.4byte	.LASF66
+ 1277 0540 21030000 		.4byte	.LASF66
  1278 0544 01       		.byte	0x1
  1279 0545 2C       		.byte	0x2c
  1280 0546 85000000 		.4byte	0x85
@@ -1667,18 +1667,18 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1284 0553 9C       		.byte	0x9c
  1285 0554 800B0000 		.4byte	0xb80
  1286 0558 1A       		.uleb128 0x1a
- 1287 0559 D3030000 		.4byte	.LASF45
+ 1287 0559 E1030000 		.4byte	.LASF45
  1288 055d 01       		.byte	0x1
  1289 055e 37       		.byte	0x37
  1290 055f A2000000 		.4byte	0xa2
  1291 0563 1A       		.uleb128 0x1a
- 1292 0564 D8030000 		.4byte	.LASF46
+ 1292 0564 E6030000 		.4byte	.LASF46
  1293 0568 01       		.byte	0x1
  1294 0569 38       		.byte	0x38
  1295 056a A2000000 		.4byte	0xa2
  1296 056e 1E       		.uleb128 0x1e
- 1297 056f A0030000 		.4byte	.LASF47
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 29
+ 1297 056f AE030000 		.4byte	.LASF47
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 29
 
 
  1298 0573 01       		.byte	0x1
@@ -1728,7 +1728,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1342 05c0 91       		.byte	0x91
  1343 05c1 BC7E     		.sleb128 -196
  1344 05c3 1E       		.uleb128 0x1e
- 1345 05c4 93010000 		.4byte	.LASF48
+ 1345 05c4 A1010000 		.4byte	.LASF48
  1346 05c8 01       		.byte	0x1
  1347 05c9 54       		.byte	0x54
  1348 05ca F2000000 		.4byte	0xf2
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1352 05d2 2A       		.uleb128 0x2a
  1353 05d3 7800     		.ascii	"x\000"
  1354 05d5 01       		.byte	0x1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 30
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 30
 
 
  1355 05d6 5E       		.byte	0x5e
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1409 0669 17020000 		.4byte	.LLST14
  1410 066d 20       		.uleb128 0x20
  1411 066e 79030000 		.4byte	0x379
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 31
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 31
 
 
  1412 0672 2B020000 		.4byte	.LLST15
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1466 0705 1F       		.uleb128 0x1f
  1467 0706 62030000 		.4byte	0x362
  1468 070a 80000000 		.4byte	.LBB145
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 32
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 32
 
 
  1469 070e 08000000 		.4byte	.LBE145-.LBB145
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1523 07a1 93030000 		.4byte	.LLST35
  1524 07a5 20       		.uleb128 0x20
  1525 07a6 C9020000 		.4byte	0x2c9
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 33
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 33
 
 
  1526 07aa B4030000 		.4byte	.LLST36
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1580 083d 2E       		.uleb128 0x2e
  1581 083e 33050000 		.4byte	0x533
  1582 0842 03       		.uleb128 0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 34
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 34
 
 
  1583 0843 91       		.byte	0x91
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1637 08d4 1C000000 		.4byte	.LBE166-.LBB166
  1638 08d8 02       		.byte	0x2
  1639 08d9 5A       		.byte	0x5a
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 35
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 35
 
 
  1640 08da 20       		.uleb128 0x20
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1694 096a 21       		.uleb128 0x21
  1695 096b 90030000 		.4byte	0x390
  1696 096f 64010000 		.4byte	.LBB174
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 36
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 36
 
 
  1697 0973 10000000 		.4byte	.LBE174-.LBB174
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1751 09ec 38000000 		.4byte	.LC2
  1752 09f0 00       		.byte	0
  1753 09f1 22       		.uleb128 0x22
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 37
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 37
 
 
  1754 09f2 52000000 		.4byte	.LVL34
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1808 0a55 00       		.byte	0
  1809 0a56 22       		.uleb128 0x22
  1810 0a57 98000000 		.4byte	.LVL46
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 38
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 38
 
 
  1811 0a5b DD030000 		.4byte	0x3dd
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1865 0abe 01       		.uleb128 0x1
  1866 0abf 50       		.byte	0x50
  1867 0ac0 05       		.uleb128 0x5
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 39
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 39
 
 
  1868 0ac1 03       		.byte	0x3
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1922 0b21 22       		.uleb128 0x22
  1923 0b22 44010000 		.4byte	.LVL70
  1924 0b26 9C0B0000 		.4byte	0xb9c
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 40
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 40
 
 
  1925 0b2a 380B0000 		.4byte	0xb38
@@ -2398,45 +2398,45 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  1979 0b7c F4       		.byte	0xf4
  1980 0b7d 25       		.byte	0x25
  1981 0b7e 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 41
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 41
 
 
  1982 0b7f 00       		.byte	0
  1983 0b80 30       		.uleb128 0x30
- 1984 0b81 54040000 		.4byte	.LASF67
+ 1984 0b81 62040000 		.4byte	.LASF67
  1985 0b85 0A       		.byte	0xa
  1986 0b86 1207     		.2byte	0x712
  1987 0b88 8C0B0000 		.4byte	0xb8c
  1988 0b8c 31       		.uleb128 0x31
  1989 0b8d 97000000 		.4byte	0x97
  1990 0b91 32       		.uleb128 0x32
- 1991 0b92 CD010000 		.4byte	.LASF49
- 1992 0b96 CD010000 		.4byte	.LASF49
+ 1991 0b92 DB010000 		.4byte	.LASF49
+ 1992 0b96 DB010000 		.4byte	.LASF49
  1993 0b9a 06       		.byte	0x6
  1994 0b9b E7       		.byte	0xe7
  1995 0b9c 32       		.uleb128 0x32
- 1996 0b9d 7E000000 		.4byte	.LASF50
- 1997 0ba1 7E000000 		.4byte	.LASF50
+ 1996 0b9d 70000000 		.4byte	.LASF50
+ 1997 0ba1 70000000 		.4byte	.LASF50
  1998 0ba5 07       		.byte	0x7
  1999 0ba6 8B       		.byte	0x8b
  2000 0ba7 32       		.uleb128 0x32
- 2001 0ba8 18030000 		.4byte	.LASF51
- 2002 0bac 18030000 		.4byte	.LASF51
+ 2001 0ba8 26030000 		.4byte	.LASF51
+ 2002 0bac 26030000 		.4byte	.LASF51
  2003 0bb0 07       		.byte	0x7
  2004 0bb1 54       		.byte	0x54
  2005 0bb2 32       		.uleb128 0x32
- 2006 0bb3 0D040000 		.4byte	.LASF52
- 2007 0bb7 0D040000 		.4byte	.LASF52
+ 2006 0bb3 1B040000 		.4byte	.LASF52
+ 2007 0bb7 1B040000 		.4byte	.LASF52
  2008 0bbb 08       		.byte	0x8
  2009 0bbc 92       		.byte	0x92
  2010 0bbd 32       		.uleb128 0x32
- 2011 0bbe 0B000000 		.4byte	.LASF53
- 2012 0bc2 0B000000 		.4byte	.LASF53
+ 2011 0bbe 6D010000 		.4byte	.LASF53
+ 2012 0bc2 6D010000 		.4byte	.LASF53
  2013 0bc6 09       		.byte	0x9
  2014 0bc7 92       		.byte	0x92
  2015 0bc8 32       		.uleb128 0x32
- 2016 0bc9 7B040000 		.4byte	.LASF54
- 2017 0bcd 7B040000 		.4byte	.LASF54
+ 2016 0bc9 89040000 		.4byte	.LASF54
+ 2017 0bcd 89040000 		.4byte	.LASF54
  2018 0bd1 09       		.byte	0x9
  2019 0bd2 C7       		.byte	0xc7
  2020 0bd3 00       		.byte	0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2036 000d 11       		.uleb128 0x11
  2037 000e 01       		.uleb128 0x1
  2038 000f 10       		.uleb128 0x10
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 42
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 42
 
 
  2039 0010 17       		.uleb128 0x17
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2093 0046 07       		.uleb128 0x7
  2094 0047 26       		.uleb128 0x26
  2095 0048 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 43
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 43
 
 
  2096 0049 49       		.uleb128 0x49
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2150 007f 38       		.uleb128 0x38
  2151 0080 0B       		.uleb128 0xb
  2152 0081 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 44
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 44
 
 
  2153 0082 00       		.byte	0
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2207 00b8 0E       		.uleb128 0xe
  2208 00b9 49       		.uleb128 0x49
  2209 00ba 13       		.uleb128 0x13
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 45
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 45
 
 
  2210 00bb 32       		.uleb128 0x32
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2264 00f1 00       		.byte	0
  2265 00f2 00       		.byte	0
  2266 00f3 12       		.uleb128 0x12
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 46
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 46
 
 
  2267 00f4 2E       		.uleb128 0x2e
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2321 012a 13       		.uleb128 0x13
  2322 012b 20       		.uleb128 0x20
  2323 012c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 47
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 47
 
 
  2324 012d 64       		.uleb128 0x64
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2378 0163 0B       		.uleb128 0xb
  2379 0164 49       		.uleb128 0x49
  2380 0165 13       		.uleb128 0x13
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 48
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 48
 
 
  2381 0166 00       		.byte	0
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2435 019d 03       		.uleb128 0x3
  2436 019e 0E       		.uleb128 0xe
  2437 019f 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 49
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 49
 
 
  2438 01a0 0B       		.uleb128 0xb
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2492 01d8 01       		.uleb128 0x1
  2493 01d9 31       		.uleb128 0x31
  2494 01da 13       		.uleb128 0x13
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 50
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 50
 
 
  2495 01db 01       		.uleb128 0x1
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2549 0216 03       		.uleb128 0x3
  2550 0217 0E       		.uleb128 0xe
  2551 0218 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 51
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 51
 
 
  2552 0219 0B       		.uleb128 0xb
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2606 0251 12       		.uleb128 0x12
  2607 0252 06       		.uleb128 0x6
  2608 0253 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 52
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 52
 
 
  2609 0254 00       		.byte	0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2663 028c 00       		.byte	0
  2664 028d 49       		.uleb128 0x49
  2665 028e 13       		.uleb128 0x13
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 53
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 53
 
 
  2666 028f 00       		.byte	0
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2720 0051 48000000 		.4byte	.LVL12
  2721 0055 0400     		.2byte	0x4
  2722 0057 F3       		.byte	0xf3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 54
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 54
 
 
  2723 0058 01       		.uleb128 0x1
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2777 00dd 00000000 		.4byte	0
  2778              	.LLST6:
  2779 00e1 10000000 		.4byte	.LVL4
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 55
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 55
 
 
  2780 00e5 1E000000 		.4byte	.LVL5
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2834 0173 0100     		.2byte	0x1
  2835 0175 52       		.byte	0x52
  2836 0176 26000000 		.4byte	.LVL24
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 56
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 56
 
 
  2837 017a 2A000000 		.4byte	.LVL25
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2891 020e 54       		.byte	0x54
  2892 020f 00000000 		.4byte	0
  2893 0213 00000000 		.4byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 57
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 57
 
 
  2894              	.LLST14:
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  2948 029d 34       		.byte	0x34
  2949 029e 9F       		.byte	0x9f
  2950 029f 00000000 		.4byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 58
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 58
 
 
  2951 02a3 00000000 		.4byte	0
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  3005 0326 91       		.byte	0x91
  3006 0327 D47E     		.sleb128 -172
  3007 0329 9F       		.byte	0x9f
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 59
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 59
 
 
  3008 032a 00000000 		.4byte	0
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  3062 03ab 9F       		.byte	0x9f
  3063 03ac 00000000 		.4byte	0
  3064 03b0 00000000 		.4byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 60
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 60
 
 
  3065              	.LLST36:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  3119 0438 0400     		.2byte	0x4
  3120 043a 91       		.byte	0x91
  3121 043b BC7E     		.sleb128 -196
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 61
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 61
 
 
  3122 043d 9F       		.byte	0x9f
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  3176 04c5 50       		.byte	0x50
  3177 04c6 FA000000 		.4byte	.LVL60
  3178 04ca 00010000 		.4byte	.LVL62
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 62
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 62
 
 
  3179 04ce 0100     		.2byte	0x1
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  3233 055e 9F       		.byte	0x9f
  3234 055f 00000000 		.4byte	0
  3235 0563 00000000 		.4byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 63
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 63
 
 
  3236              	.LLST55:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  3290 05f0 00000000 		.4byte	0
  3291 05f4 00000000 		.4byte	0
  3292              	.LLST61:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 64
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 64
 
 
  3293 05f8 60010000 		.4byte	.LVL72
@@ -3834,11 +3834,11 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  3343 0014 00000000 		.4byte	0
  3344              		.section	.debug_line,"",%progbits
  3345              	.Ldebug_line0:
- 3346 0000 3C030000 		.section	.debug_str,"MS",%progbits,1
- 3346      02004E02 
+ 3346 0000 27030000 		.section	.debug_str,"MS",%progbits,1
+ 3346      02003902 
  3346      00000201 
  3346      FB0E0D00 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 65
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 65
 
 
  3346      01010101 
@@ -3846,322 +3846,323 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 1
  3348 0000 466F756E 		.ascii	"Foundation\000"
  3348      64617469 
  3348      6F6E00
- 3349              	.LASF53:
- 3350 000b 53657276 		.ascii	"ServoAB_Start\000"
- 3350      6F41425F 
- 3350      53746172 
- 3350      7400
- 3351              	.LASF12:
- 3352 0019 696E7438 		.ascii	"int8_t\000"
- 3352      5F7400
- 3353              	.LASF58:
- 3354 0020 6465636C 		.ascii	"decltype(nullptr)\000"
- 3354      74797065 
- 3354      286E756C 
- 3354      6C707472 
- 3354      2900
- 3355              	.LASF35:
- 3356 0032 546F466C 		.ascii	"ToFloat\000"
- 3356      6F617400 
- 3357              	.LASF41:
- 3358 003a 74656D70 		.ascii	"temp\000"
- 3358      00
- 3359              	.LASF4:
- 3360 003f 73686F72 		.ascii	"short int\000"
- 3360      7420696E 
- 3360      7400
- 3361              	.LASF33:
- 3362 0049 49735661 		.ascii	"IsValid\000"
- 3362      6C696400 
- 3363              	.LASF19:
- 3364 0051 73697A65 		.ascii	"sizetype\000"
- 3364      74797065 
+ 3349              	.LASF12:
+ 3350 000b 696E7438 		.ascii	"int8_t\000"
+ 3350      5F7400
+ 3351              	.LASF58:
+ 3352 0012 6465636C 		.ascii	"decltype(nullptr)\000"
+ 3352      74797065 
+ 3352      286E756C 
+ 3352      6C707472 
+ 3352      2900
+ 3353              	.LASF35:
+ 3354 0024 546F466C 		.ascii	"ToFloat\000"
+ 3354      6F617400 
+ 3355              	.LASF41:
+ 3356 002c 74656D70 		.ascii	"temp\000"
+ 3356      00
+ 3357              	.LASF4:
+ 3358 0031 73686F72 		.ascii	"short int\000"
+ 3358      7420696E 
+ 3358      7400
+ 3359              	.LASF33:
+ 3360 003b 49735661 		.ascii	"IsValid\000"
+ 3360      6C696400 
+ 3361              	.LASF19:
+ 3362 0043 73697A65 		.ascii	"sizetype\000"
+ 3362      74797065 
+ 3362      00
+ 3363              	.LASF21:
+ 3364 004c 5F64656E 		.ascii	"_den\000"
  3364      00
- 3365              	.LASF21:
- 3366 005a 5F64656E 		.ascii	"_den\000"
- 3366      00
- 3367              	.LASF18:
- 3368 005f 6C6F6E67 		.ascii	"long double\000"
- 3368      20646F75 
- 3368      626C6500 
- 3369              	.LASF9:
- 3370 006b 5F5F7569 		.ascii	"__uint32_t\000"
- 3370      6E743332 
- 3370      5F7400
- 3371              	.LASF37:
- 3372 0076 52656475 		.ascii	"Reduced\000"
- 3372      63656400 
- 3373              	.LASF50:
- 3374 007e 55415254 		.ascii	"UART_PutString\000"
- 3374      5F507574 
- 3374      53747269 
- 3374      6E6700
- 3375              	.LASF20:
- 3376 008d 5F6E756D 		.ascii	"_num\000"
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 66
+ 3365              	.LASF18:
+ 3366 0051 6C6F6E67 		.ascii	"long double\000"
+ 3366      20646F75 
+ 3366      626C6500 
+ 3367              	.LASF9:
+ 3368 005d 5F5F7569 		.ascii	"__uint32_t\000"
+ 3368      6E743332 
+ 3368      5F7400
+ 3369              	.LASF37:
+ 3370 0068 52656475 		.ascii	"Reduced\000"
+ 3370      63656400 
+ 3371              	.LASF50:
+ 3372 0070 55415254 		.ascii	"UART_PutString\000"
+ 3372      5F507574 
+ 3372      53747269 
+ 3372      6E6700
+ 3373              	.LASF20:
+ 3374 007f 5F6E756D 		.ascii	"_num\000"
+ 3374      00
+ 3375              	.LASF64:
+ 3376 0084 5F5A4E31 		.ascii	"_ZN10Foundation4Math3GCDEmm\000"
+ 3376      30466F75 
+ 3376      6E646174 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 66
 
 
- 3376      00
- 3377              	.LASF64:
- 3378 0092 5F5A4E31 		.ascii	"_ZN10Foundation4Math3GCDEmm\000"
- 3378      30466F75 
- 3378      6E646174 
- 3378      696F6E34 
- 3378      4D617468 
- 3379              	.LASF6:
- 3380 00ae 5F5F696E 		.ascii	"__int8_t\000"
- 3380      74385F74 
+ 3376      696F6E34 
+ 3376      4D617468 
+ 3377              	.LASF6:
+ 3378 00a0 5F5F696E 		.ascii	"__int8_t\000"
+ 3378      74385F74 
+ 3378      00
+ 3379              	.LASF39:
+ 3380 00a9 626F6F6C 		.ascii	"bool\000"
  3380      00
- 3381              	.LASF39:
- 3382 00b7 626F6F6C 		.ascii	"bool\000"
- 3382      00
- 3383              	.LASF28:
- 3384 00bc 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio4SignEv\000"
- 3384      3130466F 
- 3384      756E6461 
- 3384      74696F6E 
- 3384      344D6174 
- 3385              	.LASF15:
- 3386 00df 666C6F61 		.ascii	"float\000"
+ 3381              	.LASF28:
+ 3382 00ae 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio4SignEv\000"
+ 3382      3130466F 
+ 3382      756E6461 
+ 3382      74696F6E 
+ 3382      344D6174 
+ 3383              	.LASF15:
+ 3384 00d1 666C6F61 		.ascii	"float\000"
+ 3384      7400
+ 3385              	.LASF11:
+ 3386 00d7 6C6F6E67 		.ascii	"long long int\000"
+ 3386      206C6F6E 
+ 3386      6720696E 
  3386      7400
- 3387              	.LASF11:
- 3388 00e5 6C6F6E67 		.ascii	"long long int\000"
- 3388      206C6F6E 
- 3388      6720696E 
- 3388      7400
- 3389              	.LASF8:
- 3390 00f3 6C6F6E67 		.ascii	"long int\000"
- 3390      20696E74 
- 3390      00
- 3391              	.LASF65:
- 3392 00fc 5072696E 		.ascii	"PrintRatio\000"
- 3392      74526174 
- 3392      696F00
- 3393              	.LASF44:
- 3394 0107 72657375 		.ascii	"result\000"
- 3394      6C7400
- 3395              	.LASF61:
- 3396 010e 5F5A4E31 		.ascii	"_ZN10Foundation4Math5Ratio3SetEll\000"
- 3396      30466F75 
- 3396      6E646174 
- 3396      696F6E34 
- 3396      4D617468 
- 3397              	.LASF57:
- 3398 0130 433A5C55 		.ascii	"C:\\Users\\PC\\Documents\\PSoC Creator\\RoboticArm\\"
- 3398      73657273 
- 3398      5C50435C 
- 3398      446F6375 
- 3398      6D656E74 
- 3399 015e 4D6F746F 		.ascii	"MotorPID.cydsn\000"
- 3399      72504944 
- 3399      2E637964 
- 3399      736E00
+ 3387              	.LASF8:
+ 3388 00e5 6C6F6E67 		.ascii	"long int\000"
+ 3388      20696E74 
+ 3388      00
+ 3389              	.LASF65:
+ 3390 00ee 5072696E 		.ascii	"PrintRatio\000"
+ 3390      74526174 
+ 3390      696F00
+ 3391              	.LASF44:
+ 3392 00f9 72657375 		.ascii	"result\000"
+ 3392      6C7400
+ 3393              	.LASF57:
+ 3394 0100 433A5C55 		.ascii	"C:\\Users\\PC\\Dropbox\\CodeSpaces\\PSoC\\RoboticAr"
+ 3394      73657273 
+ 3394      5C50435C 
+ 3394      44726F70 
+ 3394      626F785C 
+ 3395 012d 6D5C5053 		.ascii	"m\\PSoC_Creator\\MotorPID.cydsn\000"
+ 3395      6F435F43 
+ 3395      72656174 
+ 3395      6F725C4D 
+ 3395      6F746F72 
+ 3396              	.LASF61:
+ 3397 014b 5F5A4E31 		.ascii	"_ZN10Foundation4Math5Ratio3SetEll\000"
+ 3397      30466F75 
+ 3397      6E646174 
+ 3397      696F6E34 
+ 3397      4D617468 
+ 3398              	.LASF53:
+ 3399 016d 53657276 		.ascii	"ServoAB_Start\000"
+ 3399      6F41425F 
+ 3399      53746172 
+ 3399      7400
  3400              	.LASF36:
- 3401 016d 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio7ToFloatEv\000"
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 67
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 67
 
 
+ 3401 017b 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio7ToFloatEv\000"
  3401      3130466F 
  3401      756E6461 
  3401      74696F6E 
  3401      344D6174 
  3402              	.LASF48:
- 3403 0193 72656475 		.ascii	"reduced\000"
+ 3403 01a1 72656475 		.ascii	"reduced\000"
  3403      63656400 
  3404              	.LASF31:
- 3405 019b 5F5A4E31 		.ascii	"_ZN10Foundation4Math5Ratio6SetNumEm\000"
+ 3405 01a9 5F5A4E31 		.ascii	"_ZN10Foundation4Math5Ratio6SetNumEm\000"
  3405      30466F75 
  3405      6E646174 
  3405      696F6E34 
  3405      4D617468 
  3406              	.LASF3:
- 3407 01bf 756E7369 		.ascii	"unsigned char\000"
+ 3407 01cd 756E7369 		.ascii	"unsigned char\000"
  3407      676E6564 
  3407      20636861 
  3407      7200
  3408              	.LASF49:
- 3409 01cd 73707269 		.ascii	"sprintf\000"
+ 3409 01db 73707269 		.ascii	"sprintf\000"
  3409      6E746600 
  3410              	.LASF2:
- 3411 01d5 7369676E 		.ascii	"signed char\000"
+ 3411 01e3 7369676E 		.ascii	"signed char\000"
  3411      65642063 
  3411      68617200 
  3412              	.LASF0:
- 3413 01e1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 3413 01ef 6C6F6E67 		.ascii	"long long unsigned int\000"
  3413      206C6F6E 
  3413      6720756E 
  3413      7369676E 
  3413      65642069 
  3414              	.LASF14:
- 3415 01f8 75696E74 		.ascii	"uint32_t\000"
+ 3415 0206 75696E74 		.ascii	"uint32_t\000"
  3415      33325F74 
  3415      00
  3416              	.LASF1:
- 3417 0201 756E7369 		.ascii	"unsigned int\000"
+ 3417 020f 756E7369 		.ascii	"unsigned int\000"
  3417      676E6564 
  3417      20696E74 
  3417      00
  3418              	.LASF34:
- 3419 020e 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio7IsValidEv\000"
+ 3419 021c 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio7IsValidEv\000"
  3419      3130466F 
  3419      756E6461 
  3419      74696F6E 
  3419      344D6174 
  3420              	.LASF10:
- 3421 0234 6C6F6E67 		.ascii	"long unsigned int\000"
+ 3421 0242 6C6F6E67 		.ascii	"long unsigned int\000"
  3421      20756E73 
  3421      69676E65 
  3421      6420696E 
  3421      7400
  3422              	.LASF5:
- 3423 0246 73686F72 		.ascii	"short unsigned int\000"
+ 3423 0254 73686F72 		.ascii	"short unsigned int\000"
  3423      7420756E 
  3423      7369676E 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 68
+
+
  3423      65642069 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 68
-
-
  3423      6E7400
  3424              	.LASF55:
- 3425 0259 474E5520 		.ascii	"GNU C++14 5.4.1 20160609 (release) [ARM/embedded-5-"
+ 3425 0267 474E5520 		.ascii	"GNU C++14 5.4.1 20160609 (release) [ARM/embedded-5-"
  3425      432B2B31 
  3425      3420352E 
  3425      342E3120 
  3425      32303136 
- 3426 028c 6272616E 		.ascii	"branch revision 237715] -mcpu=cortex-m3 -mthumb -g "
+ 3426 029a 6272616E 		.ascii	"branch revision 237715] -mcpu=cortex-m3 -mthumb -g "
  3426      63682072 
  3426      65766973 
  3426      696F6E20 
  3426      32333737 
- 3427 02bf 2D4F6720 		.ascii	"-Og -std=c++1z -ffunction-sections -ffat-lto-object"
+ 3427 02cd 2D4F6720 		.ascii	"-Og -std=c++1z -ffunction-sections -ffat-lto-object"
  3427      2D737464 
  3427      3D632B2B 
  3427      317A202D 
  3427      6666756E 
- 3428 02f2 73202D66 		.ascii	"s -fno-exceptions -fno-rtti\000"
+ 3428 0300 73202D66 		.ascii	"s -fno-exceptions -fno-rtti\000"
  3428      6E6F2D65 
  3428      78636570 
  3428      74696F6E 
  3428      73202D66 
  3429              	.LASF17:
- 3430 030e 63686172 		.ascii	"char\000"
+ 3430 031c 63686172 		.ascii	"char\000"
  3430      00
  3431              	.LASF66:
- 3432 0313 6D61696E 		.ascii	"main\000"
+ 3432 0321 6D61696E 		.ascii	"main\000"
  3432      00
  3433              	.LASF51:
- 3434 0318 55415254 		.ascii	"UART_Start\000"
+ 3434 0326 55415254 		.ascii	"UART_Start\000"
  3434      5F537461 
  3434      727400
  3435              	.LASF13:
- 3436 0323 696E7433 		.ascii	"int32_t\000"
+ 3436 0331 696E7433 		.ascii	"int32_t\000"
  3436      325F7400 
  3437              	.LASF24:
- 3438 032b 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio3NumEv\000"
+ 3438 0339 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio3NumEv\000"
  3438      3130466F 
  3438      756E6461 
  3438      74696F6E 
  3438      344D6174 
  3439              	.LASF40:
- 3440 034d 74686973 		.ascii	"this\000"
+ 3440 035b 74686973 		.ascii	"this\000"
  3440      00
  3441              	.LASF32:
- 3442 0352 5F5A4E31 		.ascii	"_ZN10Foundation4Math5Ratio6SetDenEm\000"
+ 3442 0360 5F5A4E31 		.ascii	"_ZN10Foundation4Math5Ratio6SetDenEm\000"
  3442      30466F75 
  3442      6E646174 
  3442      696F6E34 
  3442      4D617468 
  3443              	.LASF63:
- 3444 0376 5F5A4E31 		.ascii	"_ZN10Foundation4Math5Ratio6ReduceEv\000"
+ 3444 0384 5F5A4E31 		.ascii	"_ZN10Foundation4Math5Ratio6ReduceEv\000"
  3444      30466F75 
  3444      6E646174 
  3444      696F6E34 
  3444      4D617468 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 69
+
+
  3445              	.LASF43:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 69
-
-
- 3446 039a 72617469 		.ascii	"ratio\000"
+ 3446 03a8 72617469 		.ascii	"ratio\000"
  3446      6F00
  3447              	.LASF47:
- 3448 03a0 62756666 		.ascii	"buffer\000"
+ 3448 03ae 62756666 		.ascii	"buffer\000"
  3448      657200
  3449              	.LASF30:
- 3450 03a7 53657444 		.ascii	"SetDen\000"
+ 3450 03b5 53657444 		.ascii	"SetDen\000"
  3450      656E00
  3451              	.LASF27:
- 3452 03ae 5F5A4E31 		.ascii	"_ZN10Foundation4Math5RatioC4Ell\000"
+ 3452 03bc 5F5A4E31 		.ascii	"_ZN10Foundation4Math5RatioC4Ell\000"
  3452      30466F75 
  3452      6E646174 
  3452      696F6E34 
  3452      4D617468 
  3453              	.LASF60:
- 3454 03ce 4D617468 		.ascii	"Math\000"
+ 3454 03dc 4D617468 		.ascii	"Math\000"
  3454      00
  3455              	.LASF45:
- 3456 03d3 67636431 		.ascii	"gcd1\000"
+ 3456 03e1 67636431 		.ascii	"gcd1\000"
  3456      00
  3457              	.LASF46:
- 3458 03d8 67636432 		.ascii	"gcd2\000"
+ 3458 03e6 67636432 		.ascii	"gcd2\000"
  3458      00
  3459              	.LASF7:
- 3460 03dd 5F5F696E 		.ascii	"__int32_t\000"
+ 3460 03eb 5F5F696E 		.ascii	"__int32_t\000"
  3460      7433325F 
  3460      7400
  3461              	.LASF38:
- 3462 03e7 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio7ReducedEv\000"
+ 3462 03f5 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio7ReducedEv\000"
  3462      3130466F 
  3462      756E6461 
  3462      74696F6E 
  3462      344D6174 
  3463              	.LASF52:
- 3464 040d 53657276 		.ascii	"Servo_PWM_Start\000"
+ 3464 041b 53657276 		.ascii	"Servo_PWM_Start\000"
  3464      6F5F5057 
  3464      4D5F5374 
  3464      61727400 
  3465              	.LASF29:
- 3466 041d 5365744E 		.ascii	"SetNum\000"
+ 3466 042b 5365744E 		.ascii	"SetNum\000"
  3466      756D00
  3467              	.LASF62:
- 3468 0424 52656475 		.ascii	"Reduce\000"
+ 3468 0432 52656475 		.ascii	"Reduce\000"
  3468      636500
  3469              	.LASF16:
- 3470 042b 646F7562 		.ascii	"double\000"
+ 3470 0439 646F7562 		.ascii	"double\000"
  3470      6C6500
  3471              	.LASF25:
- 3472 0432 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio3DenEv\000"
+ 3472 0440 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math5Ratio3DenEv\000"
  3472      3130466F 
  3472      756E6461 
  3472      74696F6E 
  3472      344D6174 
  3473              	.LASF67:
- 3474 0454 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 3474 0462 49544D5F 		.ascii	"ITM_RxBuffer\000"
  3474      52784275 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccxQWVCH.s 			page 70
+
+
  3474      66666572 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7IU8VH.s 			page 70
-
-
  3474      00
  3475              	.LASF22:
- 3476 0461 5F736967 		.ascii	"_sign\000"
+ 3476 046f 5F736967 		.ascii	"_sign\000"
  3476      6E00
  3477              	.LASF56:
- 3478 0467 6D61696E 		.ascii	"main.cpp\000"
+ 3478 0475 6D61696E 		.ascii	"main.cpp\000"
  3478      2E637070 
  3478      00
  3479              	.LASF42:
- 3480 0470 6C616265 		.ascii	"label\000"
+ 3480 047e 6C616265 		.ascii	"label\000"
  3480      6C00
  3481              	.LASF26:
- 3482 0476 5369676E 		.ascii	"Sign\000"
+ 3482 0484 5369676E 		.ascii	"Sign\000"
  3482      00
  3483              	.LASF54:
- 3484 047b 53657276 		.ascii	"ServoAB_WriteCompare1\000"
+ 3484 0489 53657276 		.ascii	"ServoAB_WriteCompare1\000"
  3484      6F41425F 
  3484      57726974 
  3484      65436F6D 
  3484      70617265 
  3485              	.LASF23:
- 3486 0491 52617469 		.ascii	"Ratio\000"
+ 3486 049f 52617469 		.ascii	"Ratio\000"
  3486      6F00
  3487              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

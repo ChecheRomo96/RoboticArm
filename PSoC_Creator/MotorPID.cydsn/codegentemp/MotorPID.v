@@ -1,6 +1,6 @@
 // ======================================================================
 // MotorPID.v generated from TopDesign.cysch
-// 05/25/2026 at 15:13
+// 05/25/2026 at 16:12
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -970,11 +970,9 @@ endmodule
 // top
 module top ;
 
-          wire  Net_1752;
-          wire  Net_1749;
-          wire  ServoPWM_B;
           wire  Net_1582;
           wire  Net_1398;
+          wire  ServoPWM_B;
           wire  Net_1397;
           wire  Net_1581;
           wire  Net_1394;
@@ -986,7 +984,6 @@ module top ;
           wire  Net_1388;
           wire  Net_528;
           wire  Net_527;
-          wire  Net_1715;
           wire  Net_1682;
           wire  Net_1733;
           wire  Net_1679;
@@ -1002,13 +999,13 @@ module top ;
           wire  Net_172;
           wire  Net_173;
           wire  Net_1552;
-          wire  ServoPWM_2;
           wire  Net_1500;
-          wire  ServoPWM_A;
+          wire  ServoPWM_2;
           wire  Net_1499;
+          wire  ServoPWM_A;
           wire  Net_1498;
-          wire  ServoPWM_clock;
           wire  Net_1519;
+          wire  ServoPWM_clock;
           wire  Net_1496;
           wire  Net_1495;
           wire  Net_1494;
@@ -1022,8 +1019,8 @@ module top ;
           wire  Net_237;
           wire  Net_236;
           wire  Net_235;
-          wire  ServoPWM_1;
           wire  Net_233;
+          wire  ServoPWM_1;
           wire  Net_232;
           wire  Net_231;
           wire  Net_230;
@@ -1054,6 +1051,7 @@ module top ;
           wire  Net_281;
           wire  Net_280;
           wire  Net_288;
+          wire  Net_1756;
           wire  ServoPWM_tc;
           wire  Net_1738;
           wire  Net_170;
@@ -1750,9 +1748,6 @@ module top ;
 	assign tmpOE__ServoA_Out_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 
-    assign Net_1715 = ServoPWM_1 & ServoPWM_B;
-
-
 	cy_clock_v1_0
 		#(.id("e82d2cca-3c3e-40c6-bb0f-ad9dba7af00d"),
 		  .source_clock_id(""),
@@ -1781,80 +1776,14 @@ module top ;
         .trigger(1'b0));
     defparam Servo_PWM.Resolution = 16;
 
-	wire [0:0] tmpOE__ServoB_Out_net;
-	wire [0:0] tmpFB_0__ServoB_Out_net;
-	wire [0:0] tmpIO_0__ServoB_Out_net;
-	wire [0:0] tmpINTERRUPT_0__ServoB_Out_net;
-	electrical [0:0] tmpSIOVREF__ServoB_Out_net;
-
-	cy_psoc3_pins_v1_10
-		#(.id("546bf8fb-d50e-41d7-9414-6eb32868802c"),
-		  .drive_mode(3'b110),
-		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
-		  .input_clk_en(0),
-		  .input_sync(1'b1),
-		  .input_sync_mode(1'b0),
-		  .intr_mode(2'b00),
-		  .invert_in_clock(0),
-		  .invert_in_clock_en(0),
-		  .invert_in_reset(0),
-		  .invert_out_clock(0),
-		  .invert_out_clock_en(0),
-		  .invert_out_reset(0),
-		  .io_voltage(""),
-		  .layout_mode("CONTIGUOUS"),
-		  .oe_conn(1'b0),
-		  .oe_reset(0),
-		  .oe_sync(1'b0),
-		  .output_clk_en(0),
-		  .output_clock_mode(1'b0),
-		  .output_conn(1'b1),
-		  .output_mode(1'b0),
-		  .output_reset(0),
-		  .output_sync(1'b0),
-		  .pa_in_clock(-1),
-		  .pa_in_clock_en(-1),
-		  .pa_in_reset(-1),
-		  .pa_out_clock(-1),
-		  .pa_out_clock_en(-1),
-		  .pa_out_reset(-1),
-		  .pin_aliases(""),
-		  .pin_mode("O"),
-		  .por_state(4),
-		  .sio_group_cnt(0),
-		  .sio_hyst(1'b1),
-		  .sio_ibuf(""),
-		  .sio_info(2'b00),
-		  .sio_obuf(""),
-		  .sio_refsel(""),
-		  .sio_vtrip(""),
-		  .sio_hifreq(""),
-		  .sio_vohsel(""),
-		  .slew_rate(1'b0),
-		  .spanning(0),
-		  .use_annotation(1'b0),
-		  .vtrip(2'b10),
-		  .width(1),
-		  .ovt_hyst_trim(1'b0),
-		  .ovt_needed(1'b0),
-		  .ovt_slew_control(2'b00),
-		  .input_buffer_sel(2'b00))
-		ServoB_Out
-		 (.oe(tmpOE__ServoB_Out_net),
-		  .y({Net_1715}),
-		  .fb({tmpFB_0__ServoB_Out_net[0:0]}),
-		  .io({tmpIO_0__ServoB_Out_net[0:0]}),
-		  .siovref(tmpSIOVREF__ServoB_Out_net),
-		  .interrupt({tmpINTERRUPT_0__ServoB_Out_net[0:0]}),
-		  .in_clock({1'b0}),
-		  .in_clock_en({1'b1}),
-		  .in_reset({1'b0}),
-		  .out_clock({1'b0}),
-		  .out_clock_en({1'b1}),
-		  .out_reset({1'b0}));
-
-	assign tmpOE__ServoB_Out_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+    // -- SRFF Start --
+    reg  cy_srff_2;
+    always @(posedge ServoPWM_clock)
+    begin
+        cy_srff_2 <= (ServoPWM_1 | Net_1756) & ~ServoPWM_B;
+    end
+    assign Net_1756 = cy_srff_2;
+    // -- SRFF End --
 
 
 	cy_clock_v1_0
@@ -2018,17 +1947,80 @@ module top ;
 
 	assign tmpOE__Pin_2_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
+	wire [0:0] tmpOE__ServoB_Out_net;
+	wire [0:0] tmpFB_0__ServoB_Out_net;
+	wire [0:0] tmpIO_0__ServoB_Out_net;
+	wire [0:0] tmpINTERRUPT_0__ServoB_Out_net;
+	electrical [0:0] tmpSIOVREF__ServoB_Out_net;
 
-	cy_clock_v1_0
-		#(.id("468a294e-2c3e-4c44-8256-6a4b0f35dc0b"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("10000000000"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_5
-		 (.clock_out(Net_1749));
+	cy_psoc3_pins_v1_10
+		#(.id("c2ebdfc4-215a-4f54-ae86-518ffc9de996"),
+		  .drive_mode(3'b110),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b1),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b1),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("O"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b10),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		ServoB_Out
+		 (.oe(tmpOE__ServoB_Out_net),
+		  .y({Net_1756}),
+		  .fb({tmpFB_0__ServoB_Out_net[0:0]}),
+		  .io({tmpIO_0__ServoB_Out_net[0:0]}),
+		  .siovref(tmpSIOVREF__ServoB_Out_net),
+		  .interrupt({tmpINTERRUPT_0__ServoB_Out_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
 
+	assign tmpOE__ServoB_Out_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__Pin_3_net;
 	wire [0:0] tmpFB_0__Pin_3_net;
@@ -2107,7 +2099,7 @@ module top ;
 
     // -- SRFF Start --
     reg  cy_srff_1;
-    always @(posedge Net_1749)
+    always @(posedge ServoPWM_clock)
     begin
         cy_srff_1 <= (ServoPWM_1 | Net_1738) & ~ServoPWM_A;
     end

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
   28:Generated_Source\PSoC5/usCounter_PM.c **** *     Save the current user configuration
   29:Generated_Source\PSoC5/usCounter_PM.c **** *
   30:Generated_Source\PSoC5/usCounter_PM.c **** * Parameters:  
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 2
 
 
   31:Generated_Source\PSoC5/usCounter_PM.c **** *  void
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
   68:Generated_Source\PSoC5/usCounter_PM.c **** *
   69:Generated_Source\PSoC5/usCounter_PM.c **** * Global variables:
   70:Generated_Source\PSoC5/usCounter_PM.c **** *  usCounter_backup:  Variables of this global structure are used to 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 3
 
 
   71:Generated_Source\PSoC5/usCounter_PM.c **** *  restore the values of non retention registers on wakeup from sleep mode.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
   63              		.cfi_startproc
   64              		@ args = 0, pretend = 0, frame = 0
   65              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 4
 
 
   66              		.loc 1 106 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
   99              		.section	.text.usCounter_Wakeup,"ax",%progbits
  100              		.align	2
  101              		.global	usCounter_Wakeup
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 5
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 5
 
 
  102              		.thumb
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  126              		.align	2
  127              	.L12:
  128 0010 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 6
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 6
 
 
  129              		.cfi_endproc
@@ -322,48 +322,48 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  147 0006 00000000 		.4byte	.Ldebug_abbrev0
  148 000a 04       		.byte	0x4
  149 000b 01       		.uleb128 0x1
- 150 000c E5000000 		.4byte	.LASF26
+ 150 000c A8000000 		.4byte	.LASF26
  151 0010 0C       		.byte	0xc
- 152 0011 B1000000 		.4byte	.LASF27
- 153 0015 00000000 		.4byte	.LASF28
+ 152 0011 74000000 		.4byte	.LASF27
+ 153 0015 52010000 		.4byte	.LASF28
  154 0019 00000000 		.4byte	.Ldebug_ranges0+0
  155 001d 00000000 		.4byte	0
  156 0021 00000000 		.4byte	.Ldebug_line0
  157 0025 02       		.uleb128 0x2
  158 0026 01       		.byte	0x1
  159 0027 06       		.byte	0x6
- 160 0028 57020000 		.4byte	.LASF0
+ 160 0028 65020000 		.4byte	.LASF0
  161 002c 02       		.uleb128 0x2
  162 002d 01       		.byte	0x1
  163 002e 08       		.byte	0x8
- 164 002f D7000000 		.4byte	.LASF1
+ 164 002f 9A000000 		.4byte	.LASF1
  165 0033 02       		.uleb128 0x2
  166 0034 02       		.byte	0x2
  167 0035 05       		.byte	0x5
- 168 0036 96010000 		.4byte	.LASF2
+ 168 0036 A4010000 		.4byte	.LASF2
  169 003a 02       		.uleb128 0x2
  170 003b 02       		.byte	0x2
  171 003c 07       		.byte	0x7
- 172 003d 43000000 		.4byte	.LASF3
+ 172 003d 06000000 		.4byte	.LASF3
  173 0041 02       		.uleb128 0x2
  174 0042 04       		.byte	0x4
  175 0043 05       		.byte	0x5
- 176 0044 31020000 		.4byte	.LASF4
+ 176 0044 3F020000 		.4byte	.LASF4
  177 0048 02       		.uleb128 0x2
  178 0049 04       		.byte	0x4
  179 004a 07       		.byte	0x7
- 180 004b A0010000 		.4byte	.LASF5
+ 180 004b AE010000 		.4byte	.LASF5
  181 004f 02       		.uleb128 0x2
  182 0050 08       		.byte	0x8
  183 0051 05       		.byte	0x5
- 184 0052 07020000 		.4byte	.LASF6
+ 184 0052 15020000 		.4byte	.LASF6
  185 0056 02       		.uleb128 0x2
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 7
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 7
 
 
  186 0057 08       		.byte	0x8
  187 0058 07       		.byte	0x7
- 188 0059 BF010000 		.4byte	.LASF7
+ 188 0059 CD010000 		.4byte	.LASF7
  189 005d 03       		.uleb128 0x3
  190 005e 04       		.byte	0x4
  191 005f 05       		.byte	0x5
@@ -371,26 +371,26 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  193 0064 02       		.uleb128 0x2
  194 0065 04       		.byte	0x4
  195 0066 07       		.byte	0x7
- 196 0067 B2010000 		.4byte	.LASF8
+ 196 0067 C0010000 		.4byte	.LASF8
  197 006b 04       		.uleb128 0x4
- 198 006c 89010000 		.4byte	.LASF12
+ 198 006c 4C010000 		.4byte	.LASF12
  199 0070 02       		.byte	0x2
  200 0071 E901     		.2byte	0x1e9
  201 0073 2C000000 		.4byte	0x2c
  202 0077 02       		.uleb128 0x2
  203 0078 04       		.byte	0x4
  204 0079 04       		.byte	0x4
- 205 007a 3D000000 		.4byte	.LASF9
+ 205 007a 00000000 		.4byte	.LASF9
  206 007e 02       		.uleb128 0x2
  207 007f 08       		.byte	0x8
  208 0080 04       		.byte	0x4
- 209 0081 8F010000 		.4byte	.LASF10
+ 209 0081 9D010000 		.4byte	.LASF10
  210 0085 02       		.uleb128 0x2
  211 0086 01       		.byte	0x1
  212 0087 08       		.byte	0x8
- 213 0088 15020000 		.4byte	.LASF11
+ 213 0088 23020000 		.4byte	.LASF11
  214 008c 04       		.uleb128 0x4
- 215 008d 73010000 		.4byte	.LASF13
+ 215 008d 36010000 		.4byte	.LASF13
  216 0091 02       		.byte	0x2
  217 0092 9302     		.2byte	0x293
  218 0094 98000000 		.4byte	0x98
@@ -399,45 +399,45 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  221 009d 02       		.uleb128 0x2
  222 009e 08       		.byte	0x8
  223 009f 04       		.byte	0x4
- 224 00a0 3A020000 		.4byte	.LASF14
+ 224 00a0 48020000 		.4byte	.LASF14
  225 00a4 02       		.uleb128 0x2
  226 00a5 04       		.byte	0x4
  227 00a6 07       		.byte	0x7
- 228 00a7 EB010000 		.4byte	.LASF15
+ 228 00a7 F9010000 		.4byte	.LASF15
  229 00ab 06       		.uleb128 0x6
  230 00ac 03       		.byte	0x3
  231 00ad 03       		.byte	0x3
  232 00ae 40       		.byte	0x40
  233 00af D8000000 		.4byte	0xd8
  234 00b3 07       		.uleb128 0x7
- 235 00b4 F4010000 		.4byte	.LASF16
+ 235 00b4 02020000 		.4byte	.LASF16
  236 00b8 03       		.byte	0x3
  237 00b9 42       		.byte	0x42
  238 00ba 6B000000 		.4byte	0x6b
  239 00be 00       		.byte	0
  240 00bf 07       		.uleb128 0x7
- 241 00c0 56000000 		.4byte	.LASF17
+ 241 00c0 19000000 		.4byte	.LASF17
  242 00c4 03       		.byte	0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 8
 
 
  243 00c5 43       		.byte	0x43
  244 00c6 6B000000 		.4byte	0x6b
  245 00ca 01       		.byte	0x1
  246 00cb 07       		.uleb128 0x7
- 247 00cc 71000000 		.4byte	.LASF18
+ 247 00cc 34000000 		.4byte	.LASF18
  248 00d0 03       		.byte	0x3
  249 00d1 46       		.byte	0x46
  250 00d2 6B000000 		.4byte	0x6b
  251 00d6 02       		.byte	0x2
  252 00d7 00       		.byte	0
  253 00d8 08       		.uleb128 0x8
- 254 00d9 1A020000 		.4byte	.LASF19
+ 254 00d9 28020000 		.4byte	.LASF19
  255 00dd 03       		.byte	0x3
  256 00de 49       		.byte	0x49
  257 00df AB000000 		.4byte	0xab
  258 00e3 09       		.uleb128 0x9
- 259 00e4 D6010000 		.4byte	.LASF20
+ 259 00e4 E4010000 		.4byte	.LASF20
  260 00e8 01       		.byte	0x1
  261 00e9 2A       		.byte	0x2a
  262 00ea 00000000 		.4byte	.LFB0
@@ -445,7 +445,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  264 00f2 01       		.uleb128 0x1
  265 00f3 9C       		.byte	0x9c
  266 00f4 09       		.uleb128 0x9
- 267 00f5 88000000 		.4byte	.LASF21
+ 267 00f5 4B000000 		.4byte	.LASF21
  268 00f9 01       		.byte	0x1
  269 00fa 4A       		.byte	0x4a
  270 00fb 00000000 		.4byte	.LFB1
@@ -453,7 +453,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  272 0103 01       		.uleb128 0x1
  273 0104 9C       		.byte	0x9c
  274 0105 0A       		.uleb128 0xa
- 275 0106 61000000 		.4byte	.LASF22
+ 275 0106 24000000 		.4byte	.LASF22
  276 010a 01       		.byte	0x1
  277 010b 69       		.byte	0x69
  278 010c 00000000 		.4byte	.LFB2
@@ -466,7 +466,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  285 011f 54010000 		.4byte	0x154
  286 0123 00       		.byte	0
  287 0124 0A       		.uleb128 0xa
- 288 0125 78010000 		.4byte	.LASF23
+ 288 0125 3B010000 		.4byte	.LASF23
  289 0129 01       		.byte	0x1
  290 012a 96       		.byte	0x96
  291 012b 00000000 		.4byte	.LFB3
@@ -478,11 +478,11 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  297 013a 0E000000 		.4byte	.LVL1
  298 013e 5F010000 		.4byte	0x15f
  299 0142 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 9
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 9
 
 
  300 0143 0C       		.uleb128 0xc
- 301 0144 A0000000 		.4byte	.LASF29
+ 301 0144 63000000 		.4byte	.LASF29
  302 0148 01       		.byte	0x1
  303 0149 15       		.byte	0x15
  304 014a D8000000 		.4byte	0xd8
@@ -490,13 +490,13 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  306 014f 03       		.byte	0x3
  307 0150 00000000 		.4byte	usCounter_backup
  308 0154 0D       		.uleb128 0xd
- 309 0155 63020000 		.4byte	.LASF24
- 310 0159 63020000 		.4byte	.LASF24
+ 309 0155 71020000 		.4byte	.LASF24
+ 310 0159 71020000 		.4byte	.LASF24
  311 015d 03       		.byte	0x3
  312 015e 50       		.byte	0x50
  313 015f 0D       		.uleb128 0xd
- 314 0160 46020000 		.4byte	.LASF25
- 315 0164 46020000 		.4byte	.LASF25
+ 314 0160 54020000 		.4byte	.LASF25
+ 315 0164 54020000 		.4byte	.LASF25
  316 0168 03       		.byte	0x3
  317 0169 71       		.byte	0x71
  318 016a 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  354 0021 0B       		.uleb128 0xb
  355 0022 0B       		.uleb128 0xb
  356 0023 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 10
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 10
 
 
  357 0024 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  411 005a 16       		.uleb128 0x16
  412 005b 00       		.byte	0
  413 005c 03       		.uleb128 0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 11
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 11
 
 
  414 005d 0E       		.uleb128 0xe
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  468 0095 13       		.uleb128 0x13
  469 0096 00       		.byte	0
  470 0097 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 12
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 12
 
 
  471 0098 0B       		.uleb128 0xb
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  525 0020 00000000 		.4byte	.LFB2
  526 0024 28000000 		.4byte	.LFE2-.LFB2
  527 0028 00000000 		.4byte	.LFB3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 13
 
 
  528 002c 14000000 		.4byte	.LFE3-.LFB3
@@ -743,174 +743,175 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 1
  545      00000201 
  545      FB0E0D00 
  545      01010101 
- 546              	.LASF28:
- 547 0000 433A5C55 		.ascii	"C:\\Users\\PC\\Documents\\PSoC Creator\\RoboticArm\\"
- 547      73657273 
- 547      5C50435C 
- 547      446F6375 
- 547      6D656E74 
- 548 002e 4D6F746F 		.ascii	"MotorPID.cydsn\000"
- 548      72504944 
- 548      2E637964 
- 548      736E00
- 549              	.LASF9:
- 550 003d 666C6F61 		.ascii	"float\000"
- 550      7400
- 551              	.LASF3:
- 552 0043 73686F72 		.ascii	"short unsigned int\000"
- 552      7420756E 
- 552      7369676E 
- 552      65642069 
- 552      6E7400
- 553              	.LASF17:
- 554 0056 436F756E 		.ascii	"CounterUdb\000"
- 554      74657255 
- 554      646200
- 555              	.LASF22:
- 556 0061 7573436F 		.ascii	"usCounter_Sleep\000"
- 556      756E7465 
- 556      725F536C 
- 556      65657000 
- 557              	.LASF18:
- 558 0071 436F756E 		.ascii	"CounterControlRegister\000"
- 558      74657243 
- 558      6F6E7472 
- 558      6F6C5265 
- 558      67697374 
- 559              	.LASF21:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 14
+ 546              	.LASF9:
+ 547 0000 666C6F61 		.ascii	"float\000"
+ 547      7400
+ 548              	.LASF3:
+ 549 0006 73686F72 		.ascii	"short unsigned int\000"
+ 549      7420756E 
+ 549      7369676E 
+ 549      65642069 
+ 549      6E7400
+ 550              	.LASF17:
+ 551 0019 436F756E 		.ascii	"CounterUdb\000"
+ 551      74657255 
+ 551      646200
+ 552              	.LASF22:
+ 553 0024 7573436F 		.ascii	"usCounter_Sleep\000"
+ 553      756E7465 
+ 553      725F536C 
+ 553      65657000 
+ 554              	.LASF18:
+ 555 0034 436F756E 		.ascii	"CounterControlRegister\000"
+ 555      74657243 
+ 555      6F6E7472 
+ 555      6F6C5265 
+ 555      67697374 
+ 556              	.LASF21:
+ 557 004b 7573436F 		.ascii	"usCounter_RestoreConfig\000"
+ 557      756E7465 
+ 557      725F5265 
+ 557      73746F72 
+ 557      65436F6E 
+ 558              	.LASF29:
+ 559 0063 7573436F 		.ascii	"usCounter_backup\000"
+ 559      756E7465 
+ 559      725F6261 
+ 559      636B7570 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 14
 
 
- 560 0088 7573436F 		.ascii	"usCounter_RestoreConfig\000"
- 560      756E7465 
- 560      725F5265 
- 560      73746F72 
- 560      65436F6E 
- 561              	.LASF29:
- 562 00a0 7573436F 		.ascii	"usCounter_backup\000"
- 562      756E7465 
- 562      725F6261 
- 562      636B7570 
- 562      00
- 563              	.LASF27:
- 564 00b1 47656E65 		.ascii	"Generated_Source\\PSoC5\\usCounter_PM.c\000"
- 564      72617465 
- 564      645F536F 
- 564      75726365 
- 564      5C50536F 
- 565              	.LASF1:
- 566 00d7 756E7369 		.ascii	"unsigned char\000"
- 566      676E6564 
- 566      20636861 
- 566      7200
- 567              	.LASF26:
- 568 00e5 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 568      43313120 
- 568      352E342E 
- 568      31203230 
- 568      31363036 
- 569 0118 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 569      20726576 
- 569      6973696F 
- 569      6E203233 
- 569      37373135 
- 570 014b 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 570      66756E63 
- 570      74696F6E 
- 570      2D736563 
- 570      74696F6E 
- 571              	.LASF13:
- 572 0173 72656738 		.ascii	"reg8\000"
- 572      00
- 573              	.LASF23:
- 574 0178 7573436F 		.ascii	"usCounter_Wakeup\000"
- 574      756E7465 
- 574      725F5761 
- 574      6B657570 
- 574      00
- 575              	.LASF12:
- 576 0189 75696E74 		.ascii	"uint8\000"
- 576      3800
+ 559      00
+ 560              	.LASF27:
+ 561 0074 47656E65 		.ascii	"Generated_Source\\PSoC5\\usCounter_PM.c\000"
+ 561      72617465 
+ 561      645F536F 
+ 561      75726365 
+ 561      5C50536F 
+ 562              	.LASF1:
+ 563 009a 756E7369 		.ascii	"unsigned char\000"
+ 563      676E6564 
+ 563      20636861 
+ 563      7200
+ 564              	.LASF26:
+ 565 00a8 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 565      43313120 
+ 565      352E342E 
+ 565      31203230 
+ 565      31363036 
+ 566 00db 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 566      20726576 
+ 566      6973696F 
+ 566      6E203233 
+ 566      37373135 
+ 567 010e 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 567      66756E63 
+ 567      74696F6E 
+ 567      2D736563 
+ 567      74696F6E 
+ 568              	.LASF13:
+ 569 0136 72656738 		.ascii	"reg8\000"
+ 569      00
+ 570              	.LASF23:
+ 571 013b 7573436F 		.ascii	"usCounter_Wakeup\000"
+ 571      756E7465 
+ 571      725F5761 
+ 571      6B657570 
+ 571      00
+ 572              	.LASF12:
+ 573 014c 75696E74 		.ascii	"uint8\000"
+ 573      3800
+ 574              	.LASF28:
+ 575 0152 433A5C55 		.ascii	"C:\\Users\\PC\\Dropbox\\CodeSpaces\\PSoC\\RoboticAr"
+ 575      73657273 
+ 575      5C50435C 
+ 575      44726F70 
+ 575      626F785C 
+ 576 017f 6D5C5053 		.ascii	"m\\PSoC_Creator\\MotorPID.cydsn\000"
+ 576      6F435F43 
+ 576      72656174 
+ 576      6F725C4D 
+ 576      6F746F72 
  577              	.LASF10:
- 578 018f 646F7562 		.ascii	"double\000"
+ 578 019d 646F7562 		.ascii	"double\000"
  578      6C6500
  579              	.LASF2:
- 580 0196 73686F72 		.ascii	"short int\000"
+ 580 01a4 73686F72 		.ascii	"short int\000"
  580      7420696E 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 15
+
+
  580      7400
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 15
-
-
  581              	.LASF5:
- 582 01a0 6C6F6E67 		.ascii	"long unsigned int\000"
+ 582 01ae 6C6F6E67 		.ascii	"long unsigned int\000"
  582      20756E73 
  582      69676E65 
  582      6420696E 
  582      7400
  583              	.LASF8:
- 584 01b2 756E7369 		.ascii	"unsigned int\000"
+ 584 01c0 756E7369 		.ascii	"unsigned int\000"
  584      676E6564 
  584      20696E74 
  584      00
  585              	.LASF7:
- 586 01bf 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 586 01cd 6C6F6E67 		.ascii	"long long unsigned int\000"
  586      206C6F6E 
  586      6720756E 
  586      7369676E 
  586      65642069 
  587              	.LASF20:
- 588 01d6 7573436F 		.ascii	"usCounter_SaveConfig\000"
+ 588 01e4 7573436F 		.ascii	"usCounter_SaveConfig\000"
  588      756E7465 
  588      725F5361 
  588      7665436F 
  588      6E666967 
  589              	.LASF15:
- 590 01eb 73697A65 		.ascii	"sizetype\000"
+ 590 01f9 73697A65 		.ascii	"sizetype\000"
  590      74797065 
  590      00
  591              	.LASF16:
- 592 01f4 436F756E 		.ascii	"CounterEnableState\000"
+ 592 0202 436F756E 		.ascii	"CounterEnableState\000"
  592      74657245 
  592      6E61626C 
  592      65537461 
  592      746500
  593              	.LASF6:
- 594 0207 6C6F6E67 		.ascii	"long long int\000"
+ 594 0215 6C6F6E67 		.ascii	"long long int\000"
  594      206C6F6E 
  594      6720696E 
  594      7400
  595              	.LASF11:
- 596 0215 63686172 		.ascii	"char\000"
+ 596 0223 63686172 		.ascii	"char\000"
  596      00
  597              	.LASF19:
- 598 021a 7573436F 		.ascii	"usCounter_backupStruct\000"
+ 598 0228 7573436F 		.ascii	"usCounter_backupStruct\000"
  598      756E7465 
  598      725F6261 
  598      636B7570 
  598      53747275 
  599              	.LASF4:
- 600 0231 6C6F6E67 		.ascii	"long int\000"
+ 600 023f 6C6F6E67 		.ascii	"long int\000"
  600      20696E74 
  600      00
  601              	.LASF14:
- 602 023a 6C6F6E67 		.ascii	"long double\000"
+ 602 0248 6C6F6E67 		.ascii	"long double\000"
  602      20646F75 
  602      626C6500 
  603              	.LASF25:
- 604 0246 7573436F 		.ascii	"usCounter_Enable\000"
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGIqGRH.s 			page 16
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cczszP3c.s 			page 16
 
 
+ 604 0254 7573436F 		.ascii	"usCounter_Enable\000"
  604      756E7465 
  604      725F456E 
  604      61626C65 
  604      00
  605              	.LASF0:
- 606 0257 7369676E 		.ascii	"signed char\000"
+ 606 0265 7369676E 		.ascii	"signed char\000"
  606      65642063 
  606      68617200 
  607              	.LASF24:
- 608 0263 7573436F 		.ascii	"usCounter_Stop\000"
+ 608 0271 7573436F 		.ascii	"usCounter_Stop\000"
  608      756E7465 
  608      725F5374 
  608      6F7000

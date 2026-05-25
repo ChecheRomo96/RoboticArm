@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
   28:Generated_Source\PSoC5/MotorA_QuadDec.c **** /*******************************************************************************
   29:Generated_Source\PSoC5/MotorA_QuadDec.c **** * Function Name: MotorA_QuadDec_Init
   30:Generated_Source\PSoC5/MotorA_QuadDec.c **** ********************************************************************************
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 2
 
 
   31:Generated_Source\PSoC5/MotorA_QuadDec.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
   68:Generated_Source\PSoC5/MotorA_QuadDec.c **** *
   69:Generated_Source\PSoC5/MotorA_QuadDec.c **** *******************************************************************************/
   70:Generated_Source\PSoC5/MotorA_QuadDec.c **** void MotorA_QuadDec_Enable(void) 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 3
 
 
   71:Generated_Source\PSoC5/MotorA_QuadDec.c **** {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  125:Generated_Source\PSoC5/MotorA_QuadDec.c ****         MotorA_QuadDec_Cnt16_Start();
  126:Generated_Source\PSoC5/MotorA_QuadDec.c ****         MotorA_QuadDec_Cnt16_WriteCounter(MotorA_QuadDec_COUNTER_INIT_VALUE);
  127:Generated_Source\PSoC5/MotorA_QuadDec.c ****     #endif /* MotorA_QuadDec_COUNTER_SIZE == MotorA_QuadDec_COUNTER_SIZE_8_BIT */
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 4
 
 
  128:Generated_Source\PSoC5/MotorA_QuadDec.c ****     
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  170:Generated_Source\PSoC5/MotorA_QuadDec.c ****     enableInterrupts = CyEnterCriticalSection();
   57              		.loc 1 170 0
   58 0006 FFF7FEFF 		bl	CyEnterCriticalSection
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 5
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 5
 
 
   59              	.LVL1:
@@ -259,7 +259,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
   69              	.L5:
   70 001a 00BF     		.align	2
   71              	.L4:
-  72 001c 96650040 		.word	1073767830
+  72 001c 94640040 		.word	1073767572
   73              		.cfi_endproc
   74              	.LFE3:
   75              		.size	MotorA_QuadDec_Stop, .-MotorA_QuadDec_Stop
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  200:Generated_Source\PSoC5/MotorA_QuadDec.c **** *
  201:Generated_Source\PSoC5/MotorA_QuadDec.c **** *******************************************************************************/
  202:Generated_Source\PSoC5/MotorA_QuadDec.c **** int16 MotorA_QuadDec_GetCounter(void) 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 6
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 6
 
 
  203:Generated_Source\PSoC5/MotorA_QuadDec.c **** {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  107              		.thumb
  108              		.thumb_func
  109              		.type	MotorA_QuadDec_SetCounter, %function
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 7
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 7
 
 
  110              	MotorA_QuadDec_SetCounter:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  131              	.L9:
  267:Generated_Source\PSoC5/MotorA_QuadDec.c ****         }
  268:Generated_Source\PSoC5/MotorA_QuadDec.c ****         else
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 8
 
 
  269:Generated_Source\PSoC5/MotorA_QuadDec.c ****         {
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  303:Generated_Source\PSoC5/MotorA_QuadDec.c **** *    Bit      Description
  304:Generated_Source\PSoC5/MotorA_QuadDec.c **** *     0        Counter overflow.
  305:Generated_Source\PSoC5/MotorA_QuadDec.c **** *     1        Counter underflow.
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 9
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 9
 
 
  306:Generated_Source\PSoC5/MotorA_QuadDec.c **** *     2        Counter reset due to index, if index input is used.
@@ -503,7 +503,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  163              	.L14:
  164 000a 00BF     		.align	2
  165              	.L13:
- 166 000c 66650040 		.word	1073767782
+ 166 000c 64640040 		.word	1073767524
  167              		.cfi_endproc
  168              	.LFE6:
  169              		.size	MotorA_QuadDec_GetEvents, .-MotorA_QuadDec_GetEvents
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  178              		.loc 1 333 0
  179              		.cfi_startproc
  180              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 10
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 10
 
 
  181              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -558,7 +558,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  188              	.L17:
  189 0006 00BF     		.align	2
  190              	.L16:
- 191 0008 86650040 		.word	1073767814
+ 191 0008 84640040 		.word	1073767556
  192              		.cfi_endproc
  193              	.LFE7:
  194              		.size	MotorA_QuadDec_SetInterruptMask, .-MotorA_QuadDec_SetInterruptMask
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  223 0012 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  224 0014 43F01003 		orr	r3, r3, #16
  225 0018 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 11
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 11
 
 
   84:Generated_Source\PSoC5/MotorA_QuadDec.c **** 
@@ -609,7 +609,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  230              	.L21:
  231              		.align	2
  232              	.L20:
- 233 0020 96650040 		.word	1073767830
+ 233 0020 94640040 		.word	1073767572
  234              		.cfi_endproc
  235              	.LFE1:
  236              		.size	MotorA_QuadDec_Enable, .-MotorA_QuadDec_Enable
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  273              	.L26:
  274              		.align	2
  275              	.L25:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 12
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 12
 
 
  276 0020 00000000 		.word	.LANCHOR0
@@ -710,7 +710,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  299              	.L29:
  300 000a 00BF     		.align	2
  301              	.L28:
- 302 000c 86650040 		.word	1073767814
+ 302 000c 84640040 		.word	1073767556
  303              		.cfi_endproc
  304              	.LFE8:
  305              		.size	MotorA_QuadDec_GetInterruptMask, .-MotorA_QuadDec_GetInterruptMask
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  307              		.bss
  308              		.set	.LANCHOR0,. + 0
  309              		.type	MotorA_QuadDec_initVar, %object
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 13
 
 
  310              		.size	MotorA_QuadDec_initVar, 1
@@ -736,10 +736,10 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  322 0006 00000000 		.4byte	.Ldebug_abbrev0
  323 000a 04       		.byte	0x4
  324 000b 01       		.uleb128 0x1
- 325 000c 08010000 		.4byte	.LASF37
+ 325 000c CB000000 		.4byte	.LASF37
  326 0010 0C       		.byte	0xc
- 327 0011 4D030000 		.4byte	.LASF38
- 328 0015 11000000 		.4byte	.LASF39
+ 327 0011 5B030000 		.4byte	.LASF38
+ 328 0015 CA010000 		.4byte	.LASF39
  329 0019 00000000 		.4byte	.Ldebug_ranges0+0
  330 001d 00000000 		.4byte	0
  331 0021 00000000 		.4byte	.Ldebug_line0
@@ -750,102 +750,102 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  336 002c 03       		.uleb128 0x3
  337 002d 04       		.byte	0x4
  338 002e 07       		.byte	0x7
- 339 002f 5F020000 		.4byte	.LASF0
+ 339 002f 6D020000 		.4byte	.LASF0
  340 0033 03       		.uleb128 0x3
  341 0034 08       		.byte	0x8
  342 0035 05       		.byte	0x5
- 343 0036 D3020000 		.4byte	.LASF1
+ 343 0036 E1020000 		.4byte	.LASF1
  344 003a 03       		.uleb128 0x3
  345 003b 08       		.byte	0x8
  346 003c 04       		.byte	0x4
- 347 003d A9020000 		.4byte	.LASF2
+ 347 003d B7020000 		.4byte	.LASF2
  348 0041 03       		.uleb128 0x3
  349 0042 01       		.byte	0x1
  350 0043 06       		.byte	0x6
- 351 0044 75030000 		.4byte	.LASF3
+ 351 0044 83030000 		.4byte	.LASF3
  352 0048 03       		.uleb128 0x3
  353 0049 01       		.byte	0x1
  354 004a 08       		.byte	0x8
- 355 004b FA000000 		.4byte	.LASF4
+ 355 004b BD000000 		.4byte	.LASF4
  356 004f 03       		.uleb128 0x3
  357 0050 02       		.byte	0x2
  358 0051 05       		.byte	0x5
- 359 0052 14030000 		.4byte	.LASF5
+ 359 0052 22030000 		.4byte	.LASF5
  360 0056 03       		.uleb128 0x3
  361 0057 02       		.byte	0x2
  362 0058 07       		.byte	0x7
- 363 0059 94000000 		.4byte	.LASF6
+ 363 0059 57000000 		.4byte	.LASF6
  364 005d 03       		.uleb128 0x3
  365 005e 04       		.byte	0x4
  366 005f 05       		.byte	0x5
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 14
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 14
 
 
- 367 0060 3F030000 		.4byte	.LASF7
+ 367 0060 4D030000 		.4byte	.LASF7
  368 0064 03       		.uleb128 0x3
  369 0065 04       		.byte	0x4
  370 0066 07       		.byte	0x7
- 371 0067 D4010000 		.4byte	.LASF8
+ 371 0067 97010000 		.4byte	.LASF8
  372 006b 03       		.uleb128 0x3
  373 006c 08       		.byte	0x8
  374 006d 07       		.byte	0x7
- 375 006e E3000000 		.4byte	.LASF9
+ 375 006e A6000000 		.4byte	.LASF9
  376 0072 03       		.uleb128 0x3
  377 0073 04       		.byte	0x4
  378 0074 07       		.byte	0x7
- 379 0075 CA020000 		.4byte	.LASF10
+ 379 0075 D8020000 		.4byte	.LASF10
  380 0079 03       		.uleb128 0x3
  381 007a 01       		.byte	0x1
  382 007b 08       		.byte	0x8
- 383 007c 48030000 		.4byte	.LASF11
+ 383 007c 56030000 		.4byte	.LASF11
  384 0080 04       		.uleb128 0x4
- 385 0081 39030000 		.4byte	.LASF12
+ 385 0081 47030000 		.4byte	.LASF12
  386 0085 02       		.byte	0x2
  387 0086 E901     		.2byte	0x1e9
  388 0088 48000000 		.4byte	0x48
  389 008c 04       		.uleb128 0x4
- 390 008d 41020000 		.4byte	.LASF13
+ 390 008d 4F020000 		.4byte	.LASF13
  391 0091 02       		.byte	0x2
  392 0092 EA01     		.2byte	0x1ea
  393 0094 56000000 		.4byte	0x56
  394 0098 04       		.uleb128 0x4
- 395 0099 A3020000 		.4byte	.LASF14
+ 395 0099 B1020000 		.4byte	.LASF14
  396 009d 02       		.byte	0x2
  397 009e ED01     		.2byte	0x1ed
  398 00a0 4F000000 		.4byte	0x4f
  399 00a4 04       		.uleb128 0x4
- 400 00a5 E6010000 		.4byte	.LASF15
+ 400 00a5 A9010000 		.4byte	.LASF15
  401 00a9 02       		.byte	0x2
  402 00aa EE01     		.2byte	0x1ee
  403 00ac 5D000000 		.4byte	0x5d
  404 00b0 03       		.uleb128 0x3
  405 00b1 04       		.byte	0x4
  406 00b2 04       		.byte	0x4
- 407 00b3 DD000000 		.4byte	.LASF16
+ 407 00b3 A0000000 		.4byte	.LASF16
  408 00b7 03       		.uleb128 0x3
  409 00b8 08       		.byte	0x8
  410 00b9 04       		.byte	0x4
- 411 00ba 21020000 		.4byte	.LASF17
+ 411 00ba 2F020000 		.4byte	.LASF17
  412 00be 04       		.uleb128 0x4
- 413 00bf AD010000 		.4byte	.LASF18
+ 413 00bf 70010000 		.4byte	.LASF18
  414 00c3 02       		.byte	0x2
  415 00c4 9302     		.2byte	0x293
  416 00c6 CA000000 		.4byte	0xca
  417 00ca 05       		.uleb128 0x5
  418 00cb 80000000 		.4byte	0x80
  419 00cf 06       		.uleb128 0x6
- 420 00d0 F3010000 		.4byte	.LASF40
+ 420 00d0 B6010000 		.4byte	.LASF40
  421 00d4 01       		.byte	0x1
  422 00d5 2A       		.byte	0x2a
  423 00d6 00000000 		.4byte	.LFB0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 15
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 15
 
 
  424 00da 02000000 		.4byte	.LFE0-.LFB0
  425 00de 01       		.uleb128 0x1
  426 00df 9C       		.byte	0x9c
  427 00e0 07       		.uleb128 0x7
- 428 00e1 E6020000 		.4byte	.LASF22
+ 428 00e1 F4020000 		.4byte	.LASF22
  429 00e5 01       		.byte	0x1
  430 00e6 9D       		.byte	0x9d
  431 00e7 00000000 		.4byte	.LFB3
@@ -870,7 +870,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  450 011b A7020000 		.4byte	0x2a7
  451 011f 00       		.byte	0
  452 0120 0A       		.uleb128 0xa
- 453 0121 07020000 		.4byte	.LASF41
+ 453 0121 15020000 		.4byte	.LASF41
  454 0125 01       		.byte	0x1
  455 0126 CA       		.byte	0xca
  456 0127 98000000 		.4byte	0x98
@@ -880,14 +880,14 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  460 0134 9C       		.byte	0x9c
  461 0135 5F010000 		.4byte	0x15f
  462 0139 0B       		.uleb128 0xb
- 463 013a 6E000000 		.4byte	.LASF20
+ 463 013a 31000000 		.4byte	.LASF20
  464 013e 01       		.byte	0x1
  465 013f CC       		.byte	0xcc
  466 0140 98000000 		.4byte	0x98
  467 0144 01       		.uleb128 0x1
  468 0145 50       		.byte	0x50
  469 0146 08       		.uleb128 0x8
- 470 0147 EC010000 		.4byte	.LASF21
+ 470 0147 AF010000 		.4byte	.LASF21
  471 014b 01       		.byte	0x1
  472 014c CD       		.byte	0xcd
  473 014d 8C000000 		.4byte	0x8c
@@ -897,8 +897,8 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  477 015a B2020000 		.4byte	0x2b2
  478 015e 00       		.byte	0
  479 015f 0C       		.uleb128 0xc
- 480 0160 FA020000 		.4byte	.LASF23
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 16
+ 480 0160 08030000 		.4byte	.LASF23
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 16
 
 
  481 0164 01       		.byte	0x1
@@ -909,13 +909,13 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  486 0170 9C       		.byte	0x9c
  487 0171 9F010000 		.4byte	0x19f
  488 0175 0D       		.uleb128 0xd
- 489 0176 68000000 		.4byte	.LASF25
+ 489 0176 2B000000 		.4byte	.LASF25
  490 017a 01       		.byte	0x1
  491 017b 0201     		.2byte	0x102
  492 017d 98000000 		.4byte	0x98
  493 0181 26000000 		.4byte	.LLST2
  494 0185 0E       		.uleb128 0xe
- 495 0186 6E000000 		.4byte	.LASF20
+ 495 0186 31000000 		.4byte	.LASF20
  496 018a 01       		.byte	0x1
  497 018b 0601     		.2byte	0x106
  498 018d 8C000000 		.4byte	0x8c
@@ -925,7 +925,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  502 019a BD020000 		.4byte	0x2bd
  503 019e 00       		.byte	0
  504 019f 0F       		.uleb128 0xf
- 505 01a0 28020000 		.4byte	.LASF29
+ 505 01a0 36020000 		.4byte	.LASF29
  506 01a4 01       		.byte	0x1
  507 01a5 3601     		.2byte	0x136
  508 01a7 80000000 		.4byte	0x80
@@ -934,7 +934,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  511 01b3 01       		.uleb128 0x1
  512 01b4 9C       		.byte	0x9c
  513 01b5 0C       		.uleb128 0xc
- 514 01b6 A7000000 		.4byte	.LASF24
+ 514 01b6 6A000000 		.4byte	.LASF24
  515 01ba 01       		.byte	0x1
  516 01bb 4C01     		.2byte	0x14c
  517 01bd 00000000 		.4byte	.LFB7
@@ -943,7 +943,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  520 01c6 9C       		.byte	0x9c
  521 01c7 DA010000 		.4byte	0x1da
  522 01cb 10       		.uleb128 0x10
- 523 01cc E1020000 		.4byte	.LASF26
+ 523 01cc EF020000 		.4byte	.LASF26
  524 01d0 01       		.byte	0x1
  525 01d1 4C01     		.2byte	0x14c
  526 01d3 80000000 		.4byte	0x80
@@ -951,14 +951,14 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  528 01d8 50       		.byte	0x50
  529 01d9 00       		.byte	0
  530 01da 07       		.uleb128 0x7
- 531 01db C7000000 		.4byte	.LASF27
+ 531 01db 8A000000 		.4byte	.LASF27
  532 01df 01       		.byte	0x1
  533 01e0 46       		.byte	0x46
  534 01e1 00000000 		.4byte	.LFB1
  535 01e5 24000000 		.4byte	.LFE1-.LFB1
  536 01e9 01       		.uleb128 0x1
  537 01ea 9C       		.byte	0x9c
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 17
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 17
 
 
  538 01eb 2D020000 		.4byte	0x22d
@@ -989,7 +989,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  563 0228 A7020000 		.4byte	0x2a7
  564 022c 00       		.byte	0
  565 022d 07       		.uleb128 0x7
- 566 022e B5020000 		.4byte	.LASF28
+ 566 022e C3020000 		.4byte	.LASF28
  567 0232 01       		.byte	0x1
  568 0233 74       		.byte	0x74
  569 0234 00000000 		.4byte	.LFB2
@@ -1016,9 +1016,9 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  590 0265 DA010000 		.4byte	0x1da
  591 0269 00       		.byte	0
  592 026a 0F       		.uleb128 0xf
- 593 026b 74000000 		.4byte	.LASF30
+ 593 026b 37000000 		.4byte	.LASF30
  594 026f 01       		.byte	0x1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 18
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 18
 
 
  595 0270 6801     		.2byte	0x168
@@ -1028,7 +1028,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  599 027e 01       		.uleb128 0x1
  600 027f 9C       		.byte	0x9c
  601 0280 13       		.uleb128 0x13
- 602 0281 96010000 		.4byte	.LASF42
+ 602 0281 59010000 		.4byte	.LASF42
  603 0285 01       		.byte	0x1
  604 0286 19       		.byte	0x19
  605 0287 80000000 		.4byte	0x80
@@ -1036,33 +1036,33 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  607 028c 03       		.byte	0x3
  608 028d 00000000 		.4byte	MotorA_QuadDec_initVar
  609 0291 14       		.uleb128 0x14
- 610 0292 4E000000 		.4byte	.LASF31
- 611 0296 4E000000 		.4byte	.LASF31
+ 610 0292 11000000 		.4byte	.LASF31
+ 611 0296 11000000 		.4byte	.LASF31
  612 029a 03       		.byte	0x3
  613 029b 50       		.byte	0x50
  614 029c 14       		.uleb128 0x14
- 615 029d 48020000 		.4byte	.LASF32
- 616 02a1 48020000 		.4byte	.LASF32
+ 615 029d 56020000 		.4byte	.LASF32
+ 616 02a1 56020000 		.4byte	.LASF32
  617 02a5 04       		.byte	0x4
  618 02a6 7D       		.byte	0x7d
  619 02a7 14       		.uleb128 0x14
- 620 02a8 8D020000 		.4byte	.LASF33
- 621 02ac 8D020000 		.4byte	.LASF33
+ 620 02a8 9B020000 		.4byte	.LASF33
+ 621 02ac 9B020000 		.4byte	.LASF33
  622 02b0 04       		.byte	0x4
  623 02b1 7E       		.byte	0x7e
  624 02b2 14       		.uleb128 0x14
- 625 02b3 6C020000 		.4byte	.LASF34
- 626 02b7 6C020000 		.4byte	.LASF34
+ 625 02b3 7A020000 		.4byte	.LASF34
+ 626 02b7 7A020000 		.4byte	.LASF34
  627 02bb 03       		.byte	0x3
  628 02bc 5D       		.byte	0x5d
  629 02bd 14       		.uleb128 0x14
- 630 02be B2010000 		.4byte	.LASF35
- 631 02c2 B2010000 		.4byte	.LASF35
+ 630 02be 75010000 		.4byte	.LASF35
+ 631 02c2 75010000 		.4byte	.LASF35
  632 02c6 03       		.byte	0x3
  633 02c7 5A       		.byte	0x5a
  634 02c8 14       		.uleb128 0x14
- 635 02c9 1E030000 		.4byte	.LASF36
- 636 02cd 1E030000 		.4byte	.LASF36
+ 635 02c9 2C030000 		.4byte	.LASF36
+ 636 02cd 2C030000 		.4byte	.LASF36
  637 02d1 03       		.byte	0x3
  638 02d2 4F       		.byte	0x4f
  639 02d3 00       		.byte	0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  649 0007 03       		.uleb128 0x3
  650 0008 0E       		.uleb128 0xe
  651 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 19
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 19
 
 
  652 000a 0E       		.uleb128 0xe
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  706 0040 3F       		.uleb128 0x3f
  707 0041 19       		.uleb128 0x19
  708 0042 03       		.uleb128 0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 20
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 20
 
 
  709 0043 0E       		.uleb128 0xe
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  763 007b 17       		.uleb128 0x17
  764 007c 00       		.byte	0
  765 007d 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 21
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 21
 
 
  766 007e 09       		.uleb128 0x9
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  820 00b7 3F       		.uleb128 0x3f
  821 00b8 19       		.uleb128 0x19
  822 00b9 03       		.uleb128 0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 22
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 22
 
 
  823 00ba 0E       		.uleb128 0xe
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  877 00f1 03       		.uleb128 0x3
  878 00f2 0E       		.uleb128 0xe
  879 00f3 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 23
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 23
 
 
  880 00f4 0B       		.uleb128 0xb
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  934 0130 00       		.byte	0
  935 0131 03       		.uleb128 0x3
  936 0132 0E       		.uleb128 0xe
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 24
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 24
 
 
  937 0133 3A       		.uleb128 0x3a
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  991 003b F3       		.byte	0xf3
  992 003c 01       		.uleb128 0x1
  993 003d 50       		.byte	0x50
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 25
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 25
 
 
  994 003e 9F       		.byte	0x9f
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  1048 000c 20000000 		.4byte	.LFE3
  1049 0010 00000000 		.4byte	.LFB4
  1050 0014 0E000000 		.4byte	.LFE4
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 26
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 26
 
 
  1051 0018 00000000 		.4byte	.LFB5
@@ -1528,233 +1528,234 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 1
  1069      74657272 
  1069      75707473 
  1069      00
- 1070              	.LASF39:
- 1071 0011 433A5C55 		.ascii	"C:\\Users\\PC\\Documents\\PSoC Creator\\RoboticArm\\"
- 1071      73657273 
- 1071      5C50435C 
- 1071      446F6375 
- 1071      6D656E74 
- 1072 003f 4D6F746F 		.ascii	"MotorPID.cydsn\000"
- 1072      72504944 
- 1072      2E637964 
- 1072      736E00
- 1073              	.LASF31:
- 1074 004e 4D6F746F 		.ascii	"MotorA_QuadDec_Cnt16_Stop\000"
- 1074      72415F51 
- 1074      75616444 
- 1074      65635F43 
- 1074      6E743136 
- 1075              	.LASF25:
- 1076 0068 76616C75 		.ascii	"value\000"
- 1076      6500
- 1077              	.LASF20:
- 1078 006e 636F756E 		.ascii	"count\000"
- 1078      7400
- 1079              	.LASF30:
- 1080 0074 4D6F746F 		.ascii	"MotorA_QuadDec_GetInterruptMask\000"
- 1080      72415F51 
- 1080      75616444 
- 1080      65635F47 
- 1080      6574496E 
- 1081              	.LASF6:
- 1082 0094 73686F72 		.ascii	"short unsigned int\000"
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 27
+ 1070              	.LASF31:
+ 1071 0011 4D6F746F 		.ascii	"MotorA_QuadDec_Cnt16_Stop\000"
+ 1071      72415F51 
+ 1071      75616444 
+ 1071      65635F43 
+ 1071      6E743136 
+ 1072              	.LASF25:
+ 1073 002b 76616C75 		.ascii	"value\000"
+ 1073      6500
+ 1074              	.LASF20:
+ 1075 0031 636F756E 		.ascii	"count\000"
+ 1075      7400
+ 1076              	.LASF30:
+ 1077 0037 4D6F746F 		.ascii	"MotorA_QuadDec_GetInterruptMask\000"
+ 1077      72415F51 
+ 1077      75616444 
+ 1077      65635F47 
+ 1077      6574496E 
+ 1078              	.LASF6:
+ 1079 0057 73686F72 		.ascii	"short unsigned int\000"
+ 1079      7420756E 
+ 1079      7369676E 
+ 1079      65642069 
+ 1079      6E7400
+ 1080              	.LASF24:
+ 1081 006a 4D6F746F 		.ascii	"MotorA_QuadDec_SetInterruptMask\000"
+ 1081      72415F51 
+ 1081      75616444 
+ 1081      65635F53 
+ 1081      6574496E 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 27
 
 
- 1082      7420756E 
- 1082      7369676E 
- 1082      65642069 
- 1082      6E7400
- 1083              	.LASF24:
- 1084 00a7 4D6F746F 		.ascii	"MotorA_QuadDec_SetInterruptMask\000"
- 1084      72415F51 
- 1084      75616444 
- 1084      65635F53 
- 1084      6574496E 
- 1085              	.LASF27:
- 1086 00c7 4D6F746F 		.ascii	"MotorA_QuadDec_Enable\000"
- 1086      72415F51 
- 1086      75616444 
- 1086      65635F45 
- 1086      6E61626C 
- 1087              	.LASF16:
- 1088 00dd 666C6F61 		.ascii	"float\000"
- 1088      7400
- 1089              	.LASF9:
- 1090 00e3 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1090      206C6F6E 
- 1090      6720756E 
- 1090      7369676E 
- 1090      65642069 
- 1091              	.LASF4:
- 1092 00fa 756E7369 		.ascii	"unsigned char\000"
- 1092      676E6564 
- 1092      20636861 
- 1092      7200
- 1093              	.LASF37:
- 1094 0108 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1094      43313120 
- 1094      352E342E 
- 1094      31203230 
- 1094      31363036 
- 1095 013b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1095      20726576 
- 1095      6973696F 
- 1095      6E203233 
- 1095      37373135 
- 1096 016e 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1096      66756E63 
- 1096      74696F6E 
- 1096      2D736563 
- 1096      74696F6E 
- 1097              	.LASF42:
- 1098 0196 4D6F746F 		.ascii	"MotorA_QuadDec_initVar\000"
- 1098      72415F51 
- 1098      75616444 
- 1098      65635F69 
- 1098      6E697456 
- 1099              	.LASF18:
- 1100 01ad 72656738 		.ascii	"reg8\000"
- 1100      00
- 1101              	.LASF35:
- 1102 01b2 4D6F746F 		.ascii	"MotorA_QuadDec_Cnt16_WriteCounter\000"
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 28
+ 1082              	.LASF27:
+ 1083 008a 4D6F746F 		.ascii	"MotorA_QuadDec_Enable\000"
+ 1083      72415F51 
+ 1083      75616444 
+ 1083      65635F45 
+ 1083      6E61626C 
+ 1084              	.LASF16:
+ 1085 00a0 666C6F61 		.ascii	"float\000"
+ 1085      7400
+ 1086              	.LASF9:
+ 1087 00a6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1087      206C6F6E 
+ 1087      6720756E 
+ 1087      7369676E 
+ 1087      65642069 
+ 1088              	.LASF4:
+ 1089 00bd 756E7369 		.ascii	"unsigned char\000"
+ 1089      676E6564 
+ 1089      20636861 
+ 1089      7200
+ 1090              	.LASF37:
+ 1091 00cb 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1091      43313120 
+ 1091      352E342E 
+ 1091      31203230 
+ 1091      31363036 
+ 1092 00fe 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1092      20726576 
+ 1092      6973696F 
+ 1092      6E203233 
+ 1092      37373135 
+ 1093 0131 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1093      66756E63 
+ 1093      74696F6E 
+ 1093      2D736563 
+ 1093      74696F6E 
+ 1094              	.LASF42:
+ 1095 0159 4D6F746F 		.ascii	"MotorA_QuadDec_initVar\000"
+ 1095      72415F51 
+ 1095      75616444 
+ 1095      65635F69 
+ 1095      6E697456 
+ 1096              	.LASF18:
+ 1097 0170 72656738 		.ascii	"reg8\000"
+ 1097      00
+ 1098              	.LASF35:
+ 1099 0175 4D6F746F 		.ascii	"MotorA_QuadDec_Cnt16_WriteCounter\000"
+ 1099      72415F51 
+ 1099      75616444 
+ 1099      65635F43 
+ 1099      6E743136 
+ 1100              	.LASF8:
+ 1101 0197 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1101      20756E73 
+ 1101      69676E65 
+ 1101      6420696E 
+ 1101      7400
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 28
 
 
- 1102      72415F51 
- 1102      75616444 
- 1102      65635F43 
- 1102      6E743136 
- 1103              	.LASF8:
- 1104 01d4 6C6F6E67 		.ascii	"long unsigned int\000"
- 1104      20756E73 
- 1104      69676E65 
- 1104      6420696E 
- 1104      7400
- 1105              	.LASF15:
- 1106 01e6 696E7433 		.ascii	"int32\000"
- 1106      3200
- 1107              	.LASF21:
- 1108 01ec 746D7043 		.ascii	"tmpCnt\000"
- 1108      6E7400
- 1109              	.LASF40:
- 1110 01f3 4D6F746F 		.ascii	"MotorA_QuadDec_Init\000"
- 1110      72415F51 
- 1110      75616444 
- 1110      65635F49 
- 1110      6E697400 
+ 1102              	.LASF15:
+ 1103 01a9 696E7433 		.ascii	"int32\000"
+ 1103      3200
+ 1104              	.LASF21:
+ 1105 01af 746D7043 		.ascii	"tmpCnt\000"
+ 1105      6E7400
+ 1106              	.LASF40:
+ 1107 01b6 4D6F746F 		.ascii	"MotorA_QuadDec_Init\000"
+ 1107      72415F51 
+ 1107      75616444 
+ 1107      65635F49 
+ 1107      6E697400 
+ 1108              	.LASF39:
+ 1109 01ca 433A5C55 		.ascii	"C:\\Users\\PC\\Dropbox\\CodeSpaces\\PSoC\\RoboticAr"
+ 1109      73657273 
+ 1109      5C50435C 
+ 1109      44726F70 
+ 1109      626F785C 
+ 1110 01f7 6D5C5053 		.ascii	"m\\PSoC_Creator\\MotorPID.cydsn\000"
+ 1110      6F435F43 
+ 1110      72656174 
+ 1110      6F725C4D 
+ 1110      6F746F72 
  1111              	.LASF41:
- 1112 0207 4D6F746F 		.ascii	"MotorA_QuadDec_GetCounter\000"
+ 1112 0215 4D6F746F 		.ascii	"MotorA_QuadDec_GetCounter\000"
  1112      72415F51 
  1112      75616444 
  1112      65635F47 
  1112      6574436F 
  1113              	.LASF17:
- 1114 0221 646F7562 		.ascii	"double\000"
+ 1114 022f 646F7562 		.ascii	"double\000"
  1114      6C6500
  1115              	.LASF29:
- 1116 0228 4D6F746F 		.ascii	"MotorA_QuadDec_GetEvents\000"
+ 1116 0236 4D6F746F 		.ascii	"MotorA_QuadDec_GetEvents\000"
  1116      72415F51 
  1116      75616444 
  1116      65635F47 
  1116      65744576 
  1117              	.LASF13:
- 1118 0241 75696E74 		.ascii	"uint16\000"
+ 1118 024f 75696E74 		.ascii	"uint16\000"
  1118      313600
  1119              	.LASF32:
- 1120 0248 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1120 0256 4379456E 		.ascii	"CyEnterCriticalSection\000"
  1120      74657243 
  1120      72697469 
  1120      63616C53 
  1120      65637469 
  1121              	.LASF0:
- 1122 025f 756E7369 		.ascii	"unsigned int\000"
+ 1122 026d 756E7369 		.ascii	"unsigned int\000"
  1122      676E6564 
  1122      20696E74 
  1122      00
  1123              	.LASF34:
- 1124 026c 4D6F746F 		.ascii	"MotorA_QuadDec_Cnt16_ReadCounter\000"
+ 1124 027a 4D6F746F 		.ascii	"MotorA_QuadDec_Cnt16_ReadCounter\000"
  1124      72415F51 
  1124      75616444 
  1124      65635F43 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 29
+
+
  1124      6E743136 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 29
-
-
  1125              	.LASF33:
- 1126 028d 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1126 029b 43794578 		.ascii	"CyExitCriticalSection\000"
  1126      69744372 
  1126      69746963 
  1126      616C5365 
  1126      6374696F 
  1127              	.LASF14:
- 1128 02a3 696E7431 		.ascii	"int16\000"
+ 1128 02b1 696E7431 		.ascii	"int16\000"
  1128      3600
  1129              	.LASF2:
- 1130 02a9 6C6F6E67 		.ascii	"long double\000"
+ 1130 02b7 6C6F6E67 		.ascii	"long double\000"
  1130      20646F75 
  1130      626C6500 
  1131              	.LASF28:
- 1132 02b5 4D6F746F 		.ascii	"MotorA_QuadDec_Start\000"
+ 1132 02c3 4D6F746F 		.ascii	"MotorA_QuadDec_Start\000"
  1132      72415F51 
  1132      75616444 
  1132      65635F53 
  1132      74617274 
  1133              	.LASF10:
- 1134 02ca 73697A65 		.ascii	"sizetype\000"
+ 1134 02d8 73697A65 		.ascii	"sizetype\000"
  1134      74797065 
  1134      00
  1135              	.LASF1:
- 1136 02d3 6C6F6E67 		.ascii	"long long int\000"
+ 1136 02e1 6C6F6E67 		.ascii	"long long int\000"
  1136      206C6F6E 
  1136      6720696E 
  1136      7400
  1137              	.LASF26:
- 1138 02e1 6D61736B 		.ascii	"mask\000"
+ 1138 02ef 6D61736B 		.ascii	"mask\000"
  1138      00
  1139              	.LASF22:
- 1140 02e6 4D6F746F 		.ascii	"MotorA_QuadDec_Stop\000"
+ 1140 02f4 4D6F746F 		.ascii	"MotorA_QuadDec_Stop\000"
  1140      72415F51 
  1140      75616444 
  1140      65635F53 
  1140      746F7000 
  1141              	.LASF23:
- 1142 02fa 4D6F746F 		.ascii	"MotorA_QuadDec_SetCounter\000"
+ 1142 0308 4D6F746F 		.ascii	"MotorA_QuadDec_SetCounter\000"
  1142      72415F51 
  1142      75616444 
  1142      65635F53 
  1142      6574436F 
  1143              	.LASF5:
- 1144 0314 73686F72 		.ascii	"short int\000"
+ 1144 0322 73686F72 		.ascii	"short int\000"
  1144      7420696E 
  1144      7400
  1145              	.LASF36:
- 1146 031e 4D6F746F 		.ascii	"MotorA_QuadDec_Cnt16_Start\000"
+ 1146 032c 4D6F746F 		.ascii	"MotorA_QuadDec_Cnt16_Start\000"
  1146      72415F51 
  1146      75616444 
  1146      65635F43 
  1146      6E743136 
  1147              	.LASF12:
- 1148 0339 75696E74 		.ascii	"uint8\000"
+ 1148 0347 75696E74 		.ascii	"uint8\000"
  1148      3800
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccNPkpOB.s 			page 30
+
+
  1149              	.LASF7:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccALhzj6.s 			page 30
-
-
- 1150 033f 6C6F6E67 		.ascii	"long int\000"
+ 1150 034d 6C6F6E67 		.ascii	"long int\000"
  1150      20696E74 
  1150      00
  1151              	.LASF11:
- 1152 0348 63686172 		.ascii	"char\000"
+ 1152 0356 63686172 		.ascii	"char\000"
  1152      00
  1153              	.LASF38:
- 1154 034d 47656E65 		.ascii	"Generated_Source\\PSoC5\\MotorA_QuadDec.c\000"
+ 1154 035b 47656E65 		.ascii	"Generated_Source\\PSoC5\\MotorA_QuadDec.c\000"
  1154      72617465 
  1154      645F536F 
  1154      75726365 
  1154      5C50536F 
  1155              	.LASF3:
- 1156 0375 7369676E 		.ascii	"signed char\000"
+ 1156 0383 7369676E 		.ascii	"signed char\000"
  1156      65642063 
  1156      68617200 
  1157              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

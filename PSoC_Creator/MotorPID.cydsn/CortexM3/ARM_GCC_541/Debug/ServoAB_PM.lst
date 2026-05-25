@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
   28:Generated_Source\PSoC5/ServoAB_PM.c **** *  Saves the current user configuration of the component.
   29:Generated_Source\PSoC5/ServoAB_PM.c **** *
   30:Generated_Source\PSoC5/ServoAB_PM.c **** * Parameters:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 2
 
 
   31:Generated_Source\PSoC5/ServoAB_PM.c **** *  None
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
   64:Generated_Source\PSoC5/ServoAB_PM.c ****             ServoAB_backup.PWMControlRegister = ServoAB_ReadControlRegister();
   49              		.loc 1 64 0
   50 0016 FFF7FEFF 		bl	ServoAB_ReadControlRegister
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 3
 
 
   51              	.LVL2:
@@ -128,7 +128,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
   55 001e 00BF     		.align	2
   56              	.L3:
   57 0020 00000000 		.word	.LANCHOR0
-  58 0024 8F640040 		.word	1073767567
+  58 0024 8A640040 		.word	1073767562
   59              		.cfi_endproc
   60              	.LFE0:
   61              		.size	ServoAB_SaveConfig, .-ServoAB_SaveConfig
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
   92:Generated_Source\PSoC5/ServoAB_PM.c ****                 ServoAB_WritePeriod(ServoAB_backup.PWMPeriod);
   78              		.loc 1 92 0
   79 0002 074C     		ldr	r4, .L7
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 4
 
 
   80 0004 A088     		ldrh	r0, [r4, #4]
@@ -220,7 +220,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
   97 001e 00BF     		.align	2
   98              	.L7:
   99 0020 00000000 		.word	.LANCHOR0
- 100 0024 8F640040 		.word	1073767567
+ 100 0024 8A640040 		.word	1073767562
  101              		.cfi_endproc
  102              	.LFE1:
  103              		.size	ServoAB_RestoreConfig, .-ServoAB_RestoreConfig
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  115:Generated_Source\PSoC5/ServoAB_PM.c **** 
  116:Generated_Source\PSoC5/ServoAB_PM.c **** 
  117:Generated_Source\PSoC5/ServoAB_PM.c **** /*******************************************************************************
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 5
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 5
 
 
  118:Generated_Source\PSoC5/ServoAB_PM.c **** * Function Name: ServoAB_Sleep
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  148:Generated_Source\PSoC5/ServoAB_PM.c ****         }
  149:Generated_Source\PSoC5/ServoAB_PM.c ****     #endif /* (ServoAB_UseControl) */
  150:Generated_Source\PSoC5/ServoAB_PM.c **** 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 6
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 6
 
 
  151:Generated_Source\PSoC5/ServoAB_PM.c ****     /* Stop component */
@@ -316,7 +316,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  143              	.L14:
  144              		.align	2
  145              	.L13:
- 146 0024 7C640040 		.word	1073767548
+ 146 0024 7A640040 		.word	1073767546
  147 0028 00000000 		.word	.LANCHOR0
  148              		.cfi_endproc
  149              	.LFE2:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  161              		@ args = 0, pretend = 0, frame = 0
  162              		@ frame_needed = 0, uses_anonymous_args = 0
  163 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 7
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 7
 
 
  164              		.cfi_def_cfa_offset 8
@@ -409,48 +409,48 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  201 0006 00000000 		.4byte	.Ldebug_abbrev0
  202 000a 04       		.byte	0x4
  203 000b 01       		.uleb128 0x1
- 204 000c 3D000000 		.4byte	.LASF35
+ 204 000c 07000000 		.4byte	.LASF35
  205 0010 0C       		.byte	0xc
- 206 0011 54010000 		.4byte	.LASF36
- 207 0015 00000000 		.4byte	.LASF37
+ 206 0011 1E010000 		.4byte	.LASF36
+ 207 0015 D8010000 		.4byte	.LASF37
  208 0019 00000000 		.4byte	.Ldebug_ranges0+0
  209 001d 00000000 		.4byte	0
  210 0021 00000000 		.4byte	.Ldebug_line0
  211 0025 02       		.uleb128 0x2
  212 0026 01       		.byte	0x1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 8
 
 
  213 0027 06       		.byte	0x6
- 214 0028 D4020000 		.4byte	.LASF0
+ 214 0028 E2020000 		.4byte	.LASF0
  215 002c 02       		.uleb128 0x2
  216 002d 01       		.byte	0x1
  217 002e 08       		.byte	0x8
- 218 002f 85010000 		.4byte	.LASF1
+ 218 002f 5B010000 		.4byte	.LASF1
  219 0033 02       		.uleb128 0x2
  220 0034 02       		.byte	0x2
  221 0035 05       		.byte	0x5
- 222 0036 7D020000 		.4byte	.LASF2
+ 222 0036 8B020000 		.4byte	.LASF2
  223 003a 02       		.uleb128 0x2
  224 003b 02       		.byte	0x2
  225 003c 07       		.byte	0x7
- 226 003d 2E010000 		.4byte	.LASF3
+ 226 003d F8000000 		.4byte	.LASF3
  227 0041 02       		.uleb128 0x2
  228 0042 04       		.byte	0x4
  229 0043 05       		.byte	0x5
- 230 0044 A3020000 		.4byte	.LASF4
+ 230 0044 B1020000 		.4byte	.LASF4
  231 0048 02       		.uleb128 0x2
  232 0049 04       		.byte	0x4
  233 004a 07       		.byte	0x7
- 234 004b C7010000 		.4byte	.LASF5
+ 234 004b 9D010000 		.4byte	.LASF5
  235 004f 02       		.uleb128 0x2
  236 0050 08       		.byte	0x8
  237 0051 05       		.byte	0x5
- 238 0052 6A020000 		.4byte	.LASF6
+ 238 0052 78020000 		.4byte	.LASF6
  239 0056 02       		.uleb128 0x2
  240 0057 08       		.byte	0x8
  241 0058 07       		.byte	0x7
- 242 0059 30020000 		.4byte	.LASF7
+ 242 0059 3E020000 		.4byte	.LASF7
  243 005d 03       		.uleb128 0x3
  244 005e 04       		.byte	0x4
  245 005f 05       		.byte	0x5
@@ -458,34 +458,34 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  247 0064 02       		.uleb128 0x2
  248 0065 04       		.byte	0x4
  249 0066 07       		.byte	0x7
- 250 0067 23020000 		.4byte	.LASF8
+ 250 0067 31020000 		.4byte	.LASF8
  251 006b 04       		.uleb128 0x4
- 252 006c D9010000 		.4byte	.LASF9
+ 252 006c AF010000 		.4byte	.LASF9
  253 0070 02       		.byte	0x2
  254 0071 E901     		.2byte	0x1e9
  255 0073 2C000000 		.4byte	0x2c
  256 0077 04       		.uleb128 0x4
- 257 0078 1C020000 		.4byte	.LASF10
+ 257 0078 2A020000 		.4byte	.LASF10
  258 007c 02       		.byte	0x2
  259 007d EA01     		.2byte	0x1ea
  260 007f 3A000000 		.4byte	0x3a
  261 0083 02       		.uleb128 0x2
  262 0084 04       		.byte	0x4
  263 0085 04       		.byte	0x4
- 264 0086 78010000 		.4byte	.LASF11
+ 264 0086 42010000 		.4byte	.LASF11
  265 008a 02       		.uleb128 0x2
  266 008b 08       		.byte	0x8
  267 008c 04       		.byte	0x4
- 268 008d 15020000 		.4byte	.LASF12
+ 268 008d 23020000 		.4byte	.LASF12
  269 0091 02       		.uleb128 0x2
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 9
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 9
 
 
  270 0092 01       		.byte	0x1
  271 0093 08       		.byte	0x8
- 272 0094 78020000 		.4byte	.LASF13
+ 272 0094 86020000 		.4byte	.LASF13
  273 0098 04       		.uleb128 0x4
- 274 0099 5C020000 		.4byte	.LASF14
+ 274 0099 6A020000 		.4byte	.LASF14
  275 009d 02       		.byte	0x2
  276 009e 9302     		.2byte	0x293
  277 00a0 A4000000 		.4byte	0xa4
@@ -494,57 +494,57 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  280 00a9 02       		.uleb128 0x2
  281 00aa 08       		.byte	0x8
  282 00ab 04       		.byte	0x4
- 283 00ac AC020000 		.4byte	.LASF15
+ 283 00ac BA020000 		.4byte	.LASF15
  284 00b0 02       		.uleb128 0x2
  285 00b1 04       		.byte	0x4
  286 00b2 07       		.byte	0x7
- 287 00b3 61020000 		.4byte	.LASF16
+ 287 00b3 6F020000 		.4byte	.LASF16
  288 00b7 06       		.uleb128 0x6
  289 00b8 08       		.byte	0x8
  290 00b9 03       		.byte	0x3
  291 00ba 6B       		.byte	0x6b
  292 00bb FC000000 		.4byte	0xfc
  293 00bf 07       		.uleb128 0x7
- 294 00c0 B8010000 		.4byte	.LASF17
+ 294 00c0 8E010000 		.4byte	.LASF17
  295 00c4 03       		.byte	0x3
  296 00c5 6E       		.byte	0x6e
  297 00c6 6B000000 		.4byte	0x6b
  298 00ca 00       		.byte	0
  299 00cb 07       		.uleb128 0x7
- 300 00cc 7E010000 		.4byte	.LASF18
+ 300 00cc 00000000 		.4byte	.LASF18
  301 00d0 03       		.byte	0x3
  302 00d1 71       		.byte	0x71
  303 00d2 77000000 		.4byte	0x77
  304 00d6 02       		.byte	0x2
  305 00d7 07       		.uleb128 0x7
- 306 00d8 CB000000 		.4byte	.LASF19
+ 306 00d8 95000000 		.4byte	.LASF19
  307 00dc 03       		.byte	0x3
  308 00dd 73       		.byte	0x73
  309 00de 77000000 		.4byte	0x77
  310 00e2 04       		.byte	0x4
  311 00e3 07       		.uleb128 0x7
- 312 00e4 E0020000 		.4byte	.LASF20
+ 312 00e4 EE020000 		.4byte	.LASF20
  313 00e8 03       		.byte	0x3
  314 00e9 76       		.byte	0x76
  315 00ea 6B000000 		.4byte	0x6b
  316 00ee 06       		.byte	0x6
  317 00ef 07       		.uleb128 0x7
- 318 00f0 02020000 		.4byte	.LASF21
+ 318 00f0 48010000 		.4byte	.LASF21
  319 00f4 03       		.byte	0x3
  320 00f5 86       		.byte	0x86
  321 00f6 6B000000 		.4byte	0x6b
  322 00fa 07       		.byte	0x7
  323 00fb 00       		.byte	0
  324 00fc 08       		.uleb128 0x8
- 325 00fd 06010000 		.4byte	.LASF22
+ 325 00fd D0000000 		.4byte	.LASF22
  326 0101 03       		.byte	0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 10
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 10
 
 
  327 0102 8B       		.byte	0x8b
  328 0103 B7000000 		.4byte	0xb7
  329 0107 09       		.uleb128 0x9
- 330 0108 41010000 		.4byte	.LASF23
+ 330 0108 0B010000 		.4byte	.LASF23
  331 010c 01       		.byte	0x1
  332 010d 2A       		.byte	0x2a
  333 010e 00000000 		.4byte	.LFB0
@@ -563,7 +563,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  346 0133 E0010000 		.4byte	0x1e0
  347 0137 00       		.byte	0
  348 0138 09       		.uleb128 0x9
- 349 0139 A2010000 		.4byte	.LASF24
+ 349 0139 78010000 		.4byte	.LASF24
  350 013d 01       		.byte	0x1
  351 013e 58       		.byte	0x58
  352 013f 00000000 		.4byte	.LFB1
@@ -582,7 +582,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  365 0164 01020000 		.4byte	0x201
  366 0168 00       		.byte	0
  367 0169 09       		.uleb128 0x9
- 368 016a F3020000 		.4byte	.LASF25
+ 368 016a 01030000 		.4byte	.LASF25
  369 016e 01       		.byte	0x1
  370 016f 88       		.byte	0x88
  371 0170 00000000 		.4byte	.LFB2
@@ -598,10 +598,10 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  381 018c 07010000 		.4byte	0x107
  382 0190 00       		.byte	0
  383 0191 09       		.uleb128 0x9
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 11
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 11
 
 
- 384 0192 93010000 		.4byte	.LASF26
+ 384 0192 69010000 		.4byte	.LASF26
  385 0196 01       		.byte	0x1
  386 0197 B2       		.byte	0xb2
  387 0198 00000000 		.4byte	.LFB3
@@ -617,7 +617,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  397 01b4 17020000 		.4byte	0x217
  398 01b8 00       		.byte	0
  399 01b9 0B       		.uleb128 0xb
- 400 01ba F3010000 		.4byte	.LASF38
+ 400 01ba C9010000 		.4byte	.LASF38
  401 01be 01       		.byte	0x1
  402 01bf 14       		.byte	0x14
  403 01c0 FC000000 		.4byte	0xfc
@@ -625,46 +625,46 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  405 01c5 03       		.byte	0x3
  406 01c6 00000000 		.4byte	ServoAB_backup
  407 01ca 0C       		.uleb128 0xc
- 408 01cb 1B010000 		.4byte	.LASF27
- 409 01cf 1B010000 		.4byte	.LASF27
+ 408 01cb E5000000 		.4byte	.LASF27
+ 409 01cf E5000000 		.4byte	.LASF27
  410 01d3 03       		.byte	0x3
  411 01d4 C0       		.byte	0xc0
  412 01d5 0C       		.uleb128 0xc
- 413 01d6 F2000000 		.4byte	.LASF28
- 414 01da F2000000 		.4byte	.LASF28
+ 413 01d6 BC000000 		.4byte	.LASF28
+ 414 01da BC000000 		.4byte	.LASF28
  415 01de 03       		.byte	0x3
  416 01df B3       		.byte	0xb3
  417 01e0 0C       		.uleb128 0xc
- 418 01e1 B8020000 		.4byte	.LASF29
- 419 01e5 B8020000 		.4byte	.LASF29
+ 418 01e1 C6020000 		.4byte	.LASF29
+ 419 01e5 C6020000 		.4byte	.LASF29
  420 01e9 03       		.byte	0x3
  421 01ea 9D       		.byte	0x9d
  422 01eb 0C       		.uleb128 0xc
- 423 01ec DF010000 		.4byte	.LASF30
- 424 01f0 DF010000 		.4byte	.LASF30
+ 423 01ec B5010000 		.4byte	.LASF30
+ 424 01f0 B5010000 		.4byte	.LASF30
  425 01f4 03       		.byte	0x3
  426 01f5 BE       		.byte	0xbe
  427 01f6 0C       		.uleb128 0xc
- 428 01f7 47020000 		.4byte	.LASF31
- 429 01fb 47020000 		.4byte	.LASF31
+ 428 01f7 55020000 		.4byte	.LASF31
+ 429 01fb 55020000 		.4byte	.LASF31
  430 01ff 03       		.byte	0x3
  431 0200 BA       		.byte	0xba
  432 0201 0C       		.uleb128 0xc
- 433 0202 D5000000 		.4byte	.LASF32
- 434 0206 D5000000 		.4byte	.LASF32
+ 433 0202 9F000000 		.4byte	.LASF32
+ 434 0206 9F000000 		.4byte	.LASF32
  435 020a 03       		.byte	0x3
  436 020b 9E       		.byte	0x9e
  437 020c 0C       		.uleb128 0xc
- 438 020d 87020000 		.4byte	.LASF33
- 439 0211 87020000 		.4byte	.LASF33
+ 438 020d 95020000 		.4byte	.LASF33
+ 439 0211 95020000 		.4byte	.LASF33
  440 0215 03       		.byte	0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 12
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 12
 
 
  441 0216 93       		.byte	0x93
  442 0217 0C       		.uleb128 0xc
- 443 0218 94020000 		.4byte	.LASF34
- 444 021c 94020000 		.4byte	.LASF34
+ 443 0218 A2020000 		.4byte	.LASF34
+ 444 021c A2020000 		.4byte	.LASF34
  445 0220 03       		.byte	0x3
  446 0221 DB       		.byte	0xdb
  447 0222 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  495 002d 0E       		.uleb128 0xe
  496 002e 3A       		.uleb128 0x3a
  497 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 13
 
 
  498 0030 3B       		.uleb128 0x3b
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  552 0066 09       		.uleb128 0x9
  553 0067 2E       		.uleb128 0x2e
  554 0068 01       		.byte	0x1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 14
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 14
 
 
  555 0069 3F       		.uleb128 0x3f
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  609 00a2 0E       		.uleb128 0xe
  610 00a3 03       		.uleb128 0x3
  611 00a4 0E       		.uleb128 0xe
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 15
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 15
 
 
  612 00a5 3A       		.uleb128 0x3a
@@ -885,221 +885,222 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 1
  651      00000201 
  651      FB0E0D00 
  651      01010101 
- 652              	.LASF37:
- 653 0000 433A5C55 		.ascii	"C:\\Users\\PC\\Documents\\PSoC Creator\\RoboticArm\\"
- 653      73657273 
- 653      5C50435C 
- 653      446F6375 
- 653      6D656E74 
- 654 002e 4D6F746F 		.ascii	"MotorPID.cydsn\000"
- 654      72504944 
- 654      2E637964 
- 654      736E00
- 655              	.LASF35:
- 656 003d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 656      43313120 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 16
+ 652              	.LASF18:
+ 653 0000 50574D55 		.ascii	"PWMUdb\000"
+ 653      646200
+ 654              	.LASF35:
+ 655 0007 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 655      43313120 
+ 655      352E342E 
+ 655      31203230 
+ 655      31363036 
+ 656 003a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 656      20726576 
+ 656      6973696F 
+ 656      6E203233 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 16
 
 
- 656      352E342E 
- 656      31203230 
- 656      31363036 
- 657 0070 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 657      20726576 
- 657      6973696F 
- 657      6E203233 
- 657      37373135 
- 658 00a3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 658      66756E63 
- 658      74696F6E 
- 658      2D736563 
- 658      74696F6E 
- 659              	.LASF19:
- 660 00cb 50574D50 		.ascii	"PWMPeriod\000"
- 660      6572696F 
- 660      6400
- 661              	.LASF32:
- 662 00d5 53657276 		.ascii	"ServoAB_WriteControlRegister\000"
- 662      6F41425F 
- 662      57726974 
- 662      65436F6E 
- 662      74726F6C 
- 663              	.LASF28:
- 664 00f2 53657276 		.ascii	"ServoAB_ReadCounter\000"
- 664      6F41425F 
- 664      52656164 
- 664      436F756E 
- 664      74657200 
- 665              	.LASF22:
- 666 0106 53657276 		.ascii	"ServoAB_backupStruct\000"
- 666      6F41425F 
- 666      6261636B 
- 666      75705374 
- 666      72756374 
- 667              	.LASF27:
- 668 011b 53657276 		.ascii	"ServoAB_ReadPeriod\000"
- 668      6F41425F 
- 668      52656164 
- 668      50657269 
- 668      6F6400
- 669              	.LASF3:
- 670 012e 73686F72 		.ascii	"short unsigned int\000"
- 670      7420756E 
- 670      7369676E 
- 670      65642069 
- 670      6E7400
- 671              	.LASF23:
- 672 0141 53657276 		.ascii	"ServoAB_SaveConfig\000"
- 672      6F41425F 
- 672      53617665 
- 672      436F6E66 
- 672      696700
- 673              	.LASF36:
- 674 0154 47656E65 		.ascii	"Generated_Source\\PSoC5\\ServoAB_PM.c\000"
- 674      72617465 
- 674      645F536F 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 17
+ 656      37373135 
+ 657 006d 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 657      66756E63 
+ 657      74696F6E 
+ 657      2D736563 
+ 657      74696F6E 
+ 658              	.LASF19:
+ 659 0095 50574D50 		.ascii	"PWMPeriod\000"
+ 659      6572696F 
+ 659      6400
+ 660              	.LASF32:
+ 661 009f 53657276 		.ascii	"ServoAB_WriteControlRegister\000"
+ 661      6F41425F 
+ 661      57726974 
+ 661      65436F6E 
+ 661      74726F6C 
+ 662              	.LASF28:
+ 663 00bc 53657276 		.ascii	"ServoAB_ReadCounter\000"
+ 663      6F41425F 
+ 663      52656164 
+ 663      436F756E 
+ 663      74657200 
+ 664              	.LASF22:
+ 665 00d0 53657276 		.ascii	"ServoAB_backupStruct\000"
+ 665      6F41425F 
+ 665      6261636B 
+ 665      75705374 
+ 665      72756374 
+ 666              	.LASF27:
+ 667 00e5 53657276 		.ascii	"ServoAB_ReadPeriod\000"
+ 667      6F41425F 
+ 667      52656164 
+ 667      50657269 
+ 667      6F6400
+ 668              	.LASF3:
+ 669 00f8 73686F72 		.ascii	"short unsigned int\000"
+ 669      7420756E 
+ 669      7369676E 
+ 669      65642069 
+ 669      6E7400
+ 670              	.LASF23:
+ 671 010b 53657276 		.ascii	"ServoAB_SaveConfig\000"
+ 671      6F41425F 
+ 671      53617665 
+ 671      436F6E66 
+ 671      696700
+ 672              	.LASF36:
+ 673 011e 47656E65 		.ascii	"Generated_Source\\PSoC5\\ServoAB_PM.c\000"
+ 673      72617465 
+ 673      645F536F 
+ 673      75726365 
+ 673      5C50536F 
+ 674              	.LASF11:
+ 675 0142 666C6F61 		.ascii	"float\000"
+ 675      7400
+ 676              	.LASF21:
+ 677 0148 50574D43 		.ascii	"PWMControlRegister\000"
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 17
 
 
- 674      75726365 
- 674      5C50536F 
- 675              	.LASF11:
- 676 0178 666C6F61 		.ascii	"float\000"
- 676      7400
- 677              	.LASF18:
- 678 017e 50574D55 		.ascii	"PWMUdb\000"
- 678      646200
- 679              	.LASF1:
- 680 0185 756E7369 		.ascii	"unsigned char\000"
- 680      676E6564 
- 680      20636861 
- 680      7200
- 681              	.LASF26:
- 682 0193 53657276 		.ascii	"ServoAB_Wakeup\000"
- 682      6F41425F 
- 682      57616B65 
- 682      757000
- 683              	.LASF24:
- 684 01a2 53657276 		.ascii	"ServoAB_RestoreConfig\000"
- 684      6F41425F 
- 684      52657374 
- 684      6F726543 
- 684      6F6E6669 
- 685              	.LASF17:
- 686 01b8 50574D45 		.ascii	"PWMEnableState\000"
- 686      6E61626C 
- 686      65537461 
- 686      746500
- 687              	.LASF5:
- 688 01c7 6C6F6E67 		.ascii	"long unsigned int\000"
- 688      20756E73 
- 688      69676E65 
- 688      6420696E 
- 688      7400
- 689              	.LASF9:
- 690 01d9 75696E74 		.ascii	"uint8\000"
- 690      3800
- 691              	.LASF30:
- 692 01df 53657276 		.ascii	"ServoAB_WritePeriod\000"
- 692      6F41425F 
- 692      57726974 
- 692      65506572 
- 692      696F6400 
- 693              	.LASF38:
- 694 01f3 53657276 		.ascii	"ServoAB_backup\000"
- 694      6F41425F 
- 694      6261636B 
- 694      757000
- 695              	.LASF21:
- 696 0202 50574D43 		.ascii	"PWMControlRegister\000"
- 696      6F6E7472 
- 696      6F6C5265 
- 696      67697374 
- 696      657200
+ 677      6F6E7472 
+ 677      6F6C5265 
+ 677      67697374 
+ 677      657200
+ 678              	.LASF1:
+ 679 015b 756E7369 		.ascii	"unsigned char\000"
+ 679      676E6564 
+ 679      20636861 
+ 679      7200
+ 680              	.LASF26:
+ 681 0169 53657276 		.ascii	"ServoAB_Wakeup\000"
+ 681      6F41425F 
+ 681      57616B65 
+ 681      757000
+ 682              	.LASF24:
+ 683 0178 53657276 		.ascii	"ServoAB_RestoreConfig\000"
+ 683      6F41425F 
+ 683      52657374 
+ 683      6F726543 
+ 683      6F6E6669 
+ 684              	.LASF17:
+ 685 018e 50574D45 		.ascii	"PWMEnableState\000"
+ 685      6E61626C 
+ 685      65537461 
+ 685      746500
+ 686              	.LASF5:
+ 687 019d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 687      20756E73 
+ 687      69676E65 
+ 687      6420696E 
+ 687      7400
+ 688              	.LASF9:
+ 689 01af 75696E74 		.ascii	"uint8\000"
+ 689      3800
+ 690              	.LASF30:
+ 691 01b5 53657276 		.ascii	"ServoAB_WritePeriod\000"
+ 691      6F41425F 
+ 691      57726974 
+ 691      65506572 
+ 691      696F6400 
+ 692              	.LASF38:
+ 693 01c9 53657276 		.ascii	"ServoAB_backup\000"
+ 693      6F41425F 
+ 693      6261636B 
+ 693      757000
+ 694              	.LASF37:
+ 695 01d8 433A5C55 		.ascii	"C:\\Users\\PC\\Dropbox\\CodeSpaces\\PSoC\\RoboticAr"
+ 695      73657273 
+ 695      5C50435C 
+ 695      44726F70 
+ 695      626F785C 
+ 696 0205 6D5C5053 		.ascii	"m\\PSoC_Creator\\MotorPID.cydsn\000"
+ 696      6F435F43 
+ 696      72656174 
+ 696      6F725C4D 
+ 696      6F746F72 
  697              	.LASF12:
- 698 0215 646F7562 		.ascii	"double\000"
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 18
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 18
 
 
+ 698 0223 646F7562 		.ascii	"double\000"
  698      6C6500
  699              	.LASF10:
- 700 021c 75696E74 		.ascii	"uint16\000"
+ 700 022a 75696E74 		.ascii	"uint16\000"
  700      313600
  701              	.LASF8:
- 702 0223 756E7369 		.ascii	"unsigned int\000"
+ 702 0231 756E7369 		.ascii	"unsigned int\000"
  702      676E6564 
  702      20696E74 
  702      00
  703              	.LASF7:
- 704 0230 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 704 023e 6C6F6E67 		.ascii	"long long unsigned int\000"
  704      206C6F6E 
  704      6720756E 
  704      7369676E 
  704      65642069 
  705              	.LASF31:
- 706 0247 53657276 		.ascii	"ServoAB_WriteCounter\000"
+ 706 0255 53657276 		.ascii	"ServoAB_WriteCounter\000"
  706      6F41425F 
  706      57726974 
  706      65436F75 
  706      6E746572 
  707              	.LASF14:
- 708 025c 72656738 		.ascii	"reg8\000"
+ 708 026a 72656738 		.ascii	"reg8\000"
  708      00
  709              	.LASF16:
- 710 0261 73697A65 		.ascii	"sizetype\000"
+ 710 026f 73697A65 		.ascii	"sizetype\000"
  710      74797065 
  710      00
  711              	.LASF6:
- 712 026a 6C6F6E67 		.ascii	"long long int\000"
+ 712 0278 6C6F6E67 		.ascii	"long long int\000"
  712      206C6F6E 
  712      6720696E 
  712      7400
  713              	.LASF13:
- 714 0278 63686172 		.ascii	"char\000"
+ 714 0286 63686172 		.ascii	"char\000"
  714      00
  715              	.LASF2:
- 716 027d 73686F72 		.ascii	"short int\000"
+ 716 028b 73686F72 		.ascii	"short int\000"
  716      7420696E 
  716      7400
  717              	.LASF33:
- 718 0287 53657276 		.ascii	"ServoAB_Stop\000"
+ 718 0295 53657276 		.ascii	"ServoAB_Stop\000"
  718      6F41425F 
  718      53746F70 
  718      00
  719              	.LASF34:
- 720 0294 53657276 		.ascii	"ServoAB_Enable\000"
+ 720 02a2 53657276 		.ascii	"ServoAB_Enable\000"
  720      6F41425F 
  720      456E6162 
  720      6C6500
  721              	.LASF4:
- 722 02a3 6C6F6E67 		.ascii	"long int\000"
+ 722 02b1 6C6F6E67 		.ascii	"long int\000"
  722      20696E74 
  722      00
  723              	.LASF15:
- 724 02ac 6C6F6E67 		.ascii	"long double\000"
+ 724 02ba 6C6F6E67 		.ascii	"long double\000"
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc3teqIV.s 			page 19
+
+
  724      20646F75 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7RHc6i.s 			page 19
-
-
  724      626C6500 
  725              	.LASF29:
- 726 02b8 53657276 		.ascii	"ServoAB_ReadControlRegister\000"
+ 726 02c6 53657276 		.ascii	"ServoAB_ReadControlRegister\000"
  726      6F41425F 
  726      52656164 
  726      436F6E74 
  726      726F6C52 
  727              	.LASF0:
- 728 02d4 7369676E 		.ascii	"signed char\000"
+ 728 02e2 7369676E 		.ascii	"signed char\000"
  728      65642063 
  728      68617200 
  729              	.LASF20:
- 730 02e0 496E7465 		.ascii	"InterruptMaskValue\000"
+ 730 02ee 496E7465 		.ascii	"InterruptMaskValue\000"
  730      72727570 
  730      744D6173 
  730      6B56616C 
  730      756500
  731              	.LASF25:
- 732 02f3 53657276 		.ascii	"ServoAB_Sleep\000"
+ 732 0301 53657276 		.ascii	"ServoAB_Sleep\000"
  732      6F41425F 
  732      536C6565 
  732      7000
