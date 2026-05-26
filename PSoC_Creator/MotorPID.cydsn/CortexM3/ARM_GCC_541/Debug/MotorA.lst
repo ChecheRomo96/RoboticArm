@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 1
 
 
    1              		.syntax unified
@@ -44,7 +44,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
   14:MotorA.cpp    ****     
   15:MotorA.cpp    ****     extern "C"{
   16:MotorA.cpp    ****         #include "project.h"
-  17:MotorA.cpp    ****         #include "MotorA_HW.h"
+  17:MotorA.cpp    ****         #include "MotorHW.h"
   18:MotorA.cpp    ****     }
   19:MotorA.cpp    ****     
   20:MotorA.cpp    ****     namespace Hardware{
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
   32 0000 08B5     		push	{r3, lr}
   33              		.cfi_def_cfa_offset 8
   34              		.cfi_offset 3, -8
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 2
 
 
   35              		.cfi_offset 14, -4
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
   81              		.cfi_def_cfa_offset 8
   82              		.cfi_offset 3, -8
   83              		.cfi_offset 14, -4
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 3
 
 
   32:MotorA.cpp    ****                 MotorA_SetPWM(value);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  131              		.cfi_offset 14, -4
   39:MotorA.cpp    ****                 MotorA_SetDirection(dir);
  132              		.loc 1 39 0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 4
 
 
  133 0002 FFF7FEFF 		bl	MotorA_SetDirection
@@ -191,7 +191,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  140              	.Letext0:
  141              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
  142              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 143              		.file 4 "MotorA_HW.h"
+ 143              		.file 4 "MotorHW.h"
  144              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
  145              		.section	.debug_info,"",%progbits
  146              	.Ldebug_info0:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  187 0059 05       		.byte	0x5
  188 005a C6020000 		.4byte	.LASF6
  189 005e 02       		.uleb128 0x2
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 5
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 5
 
 
  190 005f 04       		.byte	0x4
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  244 00c5 14       		.byte	0x14
  245 00c6 22010000 		.4byte	0x122
  246 00ca 07       		.uleb128 0x7
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 6
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 6
 
 
  247 00cb 85000000 		.4byte	.LASF34
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  301 014c 01       		.uleb128 0x1
  302 014d 9C       		.byte	0x9c
  303 014e 5C010000 		.4byte	0x15c
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 7
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 7
 
 
  304 0152 0E       		.uleb128 0xe
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  358 01d9 9E010000 		.4byte	.LASF41
  359 01dd 05       		.byte	0x5
  360 01de 1207     		.2byte	0x712
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 8
 
 
  361 01e0 E4010000 		.4byte	0x1e4
@@ -428,27 +428,27 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  365 01ea DB020000 		.4byte	.LASF24
  366 01ee DB020000 		.4byte	.LASF24
  367 01f2 04       		.byte	0x4
- 368 01f3 12       		.byte	0x12
+ 368 01f3 14       		.byte	0x14
  369 01f4 13       		.uleb128 0x13
  370 01f5 8B010000 		.4byte	.LASF25
  371 01f9 8B010000 		.4byte	.LASF25
  372 01fd 04       		.byte	0x4
- 373 01fe 13       		.byte	0x13
+ 373 01fe 15       		.byte	0x15
  374 01ff 13       		.uleb128 0x13
  375 0200 D8010000 		.4byte	.LASF26
  376 0204 D8010000 		.4byte	.LASF26
  377 0208 04       		.byte	0x4
- 378 0209 14       		.byte	0x14
+ 378 0209 16       		.byte	0x16
  379 020a 13       		.uleb128 0x13
  380 020b 31010000 		.4byte	.LASF27
  381 020f 31010000 		.4byte	.LASF27
  382 0213 04       		.byte	0x4
- 383 0214 15       		.byte	0x15
+ 383 0214 17       		.byte	0x17
  384 0215 13       		.uleb128 0x13
  385 0216 48010000 		.4byte	.LASF28
  386 021a 48010000 		.4byte	.LASF28
  387 021e 04       		.byte	0x4
- 388 021f 16       		.byte	0x16
+ 388 021f 18       		.byte	0x18
  389 0220 00       		.byte	0
  390              		.section	.debug_abbrev,"",%progbits
  391              	.Ldebug_abbrev0:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  415 0017 0B       		.uleb128 0xb
  416 0018 3E       		.uleb128 0x3e
  417 0019 0B       		.uleb128 0xb
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 9
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 9
 
 
  418 001a 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  472 0050 0B       		.uleb128 0xb
  473 0051 3B       		.uleb128 0x3b
  474 0052 0B       		.uleb128 0xb
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 10
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 10
 
 
  475 0053 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  529 0089 13       		.uleb128 0x13
  530 008a 00       		.byte	0
  531 008b 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 11
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 11
 
 
  532 008c 0B       		.uleb128 0xb
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  586 00c5 0E       		.uleb128 0xe
  587 00c6 3A       		.uleb128 0x3a
  588 00c7 0B       		.uleb128 0xb
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 12
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 12
 
 
  589 00c8 3B       		.uleb128 0x3b
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  643 00fe 6E       		.uleb128 0x6e
  644 00ff 0E       		.uleb128 0xe
  645 0100 03       		.uleb128 0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 13
 
 
  646 0101 0E       		.uleb128 0xe
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  700 0030 00000000 		.4byte	.LFB67
  701 0034 08000000 		.4byte	.LFE67-.LFB67
  702 0038 00000000 		.4byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 14
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 14
 
 
  703 003c 00000000 		.4byte	0
@@ -798,8 +798,8 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  717 002c 00000000 		.4byte	0
  718              		.section	.debug_line,"",%progbits
  719              	.Ldebug_line0:
- 720 0000 AA010000 		.section	.debug_str,"MS",%progbits,1
- 720      02005201 
+ 720 0000 A8010000 		.section	.debug_str,"MS",%progbits,1
+ 720      02005001 
  720      00000201 
  720      FB0E0D00 
  720      01010101 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  738 0059 47657450 		.ascii	"GetPosition\000"
  738      6F736974 
  738      696F6E00 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 15
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 15
 
 
  739              	.LASF1:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  760              	.LASF28:
  761 0148 4D6F746F 		.ascii	"MotorA_SetDirection\000"
  761      72415F53 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 16
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 16
 
 
  761      65744469 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  785 01e6 73686F72 		.ascii	"short int\000"
  785      7420696E 
  785      7400
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 17
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 17
 
 
  786              	.LASF29:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 1
  806      77617265 
  806      364D6F74 
  806      6F724131 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccoHDPwx.s 			page 18
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccpfsnQ4.s 			page 18
 
 
  807              	.LASF36:

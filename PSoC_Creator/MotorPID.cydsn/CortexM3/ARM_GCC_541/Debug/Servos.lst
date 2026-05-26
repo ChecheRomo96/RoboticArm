@@ -1,0 +1,2151 @@
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"Servos.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text._ZN8Hardware6ServoA11SetPositionEf,"ax",%progbits
+  20              		.align	2
+  21              		.global	_ZN8Hardware6ServoA11SetPositionEf
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	_ZN8Hardware6ServoA11SetPositionEf, %function
+  25              	_ZN8Hardware6ServoA11SetPositionEf:
+  26              	.LFB63:
+  27              		.file 1 "Servos.cpp"
+   1:Servos.cpp    **** /* ========================================
+   2:Servos.cpp    ****  *
+   3:Servos.cpp    ****  * Copyright YOUR COMPANY, THE YEAR
+   4:Servos.cpp    ****  * All Rights Reserved
+   5:Servos.cpp    ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:Servos.cpp    ****  *
+   7:Servos.cpp    ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:Servos.cpp    ****  * WHICH IS THE PROPERTY OF your company.
+   9:Servos.cpp    ****  *
+  10:Servos.cpp    ****  * ========================================
+  11:Servos.cpp    **** */
+  12:Servos.cpp    ****   
+  13:Servos.cpp    ****     extern "C"{
+  14:Servos.cpp    ****         #include "project.h"
+  15:Servos.cpp    ****         #include "ServosHW.h"
+  16:Servos.cpp    ****     }
+  17:Servos.cpp    ****     
+  18:Servos.cpp    ****     namespace Hardware{
+  19:Servos.cpp    ****     
+  20:Servos.cpp    ****         namespace ServoA{
+  21:Servos.cpp    ****     
+  22:Servos.cpp    ****             void SetPosition(float pos){
+  28              		.loc 1 22 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              	.LVL0:
+  33 0000 08B5     		push	{r3, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 2
+
+
+  36              		.cfi_offset 14, -4
+  23:Servos.cpp    ****                 ServoA_SetPositionNorm(pos);
+  37              		.loc 1 23 0
+  38 0002 FFF7FEFF 		bl	ServoA_SetPositionNorm
+  39              	.LVL1:
+  40 0006 08BD     		pop	{r3, pc}
+  41              		.cfi_endproc
+  42              	.LFE63:
+  43              		.size	_ZN8Hardware6ServoA11SetPositionEf, .-_ZN8Hardware6ServoA11SetPositionEf
+  44              		.section	.text._ZN8Hardware6ServoA11SetPositionEt,"ax",%progbits
+  45              		.align	2
+  46              		.global	_ZN8Hardware6ServoA11SetPositionEt
+  47              		.thumb
+  48              		.thumb_func
+  49              		.type	_ZN8Hardware6ServoA11SetPositionEt, %function
+  50              	_ZN8Hardware6ServoA11SetPositionEt:
+  51              	.LFB64:
+  24:Servos.cpp    ****             }
+  25:Servos.cpp    ****             
+  26:Servos.cpp    ****             void SetPosition(uint16_t pos){
+  52              		.loc 1 26 0
+  53              		.cfi_startproc
+  54              		@ args = 0, pretend = 0, frame = 0
+  55              		@ frame_needed = 0, uses_anonymous_args = 0
+  56              	.LVL2:
+  57 0000 08B5     		push	{r3, lr}
+  58              		.cfi_def_cfa_offset 8
+  59              		.cfi_offset 3, -8
+  60              		.cfi_offset 14, -4
+  27:Servos.cpp    ****                 ServoA_SetPositionTicks(pos);
+  61              		.loc 1 27 0
+  62 0002 FFF7FEFF 		bl	ServoA_SetPositionTicks
+  63              	.LVL3:
+  64 0006 08BD     		pop	{r3, pc}
+  65              		.cfi_endproc
+  66              	.LFE64:
+  67              		.size	_ZN8Hardware6ServoA11SetPositionEt, .-_ZN8Hardware6ServoA11SetPositionEt
+  68              		.section	.text._ZN8Hardware6ServoA16GetPositionTicksEv,"ax",%progbits
+  69              		.align	2
+  70              		.global	_ZN8Hardware6ServoA16GetPositionTicksEv
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	_ZN8Hardware6ServoA16GetPositionTicksEv, %function
+  74              	_ZN8Hardware6ServoA16GetPositionTicksEv:
+  75              	.LFB65:
+  28:Servos.cpp    ****             }
+  29:Servos.cpp    ****             
+  30:Servos.cpp    ****             uint16_t GetPositionTicks(){
+  76              		.loc 1 30 0
+  77              		.cfi_startproc
+  78              		@ args = 0, pretend = 0, frame = 0
+  79              		@ frame_needed = 0, uses_anonymous_args = 0
+  80 0000 08B5     		push	{r3, lr}
+  81              		.cfi_def_cfa_offset 8
+  82              		.cfi_offset 3, -8
+  83              		.cfi_offset 14, -4
+  31:Servos.cpp    ****                 return ServoA_GetPositionTicks();
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 3
+
+
+  84              		.loc 1 31 0
+  85 0002 FFF7FEFF 		bl	ServoA_GetPositionTicks
+  86              	.LVL4:
+  32:Servos.cpp    ****             }
+  87              		.loc 1 32 0
+  88 0006 08BD     		pop	{r3, pc}
+  89              		.cfi_endproc
+  90              	.LFE65:
+  91              		.size	_ZN8Hardware6ServoA16GetPositionTicksEv, .-_ZN8Hardware6ServoA16GetPositionTicksEv
+  92              		.section	.text._ZN8Hardware6ServoA15GetPositionNormEv,"ax",%progbits
+  93              		.align	2
+  94              		.global	_ZN8Hardware6ServoA15GetPositionNormEv
+  95              		.thumb
+  96              		.thumb_func
+  97              		.type	_ZN8Hardware6ServoA15GetPositionNormEv, %function
+  98              	_ZN8Hardware6ServoA15GetPositionNormEv:
+  99              	.LFB66:
+  33:Servos.cpp    ****             
+  34:Servos.cpp    ****             float GetPositionNorm(){
+ 100              		.loc 1 34 0
+ 101              		.cfi_startproc
+ 102              		@ args = 0, pretend = 0, frame = 0
+ 103              		@ frame_needed = 0, uses_anonymous_args = 0
+ 104 0000 08B5     		push	{r3, lr}
+ 105              		.cfi_def_cfa_offset 8
+ 106              		.cfi_offset 3, -8
+ 107              		.cfi_offset 14, -4
+  35:Servos.cpp    ****                 return ServoA_GetPositionNorm();
+ 108              		.loc 1 35 0
+ 109 0002 FFF7FEFF 		bl	ServoA_GetPositionNorm
+ 110              	.LVL5:
+  36:Servos.cpp    ****             }
+ 111              		.loc 1 36 0
+ 112 0006 08BD     		pop	{r3, pc}
+ 113              		.cfi_endproc
+ 114              	.LFE66:
+ 115              		.size	_ZN8Hardware6ServoA15GetPositionNormEv, .-_ZN8Hardware6ServoA15GetPositionNormEv
+ 116              		.section	.text._ZN8Hardware6ServoB11SetPositionEf,"ax",%progbits
+ 117              		.align	2
+ 118              		.global	_ZN8Hardware6ServoB11SetPositionEf
+ 119              		.thumb
+ 120              		.thumb_func
+ 121              		.type	_ZN8Hardware6ServoB11SetPositionEf, %function
+ 122              	_ZN8Hardware6ServoB11SetPositionEf:
+ 123              	.LFB67:
+  37:Servos.cpp    ****         }
+  38:Servos.cpp    ****     
+  39:Servos.cpp    ****         namespace ServoB{
+  40:Servos.cpp    ****     
+  41:Servos.cpp    ****             void SetPosition(float pos){
+ 124              		.loc 1 41 0
+ 125              		.cfi_startproc
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ 128              	.LVL6:
+ 129 0000 08B5     		push	{r3, lr}
+ 130              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 4
+
+
+ 131              		.cfi_offset 3, -8
+ 132              		.cfi_offset 14, -4
+  42:Servos.cpp    ****                 ServoB_SetPositionNorm(pos);
+ 133              		.loc 1 42 0
+ 134 0002 FFF7FEFF 		bl	ServoB_SetPositionNorm
+ 135              	.LVL7:
+ 136 0006 08BD     		pop	{r3, pc}
+ 137              		.cfi_endproc
+ 138              	.LFE67:
+ 139              		.size	_ZN8Hardware6ServoB11SetPositionEf, .-_ZN8Hardware6ServoB11SetPositionEf
+ 140              		.section	.text._ZN8Hardware6ServoB11SetPositionEt,"ax",%progbits
+ 141              		.align	2
+ 142              		.global	_ZN8Hardware6ServoB11SetPositionEt
+ 143              		.thumb
+ 144              		.thumb_func
+ 145              		.type	_ZN8Hardware6ServoB11SetPositionEt, %function
+ 146              	_ZN8Hardware6ServoB11SetPositionEt:
+ 147              	.LFB68:
+  43:Servos.cpp    ****             }
+  44:Servos.cpp    ****             
+  45:Servos.cpp    ****             void SetPosition(uint16_t pos){
+ 148              		.loc 1 45 0
+ 149              		.cfi_startproc
+ 150              		@ args = 0, pretend = 0, frame = 0
+ 151              		@ frame_needed = 0, uses_anonymous_args = 0
+ 152              	.LVL8:
+ 153 0000 08B5     		push	{r3, lr}
+ 154              		.cfi_def_cfa_offset 8
+ 155              		.cfi_offset 3, -8
+ 156              		.cfi_offset 14, -4
+  46:Servos.cpp    ****                 ServoB_SetPositionTicks(pos);
+ 157              		.loc 1 46 0
+ 158 0002 FFF7FEFF 		bl	ServoB_SetPositionTicks
+ 159              	.LVL9:
+ 160 0006 08BD     		pop	{r3, pc}
+ 161              		.cfi_endproc
+ 162              	.LFE68:
+ 163              		.size	_ZN8Hardware6ServoB11SetPositionEt, .-_ZN8Hardware6ServoB11SetPositionEt
+ 164              		.section	.text._ZN8Hardware6ServoB16GetPositionTicksEv,"ax",%progbits
+ 165              		.align	2
+ 166              		.global	_ZN8Hardware6ServoB16GetPositionTicksEv
+ 167              		.thumb
+ 168              		.thumb_func
+ 169              		.type	_ZN8Hardware6ServoB16GetPositionTicksEv, %function
+ 170              	_ZN8Hardware6ServoB16GetPositionTicksEv:
+ 171              	.LFB69:
+  47:Servos.cpp    ****             }
+  48:Servos.cpp    ****             
+  49:Servos.cpp    ****             uint16_t GetPositionTicks(){
+ 172              		.loc 1 49 0
+ 173              		.cfi_startproc
+ 174              		@ args = 0, pretend = 0, frame = 0
+ 175              		@ frame_needed = 0, uses_anonymous_args = 0
+ 176 0000 08B5     		push	{r3, lr}
+ 177              		.cfi_def_cfa_offset 8
+ 178              		.cfi_offset 3, -8
+ 179              		.cfi_offset 14, -4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 5
+
+
+  50:Servos.cpp    ****                 return ServoB_GetPositionTicks();
+ 180              		.loc 1 50 0
+ 181 0002 FFF7FEFF 		bl	ServoB_GetPositionTicks
+ 182              	.LVL10:
+  51:Servos.cpp    ****             }
+ 183              		.loc 1 51 0
+ 184 0006 08BD     		pop	{r3, pc}
+ 185              		.cfi_endproc
+ 186              	.LFE69:
+ 187              		.size	_ZN8Hardware6ServoB16GetPositionTicksEv, .-_ZN8Hardware6ServoB16GetPositionTicksEv
+ 188              		.section	.text._ZN8Hardware6ServoB15GetPositionNormEv,"ax",%progbits
+ 189              		.align	2
+ 190              		.global	_ZN8Hardware6ServoB15GetPositionNormEv
+ 191              		.thumb
+ 192              		.thumb_func
+ 193              		.type	_ZN8Hardware6ServoB15GetPositionNormEv, %function
+ 194              	_ZN8Hardware6ServoB15GetPositionNormEv:
+ 195              	.LFB70:
+  52:Servos.cpp    ****             
+  53:Servos.cpp    ****             float GetPositionNorm(){
+ 196              		.loc 1 53 0
+ 197              		.cfi_startproc
+ 198              		@ args = 0, pretend = 0, frame = 0
+ 199              		@ frame_needed = 0, uses_anonymous_args = 0
+ 200 0000 08B5     		push	{r3, lr}
+ 201              		.cfi_def_cfa_offset 8
+ 202              		.cfi_offset 3, -8
+ 203              		.cfi_offset 14, -4
+  54:Servos.cpp    ****                 return ServoB_GetPositionNorm();
+ 204              		.loc 1 54 0
+ 205 0002 FFF7FEFF 		bl	ServoB_GetPositionNorm
+ 206              	.LVL11:
+  55:Servos.cpp    ****             }
+ 207              		.loc 1 55 0
+ 208 0006 08BD     		pop	{r3, pc}
+ 209              		.cfi_endproc
+ 210              	.LFE70:
+ 211              		.size	_ZN8Hardware6ServoB15GetPositionNormEv, .-_ZN8Hardware6ServoB15GetPositionNormEv
+ 212              		.section	.text._ZN8Hardware6ServoC11SetPositionEf,"ax",%progbits
+ 213              		.align	2
+ 214              		.global	_ZN8Hardware6ServoC11SetPositionEf
+ 215              		.thumb
+ 216              		.thumb_func
+ 217              		.type	_ZN8Hardware6ServoC11SetPositionEf, %function
+ 218              	_ZN8Hardware6ServoC11SetPositionEf:
+ 219              	.LFB71:
+  56:Servos.cpp    ****         }
+  57:Servos.cpp    ****     
+  58:Servos.cpp    ****         namespace ServoC{
+  59:Servos.cpp    ****     
+  60:Servos.cpp    ****             void SetPosition(float pos){
+ 220              		.loc 1 60 0
+ 221              		.cfi_startproc
+ 222              		@ args = 0, pretend = 0, frame = 0
+ 223              		@ frame_needed = 0, uses_anonymous_args = 0
+ 224              	.LVL12:
+ 225 0000 08B5     		push	{r3, lr}
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 6
+
+
+ 226              		.cfi_def_cfa_offset 8
+ 227              		.cfi_offset 3, -8
+ 228              		.cfi_offset 14, -4
+  61:Servos.cpp    ****                 ServoC_SetPositionNorm(pos);
+ 229              		.loc 1 61 0
+ 230 0002 FFF7FEFF 		bl	ServoC_SetPositionNorm
+ 231              	.LVL13:
+ 232 0006 08BD     		pop	{r3, pc}
+ 233              		.cfi_endproc
+ 234              	.LFE71:
+ 235              		.size	_ZN8Hardware6ServoC11SetPositionEf, .-_ZN8Hardware6ServoC11SetPositionEf
+ 236              		.section	.text._ZN8Hardware6ServoC11SetPositionEt,"ax",%progbits
+ 237              		.align	2
+ 238              		.global	_ZN8Hardware6ServoC11SetPositionEt
+ 239              		.thumb
+ 240              		.thumb_func
+ 241              		.type	_ZN8Hardware6ServoC11SetPositionEt, %function
+ 242              	_ZN8Hardware6ServoC11SetPositionEt:
+ 243              	.LFB72:
+  62:Servos.cpp    ****             }
+  63:Servos.cpp    ****             
+  64:Servos.cpp    ****             void SetPosition(uint16_t pos){
+ 244              		.loc 1 64 0
+ 245              		.cfi_startproc
+ 246              		@ args = 0, pretend = 0, frame = 0
+ 247              		@ frame_needed = 0, uses_anonymous_args = 0
+ 248              	.LVL14:
+ 249 0000 08B5     		push	{r3, lr}
+ 250              		.cfi_def_cfa_offset 8
+ 251              		.cfi_offset 3, -8
+ 252              		.cfi_offset 14, -4
+  65:Servos.cpp    ****                 ServoC_SetPositionTicks(pos);
+ 253              		.loc 1 65 0
+ 254 0002 FFF7FEFF 		bl	ServoC_SetPositionTicks
+ 255              	.LVL15:
+ 256 0006 08BD     		pop	{r3, pc}
+ 257              		.cfi_endproc
+ 258              	.LFE72:
+ 259              		.size	_ZN8Hardware6ServoC11SetPositionEt, .-_ZN8Hardware6ServoC11SetPositionEt
+ 260              		.section	.text._ZN8Hardware6ServoC16GetPositionTicksEv,"ax",%progbits
+ 261              		.align	2
+ 262              		.global	_ZN8Hardware6ServoC16GetPositionTicksEv
+ 263              		.thumb
+ 264              		.thumb_func
+ 265              		.type	_ZN8Hardware6ServoC16GetPositionTicksEv, %function
+ 266              	_ZN8Hardware6ServoC16GetPositionTicksEv:
+ 267              	.LFB73:
+  66:Servos.cpp    ****             }
+  67:Servos.cpp    ****             
+  68:Servos.cpp    ****             uint16_t GetPositionTicks(){
+ 268              		.loc 1 68 0
+ 269              		.cfi_startproc
+ 270              		@ args = 0, pretend = 0, frame = 0
+ 271              		@ frame_needed = 0, uses_anonymous_args = 0
+ 272 0000 08B5     		push	{r3, lr}
+ 273              		.cfi_def_cfa_offset 8
+ 274              		.cfi_offset 3, -8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 7
+
+
+ 275              		.cfi_offset 14, -4
+  69:Servos.cpp    ****                 return ServoC_GetPositionTicks();
+ 276              		.loc 1 69 0
+ 277 0002 FFF7FEFF 		bl	ServoC_GetPositionTicks
+ 278              	.LVL16:
+  70:Servos.cpp    ****             }
+ 279              		.loc 1 70 0
+ 280 0006 08BD     		pop	{r3, pc}
+ 281              		.cfi_endproc
+ 282              	.LFE73:
+ 283              		.size	_ZN8Hardware6ServoC16GetPositionTicksEv, .-_ZN8Hardware6ServoC16GetPositionTicksEv
+ 284              		.section	.text._ZN8Hardware6ServoC15GetPositionNormEv,"ax",%progbits
+ 285              		.align	2
+ 286              		.global	_ZN8Hardware6ServoC15GetPositionNormEv
+ 287              		.thumb
+ 288              		.thumb_func
+ 289              		.type	_ZN8Hardware6ServoC15GetPositionNormEv, %function
+ 290              	_ZN8Hardware6ServoC15GetPositionNormEv:
+ 291              	.LFB74:
+  71:Servos.cpp    ****             
+  72:Servos.cpp    ****             float GetPositionNorm(){
+ 292              		.loc 1 72 0
+ 293              		.cfi_startproc
+ 294              		@ args = 0, pretend = 0, frame = 0
+ 295              		@ frame_needed = 0, uses_anonymous_args = 0
+ 296 0000 08B5     		push	{r3, lr}
+ 297              		.cfi_def_cfa_offset 8
+ 298              		.cfi_offset 3, -8
+ 299              		.cfi_offset 14, -4
+  73:Servos.cpp    ****                 return ServoC_GetPositionNorm();
+ 300              		.loc 1 73 0
+ 301 0002 FFF7FEFF 		bl	ServoC_GetPositionNorm
+ 302              	.LVL17:
+  74:Servos.cpp    ****             }
+ 303              		.loc 1 74 0
+ 304 0006 08BD     		pop	{r3, pc}
+ 305              		.cfi_endproc
+ 306              	.LFE74:
+ 307              		.size	_ZN8Hardware6ServoC15GetPositionNormEv, .-_ZN8Hardware6ServoC15GetPositionNormEv
+ 308              		.section	.text._ZN8Hardware6ServoD11SetPositionEf,"ax",%progbits
+ 309              		.align	2
+ 310              		.global	_ZN8Hardware6ServoD11SetPositionEf
+ 311              		.thumb
+ 312              		.thumb_func
+ 313              		.type	_ZN8Hardware6ServoD11SetPositionEf, %function
+ 314              	_ZN8Hardware6ServoD11SetPositionEf:
+ 315              	.LFB75:
+  75:Servos.cpp    ****         }
+  76:Servos.cpp    ****     
+  77:Servos.cpp    ****         namespace ServoD{
+  78:Servos.cpp    ****     
+  79:Servos.cpp    ****             void SetPosition(float pos){
+ 316              		.loc 1 79 0
+ 317              		.cfi_startproc
+ 318              		@ args = 0, pretend = 0, frame = 0
+ 319              		@ frame_needed = 0, uses_anonymous_args = 0
+ 320              	.LVL18:
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 8
+
+
+ 321 0000 08B5     		push	{r3, lr}
+ 322              		.cfi_def_cfa_offset 8
+ 323              		.cfi_offset 3, -8
+ 324              		.cfi_offset 14, -4
+  80:Servos.cpp    ****                 ServoD_SetPositionNorm(pos);
+ 325              		.loc 1 80 0
+ 326 0002 FFF7FEFF 		bl	ServoD_SetPositionNorm
+ 327              	.LVL19:
+ 328 0006 08BD     		pop	{r3, pc}
+ 329              		.cfi_endproc
+ 330              	.LFE75:
+ 331              		.size	_ZN8Hardware6ServoD11SetPositionEf, .-_ZN8Hardware6ServoD11SetPositionEf
+ 332              		.section	.text._ZN8Hardware6ServoD11SetPositionEt,"ax",%progbits
+ 333              		.align	2
+ 334              		.global	_ZN8Hardware6ServoD11SetPositionEt
+ 335              		.thumb
+ 336              		.thumb_func
+ 337              		.type	_ZN8Hardware6ServoD11SetPositionEt, %function
+ 338              	_ZN8Hardware6ServoD11SetPositionEt:
+ 339              	.LFB76:
+  81:Servos.cpp    ****             }
+  82:Servos.cpp    ****             
+  83:Servos.cpp    ****             void SetPosition(uint16_t pos){
+ 340              		.loc 1 83 0
+ 341              		.cfi_startproc
+ 342              		@ args = 0, pretend = 0, frame = 0
+ 343              		@ frame_needed = 0, uses_anonymous_args = 0
+ 344              	.LVL20:
+ 345 0000 08B5     		push	{r3, lr}
+ 346              		.cfi_def_cfa_offset 8
+ 347              		.cfi_offset 3, -8
+ 348              		.cfi_offset 14, -4
+  84:Servos.cpp    ****                 ServoD_SetPositionTicks(pos);
+ 349              		.loc 1 84 0
+ 350 0002 FFF7FEFF 		bl	ServoD_SetPositionTicks
+ 351              	.LVL21:
+ 352 0006 08BD     		pop	{r3, pc}
+ 353              		.cfi_endproc
+ 354              	.LFE76:
+ 355              		.size	_ZN8Hardware6ServoD11SetPositionEt, .-_ZN8Hardware6ServoD11SetPositionEt
+ 356              		.section	.text._ZN8Hardware6ServoD16GetPositionTicksEv,"ax",%progbits
+ 357              		.align	2
+ 358              		.global	_ZN8Hardware6ServoD16GetPositionTicksEv
+ 359              		.thumb
+ 360              		.thumb_func
+ 361              		.type	_ZN8Hardware6ServoD16GetPositionTicksEv, %function
+ 362              	_ZN8Hardware6ServoD16GetPositionTicksEv:
+ 363              	.LFB77:
+  85:Servos.cpp    ****             }
+  86:Servos.cpp    ****             
+  87:Servos.cpp    ****             uint16_t GetPositionTicks(){
+ 364              		.loc 1 87 0
+ 365              		.cfi_startproc
+ 366              		@ args = 0, pretend = 0, frame = 0
+ 367              		@ frame_needed = 0, uses_anonymous_args = 0
+ 368 0000 08B5     		push	{r3, lr}
+ 369              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 9
+
+
+ 370              		.cfi_offset 3, -8
+ 371              		.cfi_offset 14, -4
+  88:Servos.cpp    ****                 return ServoD_GetPositionTicks();
+ 372              		.loc 1 88 0
+ 373 0002 FFF7FEFF 		bl	ServoD_GetPositionTicks
+ 374              	.LVL22:
+  89:Servos.cpp    ****             }
+ 375              		.loc 1 89 0
+ 376 0006 08BD     		pop	{r3, pc}
+ 377              		.cfi_endproc
+ 378              	.LFE77:
+ 379              		.size	_ZN8Hardware6ServoD16GetPositionTicksEv, .-_ZN8Hardware6ServoD16GetPositionTicksEv
+ 380              		.section	.text._ZN8Hardware6ServoD15GetPositionNormEv,"ax",%progbits
+ 381              		.align	2
+ 382              		.global	_ZN8Hardware6ServoD15GetPositionNormEv
+ 383              		.thumb
+ 384              		.thumb_func
+ 385              		.type	_ZN8Hardware6ServoD15GetPositionNormEv, %function
+ 386              	_ZN8Hardware6ServoD15GetPositionNormEv:
+ 387              	.LFB78:
+  90:Servos.cpp    ****             
+  91:Servos.cpp    ****             float GetPositionNorm(){
+ 388              		.loc 1 91 0
+ 389              		.cfi_startproc
+ 390              		@ args = 0, pretend = 0, frame = 0
+ 391              		@ frame_needed = 0, uses_anonymous_args = 0
+ 392 0000 08B5     		push	{r3, lr}
+ 393              		.cfi_def_cfa_offset 8
+ 394              		.cfi_offset 3, -8
+ 395              		.cfi_offset 14, -4
+  92:Servos.cpp    ****                 return ServoD_GetPositionNorm();
+ 396              		.loc 1 92 0
+ 397 0002 FFF7FEFF 		bl	ServoD_GetPositionNorm
+ 398              	.LVL23:
+  93:Servos.cpp    ****             }
+ 399              		.loc 1 93 0
+ 400 0006 08BD     		pop	{r3, pc}
+ 401              		.cfi_endproc
+ 402              	.LFE78:
+ 403              		.size	_ZN8Hardware6ServoD15GetPositionNormEv, .-_ZN8Hardware6ServoD15GetPositionNormEv
+ 404              		.section	.text._ZN8Hardware12Servos_StartEv,"ax",%progbits
+ 405              		.align	2
+ 406              		.global	_ZN8Hardware12Servos_StartEv
+ 407              		.thumb
+ 408              		.thumb_func
+ 409              		.type	_ZN8Hardware12Servos_StartEv, %function
+ 410              	_ZN8Hardware12Servos_StartEv:
+ 411              	.LFB79:
+  94:Servos.cpp    ****         }
+  95:Servos.cpp    ****         
+  96:Servos.cpp    ****         
+  97:Servos.cpp    ****         void Servos_Start(){
+ 412              		.loc 1 97 0
+ 413              		.cfi_startproc
+ 414              		@ args = 0, pretend = 0, frame = 0
+ 415              		@ frame_needed = 0, uses_anonymous_args = 0
+ 416 0000 10B5     		push	{r4, lr}
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 10
+
+
+ 417              		.cfi_def_cfa_offset 8
+ 418              		.cfi_offset 4, -8
+ 419              		.cfi_offset 14, -4
+  98:Servos.cpp    ****             ServoDriver_Start();
+ 420              		.loc 1 98 0
+ 421 0002 FFF7FEFF 		bl	ServoDriver_Start
+ 422              	.LVL24:
+  99:Servos.cpp    ****             ServoA::SetPosition(0.5f);
+ 423              		.loc 1 99 0
+ 424 0006 4FF07C54 		mov	r4, #1056964608
+ 425 000a 2046     		mov	r0, r4
+ 426 000c FFF7FEFF 		bl	_ZN8Hardware6ServoA11SetPositionEf
+ 427              	.LVL25:
+ 100:Servos.cpp    ****             ServoB::SetPosition(0.5f);
+ 428              		.loc 1 100 0
+ 429 0010 2046     		mov	r0, r4
+ 430 0012 FFF7FEFF 		bl	_ZN8Hardware6ServoB11SetPositionEf
+ 431              	.LVL26:
+ 101:Servos.cpp    ****             ServoC::SetPosition(0.5f);
+ 432              		.loc 1 101 0
+ 433 0016 2046     		mov	r0, r4
+ 434 0018 FFF7FEFF 		bl	_ZN8Hardware6ServoC11SetPositionEf
+ 435              	.LVL27:
+ 102:Servos.cpp    ****             ServoD::SetPosition(0.5f);
+ 436              		.loc 1 102 0
+ 437 001c 2046     		mov	r0, r4
+ 438 001e FFF7FEFF 		bl	_ZN8Hardware6ServoD11SetPositionEf
+ 439              	.LVL28:
+ 440 0022 10BD     		pop	{r4, pc}
+ 441              		.cfi_endproc
+ 442              	.LFE79:
+ 443              		.size	_ZN8Hardware12Servos_StartEv, .-_ZN8Hardware12Servos_StartEv
+ 444              		.text
+ 445              	.Letext0:
+ 446              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 447              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 448              		.file 4 "ServosHW.h"
+ 449              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 450              		.section	.debug_info,"",%progbits
+ 451              	.Ldebug_info0:
+ 452 0000 CC050000 		.4byte	0x5cc
+ 453 0004 0400     		.2byte	0x4
+ 454 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 455 000a 04       		.byte	0x4
+ 456 000b 01       		.uleb128 0x1
+ 457 000c 29030000 		.4byte	.LASF59
+ 458 0010 04       		.byte	0x4
+ 459 0011 7E010000 		.4byte	.LASF60
+ 460 0015 18000000 		.4byte	.LASF61
+ 461 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 462 001d 00000000 		.4byte	0
+ 463 0021 00000000 		.4byte	.Ldebug_line0
+ 464 0025 02       		.uleb128 0x2
+ 465 0026 04       		.byte	0x4
+ 466 0027 04       		.byte	0x4
+ 467 0028 AC010000 		.4byte	.LASF0
+ 468 002c 02       		.uleb128 0x2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 11
+
+
+ 469 002d 01       		.byte	0x1
+ 470 002e 06       		.byte	0x6
+ 471 002f 89010000 		.4byte	.LASF1
+ 472 0033 02       		.uleb128 0x2
+ 473 0034 01       		.byte	0x1
+ 474 0035 08       		.byte	0x8
+ 475 0036 2D020000 		.4byte	.LASF2
+ 476 003a 02       		.uleb128 0x2
+ 477 003b 02       		.byte	0x2
+ 478 003c 05       		.byte	0x5
+ 479 003d A8000000 		.4byte	.LASF3
+ 480 0041 03       		.uleb128 0x3
+ 481 0042 E3000000 		.4byte	.LASF5
+ 482 0046 02       		.byte	0x2
+ 483 0047 2B       		.byte	0x2b
+ 484 0048 4C000000 		.4byte	0x4c
+ 485 004c 02       		.uleb128 0x2
+ 486 004d 02       		.byte	0x2
+ 487 004e 07       		.byte	0x7
+ 488 004f 16030000 		.4byte	.LASF4
+ 489 0053 03       		.uleb128 0x3
+ 490 0054 5B050000 		.4byte	.LASF6
+ 491 0058 02       		.byte	0x2
+ 492 0059 3F       		.byte	0x3f
+ 493 005a 5E000000 		.4byte	0x5e
+ 494 005e 02       		.uleb128 0x2
+ 495 005f 04       		.byte	0x4
+ 496 0060 05       		.byte	0x5
+ 497 0061 D2010000 		.4byte	.LASF7
+ 498 0065 02       		.uleb128 0x2
+ 499 0066 04       		.byte	0x4
+ 500 0067 07       		.byte	0x7
+ 501 0068 E5040000 		.4byte	.LASF8
+ 502 006c 02       		.uleb128 0x2
+ 503 006d 08       		.byte	0x8
+ 504 006e 05       		.byte	0x5
+ 505 006f B2010000 		.4byte	.LASF9
+ 506 0073 02       		.uleb128 0x2
+ 507 0074 08       		.byte	0x8
+ 508 0075 07       		.byte	0x7
+ 509 0076 64020000 		.4byte	.LASF10
+ 510 007a 04       		.uleb128 0x4
+ 511 007b 04       		.byte	0x4
+ 512 007c 05       		.byte	0x5
+ 513 007d 696E7400 		.ascii	"int\000"
+ 514 0081 02       		.uleb128 0x2
+ 515 0082 04       		.byte	0x4
+ 516 0083 07       		.byte	0x7
+ 517 0084 7B020000 		.4byte	.LASF11
+ 518 0088 03       		.uleb128 0x3
+ 519 0089 88020000 		.4byte	.LASF12
+ 520 008d 03       		.byte	0x3
+ 521 008e 24       		.byte	0x24
+ 522 008f 41000000 		.4byte	0x41
+ 523 0093 03       		.uleb128 0x3
+ 524 0094 58040000 		.4byte	.LASF13
+ 525 0098 03       		.byte	0x3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 12
+
+
+ 526 0099 2C       		.byte	0x2c
+ 527 009a 53000000 		.4byte	0x53
+ 528 009e 02       		.uleb128 0x2
+ 529 009f 08       		.byte	0x8
+ 530 00a0 04       		.byte	0x4
+ 531 00a1 FE040000 		.4byte	.LASF14
+ 532 00a5 02       		.uleb128 0x2
+ 533 00a6 01       		.byte	0x1
+ 534 00a7 08       		.byte	0x8
+ 535 00a8 30040000 		.4byte	.LASF15
+ 536 00ac 02       		.uleb128 0x2
+ 537 00ad 08       		.byte	0x8
+ 538 00ae 04       		.byte	0x4
+ 539 00af 21020000 		.4byte	.LASF16
+ 540 00b3 05       		.uleb128 0x5
+ 541 00b4 8A000000 		.4byte	.LASF62
+ 542 00b8 02       		.uleb128 0x2
+ 543 00b9 04       		.byte	0x4
+ 544 00ba 07       		.byte	0x7
+ 545 00bb B2000000 		.4byte	.LASF17
+ 546 00bf 06       		.uleb128 0x6
+ 547 00c0 1C050000 		.4byte	.LASF18
+ 548 00c4 01       		.byte	0x1
+ 549 00c5 12       		.byte	0x12
+ 550 00c6 26020000 		.4byte	0x226
+ 551 00ca 06       		.uleb128 0x6
+ 552 00cb F7040000 		.4byte	.LASF19
+ 553 00cf 01       		.byte	0x1
+ 554 00d0 14       		.byte	0x14
+ 555 00d1 1E010000 		.4byte	0x11e
+ 556 00d5 07       		.uleb128 0x7
+ 557 00d6 9C000000 		.4byte	.LASF20
+ 558 00da 01       		.byte	0x1
+ 559 00db 16       		.byte	0x16
+ 560 00dc B4020000 		.4byte	.LASF21
+ 561 00e0 EA000000 		.4byte	0xea
+ 562 00e4 08       		.uleb128 0x8
+ 563 00e5 25000000 		.4byte	0x25
+ 564 00e9 00       		.byte	0
+ 565 00ea 07       		.uleb128 0x7
+ 566 00eb 9C000000 		.4byte	.LASF20
+ 567 00ef 01       		.byte	0x1
+ 568 00f0 1A       		.byte	0x1a
+ 569 00f1 35040000 		.4byte	.LASF22
+ 570 00f5 FF000000 		.4byte	0xff
+ 571 00f9 08       		.uleb128 0x8
+ 572 00fa 88000000 		.4byte	0x88
+ 573 00fe 00       		.byte	0
+ 574 00ff 09       		.uleb128 0x9
+ 575 0100 53020000 		.4byte	.LASF23
+ 576 0104 01       		.byte	0x1
+ 577 0105 1E       		.byte	0x1e
+ 578 0106 9A040000 		.4byte	.LASF25
+ 579 010a 88000000 		.4byte	0x88
+ 580 010e 09       		.uleb128 0x9
+ 581 010f 45060000 		.4byte	.LASF24
+ 582 0113 01       		.byte	0x1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 13
+
+
+ 583 0114 22       		.byte	0x22
+ 584 0115 D7020000 		.4byte	.LASF26
+ 585 0119 25000000 		.4byte	0x25
+ 586 011d 00       		.byte	0
+ 587 011e 06       		.uleb128 0x6
+ 588 011f F8050000 		.4byte	.LASF27
+ 589 0123 01       		.byte	0x1
+ 590 0124 27       		.byte	0x27
+ 591 0125 72010000 		.4byte	0x172
+ 592 0129 07       		.uleb128 0x7
+ 593 012a 9C000000 		.4byte	.LASF20
+ 594 012e 01       		.byte	0x1
+ 595 012f 29       		.byte	0x29
+ 596 0130 77040000 		.4byte	.LASF28
+ 597 0134 3E010000 		.4byte	0x13e
+ 598 0138 08       		.uleb128 0x8
+ 599 0139 25000000 		.4byte	0x25
+ 600 013d 00       		.byte	0
+ 601 013e 07       		.uleb128 0x7
+ 602 013f 9C000000 		.4byte	.LASF20
+ 603 0143 01       		.byte	0x1
+ 604 0144 2D       		.byte	0x2d
+ 605 0145 C2040000 		.4byte	.LASF29
+ 606 0149 53010000 		.4byte	0x153
+ 607 014d 08       		.uleb128 0x8
+ 608 014e 88000000 		.4byte	0x88
+ 609 0152 00       		.byte	0
+ 610 0153 09       		.uleb128 0x9
+ 611 0154 53020000 		.4byte	.LASF23
+ 612 0158 01       		.byte	0x1
+ 613 0159 31       		.byte	0x31
+ 614 015a BB000000 		.4byte	.LASF30
+ 615 015e 88000000 		.4byte	0x88
+ 616 0162 09       		.uleb128 0x9
+ 617 0163 45060000 		.4byte	.LASF24
+ 618 0167 01       		.byte	0x1
+ 619 0168 35       		.byte	0x35
+ 620 0169 63000000 		.4byte	.LASF31
+ 621 016d 25000000 		.4byte	0x25
+ 622 0171 00       		.byte	0
+ 623 0172 06       		.uleb128 0x6
+ 624 0173 FF050000 		.4byte	.LASF32
+ 625 0177 01       		.byte	0x1
+ 626 0178 3A       		.byte	0x3a
+ 627 0179 C6010000 		.4byte	0x1c6
+ 628 017d 07       		.uleb128 0x7
+ 629 017e 9C000000 		.4byte	.LASF20
+ 630 0182 01       		.byte	0x1
+ 631 0183 3C       		.byte	0x3c
+ 632 0184 5B010000 		.4byte	.LASF33
+ 633 0188 92010000 		.4byte	0x192
+ 634 018c 08       		.uleb128 0x8
+ 635 018d 25000000 		.4byte	0x25
+ 636 0191 00       		.byte	0
+ 637 0192 07       		.uleb128 0x7
+ 638 0193 9C000000 		.4byte	.LASF20
+ 639 0197 01       		.byte	0x1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 14
+
+
+ 640 0198 40       		.byte	0x40
+ 641 0199 91020000 		.4byte	.LASF34
+ 642 019d A7010000 		.4byte	0x1a7
+ 643 01a1 08       		.uleb128 0x8
+ 644 01a2 88000000 		.4byte	0x88
+ 645 01a6 00       		.byte	0
+ 646 01a7 09       		.uleb128 0x9
+ 647 01a8 53020000 		.4byte	.LASF23
+ 648 01ac 01       		.byte	0x1
+ 649 01ad 44       		.byte	0x44
+ 650 01ae DE030000 		.4byte	.LASF35
+ 651 01b2 88000000 		.4byte	0x88
+ 652 01b6 09       		.uleb128 0x9
+ 653 01b7 45060000 		.4byte	.LASF24
+ 654 01bb 01       		.byte	0x1
+ 655 01bc 48       		.byte	0x48
+ 656 01bd 06060000 		.4byte	.LASF36
+ 657 01c1 25000000 		.4byte	0x25
+ 658 01c5 00       		.byte	0
+ 659 01c6 06       		.uleb128 0x6
+ 660 01c7 25050000 		.4byte	.LASF37
+ 661 01cb 01       		.byte	0x1
+ 662 01cc 4D       		.byte	0x4d
+ 663 01cd 1A020000 		.4byte	0x21a
+ 664 01d1 07       		.uleb128 0x7
+ 665 01d2 9C000000 		.4byte	.LASF20
+ 666 01d6 01       		.byte	0x1
+ 667 01d7 4F       		.byte	0x4f
+ 668 01d8 DB010000 		.4byte	.LASF38
+ 669 01dc E6010000 		.4byte	0x1e6
+ 670 01e0 08       		.uleb128 0x8
+ 671 01e1 25000000 		.4byte	0x25
+ 672 01e5 00       		.byte	0
+ 673 01e6 07       		.uleb128 0x7
+ 674 01e7 9C000000 		.4byte	.LASF20
+ 675 01eb 01       		.byte	0x1
+ 676 01ec 53       		.byte	0x53
+ 677 01ed FE010000 		.4byte	.LASF39
+ 678 01f1 FB010000 		.4byte	0x1fb
+ 679 01f5 08       		.uleb128 0x8
+ 680 01f6 88000000 		.4byte	0x88
+ 681 01fa 00       		.byte	0
+ 682 01fb 09       		.uleb128 0x9
+ 683 01fc 53020000 		.4byte	.LASF23
+ 684 0200 01       		.byte	0x1
+ 685 0201 57       		.byte	0x57
+ 686 0202 33010000 		.4byte	.LASF40
+ 687 0206 88000000 		.4byte	0x88
+ 688 020a 09       		.uleb128 0x9
+ 689 020b 45060000 		.4byte	.LASF24
+ 690 020f 01       		.byte	0x1
+ 691 0210 5B       		.byte	0x5b
+ 692 0211 94050000 		.4byte	.LASF41
+ 693 0215 25000000 		.4byte	0x25
+ 694 0219 00       		.byte	0
+ 695 021a 0A       		.uleb128 0xa
+ 696 021b 06040000 		.4byte	.LASF63
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 15
+
+
+ 697 021f 01       		.byte	0x1
+ 698 0220 61       		.byte	0x61
+ 699 0221 13040000 		.4byte	.LASF64
+ 700 0225 00       		.byte	0
+ 701 0226 0B       		.uleb128 0xb
+ 702 0227 D5000000 		.4byte	0xd5
+ 703 022b 00000000 		.4byte	.LFB63
+ 704 022f 08000000 		.4byte	.LFE63-.LFB63
+ 705 0233 01       		.uleb128 0x1
+ 706 0234 9C       		.byte	0x9c
+ 707 0235 5C020000 		.4byte	0x25c
+ 708 0239 0C       		.uleb128 0xc
+ 709 023a 706F7300 		.ascii	"pos\000"
+ 710 023e 01       		.byte	0x1
+ 711 023f 16       		.byte	0x16
+ 712 0240 25000000 		.4byte	0x25
+ 713 0244 00000000 		.4byte	.LLST0
+ 714 0248 0D       		.uleb128 0xd
+ 715 0249 06000000 		.4byte	.LVL1
+ 716 024d 14050000 		.4byte	0x514
+ 717 0251 0E       		.uleb128 0xe
+ 718 0252 01       		.uleb128 0x1
+ 719 0253 50       		.byte	0x50
+ 720 0254 05       		.uleb128 0x5
+ 721 0255 F3       		.byte	0xf3
+ 722 0256 03       		.uleb128 0x3
+ 723 0257 F5       		.byte	0xf5
+ 724 0258 00       		.uleb128 0
+ 725 0259 25       		.uleb128 0x25
+ 726 025a 00       		.byte	0
+ 727 025b 00       		.byte	0
+ 728 025c 0B       		.uleb128 0xb
+ 729 025d EA000000 		.4byte	0xea
+ 730 0261 00000000 		.4byte	.LFB64
+ 731 0265 08000000 		.4byte	.LFE64-.LFB64
+ 732 0269 01       		.uleb128 0x1
+ 733 026a 9C       		.byte	0x9c
+ 734 026b 88020000 		.4byte	0x288
+ 735 026f 0C       		.uleb128 0xc
+ 736 0270 706F7300 		.ascii	"pos\000"
+ 737 0274 01       		.byte	0x1
+ 738 0275 1A       		.byte	0x1a
+ 739 0276 88000000 		.4byte	0x88
+ 740 027a 23000000 		.4byte	.LLST1
+ 741 027e 0F       		.uleb128 0xf
+ 742 027f 06000000 		.4byte	.LVL3
+ 743 0283 1F050000 		.4byte	0x51f
+ 744 0287 00       		.byte	0
+ 745 0288 0B       		.uleb128 0xb
+ 746 0289 FF000000 		.4byte	0xff
+ 747 028d 00000000 		.4byte	.LFB65
+ 748 0291 08000000 		.4byte	.LFE65-.LFB65
+ 749 0295 01       		.uleb128 0x1
+ 750 0296 9C       		.byte	0x9c
+ 751 0297 A5020000 		.4byte	0x2a5
+ 752 029b 0F       		.uleb128 0xf
+ 753 029c 06000000 		.4byte	.LVL4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 16
+
+
+ 754 02a0 2A050000 		.4byte	0x52a
+ 755 02a4 00       		.byte	0
+ 756 02a5 0B       		.uleb128 0xb
+ 757 02a6 0E010000 		.4byte	0x10e
+ 758 02aa 00000000 		.4byte	.LFB66
+ 759 02ae 08000000 		.4byte	.LFE66-.LFB66
+ 760 02b2 01       		.uleb128 0x1
+ 761 02b3 9C       		.byte	0x9c
+ 762 02b4 C2020000 		.4byte	0x2c2
+ 763 02b8 0F       		.uleb128 0xf
+ 764 02b9 06000000 		.4byte	.LVL5
+ 765 02bd 35050000 		.4byte	0x535
+ 766 02c1 00       		.byte	0
+ 767 02c2 0B       		.uleb128 0xb
+ 768 02c3 29010000 		.4byte	0x129
+ 769 02c7 00000000 		.4byte	.LFB67
+ 770 02cb 08000000 		.4byte	.LFE67-.LFB67
+ 771 02cf 01       		.uleb128 0x1
+ 772 02d0 9C       		.byte	0x9c
+ 773 02d1 F8020000 		.4byte	0x2f8
+ 774 02d5 0C       		.uleb128 0xc
+ 775 02d6 706F7300 		.ascii	"pos\000"
+ 776 02da 01       		.byte	0x1
+ 777 02db 29       		.byte	0x29
+ 778 02dc 25000000 		.4byte	0x25
+ 779 02e0 44000000 		.4byte	.LLST2
+ 780 02e4 0D       		.uleb128 0xd
+ 781 02e5 06000000 		.4byte	.LVL7
+ 782 02e9 40050000 		.4byte	0x540
+ 783 02ed 0E       		.uleb128 0xe
+ 784 02ee 01       		.uleb128 0x1
+ 785 02ef 50       		.byte	0x50
+ 786 02f0 05       		.uleb128 0x5
+ 787 02f1 F3       		.byte	0xf3
+ 788 02f2 03       		.uleb128 0x3
+ 789 02f3 F5       		.byte	0xf5
+ 790 02f4 00       		.uleb128 0
+ 791 02f5 25       		.uleb128 0x25
+ 792 02f6 00       		.byte	0
+ 793 02f7 00       		.byte	0
+ 794 02f8 0B       		.uleb128 0xb
+ 795 02f9 3E010000 		.4byte	0x13e
+ 796 02fd 00000000 		.4byte	.LFB68
+ 797 0301 08000000 		.4byte	.LFE68-.LFB68
+ 798 0305 01       		.uleb128 0x1
+ 799 0306 9C       		.byte	0x9c
+ 800 0307 24030000 		.4byte	0x324
+ 801 030b 0C       		.uleb128 0xc
+ 802 030c 706F7300 		.ascii	"pos\000"
+ 803 0310 01       		.byte	0x1
+ 804 0311 2D       		.byte	0x2d
+ 805 0312 88000000 		.4byte	0x88
+ 806 0316 67000000 		.4byte	.LLST3
+ 807 031a 0F       		.uleb128 0xf
+ 808 031b 06000000 		.4byte	.LVL9
+ 809 031f 4B050000 		.4byte	0x54b
+ 810 0323 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 17
+
+
+ 811 0324 0B       		.uleb128 0xb
+ 812 0325 53010000 		.4byte	0x153
+ 813 0329 00000000 		.4byte	.LFB69
+ 814 032d 08000000 		.4byte	.LFE69-.LFB69
+ 815 0331 01       		.uleb128 0x1
+ 816 0332 9C       		.byte	0x9c
+ 817 0333 41030000 		.4byte	0x341
+ 818 0337 0F       		.uleb128 0xf
+ 819 0338 06000000 		.4byte	.LVL10
+ 820 033c 56050000 		.4byte	0x556
+ 821 0340 00       		.byte	0
+ 822 0341 0B       		.uleb128 0xb
+ 823 0342 62010000 		.4byte	0x162
+ 824 0346 00000000 		.4byte	.LFB70
+ 825 034a 08000000 		.4byte	.LFE70-.LFB70
+ 826 034e 01       		.uleb128 0x1
+ 827 034f 9C       		.byte	0x9c
+ 828 0350 5E030000 		.4byte	0x35e
+ 829 0354 0F       		.uleb128 0xf
+ 830 0355 06000000 		.4byte	.LVL11
+ 831 0359 61050000 		.4byte	0x561
+ 832 035d 00       		.byte	0
+ 833 035e 0B       		.uleb128 0xb
+ 834 035f 7D010000 		.4byte	0x17d
+ 835 0363 00000000 		.4byte	.LFB71
+ 836 0367 08000000 		.4byte	.LFE71-.LFB71
+ 837 036b 01       		.uleb128 0x1
+ 838 036c 9C       		.byte	0x9c
+ 839 036d 94030000 		.4byte	0x394
+ 840 0371 0C       		.uleb128 0xc
+ 841 0372 706F7300 		.ascii	"pos\000"
+ 842 0376 01       		.byte	0x1
+ 843 0377 3C       		.byte	0x3c
+ 844 0378 25000000 		.4byte	0x25
+ 845 037c 88000000 		.4byte	.LLST4
+ 846 0380 0D       		.uleb128 0xd
+ 847 0381 06000000 		.4byte	.LVL13
+ 848 0385 6C050000 		.4byte	0x56c
+ 849 0389 0E       		.uleb128 0xe
+ 850 038a 01       		.uleb128 0x1
+ 851 038b 50       		.byte	0x50
+ 852 038c 05       		.uleb128 0x5
+ 853 038d F3       		.byte	0xf3
+ 854 038e 03       		.uleb128 0x3
+ 855 038f F5       		.byte	0xf5
+ 856 0390 00       		.uleb128 0
+ 857 0391 25       		.uleb128 0x25
+ 858 0392 00       		.byte	0
+ 859 0393 00       		.byte	0
+ 860 0394 0B       		.uleb128 0xb
+ 861 0395 92010000 		.4byte	0x192
+ 862 0399 00000000 		.4byte	.LFB72
+ 863 039d 08000000 		.4byte	.LFE72-.LFB72
+ 864 03a1 01       		.uleb128 0x1
+ 865 03a2 9C       		.byte	0x9c
+ 866 03a3 C0030000 		.4byte	0x3c0
+ 867 03a7 0C       		.uleb128 0xc
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 18
+
+
+ 868 03a8 706F7300 		.ascii	"pos\000"
+ 869 03ac 01       		.byte	0x1
+ 870 03ad 40       		.byte	0x40
+ 871 03ae 88000000 		.4byte	0x88
+ 872 03b2 AB000000 		.4byte	.LLST5
+ 873 03b6 0F       		.uleb128 0xf
+ 874 03b7 06000000 		.4byte	.LVL15
+ 875 03bb 77050000 		.4byte	0x577
+ 876 03bf 00       		.byte	0
+ 877 03c0 0B       		.uleb128 0xb
+ 878 03c1 A7010000 		.4byte	0x1a7
+ 879 03c5 00000000 		.4byte	.LFB73
+ 880 03c9 08000000 		.4byte	.LFE73-.LFB73
+ 881 03cd 01       		.uleb128 0x1
+ 882 03ce 9C       		.byte	0x9c
+ 883 03cf DD030000 		.4byte	0x3dd
+ 884 03d3 0F       		.uleb128 0xf
+ 885 03d4 06000000 		.4byte	.LVL16
+ 886 03d8 82050000 		.4byte	0x582
+ 887 03dc 00       		.byte	0
+ 888 03dd 0B       		.uleb128 0xb
+ 889 03de B6010000 		.4byte	0x1b6
+ 890 03e2 00000000 		.4byte	.LFB74
+ 891 03e6 08000000 		.4byte	.LFE74-.LFB74
+ 892 03ea 01       		.uleb128 0x1
+ 893 03eb 9C       		.byte	0x9c
+ 894 03ec FA030000 		.4byte	0x3fa
+ 895 03f0 0F       		.uleb128 0xf
+ 896 03f1 06000000 		.4byte	.LVL17
+ 897 03f5 8D050000 		.4byte	0x58d
+ 898 03f9 00       		.byte	0
+ 899 03fa 0B       		.uleb128 0xb
+ 900 03fb D1010000 		.4byte	0x1d1
+ 901 03ff 00000000 		.4byte	.LFB75
+ 902 0403 08000000 		.4byte	.LFE75-.LFB75
+ 903 0407 01       		.uleb128 0x1
+ 904 0408 9C       		.byte	0x9c
+ 905 0409 30040000 		.4byte	0x430
+ 906 040d 0C       		.uleb128 0xc
+ 907 040e 706F7300 		.ascii	"pos\000"
+ 908 0412 01       		.byte	0x1
+ 909 0413 4F       		.byte	0x4f
+ 910 0414 25000000 		.4byte	0x25
+ 911 0418 CC000000 		.4byte	.LLST6
+ 912 041c 0D       		.uleb128 0xd
+ 913 041d 06000000 		.4byte	.LVL19
+ 914 0421 98050000 		.4byte	0x598
+ 915 0425 0E       		.uleb128 0xe
+ 916 0426 01       		.uleb128 0x1
+ 917 0427 50       		.byte	0x50
+ 918 0428 05       		.uleb128 0x5
+ 919 0429 F3       		.byte	0xf3
+ 920 042a 03       		.uleb128 0x3
+ 921 042b F5       		.byte	0xf5
+ 922 042c 00       		.uleb128 0
+ 923 042d 25       		.uleb128 0x25
+ 924 042e 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 19
+
+
+ 925 042f 00       		.byte	0
+ 926 0430 0B       		.uleb128 0xb
+ 927 0431 E6010000 		.4byte	0x1e6
+ 928 0435 00000000 		.4byte	.LFB76
+ 929 0439 08000000 		.4byte	.LFE76-.LFB76
+ 930 043d 01       		.uleb128 0x1
+ 931 043e 9C       		.byte	0x9c
+ 932 043f 5C040000 		.4byte	0x45c
+ 933 0443 0C       		.uleb128 0xc
+ 934 0444 706F7300 		.ascii	"pos\000"
+ 935 0448 01       		.byte	0x1
+ 936 0449 53       		.byte	0x53
+ 937 044a 88000000 		.4byte	0x88
+ 938 044e EF000000 		.4byte	.LLST7
+ 939 0452 0F       		.uleb128 0xf
+ 940 0453 06000000 		.4byte	.LVL21
+ 941 0457 A3050000 		.4byte	0x5a3
+ 942 045b 00       		.byte	0
+ 943 045c 0B       		.uleb128 0xb
+ 944 045d FB010000 		.4byte	0x1fb
+ 945 0461 00000000 		.4byte	.LFB77
+ 946 0465 08000000 		.4byte	.LFE77-.LFB77
+ 947 0469 01       		.uleb128 0x1
+ 948 046a 9C       		.byte	0x9c
+ 949 046b 79040000 		.4byte	0x479
+ 950 046f 0F       		.uleb128 0xf
+ 951 0470 06000000 		.4byte	.LVL22
+ 952 0474 AE050000 		.4byte	0x5ae
+ 953 0478 00       		.byte	0
+ 954 0479 0B       		.uleb128 0xb
+ 955 047a 0A020000 		.4byte	0x20a
+ 956 047e 00000000 		.4byte	.LFB78
+ 957 0482 08000000 		.4byte	.LFE78-.LFB78
+ 958 0486 01       		.uleb128 0x1
+ 959 0487 9C       		.byte	0x9c
+ 960 0488 96040000 		.4byte	0x496
+ 961 048c 0F       		.uleb128 0xf
+ 962 048d 06000000 		.4byte	.LVL23
+ 963 0491 B9050000 		.4byte	0x5b9
+ 964 0495 00       		.byte	0
+ 965 0496 0B       		.uleb128 0xb
+ 966 0497 1A020000 		.4byte	0x21a
+ 967 049b 00000000 		.4byte	.LFB79
+ 968 049f 24000000 		.4byte	.LFE79-.LFB79
+ 969 04a3 01       		.uleb128 0x1
+ 970 04a4 9C       		.byte	0x9c
+ 971 04a5 03050000 		.4byte	0x503
+ 972 04a9 0F       		.uleb128 0xf
+ 973 04aa 06000000 		.4byte	.LVL24
+ 974 04ae C4050000 		.4byte	0x5c4
+ 975 04b2 10       		.uleb128 0x10
+ 976 04b3 10000000 		.4byte	.LVL25
+ 977 04b7 26020000 		.4byte	0x226
+ 978 04bb C7040000 		.4byte	0x4c7
+ 979 04bf 0E       		.uleb128 0xe
+ 980 04c0 01       		.uleb128 0x1
+ 981 04c1 50       		.byte	0x50
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 20
+
+
+ 982 04c2 03       		.uleb128 0x3
+ 983 04c3 F5       		.byte	0xf5
+ 984 04c4 04       		.uleb128 0x4
+ 985 04c5 25       		.uleb128 0x25
+ 986 04c6 00       		.byte	0
+ 987 04c7 10       		.uleb128 0x10
+ 988 04c8 16000000 		.4byte	.LVL26
+ 989 04cc C2020000 		.4byte	0x2c2
+ 990 04d0 DC040000 		.4byte	0x4dc
+ 991 04d4 0E       		.uleb128 0xe
+ 992 04d5 01       		.uleb128 0x1
+ 993 04d6 50       		.byte	0x50
+ 994 04d7 03       		.uleb128 0x3
+ 995 04d8 F5       		.byte	0xf5
+ 996 04d9 04       		.uleb128 0x4
+ 997 04da 25       		.uleb128 0x25
+ 998 04db 00       		.byte	0
+ 999 04dc 10       		.uleb128 0x10
+ 1000 04dd 1C000000 		.4byte	.LVL27
+ 1001 04e1 5E030000 		.4byte	0x35e
+ 1002 04e5 F1040000 		.4byte	0x4f1
+ 1003 04e9 0E       		.uleb128 0xe
+ 1004 04ea 01       		.uleb128 0x1
+ 1005 04eb 50       		.byte	0x50
+ 1006 04ec 03       		.uleb128 0x3
+ 1007 04ed F5       		.byte	0xf5
+ 1008 04ee 04       		.uleb128 0x4
+ 1009 04ef 25       		.uleb128 0x25
+ 1010 04f0 00       		.byte	0
+ 1011 04f1 0D       		.uleb128 0xd
+ 1012 04f2 22000000 		.4byte	.LVL28
+ 1013 04f6 FA030000 		.4byte	0x3fa
+ 1014 04fa 0E       		.uleb128 0xe
+ 1015 04fb 01       		.uleb128 0x1
+ 1016 04fc 50       		.byte	0x50
+ 1017 04fd 03       		.uleb128 0x3
+ 1018 04fe F5       		.byte	0xf5
+ 1019 04ff 04       		.uleb128 0x4
+ 1020 0500 25       		.uleb128 0x25
+ 1021 0501 00       		.byte	0
+ 1022 0502 00       		.byte	0
+ 1023 0503 11       		.uleb128 0x11
+ 1024 0504 D3050000 		.4byte	.LASF65
+ 1025 0508 05       		.byte	0x5
+ 1026 0509 1207     		.2byte	0x712
+ 1027 050b 0F050000 		.4byte	0x50f
+ 1028 050f 12       		.uleb128 0x12
+ 1029 0510 93000000 		.4byte	0x93
+ 1030 0514 13       		.uleb128 0x13
+ 1031 0515 05010000 		.4byte	.LASF42
+ 1032 0519 05010000 		.4byte	.LASF42
+ 1033 051d 04       		.byte	0x4
+ 1034 051e 13       		.byte	0x13
+ 1035 051f 13       		.uleb128 0x13
+ 1036 0520 FE020000 		.4byte	.LASF43
+ 1037 0524 FE020000 		.4byte	.LASF43
+ 1038 0528 04       		.byte	0x4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 21
+
+
+ 1039 0529 12       		.byte	0x12
+ 1040 052a 13       		.uleb128 0x13
+ 1041 052b 3B020000 		.4byte	.LASF44
+ 1042 052f 3B020000 		.4byte	.LASF44
+ 1043 0533 04       		.byte	0x4
+ 1044 0534 14       		.byte	0x14
+ 1045 0535 13       		.uleb128 0x13
+ 1046 0536 60040000 		.4byte	.LASF45
+ 1047 053a 60040000 		.4byte	.LASF45
+ 1048 053e 04       		.byte	0x4
+ 1049 053f 15       		.byte	0x15
+ 1050 0540 13       		.uleb128 0x13
+ 1051 0541 05050000 		.4byte	.LASF46
+ 1052 0545 05050000 		.4byte	.LASF46
+ 1053 0549 04       		.byte	0x4
+ 1054 054a 18       		.byte	0x18
+ 1055 054b 13       		.uleb128 0x13
+ 1056 054c 7C050000 		.4byte	.LASF47
+ 1057 0550 7C050000 		.4byte	.LASF47
+ 1058 0554 04       		.byte	0x4
+ 1059 0555 17       		.byte	0x17
+ 1060 0556 13       		.uleb128 0x13
+ 1061 0557 2D060000 		.4byte	.LASF48
+ 1062 055b 2D060000 		.4byte	.LASF48
+ 1063 055f 04       		.byte	0x4
+ 1064 0560 19       		.byte	0x19
+ 1065 0561 13       		.uleb128 0x13
+ 1066 0562 EE000000 		.4byte	.LASF49
+ 1067 0566 EE000000 		.4byte	.LASF49
+ 1068 056a 04       		.byte	0x4
+ 1069 056b 1A       		.byte	0x1a
+ 1070 056c 13       		.uleb128 0x13
+ 1071 056d 44050000 		.4byte	.LASF50
+ 1072 0571 44050000 		.4byte	.LASF50
+ 1073 0575 04       		.byte	0x4
+ 1074 0576 1D       		.byte	0x1d
+ 1075 0577 13       		.uleb128 0x13
+ 1076 0578 00000000 		.4byte	.LASF51
+ 1077 057c 00000000 		.4byte	.LASF51
+ 1078 0580 04       		.byte	0x4
+ 1079 0581 1C       		.byte	0x1c
+ 1080 0582 13       		.uleb128 0x13
+ 1081 0583 BB050000 		.4byte	.LASF52
+ 1082 0587 BB050000 		.4byte	.LASF52
+ 1083 058b 04       		.byte	0x4
+ 1084 058c 1E       		.byte	0x1e
+ 1085 058d 13       		.uleb128 0x13
+ 1086 058e 1C010000 		.4byte	.LASF53
+ 1087 0592 1C010000 		.4byte	.LASF53
+ 1088 0596 04       		.byte	0x4
+ 1089 0597 1F       		.byte	0x1f
+ 1090 0598 13       		.uleb128 0x13
+ 1091 0599 65050000 		.4byte	.LASF54
+ 1092 059d 65050000 		.4byte	.LASF54
+ 1093 05a1 04       		.byte	0x4
+ 1094 05a2 22       		.byte	0x22
+ 1095 05a3 13       		.uleb128 0x13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 22
+
+
+ 1096 05a4 E0050000 		.4byte	.LASF55
+ 1097 05a8 E0050000 		.4byte	.LASF55
+ 1098 05ac 04       		.byte	0x4
+ 1099 05ad 21       		.byte	0x21
+ 1100 05ae 13       		.uleb128 0x13
+ 1101 05af 2C050000 		.4byte	.LASF56
+ 1102 05b3 2C050000 		.4byte	.LASF56
+ 1103 05b7 04       		.byte	0x4
+ 1104 05b8 23       		.byte	0x23
+ 1105 05b9 13       		.uleb128 0x13
+ 1106 05ba 95010000 		.4byte	.LASF57
+ 1107 05be 95010000 		.4byte	.LASF57
+ 1108 05c2 04       		.byte	0x4
+ 1109 05c3 24       		.byte	0x24
+ 1110 05c4 13       		.uleb128 0x13
+ 1111 05c5 C0010000 		.4byte	.LASF58
+ 1112 05c9 C0010000 		.4byte	.LASF58
+ 1113 05cd 04       		.byte	0x4
+ 1114 05ce 10       		.byte	0x10
+ 1115 05cf 00       		.byte	0
+ 1116              		.section	.debug_abbrev,"",%progbits
+ 1117              	.Ldebug_abbrev0:
+ 1118 0000 01       		.uleb128 0x1
+ 1119 0001 11       		.uleb128 0x11
+ 1120 0002 01       		.byte	0x1
+ 1121 0003 25       		.uleb128 0x25
+ 1122 0004 0E       		.uleb128 0xe
+ 1123 0005 13       		.uleb128 0x13
+ 1124 0006 0B       		.uleb128 0xb
+ 1125 0007 03       		.uleb128 0x3
+ 1126 0008 0E       		.uleb128 0xe
+ 1127 0009 1B       		.uleb128 0x1b
+ 1128 000a 0E       		.uleb128 0xe
+ 1129 000b 55       		.uleb128 0x55
+ 1130 000c 17       		.uleb128 0x17
+ 1131 000d 11       		.uleb128 0x11
+ 1132 000e 01       		.uleb128 0x1
+ 1133 000f 10       		.uleb128 0x10
+ 1134 0010 17       		.uleb128 0x17
+ 1135 0011 00       		.byte	0
+ 1136 0012 00       		.byte	0
+ 1137 0013 02       		.uleb128 0x2
+ 1138 0014 24       		.uleb128 0x24
+ 1139 0015 00       		.byte	0
+ 1140 0016 0B       		.uleb128 0xb
+ 1141 0017 0B       		.uleb128 0xb
+ 1142 0018 3E       		.uleb128 0x3e
+ 1143 0019 0B       		.uleb128 0xb
+ 1144 001a 03       		.uleb128 0x3
+ 1145 001b 0E       		.uleb128 0xe
+ 1146 001c 00       		.byte	0
+ 1147 001d 00       		.byte	0
+ 1148 001e 03       		.uleb128 0x3
+ 1149 001f 16       		.uleb128 0x16
+ 1150 0020 00       		.byte	0
+ 1151 0021 03       		.uleb128 0x3
+ 1152 0022 0E       		.uleb128 0xe
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 23
+
+
+ 1153 0023 3A       		.uleb128 0x3a
+ 1154 0024 0B       		.uleb128 0xb
+ 1155 0025 3B       		.uleb128 0x3b
+ 1156 0026 0B       		.uleb128 0xb
+ 1157 0027 49       		.uleb128 0x49
+ 1158 0028 13       		.uleb128 0x13
+ 1159 0029 00       		.byte	0
+ 1160 002a 00       		.byte	0
+ 1161 002b 04       		.uleb128 0x4
+ 1162 002c 24       		.uleb128 0x24
+ 1163 002d 00       		.byte	0
+ 1164 002e 0B       		.uleb128 0xb
+ 1165 002f 0B       		.uleb128 0xb
+ 1166 0030 3E       		.uleb128 0x3e
+ 1167 0031 0B       		.uleb128 0xb
+ 1168 0032 03       		.uleb128 0x3
+ 1169 0033 08       		.uleb128 0x8
+ 1170 0034 00       		.byte	0
+ 1171 0035 00       		.byte	0
+ 1172 0036 05       		.uleb128 0x5
+ 1173 0037 3B       		.uleb128 0x3b
+ 1174 0038 00       		.byte	0
+ 1175 0039 03       		.uleb128 0x3
+ 1176 003a 0E       		.uleb128 0xe
+ 1177 003b 00       		.byte	0
+ 1178 003c 00       		.byte	0
+ 1179 003d 06       		.uleb128 0x6
+ 1180 003e 39       		.uleb128 0x39
+ 1181 003f 01       		.byte	0x1
+ 1182 0040 03       		.uleb128 0x3
+ 1183 0041 0E       		.uleb128 0xe
+ 1184 0042 3A       		.uleb128 0x3a
+ 1185 0043 0B       		.uleb128 0xb
+ 1186 0044 3B       		.uleb128 0x3b
+ 1187 0045 0B       		.uleb128 0xb
+ 1188 0046 01       		.uleb128 0x1
+ 1189 0047 13       		.uleb128 0x13
+ 1190 0048 00       		.byte	0
+ 1191 0049 00       		.byte	0
+ 1192 004a 07       		.uleb128 0x7
+ 1193 004b 2E       		.uleb128 0x2e
+ 1194 004c 01       		.byte	0x1
+ 1195 004d 3F       		.uleb128 0x3f
+ 1196 004e 19       		.uleb128 0x19
+ 1197 004f 03       		.uleb128 0x3
+ 1198 0050 0E       		.uleb128 0xe
+ 1199 0051 3A       		.uleb128 0x3a
+ 1200 0052 0B       		.uleb128 0xb
+ 1201 0053 3B       		.uleb128 0x3b
+ 1202 0054 0B       		.uleb128 0xb
+ 1203 0055 6E       		.uleb128 0x6e
+ 1204 0056 0E       		.uleb128 0xe
+ 1205 0057 3C       		.uleb128 0x3c
+ 1206 0058 19       		.uleb128 0x19
+ 1207 0059 01       		.uleb128 0x1
+ 1208 005a 13       		.uleb128 0x13
+ 1209 005b 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 24
+
+
+ 1210 005c 00       		.byte	0
+ 1211 005d 08       		.uleb128 0x8
+ 1212 005e 05       		.uleb128 0x5
+ 1213 005f 00       		.byte	0
+ 1214 0060 49       		.uleb128 0x49
+ 1215 0061 13       		.uleb128 0x13
+ 1216 0062 00       		.byte	0
+ 1217 0063 00       		.byte	0
+ 1218 0064 09       		.uleb128 0x9
+ 1219 0065 2E       		.uleb128 0x2e
+ 1220 0066 00       		.byte	0
+ 1221 0067 3F       		.uleb128 0x3f
+ 1222 0068 19       		.uleb128 0x19
+ 1223 0069 03       		.uleb128 0x3
+ 1224 006a 0E       		.uleb128 0xe
+ 1225 006b 3A       		.uleb128 0x3a
+ 1226 006c 0B       		.uleb128 0xb
+ 1227 006d 3B       		.uleb128 0x3b
+ 1228 006e 0B       		.uleb128 0xb
+ 1229 006f 6E       		.uleb128 0x6e
+ 1230 0070 0E       		.uleb128 0xe
+ 1231 0071 49       		.uleb128 0x49
+ 1232 0072 13       		.uleb128 0x13
+ 1233 0073 3C       		.uleb128 0x3c
+ 1234 0074 19       		.uleb128 0x19
+ 1235 0075 00       		.byte	0
+ 1236 0076 00       		.byte	0
+ 1237 0077 0A       		.uleb128 0xa
+ 1238 0078 2E       		.uleb128 0x2e
+ 1239 0079 00       		.byte	0
+ 1240 007a 3F       		.uleb128 0x3f
+ 1241 007b 19       		.uleb128 0x19
+ 1242 007c 03       		.uleb128 0x3
+ 1243 007d 0E       		.uleb128 0xe
+ 1244 007e 3A       		.uleb128 0x3a
+ 1245 007f 0B       		.uleb128 0xb
+ 1246 0080 3B       		.uleb128 0x3b
+ 1247 0081 0B       		.uleb128 0xb
+ 1248 0082 6E       		.uleb128 0x6e
+ 1249 0083 0E       		.uleb128 0xe
+ 1250 0084 3C       		.uleb128 0x3c
+ 1251 0085 19       		.uleb128 0x19
+ 1252 0086 00       		.byte	0
+ 1253 0087 00       		.byte	0
+ 1254 0088 0B       		.uleb128 0xb
+ 1255 0089 2E       		.uleb128 0x2e
+ 1256 008a 01       		.byte	0x1
+ 1257 008b 47       		.uleb128 0x47
+ 1258 008c 13       		.uleb128 0x13
+ 1259 008d 11       		.uleb128 0x11
+ 1260 008e 01       		.uleb128 0x1
+ 1261 008f 12       		.uleb128 0x12
+ 1262 0090 06       		.uleb128 0x6
+ 1263 0091 40       		.uleb128 0x40
+ 1264 0092 18       		.uleb128 0x18
+ 1265 0093 9742     		.uleb128 0x2117
+ 1266 0095 19       		.uleb128 0x19
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 25
+
+
+ 1267 0096 01       		.uleb128 0x1
+ 1268 0097 13       		.uleb128 0x13
+ 1269 0098 00       		.byte	0
+ 1270 0099 00       		.byte	0
+ 1271 009a 0C       		.uleb128 0xc
+ 1272 009b 05       		.uleb128 0x5
+ 1273 009c 00       		.byte	0
+ 1274 009d 03       		.uleb128 0x3
+ 1275 009e 08       		.uleb128 0x8
+ 1276 009f 3A       		.uleb128 0x3a
+ 1277 00a0 0B       		.uleb128 0xb
+ 1278 00a1 3B       		.uleb128 0x3b
+ 1279 00a2 0B       		.uleb128 0xb
+ 1280 00a3 49       		.uleb128 0x49
+ 1281 00a4 13       		.uleb128 0x13
+ 1282 00a5 02       		.uleb128 0x2
+ 1283 00a6 17       		.uleb128 0x17
+ 1284 00a7 00       		.byte	0
+ 1285 00a8 00       		.byte	0
+ 1286 00a9 0D       		.uleb128 0xd
+ 1287 00aa 898201   		.uleb128 0x4109
+ 1288 00ad 01       		.byte	0x1
+ 1289 00ae 11       		.uleb128 0x11
+ 1290 00af 01       		.uleb128 0x1
+ 1291 00b0 31       		.uleb128 0x31
+ 1292 00b1 13       		.uleb128 0x13
+ 1293 00b2 00       		.byte	0
+ 1294 00b3 00       		.byte	0
+ 1295 00b4 0E       		.uleb128 0xe
+ 1296 00b5 8A8201   		.uleb128 0x410a
+ 1297 00b8 00       		.byte	0
+ 1298 00b9 02       		.uleb128 0x2
+ 1299 00ba 18       		.uleb128 0x18
+ 1300 00bb 9142     		.uleb128 0x2111
+ 1301 00bd 18       		.uleb128 0x18
+ 1302 00be 00       		.byte	0
+ 1303 00bf 00       		.byte	0
+ 1304 00c0 0F       		.uleb128 0xf
+ 1305 00c1 898201   		.uleb128 0x4109
+ 1306 00c4 00       		.byte	0
+ 1307 00c5 11       		.uleb128 0x11
+ 1308 00c6 01       		.uleb128 0x1
+ 1309 00c7 31       		.uleb128 0x31
+ 1310 00c8 13       		.uleb128 0x13
+ 1311 00c9 00       		.byte	0
+ 1312 00ca 00       		.byte	0
+ 1313 00cb 10       		.uleb128 0x10
+ 1314 00cc 898201   		.uleb128 0x4109
+ 1315 00cf 01       		.byte	0x1
+ 1316 00d0 11       		.uleb128 0x11
+ 1317 00d1 01       		.uleb128 0x1
+ 1318 00d2 31       		.uleb128 0x31
+ 1319 00d3 13       		.uleb128 0x13
+ 1320 00d4 01       		.uleb128 0x1
+ 1321 00d5 13       		.uleb128 0x13
+ 1322 00d6 00       		.byte	0
+ 1323 00d7 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 26
+
+
+ 1324 00d8 11       		.uleb128 0x11
+ 1325 00d9 34       		.uleb128 0x34
+ 1326 00da 00       		.byte	0
+ 1327 00db 03       		.uleb128 0x3
+ 1328 00dc 0E       		.uleb128 0xe
+ 1329 00dd 3A       		.uleb128 0x3a
+ 1330 00de 0B       		.uleb128 0xb
+ 1331 00df 3B       		.uleb128 0x3b
+ 1332 00e0 05       		.uleb128 0x5
+ 1333 00e1 49       		.uleb128 0x49
+ 1334 00e2 13       		.uleb128 0x13
+ 1335 00e3 3F       		.uleb128 0x3f
+ 1336 00e4 19       		.uleb128 0x19
+ 1337 00e5 3C       		.uleb128 0x3c
+ 1338 00e6 19       		.uleb128 0x19
+ 1339 00e7 00       		.byte	0
+ 1340 00e8 00       		.byte	0
+ 1341 00e9 12       		.uleb128 0x12
+ 1342 00ea 35       		.uleb128 0x35
+ 1343 00eb 00       		.byte	0
+ 1344 00ec 49       		.uleb128 0x49
+ 1345 00ed 13       		.uleb128 0x13
+ 1346 00ee 00       		.byte	0
+ 1347 00ef 00       		.byte	0
+ 1348 00f0 13       		.uleb128 0x13
+ 1349 00f1 2E       		.uleb128 0x2e
+ 1350 00f2 00       		.byte	0
+ 1351 00f3 3F       		.uleb128 0x3f
+ 1352 00f4 19       		.uleb128 0x19
+ 1353 00f5 3C       		.uleb128 0x3c
+ 1354 00f6 19       		.uleb128 0x19
+ 1355 00f7 6E       		.uleb128 0x6e
+ 1356 00f8 0E       		.uleb128 0xe
+ 1357 00f9 03       		.uleb128 0x3
+ 1358 00fa 0E       		.uleb128 0xe
+ 1359 00fb 3A       		.uleb128 0x3a
+ 1360 00fc 0B       		.uleb128 0xb
+ 1361 00fd 3B       		.uleb128 0x3b
+ 1362 00fe 0B       		.uleb128 0xb
+ 1363 00ff 00       		.byte	0
+ 1364 0100 00       		.byte	0
+ 1365 0101 00       		.byte	0
+ 1366              		.section	.debug_loc,"",%progbits
+ 1367              	.Ldebug_loc0:
+ 1368              	.LLST0:
+ 1369 0000 00000000 		.4byte	.LVL0
+ 1370 0004 05000000 		.4byte	.LVL1-1
+ 1371 0008 0100     		.2byte	0x1
+ 1372 000a 50       		.byte	0x50
+ 1373 000b 05000000 		.4byte	.LVL1-1
+ 1374 000f 08000000 		.4byte	.LFE63
+ 1375 0013 0600     		.2byte	0x6
+ 1376 0015 F3       		.byte	0xf3
+ 1377 0016 03       		.uleb128 0x3
+ 1378 0017 F5       		.byte	0xf5
+ 1379 0018 00       		.uleb128 0
+ 1380 0019 25       		.uleb128 0x25
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 27
+
+
+ 1381 001a 9F       		.byte	0x9f
+ 1382 001b 00000000 		.4byte	0
+ 1383 001f 00000000 		.4byte	0
+ 1384              	.LLST1:
+ 1385 0023 00000000 		.4byte	.LVL2
+ 1386 0027 05000000 		.4byte	.LVL3-1
+ 1387 002b 0100     		.2byte	0x1
+ 1388 002d 50       		.byte	0x50
+ 1389 002e 05000000 		.4byte	.LVL3-1
+ 1390 0032 08000000 		.4byte	.LFE64
+ 1391 0036 0400     		.2byte	0x4
+ 1392 0038 F3       		.byte	0xf3
+ 1393 0039 01       		.uleb128 0x1
+ 1394 003a 50       		.byte	0x50
+ 1395 003b 9F       		.byte	0x9f
+ 1396 003c 00000000 		.4byte	0
+ 1397 0040 00000000 		.4byte	0
+ 1398              	.LLST2:
+ 1399 0044 00000000 		.4byte	.LVL6
+ 1400 0048 05000000 		.4byte	.LVL7-1
+ 1401 004c 0100     		.2byte	0x1
+ 1402 004e 50       		.byte	0x50
+ 1403 004f 05000000 		.4byte	.LVL7-1
+ 1404 0053 08000000 		.4byte	.LFE67
+ 1405 0057 0600     		.2byte	0x6
+ 1406 0059 F3       		.byte	0xf3
+ 1407 005a 03       		.uleb128 0x3
+ 1408 005b F5       		.byte	0xf5
+ 1409 005c 00       		.uleb128 0
+ 1410 005d 25       		.uleb128 0x25
+ 1411 005e 9F       		.byte	0x9f
+ 1412 005f 00000000 		.4byte	0
+ 1413 0063 00000000 		.4byte	0
+ 1414              	.LLST3:
+ 1415 0067 00000000 		.4byte	.LVL8
+ 1416 006b 05000000 		.4byte	.LVL9-1
+ 1417 006f 0100     		.2byte	0x1
+ 1418 0071 50       		.byte	0x50
+ 1419 0072 05000000 		.4byte	.LVL9-1
+ 1420 0076 08000000 		.4byte	.LFE68
+ 1421 007a 0400     		.2byte	0x4
+ 1422 007c F3       		.byte	0xf3
+ 1423 007d 01       		.uleb128 0x1
+ 1424 007e 50       		.byte	0x50
+ 1425 007f 9F       		.byte	0x9f
+ 1426 0080 00000000 		.4byte	0
+ 1427 0084 00000000 		.4byte	0
+ 1428              	.LLST4:
+ 1429 0088 00000000 		.4byte	.LVL12
+ 1430 008c 05000000 		.4byte	.LVL13-1
+ 1431 0090 0100     		.2byte	0x1
+ 1432 0092 50       		.byte	0x50
+ 1433 0093 05000000 		.4byte	.LVL13-1
+ 1434 0097 08000000 		.4byte	.LFE71
+ 1435 009b 0600     		.2byte	0x6
+ 1436 009d F3       		.byte	0xf3
+ 1437 009e 03       		.uleb128 0x3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 28
+
+
+ 1438 009f F5       		.byte	0xf5
+ 1439 00a0 00       		.uleb128 0
+ 1440 00a1 25       		.uleb128 0x25
+ 1441 00a2 9F       		.byte	0x9f
+ 1442 00a3 00000000 		.4byte	0
+ 1443 00a7 00000000 		.4byte	0
+ 1444              	.LLST5:
+ 1445 00ab 00000000 		.4byte	.LVL14
+ 1446 00af 05000000 		.4byte	.LVL15-1
+ 1447 00b3 0100     		.2byte	0x1
+ 1448 00b5 50       		.byte	0x50
+ 1449 00b6 05000000 		.4byte	.LVL15-1
+ 1450 00ba 08000000 		.4byte	.LFE72
+ 1451 00be 0400     		.2byte	0x4
+ 1452 00c0 F3       		.byte	0xf3
+ 1453 00c1 01       		.uleb128 0x1
+ 1454 00c2 50       		.byte	0x50
+ 1455 00c3 9F       		.byte	0x9f
+ 1456 00c4 00000000 		.4byte	0
+ 1457 00c8 00000000 		.4byte	0
+ 1458              	.LLST6:
+ 1459 00cc 00000000 		.4byte	.LVL18
+ 1460 00d0 05000000 		.4byte	.LVL19-1
+ 1461 00d4 0100     		.2byte	0x1
+ 1462 00d6 50       		.byte	0x50
+ 1463 00d7 05000000 		.4byte	.LVL19-1
+ 1464 00db 08000000 		.4byte	.LFE75
+ 1465 00df 0600     		.2byte	0x6
+ 1466 00e1 F3       		.byte	0xf3
+ 1467 00e2 03       		.uleb128 0x3
+ 1468 00e3 F5       		.byte	0xf5
+ 1469 00e4 00       		.uleb128 0
+ 1470 00e5 25       		.uleb128 0x25
+ 1471 00e6 9F       		.byte	0x9f
+ 1472 00e7 00000000 		.4byte	0
+ 1473 00eb 00000000 		.4byte	0
+ 1474              	.LLST7:
+ 1475 00ef 00000000 		.4byte	.LVL20
+ 1476 00f3 05000000 		.4byte	.LVL21-1
+ 1477 00f7 0100     		.2byte	0x1
+ 1478 00f9 50       		.byte	0x50
+ 1479 00fa 05000000 		.4byte	.LVL21-1
+ 1480 00fe 08000000 		.4byte	.LFE76
+ 1481 0102 0400     		.2byte	0x4
+ 1482 0104 F3       		.byte	0xf3
+ 1483 0105 01       		.uleb128 0x1
+ 1484 0106 50       		.byte	0x50
+ 1485 0107 9F       		.byte	0x9f
+ 1486 0108 00000000 		.4byte	0
+ 1487 010c 00000000 		.4byte	0
+ 1488              		.section	.debug_aranges,"",%progbits
+ 1489 0000 9C000000 		.4byte	0x9c
+ 1490 0004 0200     		.2byte	0x2
+ 1491 0006 00000000 		.4byte	.Ldebug_info0
+ 1492 000a 04       		.byte	0x4
+ 1493 000b 00       		.byte	0
+ 1494 000c 0000     		.2byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 29
+
+
+ 1495 000e 0000     		.2byte	0
+ 1496 0010 00000000 		.4byte	.LFB63
+ 1497 0014 08000000 		.4byte	.LFE63-.LFB63
+ 1498 0018 00000000 		.4byte	.LFB64
+ 1499 001c 08000000 		.4byte	.LFE64-.LFB64
+ 1500 0020 00000000 		.4byte	.LFB65
+ 1501 0024 08000000 		.4byte	.LFE65-.LFB65
+ 1502 0028 00000000 		.4byte	.LFB66
+ 1503 002c 08000000 		.4byte	.LFE66-.LFB66
+ 1504 0030 00000000 		.4byte	.LFB67
+ 1505 0034 08000000 		.4byte	.LFE67-.LFB67
+ 1506 0038 00000000 		.4byte	.LFB68
+ 1507 003c 08000000 		.4byte	.LFE68-.LFB68
+ 1508 0040 00000000 		.4byte	.LFB69
+ 1509 0044 08000000 		.4byte	.LFE69-.LFB69
+ 1510 0048 00000000 		.4byte	.LFB70
+ 1511 004c 08000000 		.4byte	.LFE70-.LFB70
+ 1512 0050 00000000 		.4byte	.LFB71
+ 1513 0054 08000000 		.4byte	.LFE71-.LFB71
+ 1514 0058 00000000 		.4byte	.LFB72
+ 1515 005c 08000000 		.4byte	.LFE72-.LFB72
+ 1516 0060 00000000 		.4byte	.LFB73
+ 1517 0064 08000000 		.4byte	.LFE73-.LFB73
+ 1518 0068 00000000 		.4byte	.LFB74
+ 1519 006c 08000000 		.4byte	.LFE74-.LFB74
+ 1520 0070 00000000 		.4byte	.LFB75
+ 1521 0074 08000000 		.4byte	.LFE75-.LFB75
+ 1522 0078 00000000 		.4byte	.LFB76
+ 1523 007c 08000000 		.4byte	.LFE76-.LFB76
+ 1524 0080 00000000 		.4byte	.LFB77
+ 1525 0084 08000000 		.4byte	.LFE77-.LFB77
+ 1526 0088 00000000 		.4byte	.LFB78
+ 1527 008c 08000000 		.4byte	.LFE78-.LFB78
+ 1528 0090 00000000 		.4byte	.LFB79
+ 1529 0094 24000000 		.4byte	.LFE79-.LFB79
+ 1530 0098 00000000 		.4byte	0
+ 1531 009c 00000000 		.4byte	0
+ 1532              		.section	.debug_ranges,"",%progbits
+ 1533              	.Ldebug_ranges0:
+ 1534 0000 00000000 		.4byte	.LFB63
+ 1535 0004 08000000 		.4byte	.LFE63
+ 1536 0008 00000000 		.4byte	.LFB64
+ 1537 000c 08000000 		.4byte	.LFE64
+ 1538 0010 00000000 		.4byte	.LFB65
+ 1539 0014 08000000 		.4byte	.LFE65
+ 1540 0018 00000000 		.4byte	.LFB66
+ 1541 001c 08000000 		.4byte	.LFE66
+ 1542 0020 00000000 		.4byte	.LFB67
+ 1543 0024 08000000 		.4byte	.LFE67
+ 1544 0028 00000000 		.4byte	.LFB68
+ 1545 002c 08000000 		.4byte	.LFE68
+ 1546 0030 00000000 		.4byte	.LFB69
+ 1547 0034 08000000 		.4byte	.LFE69
+ 1548 0038 00000000 		.4byte	.LFB70
+ 1549 003c 08000000 		.4byte	.LFE70
+ 1550 0040 00000000 		.4byte	.LFB71
+ 1551 0044 08000000 		.4byte	.LFE71
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 30
+
+
+ 1552 0048 00000000 		.4byte	.LFB72
+ 1553 004c 08000000 		.4byte	.LFE72
+ 1554 0050 00000000 		.4byte	.LFB73
+ 1555 0054 08000000 		.4byte	.LFE73
+ 1556 0058 00000000 		.4byte	.LFB74
+ 1557 005c 08000000 		.4byte	.LFE74
+ 1558 0060 00000000 		.4byte	.LFB75
+ 1559 0064 08000000 		.4byte	.LFE75
+ 1560 0068 00000000 		.4byte	.LFB76
+ 1561 006c 08000000 		.4byte	.LFE76
+ 1562 0070 00000000 		.4byte	.LFB77
+ 1563 0074 08000000 		.4byte	.LFE77
+ 1564 0078 00000000 		.4byte	.LFB78
+ 1565 007c 08000000 		.4byte	.LFE78
+ 1566 0080 00000000 		.4byte	.LFB79
+ 1567 0084 24000000 		.4byte	.LFE79
+ 1568 0088 00000000 		.4byte	0
+ 1569 008c 00000000 		.4byte	0
+ 1570              		.section	.debug_line,"",%progbits
+ 1571              	.Ldebug_line0:
+ 1572 0000 7A020000 		.section	.debug_str,"MS",%progbits,1
+ 1572      02005101 
+ 1572      00000201 
+ 1572      FB0E0D00 
+ 1572      01010101 
+ 1573              	.LASF51:
+ 1574 0000 53657276 		.ascii	"ServoC_SetPositionTicks\000"
+ 1574      6F435F53 
+ 1574      6574506F 
+ 1574      73697469 
+ 1574      6F6E5469 
+ 1575              	.LASF61:
+ 1576 0018 433A5C55 		.ascii	"C:\\Users\\PC\\Dropbox\\CodeSpaces\\PSoC\\RoboticAr"
+ 1576      73657273 
+ 1576      5C50435C 
+ 1576      44726F70 
+ 1576      626F785C 
+ 1577 0045 6D5C5053 		.ascii	"m\\PSoC_Creator\\MotorPID.cydsn\000"
+ 1577      6F435F43 
+ 1577      72656174 
+ 1577      6F725C4D 
+ 1577      6F746F72 
+ 1578              	.LASF31:
+ 1579 0063 5F5A4E38 		.ascii	"_ZN8Hardware6ServoB15GetPositionNormEv\000"
+ 1579      48617264 
+ 1579      77617265 
+ 1579      36536572 
+ 1579      766F4231 
+ 1580              	.LASF62:
+ 1581 008a 6465636C 		.ascii	"decltype(nullptr)\000"
+ 1581      74797065 
+ 1581      286E756C 
+ 1581      6C707472 
+ 1581      2900
+ 1582              	.LASF20:
+ 1583 009c 53657450 		.ascii	"SetPosition\000"
+ 1583      6F736974 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 31
+
+
+ 1583      696F6E00 
+ 1584              	.LASF3:
+ 1585 00a8 73686F72 		.ascii	"short int\000"
+ 1585      7420696E 
+ 1585      7400
+ 1586              	.LASF17:
+ 1587 00b2 73697A65 		.ascii	"sizetype\000"
+ 1587      74797065 
+ 1587      00
+ 1588              	.LASF30:
+ 1589 00bb 5F5A4E38 		.ascii	"_ZN8Hardware6ServoB16GetPositionTicksEv\000"
+ 1589      48617264 
+ 1589      77617265 
+ 1589      36536572 
+ 1589      766F4231 
+ 1590              	.LASF5:
+ 1591 00e3 5F5F7569 		.ascii	"__uint16_t\000"
+ 1591      6E743136 
+ 1591      5F7400
+ 1592              	.LASF49:
+ 1593 00ee 53657276 		.ascii	"ServoB_GetPositionNorm\000"
+ 1593      6F425F47 
+ 1593      6574506F 
+ 1593      73697469 
+ 1593      6F6E4E6F 
+ 1594              	.LASF42:
+ 1595 0105 53657276 		.ascii	"ServoA_SetPositionNorm\000"
+ 1595      6F415F53 
+ 1595      6574506F 
+ 1595      73697469 
+ 1595      6F6E4E6F 
+ 1596              	.LASF53:
+ 1597 011c 53657276 		.ascii	"ServoC_GetPositionNorm\000"
+ 1597      6F435F47 
+ 1597      6574506F 
+ 1597      73697469 
+ 1597      6F6E4E6F 
+ 1598              	.LASF40:
+ 1599 0133 5F5A4E38 		.ascii	"_ZN8Hardware6ServoD16GetPositionTicksEv\000"
+ 1599      48617264 
+ 1599      77617265 
+ 1599      36536572 
+ 1599      766F4431 
+ 1600              	.LASF33:
+ 1601 015b 5F5A4E38 		.ascii	"_ZN8Hardware6ServoC11SetPositionEf\000"
+ 1601      48617264 
+ 1601      77617265 
+ 1601      36536572 
+ 1601      766F4331 
+ 1602              	.LASF60:
+ 1603 017e 53657276 		.ascii	"Servos.cpp\000"
+ 1603      6F732E63 
+ 1603      707000
+ 1604              	.LASF1:
+ 1605 0189 7369676E 		.ascii	"signed char\000"
+ 1605      65642063 
+ 1605      68617200 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 32
+
+
+ 1606              	.LASF57:
+ 1607 0195 53657276 		.ascii	"ServoD_GetPositionNorm\000"
+ 1607      6F445F47 
+ 1607      6574506F 
+ 1607      73697469 
+ 1607      6F6E4E6F 
+ 1608              	.LASF0:
+ 1609 01ac 666C6F61 		.ascii	"float\000"
+ 1609      7400
+ 1610              	.LASF9:
+ 1611 01b2 6C6F6E67 		.ascii	"long long int\000"
+ 1611      206C6F6E 
+ 1611      6720696E 
+ 1611      7400
+ 1612              	.LASF58:
+ 1613 01c0 53657276 		.ascii	"ServoDriver_Start\000"
+ 1613      6F447269 
+ 1613      7665725F 
+ 1613      53746172 
+ 1613      7400
+ 1614              	.LASF7:
+ 1615 01d2 6C6F6E67 		.ascii	"long int\000"
+ 1615      20696E74 
+ 1615      00
+ 1616              	.LASF38:
+ 1617 01db 5F5A4E38 		.ascii	"_ZN8Hardware6ServoD11SetPositionEf\000"
+ 1617      48617264 
+ 1617      77617265 
+ 1617      36536572 
+ 1617      766F4431 
+ 1618              	.LASF39:
+ 1619 01fe 5F5A4E38 		.ascii	"_ZN8Hardware6ServoD11SetPositionEt\000"
+ 1619      48617264 
+ 1619      77617265 
+ 1619      36536572 
+ 1619      766F4431 
+ 1620              	.LASF16:
+ 1621 0221 6C6F6E67 		.ascii	"long double\000"
+ 1621      20646F75 
+ 1621      626C6500 
+ 1622              	.LASF2:
+ 1623 022d 756E7369 		.ascii	"unsigned char\000"
+ 1623      676E6564 
+ 1623      20636861 
+ 1623      7200
+ 1624              	.LASF44:
+ 1625 023b 53657276 		.ascii	"ServoA_GetPositionTicks\000"
+ 1625      6F415F47 
+ 1625      6574506F 
+ 1625      73697469 
+ 1625      6F6E5469 
+ 1626              	.LASF23:
+ 1627 0253 47657450 		.ascii	"GetPositionTicks\000"
+ 1627      6F736974 
+ 1627      696F6E54 
+ 1627      69636B73 
+ 1627      00
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 33
+
+
+ 1628              	.LASF10:
+ 1629 0264 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1629      206C6F6E 
+ 1629      6720756E 
+ 1629      7369676E 
+ 1629      65642069 
+ 1630              	.LASF11:
+ 1631 027b 756E7369 		.ascii	"unsigned int\000"
+ 1631      676E6564 
+ 1631      20696E74 
+ 1631      00
+ 1632              	.LASF12:
+ 1633 0288 75696E74 		.ascii	"uint16_t\000"
+ 1633      31365F74 
+ 1633      00
+ 1634              	.LASF34:
+ 1635 0291 5F5A4E38 		.ascii	"_ZN8Hardware6ServoC11SetPositionEt\000"
+ 1635      48617264 
+ 1635      77617265 
+ 1635      36536572 
+ 1635      766F4331 
+ 1636              	.LASF21:
+ 1637 02b4 5F5A4E38 		.ascii	"_ZN8Hardware6ServoA11SetPositionEf\000"
+ 1637      48617264 
+ 1637      77617265 
+ 1637      36536572 
+ 1637      766F4131 
+ 1638              	.LASF26:
+ 1639 02d7 5F5A4E38 		.ascii	"_ZN8Hardware6ServoA15GetPositionNormEv\000"
+ 1639      48617264 
+ 1639      77617265 
+ 1639      36536572 
+ 1639      766F4131 
+ 1640              	.LASF43:
+ 1641 02fe 53657276 		.ascii	"ServoA_SetPositionTicks\000"
+ 1641      6F415F53 
+ 1641      6574506F 
+ 1641      73697469 
+ 1641      6F6E5469 
+ 1642              	.LASF4:
+ 1643 0316 73686F72 		.ascii	"short unsigned int\000"
+ 1643      7420756E 
+ 1643      7369676E 
+ 1643      65642069 
+ 1643      6E7400
+ 1644              	.LASF59:
+ 1645 0329 474E5520 		.ascii	"GNU C++14 5.4.1 20160609 (release) [ARM/embedded-5-"
+ 1645      432B2B31 
+ 1645      3420352E 
+ 1645      342E3120 
+ 1645      32303136 
+ 1646 035c 6272616E 		.ascii	"branch revision 237715] -mcpu=cortex-m3 -mthumb -g "
+ 1646      63682072 
+ 1646      65766973 
+ 1646      696F6E20 
+ 1646      32333737 
+ 1647 038f 2D4F6720 		.ascii	"-Og -std=c++1z -ffunction-sections -ffat-lto-object"
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 34
+
+
+ 1647      2D737464 
+ 1647      3D632B2B 
+ 1647      317A202D 
+ 1647      6666756E 
+ 1648 03c2 73202D66 		.ascii	"s -fno-exceptions -fno-rtti\000"
+ 1648      6E6F2D65 
+ 1648      78636570 
+ 1648      74696F6E 
+ 1648      73202D66 
+ 1649              	.LASF35:
+ 1650 03de 5F5A4E38 		.ascii	"_ZN8Hardware6ServoC16GetPositionTicksEv\000"
+ 1650      48617264 
+ 1650      77617265 
+ 1650      36536572 
+ 1650      766F4331 
+ 1651              	.LASF63:
+ 1652 0406 53657276 		.ascii	"Servos_Start\000"
+ 1652      6F735F53 
+ 1652      74617274 
+ 1652      00
+ 1653              	.LASF64:
+ 1654 0413 5F5A4E38 		.ascii	"_ZN8Hardware12Servos_StartEv\000"
+ 1654      48617264 
+ 1654      77617265 
+ 1654      31325365 
+ 1654      72766F73 
+ 1655              	.LASF15:
+ 1656 0430 63686172 		.ascii	"char\000"
+ 1656      00
+ 1657              	.LASF22:
+ 1658 0435 5F5A4E38 		.ascii	"_ZN8Hardware6ServoA11SetPositionEt\000"
+ 1658      48617264 
+ 1658      77617265 
+ 1658      36536572 
+ 1658      766F4131 
+ 1659              	.LASF13:
+ 1660 0458 696E7433 		.ascii	"int32_t\000"
+ 1660      325F7400 
+ 1661              	.LASF45:
+ 1662 0460 53657276 		.ascii	"ServoA_GetPositionNorm\000"
+ 1662      6F415F47 
+ 1662      6574506F 
+ 1662      73697469 
+ 1662      6F6E4E6F 
+ 1663              	.LASF28:
+ 1664 0477 5F5A4E38 		.ascii	"_ZN8Hardware6ServoB11SetPositionEf\000"
+ 1664      48617264 
+ 1664      77617265 
+ 1664      36536572 
+ 1664      766F4231 
+ 1665              	.LASF25:
+ 1666 049a 5F5A4E38 		.ascii	"_ZN8Hardware6ServoA16GetPositionTicksEv\000"
+ 1666      48617264 
+ 1666      77617265 
+ 1666      36536572 
+ 1666      766F4131 
+ 1667              	.LASF29:
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 35
+
+
+ 1668 04c2 5F5A4E38 		.ascii	"_ZN8Hardware6ServoB11SetPositionEt\000"
+ 1668      48617264 
+ 1668      77617265 
+ 1668      36536572 
+ 1668      766F4231 
+ 1669              	.LASF8:
+ 1670 04e5 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1670      20756E73 
+ 1670      69676E65 
+ 1670      6420696E 
+ 1670      7400
+ 1671              	.LASF19:
+ 1672 04f7 53657276 		.ascii	"ServoA\000"
+ 1672      6F4100
+ 1673              	.LASF14:
+ 1674 04fe 646F7562 		.ascii	"double\000"
+ 1674      6C6500
+ 1675              	.LASF46:
+ 1676 0505 53657276 		.ascii	"ServoB_SetPositionNorm\000"
+ 1676      6F425F53 
+ 1676      6574506F 
+ 1676      73697469 
+ 1676      6F6E4E6F 
+ 1677              	.LASF18:
+ 1678 051c 48617264 		.ascii	"Hardware\000"
+ 1678      77617265 
+ 1678      00
+ 1679              	.LASF37:
+ 1680 0525 53657276 		.ascii	"ServoD\000"
+ 1680      6F4400
+ 1681              	.LASF56:
+ 1682 052c 53657276 		.ascii	"ServoD_GetPositionTicks\000"
+ 1682      6F445F47 
+ 1682      6574506F 
+ 1682      73697469 
+ 1682      6F6E5469 
+ 1683              	.LASF50:
+ 1684 0544 53657276 		.ascii	"ServoC_SetPositionNorm\000"
+ 1684      6F435F53 
+ 1684      6574506F 
+ 1684      73697469 
+ 1684      6F6E4E6F 
+ 1685              	.LASF6:
+ 1686 055b 5F5F696E 		.ascii	"__int32_t\000"
+ 1686      7433325F 
+ 1686      7400
+ 1687              	.LASF54:
+ 1688 0565 53657276 		.ascii	"ServoD_SetPositionNorm\000"
+ 1688      6F445F53 
+ 1688      6574506F 
+ 1688      73697469 
+ 1688      6F6E4E6F 
+ 1689              	.LASF47:
+ 1690 057c 53657276 		.ascii	"ServoB_SetPositionTicks\000"
+ 1690      6F425F53 
+ 1690      6574506F 
+ 1690      73697469 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccnmiU2I.s 			page 36
+
+
+ 1690      6F6E5469 
+ 1691              	.LASF41:
+ 1692 0594 5F5A4E38 		.ascii	"_ZN8Hardware6ServoD15GetPositionNormEv\000"
+ 1692      48617264 
+ 1692      77617265 
+ 1692      36536572 
+ 1692      766F4431 
+ 1693              	.LASF52:
+ 1694 05bb 53657276 		.ascii	"ServoC_GetPositionTicks\000"
+ 1694      6F435F47 
+ 1694      6574506F 
+ 1694      73697469 
+ 1694      6F6E5469 
+ 1695              	.LASF65:
+ 1696 05d3 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1696      52784275 
+ 1696      66666572 
+ 1696      00
+ 1697              	.LASF55:
+ 1698 05e0 53657276 		.ascii	"ServoD_SetPositionTicks\000"
+ 1698      6F445F53 
+ 1698      6574506F 
+ 1698      73697469 
+ 1698      6F6E5469 
+ 1699              	.LASF27:
+ 1700 05f8 53657276 		.ascii	"ServoB\000"
+ 1700      6F4200
+ 1701              	.LASF32:
+ 1702 05ff 53657276 		.ascii	"ServoC\000"
+ 1702      6F4300
+ 1703              	.LASF36:
+ 1704 0606 5F5A4E38 		.ascii	"_ZN8Hardware6ServoC15GetPositionNormEv\000"
+ 1704      48617264 
+ 1704      77617265 
+ 1704      36536572 
+ 1704      766F4331 
+ 1705              	.LASF48:
+ 1706 062d 53657276 		.ascii	"ServoB_GetPositionTicks\000"
+ 1706      6F425F47 
+ 1706      6574506F 
+ 1706      73697469 
+ 1706      6F6E5469 
+ 1707              	.LASF24:
+ 1708 0645 47657450 		.ascii	"GetPositionNorm\000"
+ 1708      6F736974 
+ 1708      696F6E4E 
+ 1708      6F726D00 
+ 1709              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

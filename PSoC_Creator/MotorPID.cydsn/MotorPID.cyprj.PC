@@ -11,6 +11,209 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
+<file name=".\CortexM3\ARM_GCC_541\Debug\main.o">
+<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\UART.h" />
+<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\usCounter.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Arithmetic.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
+<dep name=".\MotorTypes.h" />
+<dep name=".\Motors.hpp" />
+<dep name=".\Servos.hpp" />
+<dep name=".\main.cpp" />
+</file>
+<file name=".\Generated_Source\PSoC5\Clock_3.h" />
+<file name=".\Generated_Source\PSoC5\Clock_4.h" />
+<file name=".\Generated_Source\PSoC5\CyDmac.h" />
+<file name=".\Generated_Source\PSoC5\CyFlash.h" />
+<file name=".\Generated_Source\PSoC5\CyLib.h" />
+<file name=".\Generated_Source\PSoC5\CySpc.h" />
+<file name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<file name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<file name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<file name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<file name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<file name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<file name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<file name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<file name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
+<file name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
+<file name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
+<file name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<file name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<file name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<file name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<file name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<file name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<file name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<file name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<file name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<file name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<file name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<file name=".\Generated_Source\PSoC5\MotorCW.h" />
+<file name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<file name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
+<file name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
+<file name=".\Generated_Source\PSoC5\ServoAB.h" />
+<file name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<file name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
+<file name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<file name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<file name=".\Generated_Source\PSoC5\ServoCD.h" />
+<file name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<file name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<file name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<file name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<file name=".\Generated_Source\PSoC5\Servo_PWM.h" />
+<file name=".\Generated_Source\PSoC5\UART.h" />
+<file name=".\Generated_Source\PSoC5\UART_IntClock.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<file name=".\Generated_Source\PSoC5\core_cm3.h" />
+<file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<file name=".\Generated_Source\PSoC5\cyPm.h" />
+<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<file name=".\Generated_Source\PSoC5\cydevice.h" />
+<file name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<file name=".\Generated_Source\PSoC5\cypins.h" />
+<file name=".\Generated_Source\PSoC5\cytypes.h" />
+<file name=".\Generated_Source\PSoC5\project.h" />
+<file name=".\Generated_Source\PSoC5\usCounter.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Arithmetic.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
+<file name=".\MotorTypes.h" />
+<file name=".\Motors.hpp" />
+<file name=".\Servos.hpp" />
+<file name=".\main.cpp" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Servos.o">
+<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\UART.h" />
+<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\usCounter.h" />
+<dep name=".\Servos.cpp" />
+<dep name=".\ServosHW.h" />
+</file>
+<file name=".\Servos.cpp" />
+<file name=".\ServosHW.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Clock_3.o">
 <dep name=".\Generated_Source\PSoC5\Clock_3.c" />
 <dep name=".\Generated_Source\PSoC5\Clock_3.h" />
@@ -20,11 +223,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Clock_3.c" />
-<file name=".\Generated_Source\PSoC5\Clock_3.h" />
-<file name=".\Generated_Source\PSoC5\cydevice.h" />
-<file name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<file name=".\Generated_Source\PSoC5\cyfitter.h" />
-<file name=".\Generated_Source\PSoC5\cytypes.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Clock_4.o">
 <dep name=".\Generated_Source\PSoC5\Clock_4.c" />
 <dep name=".\Generated_Source\PSoC5\Clock_4.h" />
@@ -34,7 +232,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Clock_4.c" />
-<file name=".\Generated_Source\PSoC5\Clock_4.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o">
 <dep name=".\Generated_Source\PSoC5\Cm3Start.c" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.h" />
@@ -50,12 +247,6 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Cm3Start.c" />
-<file name=".\Generated_Source\PSoC5\CyDmac.h" />
-<file name=".\Generated_Source\PSoC5\CyFlash.h" />
-<file name=".\Generated_Source\PSoC5\CyLib.h" />
-<file name=".\Generated_Source\PSoC5\CySpc.h" />
-<file name=".\Generated_Source\PSoC5\cyPm.h" />
-<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
 <file name=".\cyapicallbacks.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\CyDmac.o">
 <dep name=".\Generated_Source\PSoC5\CyDmac.c" />
@@ -106,20 +297,50 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\CySpc.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Encoder.o">
-<dep name=".\Generated_Source\PSoC5\Encoder.c" />
-<dep name=".\Generated_Source\PSoC5\Encoder.h" />
-<dep name=".\Generated_Source\PSoC5\Encoder_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MA_Encoder.o">
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.c" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC5\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC5\cypins.h" />
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
-<file name=".\Generated_Source\PSoC5\Encoder.c" />
-<file name=".\Generated_Source\PSoC5\Encoder.h" />
-<file name=".\Generated_Source\PSoC5\Encoder_aliases.h" />
-<file name=".\Generated_Source\PSoC5\cypins.h" />
+<file name=".\Generated_Source\PSoC5\MA_Encoder.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MA_PWM.o">
+<dep name=".\Generated_Source\PSoC5\MA_PWM.c" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MA_PWM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MB_Encoder.o">
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.c" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MB_Encoder.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MB_PWM.o">
+<dep name=".\Generated_Source\PSoC5\MB_PWM.c" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MB_PWM.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_Dir.o">
 <dep name=".\Generated_Source\PSoC5\MotorA_Dir.c" />
 <dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
@@ -129,7 +350,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorA_Dir.c" />
-<file name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_Dir_PM.o">
 <dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
 <dep name=".\Generated_Source\PSoC5\MotorA_Dir_PM.c" />
@@ -153,7 +373,6 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorA_ISR.c" />
-<file name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_PWM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -167,7 +386,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorA_PWM.c" />
-<file name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_PWM_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -195,8 +413,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorA_QuadDec.c" />
-<file name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
-<file name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_QuadDec_Cnt16.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -237,6 +453,118 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorA_QuadDec_PM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_Dir.o">
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.c" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorB_Dir.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_Dir_PM.o">
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorB_Dir_PM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_ISR.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.c" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorB_ISR.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_PWM.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.c" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorB_PWM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_PWM_PM.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorB_PWM_PM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.c" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorB_QuadDec.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec_Cnt16.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.c" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec_Cnt16_PM.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16_PM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec_PM.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorB_QuadDec_PM.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorCCW.o">
 <dep name=".\Generated_Source\PSoC5\MotorCCW.c" />
 <dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
@@ -248,8 +576,17 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorCCW.c" />
-<file name=".\Generated_Source\PSoC5\MotorCCW.h" />
-<file name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorCCW_1.o">
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.c" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorCCW_1.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorCW.o">
 <dep name=".\Generated_Source\PSoC5\MotorCW.c" />
 <dep name=".\Generated_Source\PSoC5\MotorCW.h" />
@@ -261,60 +598,17 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorCW.c" />
-<file name=".\Generated_Source\PSoC5\MotorCW.h" />
-<file name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\MotorPWM.o">
-<dep name=".\Generated_Source\PSoC5\MotorPWM.c" />
-<dep name=".\Generated_Source\PSoC5\MotorPWM.h" />
-<dep name=".\Generated_Source\PSoC5\MotorPWM_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorCW_1.o">
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.c" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC5\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC5\cypins.h" />
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
-<file name=".\Generated_Source\PSoC5\MotorPWM.c" />
-<file name=".\Generated_Source\PSoC5\MotorPWM.h" />
-<file name=".\Generated_Source\PSoC5\MotorPWM_aliases.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Pin_1.o">
-<dep name=".\Generated_Source\PSoC5\Pin_1.c" />
-<dep name=".\Generated_Source\PSoC5\Pin_1.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Pin_1.c" />
-<file name=".\Generated_Source\PSoC5\Pin_1.h" />
-<file name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Pin_2.o">
-<dep name=".\Generated_Source\PSoC5\Pin_2.c" />
-<dep name=".\Generated_Source\PSoC5\Pin_2.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Pin_2.c" />
-<file name=".\Generated_Source\PSoC5\Pin_2.h" />
-<file name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Pin_3.o">
-<dep name=".\Generated_Source\PSoC5\Pin_3.c" />
-<dep name=".\Generated_Source\PSoC5\Pin_3.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_3_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Pin_3.c" />
-<file name=".\Generated_Source\PSoC5\Pin_3.h" />
-<file name=".\Generated_Source\PSoC5\Pin_3_aliases.h" />
+<file name=".\Generated_Source\PSoC5\MotorCW_1.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\ServoAB.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -328,7 +622,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\ServoAB.c" />
-<file name=".\Generated_Source\PSoC5\ServoAB.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\ServoAB_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -353,8 +646,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\ServoA_Out.c" />
-<file name=".\Generated_Source\PSoC5\ServoA_Out.h" />
-<file name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\ServoB_Out.o">
 <dep name=".\Generated_Source\PSoC5\ServoB_Out.c" />
 <dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
@@ -366,8 +657,54 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\ServoB_Out.c" />
-<file name=".\Generated_Source\PSoC5\ServoB_Out.h" />
-<file name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\ServoCD.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.c" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\ServoCD.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\ServoCD_PM.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\ServoCD_PM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\ServoC_Out.o">
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.c" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\ServoC_Out.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\ServoD_Out.o">
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.c" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\ServoD_Out.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Servo_PWM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -381,7 +718,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Servo_PWM.c" />
-<file name=".\Generated_Source\PSoC5\Servo_PWM.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Servo_PWM_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -409,8 +745,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\UART.c" />
-<file name=".\Generated_Source\PSoC5\UART.h" />
-<file name=".\Generated_Source\PSoC5\UART_IntClock.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\UART_BOOT.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -486,7 +820,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\cy_em_eeprom.c" />
-<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -526,7 +859,6 @@
 <dep name=".\Generated_Source\PSoC5\usCounter.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\usCounter.c" />
-<file name=".\Generated_Source\PSoC5\usCounter.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\usCounter_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -540,6 +872,349 @@
 <dep name=".\Generated_Source\PSoC5\usCounter_PM.c" />
 </file>
 <file name=".\Generated_Source\PSoC5\usCounter_PM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Motors.o">
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\UART.h" />
+<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\usCounter.h" />
+<dep name=".\MotorTypes.h" />
+<dep name=".\Motors.cpp" />
+<dep name=".\MotorsHW.h" />
+</file>
+<file name=".\Motors.cpp" />
+<file name=".\MotorsHW.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorsHW.o">
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\UART.h" />
+<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\usCounter.h" />
+<dep name=".\MotorTypes.h" />
+<dep name=".\MotorsHW.c" />
+<dep name=".\MotorsHW.h" />
+</file>
+<file name=".\MotorsHW.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\ServosHW.o">
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\UART.h" />
+<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\usCounter.h" />
+<dep name=".\ServosHW.c" />
+</file>
+<file name=".\ServosHW.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o">
+<dep name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
+<dep name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
+<dep name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
+<dep name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
+</file>
+<file name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
+<file name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
+<file name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
+<file name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\ServoHW.o">
+<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\UART.h" />
+<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\usCounter.h" />
+<dep name=".\ServoHW.c" />
+</file>
+<file name=".\ServoHW.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorHW.o">
+<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\UART.h" />
+<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\usCounter.h" />
+<dep name=".\MotorHW.c" />
+<dep name=".\MotorHW.h" />
+<dep name=".\MotorTypes.h" />
+</file>
+<file name=".\MotorHW.c" />
+<file name=".\MotorHW.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA.o">
 <dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
 <dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
@@ -554,30 +1229,42 @@
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\Encoder.h" />
-<dep name=".\Generated_Source\PSoC5\Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
 <dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
 <dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
 <dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
 <dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
 <dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\MotorCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorPWM.h" />
-<dep name=".\Generated_Source\PSoC5\MotorPWM_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_1.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_2.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_3.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_3_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\ServoAB.h" />
 <dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
 <dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
 <dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
 <dep name=".\Generated_Source\PSoC5\UART.h" />
 <dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
@@ -591,16 +1278,74 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\usCounter.h" />
 <dep name=".\MotorA.cpp" />
-<dep name=".\MotorA_HW.h" />
+<dep name=".\MotorHW.h" />
 </file>
-<file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<file name=".\Generated_Source\PSoC5\core_cm3.h" />
-<file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<file name=".\Generated_Source\PSoC5\project.h" />
 <file name=".\MotorA.cpp" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Encoder.o">
+<dep name=".\Generated_Source\PSoC5\Encoder.c" />
+<dep name=".\Generated_Source\PSoC5\Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Encoder.c" />
+<file name=".\Generated_Source\PSoC5\Encoder.h" />
+<file name=".\Generated_Source\PSoC5\Encoder_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MotorPWM.o">
+<dep name=".\Generated_Source\PSoC5\MotorPWM.c" />
+<dep name=".\Generated_Source\PSoC5\MotorPWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorPWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MotorPWM.c" />
+<file name=".\Generated_Source\PSoC5\MotorPWM.h" />
+<file name=".\Generated_Source\PSoC5\MotorPWM_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Pin_1.o">
+<dep name=".\Generated_Source\PSoC5\Pin_1.c" />
+<dep name=".\Generated_Source\PSoC5\Pin_1.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Pin_1.c" />
+<file name=".\Generated_Source\PSoC5\Pin_1.h" />
+<file name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Pin_2.o">
+<dep name=".\Generated_Source\PSoC5\Pin_2.c" />
+<dep name=".\Generated_Source\PSoC5\Pin_2.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Pin_2.c" />
+<file name=".\Generated_Source\PSoC5\Pin_2.h" />
+<file name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Pin_3.o">
+<dep name=".\Generated_Source\PSoC5\Pin_3.c" />
+<dep name=".\Generated_Source\PSoC5\Pin_3.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_3_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Pin_3.c" />
+<file name=".\Generated_Source\PSoC5\Pin_3.h" />
+<file name=".\Generated_Source\PSoC5\Pin_3_aliases.h" />
 <file name=".\MotorA_HW.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_HW.o">
 <dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
@@ -656,73 +1401,6 @@
 <dep name=".\MotorA_HW.h" />
 </file>
 <file name=".\MotorA_HW.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\main.o">
-<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC5\project.h" />
-<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Arithmetic.h" />
-<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\Encoder.h" />
-<dep name=".\Generated_Source\PSoC5\Encoder_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorPWM.h" />
-<dep name=".\Generated_Source\PSoC5\MotorPWM_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_1.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_2.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_3.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_3_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
-<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
-<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
-<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\UART.h" />
-<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\usCounter.h" />
-<dep name=".\main.cpp" />
-</file>
-<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Arithmetic.h" />
-<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
-<file name=".\main.cpp" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o">
-<dep name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
-<dep name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
-<dep name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
-<dep name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
-</file>
-<file name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
-<file name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
-<file name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
-<file name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Clock_5.o">
 <dep name=".\Generated_Source\PSoC5\Clock_5.c" />
 <dep name=".\Generated_Source\PSoC5\Clock_5.h" />
@@ -771,8 +1449,6 @@
 <file name="..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-\Foundation_Time.h" />
 <file name="..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation-\Foundation_Utils.h" />
 <file name=".\MotorA.hpp" />
-<file name=".\MotorTypes.h" />
-<file name=".\Motors.hpp" />
 <file name=".\Generated_Source\PSoC5\UART_1.h" />
 <file name=".\Generated_Source\PSoC5\UART_1_IntClock.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\UART_1.o">
@@ -848,13 +1524,14 @@
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorPID.hex">
 <dep name=".\CortexM3\ARM_GCC_541\Debug\main.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorA_HW.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorA.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorsHW.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\Motors.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\ServosHW.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\Servos.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cymetadata.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\MotorA_Dir.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\MotorA_Dir_PM.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorPWM.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\MotorA_PWM.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\MotorA_PWM_PM.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\MotorCW.o" />
@@ -862,7 +1539,6 @@
 <dep name=".\CortexM3\ARM_GCC_541\Debug\usCounter_PM.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Clock_3.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\MotorA_ISR.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Encoder.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\MotorA_QuadDec.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\MotorA_QuadDec_PM.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\MotorCCW.o" />
@@ -889,9 +1565,25 @@
 <dep name=".\CortexM3\ARM_GCC_541\Debug\UART_INT.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\UART_BOOT.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\UART_IntClock.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Pin_1.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Pin_2.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Pin_3.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MA_PWM.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MA_Encoder.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\ServoD_Out.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\ServoCD.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\ServoCD_PM.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\ServoC_Out.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec_PM.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MB_Encoder.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorB_ISR.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorB_PWM.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorB_PWM_PM.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MB_PWM.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorCW_1.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorB_Dir.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorB_Dir_PM.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorCCW_1.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec_Cnt16.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec_Cnt16_PM.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\MotorPID.a" />
 <dep name="${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" />
 </file>
@@ -959,6 +1651,31 @@
 <name_val_pair name="Generated_Source\PSoC5\Pin_4.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\Clock_5.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\CortexM3\ARM_GCC_541\Debug\MotorPID.hex" v="-mcpu=cortex-m3 -mthumb -l Foundation_d -L Generated_Source\PSoC5 -L ..\..\libs\Foundation\dist\psoc\lib -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -u _printf_float -Wl,--gc-sections -lstdc++ -lsupc++ -lm -g -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name="MotorHW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MA_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MA_Encoder.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoD_Out.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoCD.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoCD_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoC_Out.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MB_Encoder.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_ISR.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_PWM_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MB_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorCW_1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_Dir.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_Dir_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorCCW_1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec_Cnt16_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Motors.cpp" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -x c++ -std=c++17 -fno-exceptions -fno-rtti" />
+<name_val_pair name="ServoHW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="MotorsHW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="ServosHW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Servos.cpp" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -x c++ -std=c++17 -fno-exceptions -fno-rtti" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\PC\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\MotorPID.cyprj -d CY8C5888LTI-LP097 -s C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -1030,28 +1747,6 @@
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\PSoC5\API\aliases.h</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\PSoC5\API\pins.c</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\PSoC5\API\pins.h</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\UART_v2_50.cysch</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\UART_v2_50.cysym</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\UART_v2_50.pdf</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\UART_v2_50.cystate</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\UART_v2_50.cycdx</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\version.cypatch</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\API\UART.c</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\API\UART.h</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\API\UART_PM.c</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\API\UARTINT.c</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\API\UART_BOOT.c</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartadvancedcontrol.cs</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartadvancedcontrol.Designer.cs</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartcontrol.cs</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartcontrol.Designer.cs</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartcustomizer.cs</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartparameters.cs</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\Resources.Designer.cs</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartadvancedcontrol.resx</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartcontrol.resx</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\Resources.resx</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cyprimitive</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cysym</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
@@ -1060,13 +1755,6 @@
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\API\clk.c</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\API\clk.h</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\Custom\custom.cs</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\version.cypatch</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.cysym</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\PWM_v3_30\PWM_v3_30.cysym</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\PWM_v3_30\PWM_v3_30.pdf</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\PWM_v3_30\PWM_v3_30.cystate</v>
@@ -1090,6 +1778,11 @@
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\PWM_v3_30\PSoC5\PWM_v3_30.cysch</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.cysym</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\version.cypatch</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.cysym</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.pdf</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v</v>
@@ -1119,6 +1812,30 @@
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Counter_v3_0\PSoC5\Counter_v3_0.cysch</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_psoc3_timer_v1_0\cy_psoc3_timer_v1_0.cyprimitive</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_psoc3_timer_v1_0\cy_psoc3_timer_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\UART_v2_50.cysch</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\UART_v2_50.cysym</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\UART_v2_50.pdf</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\UART_v2_50.cystate</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\UART_v2_50.cycdx</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\version.cypatch</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\API\UART.c</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\API\UART.h</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\API\UART_PM.c</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\API\UARTINT.c</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\API\UART_BOOT.c</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartadvancedcontrol.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartadvancedcontrol.Designer.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartcontrol.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartcontrol.Designer.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartcustomizer.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartparameters.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\Resources.Designer.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartadvancedcontrol.resx</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\cyuartcontrol.resx</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\Resources.resx</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.cysym</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v</v>
 <v>..\..\..\..\..\..\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\cy_isr_v1_71\cy_isr_v1_71.cysym</v>
 <v>..\..\..\..\..\..\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\cy_isr_v1_71\cy_isr_v1_71.pdf</v>
 <v>..\..\..\..\..\..\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\cy_isr_v1_71\cy_isr_v1_71.primitive</v>
@@ -1328,6 +2045,47 @@
 <v>Generated_Source\PSoC5\Pin_4.h</v>
 <v>Generated_Source\PSoC5\Clock_5.c</v>
 <v>Generated_Source\PSoC5\Clock_5.h</v>
+<v>Generated_Source\PSoC5\MA_PWM_aliases.h</v>
+<v>Generated_Source\PSoC5\MA_PWM.c</v>
+<v>Generated_Source\PSoC5\MA_PWM.h</v>
+<v>Generated_Source\PSoC5\MA_Encoder_aliases.h</v>
+<v>Generated_Source\PSoC5\MA_Encoder.c</v>
+<v>Generated_Source\PSoC5\MA_Encoder.h</v>
+<v>Generated_Source\PSoC5\ServoD_Out_aliases.h</v>
+<v>Generated_Source\PSoC5\ServoD_Out.c</v>
+<v>Generated_Source\PSoC5\ServoD_Out.h</v>
+<v>Generated_Source\PSoC5\ServoCD.c</v>
+<v>Generated_Source\PSoC5\ServoCD.h</v>
+<v>Generated_Source\PSoC5\ServoCD_PM.c</v>
+<v>Generated_Source\PSoC5\ServoC_Out_aliases.h</v>
+<v>Generated_Source\PSoC5\ServoC_Out.c</v>
+<v>Generated_Source\PSoC5\ServoC_Out.h</v>
+<v>Generated_Source\PSoC5\MotorB_QuadDec.c</v>
+<v>Generated_Source\PSoC5\MotorB_QuadDec.h</v>
+<v>Generated_Source\PSoC5\MotorB_QuadDec_PM.c</v>
+<v>Generated_Source\PSoC5\MB_Encoder_aliases.h</v>
+<v>Generated_Source\PSoC5\MB_Encoder.c</v>
+<v>Generated_Source\PSoC5\MB_Encoder.h</v>
+<v>Generated_Source\PSoC5\MotorB_ISR.c</v>
+<v>Generated_Source\PSoC5\MotorB_ISR.h</v>
+<v>Generated_Source\PSoC5\MotorB_PWM.c</v>
+<v>Generated_Source\PSoC5\MotorB_PWM.h</v>
+<v>Generated_Source\PSoC5\MotorB_PWM_PM.c</v>
+<v>Generated_Source\PSoC5\MB_PWM_aliases.h</v>
+<v>Generated_Source\PSoC5\MB_PWM.c</v>
+<v>Generated_Source\PSoC5\MB_PWM.h</v>
+<v>Generated_Source\PSoC5\MotorCW_1_aliases.h</v>
+<v>Generated_Source\PSoC5\MotorCW_1.c</v>
+<v>Generated_Source\PSoC5\MotorCW_1.h</v>
+<v>Generated_Source\PSoC5\MotorB_Dir.h</v>
+<v>Generated_Source\PSoC5\MotorB_Dir.c</v>
+<v>Generated_Source\PSoC5\MotorB_Dir_PM.c</v>
+<v>Generated_Source\PSoC5\MotorCCW_1_aliases.h</v>
+<v>Generated_Source\PSoC5\MotorCCW_1.c</v>
+<v>Generated_Source\PSoC5\MotorCCW_1.h</v>
+<v>Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.c</v>
+<v>Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h</v>
+<v>Generated_Source\PSoC5\MotorB_QuadDec_Cnt16_PM.c</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
@@ -1337,7 +2095,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="134242207701702550" />
+<deps_time v="134242944065208297" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -1347,14 +2105,51 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="134242208490405048" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="134242945455977856" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 <dataGuid v="718b6b01-68ba-4a17-b632-d38dc61ebb3b">
 <CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b type_name="CyDesigner.Gde.Schematic.Symbolcatalog.CyComponentCatalogControl+CyCompCatalogData" version="1" tab="Cypress">
-<tree_states_tab_names />
-<tree_states />
+<tree_states_tab_names>
+<v>Cypress</v>
+<v>Off-Chip</v>
+</tree_states_tab_names>
+<tree_states>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog">
+<ExpandedNodeIds>
+<v>Cypress Component Catalog</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Cypress Component Catalog</v>
+<v>Cypress Component Catalog\Analog</v>
+<v>Cypress Component Catalog\CapSense</v>
+<v>Cypress Component Catalog\Communications</v>
+<v>Cypress Component Catalog\Digital</v>
+<v>Cypress Component Catalog\Display</v>
+<v>Cypress Component Catalog\Filters</v>
+<v>Cypress Component Catalog\Ports and Pins</v>
+<v>Cypress Component Catalog\Power Supervision</v>
+<v>Cypress Component Catalog\System</v>
+<v>Cypress Component Catalog\Thermal Management</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Off-Chip Component Catalog</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Off-Chip Component Catalog</v>
+<v>Off-Chip Component Catalog\Active</v>
+<v>Off-Chip Component Catalog\Diodes</v>
+<v>Off-Chip Component Catalog\Electro-Mechanical</v>
+<v>Off-Chip Component Catalog\Passive</v>
+<v>Off-Chip Component Catalog\Power</v>
+<v>Off-Chip Component Catalog\Sensors</v>
+<v>Off-Chip Component Catalog\Transistors</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</tree_states>
 </CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b>
 </dataGuid>
 </userData>

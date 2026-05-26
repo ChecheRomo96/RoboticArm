@@ -21,64 +21,90 @@
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_Dir.h" value="HEADER;;;;;MotorA_Dir" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_Dir.c" value="SOURCE_C;CortexM3;;;;MotorA_Dir" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_Dir_PM.c" value="SOURCE_C;CortexM3;;;;MotorA_Dir" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART.c" value="SOURCE_C;CortexM3;;;;UART" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART.h" value="HEADER;;;;;UART" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART_PM.c" value="SOURCE_C;CortexM3;;;;UART" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART_INT.c" value="SOURCE_C;CortexM3;;;;UART" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART_BOOT.c" value="SOURCE_C;CortexM3;;;;UART" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorPWM_aliases.h" value="HEADER;;;;;MotorPWM" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorPWM.c" value="SOURCE_C;CortexM3;;;;MotorPWM" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorPWM.h" value="HEADER;;;;;MotorPWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Clock_3.c" value="SOURCE_C;CortexM3;;;;Clock_3" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Clock_3.h" value="HEADER;;;;;Clock_3" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MA_PWM_aliases.h" value="HEADER;;;;;MA_PWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MA_PWM.c" value="SOURCE_C;CortexM3;;;;MA_PWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MA_PWM.h" value="HEADER;;;;;MA_PWM" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_PWM.c" value="SOURCE_C;CortexM3;;;;MotorA_PWM" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_PWM.h" value="HEADER;;;;;MotorA_PWM" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_PWM_PM.c" value="SOURCE_C;CortexM3;;;;MotorA_PWM" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCW_aliases.h" value="HEADER;;;;;MotorCW" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCW.c" value="SOURCE_C;CortexM3;;;;MotorCW" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCW.h" value="HEADER;;;;;MotorCW" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Servo_PWM.c" value="SOURCE_C;CortexM3;;;;Servo_PWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Servo_PWM.h" value="HEADER;;;;;Servo_PWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Servo_PWM_PM.c" value="SOURCE_C;CortexM3;;;;Servo_PWM" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\usCounter.c" value="SOURCE_C;CortexM3;;;;usCounter" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\usCounter.h" value="HEADER;;;;;usCounter" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\usCounter_PM.c" value="SOURCE_C;CortexM3;;;;usCounter" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Clock_3.c" value="SOURCE_C;CortexM3;;;;Clock_3" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Clock_3.h" value="HEADER;;;;;Clock_3" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART.c" value="SOURCE_C;CortexM3;;;;UART" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART.h" value="HEADER;;;;;UART" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART_PM.c" value="SOURCE_C;CortexM3;;;;UART" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART_INT.c" value="SOURCE_C;CortexM3;;;;UART" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART_BOOT.c" value="SOURCE_C;CortexM3;;;;UART" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_ISR.c" value="SOURCE_C;CortexM3;;;;MotorA_ISR" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_ISR.h" value="HEADER;;;;;MotorA_ISR" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Encoder_aliases.h" value="HEADER;;;;;Encoder" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Encoder.c" value="SOURCE_C;CortexM3;;;;Encoder" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Encoder.h" value="HEADER;;;;;Encoder" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MA_Encoder_aliases.h" value="HEADER;;;;;MA_Encoder" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MA_Encoder.c" value="SOURCE_C;CortexM3;;;;MA_Encoder" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MA_Encoder.h" value="HEADER;;;;;MA_Encoder" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_QuadDec.c" value="SOURCE_C;CortexM3;;;;MotorA_QuadDec" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_QuadDec.h" value="HEADER;;;;;MotorA_QuadDec" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_QuadDec_PM.c" value="SOURCE_C;CortexM3;;;;MotorA_QuadDec" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCCW_aliases.h" value="HEADER;;;;;MotorCCW" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCCW.c" value="SOURCE_C;CortexM3;;;;MotorCCW" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCCW.h" value="HEADER;;;;;MotorCCW" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoAB.c" value="SOURCE_C;CortexM3;;;;ServoAB" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoAB.h" value="HEADER;;;;;ServoAB" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoAB_PM.c" value="SOURCE_C;CortexM3;;;;ServoAB" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoA_Out_aliases.h" value="HEADER;;;;;ServoA_Out" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoA_Out.c" value="SOURCE_C;CortexM3;;;;ServoA_Out" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoA_Out.h" value="HEADER;;;;;ServoA_Out" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Clock_4.c" value="SOURCE_C;CortexM3;;;;Clock_4" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Clock_4.h" value="HEADER;;;;;Clock_4" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Servo_PWM.c" value="SOURCE_C;CortexM3;;;;Servo_PWM" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Servo_PWM.h" value="HEADER;;;;;Servo_PWM" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Servo_PWM_PM.c" value="SOURCE_C;CortexM3;;;;Servo_PWM" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Pin_1_aliases.h" value="HEADER;;;;;Pin_1" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Pin_1.c" value="SOURCE_C;CortexM3;;;;Pin_1" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Pin_1.h" value="HEADER;;;;;Pin_1" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Pin_2_aliases.h" value="HEADER;;;;;Pin_2" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Pin_2.c" value="SOURCE_C;CortexM3;;;;Pin_2" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Pin_2.h" value="HEADER;;;;;Pin_2" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoB_Out_aliases.h" value="HEADER;;;;;ServoB_Out" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoB_Out.c" value="SOURCE_C;CortexM3;;;;ServoB_Out" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoB_Out.h" value="HEADER;;;;;ServoB_Out" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Pin_3_aliases.h" value="HEADER;;;;;Pin_3" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Pin_3.c" value="SOURCE_C;CortexM3;;;;Pin_3" />
-  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Pin_3.h" value="HEADER;;;;;Pin_3" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoA_Out_aliases.h" value="HEADER;;;;;ServoA_Out" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoA_Out.c" value="SOURCE_C;CortexM3;;;;ServoA_Out" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoA_Out.h" value="HEADER;;;;;ServoA_Out" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoD_Out_aliases.h" value="HEADER;;;;;ServoD_Out" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoD_Out.c" value="SOURCE_C;CortexM3;;;;ServoD_Out" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoD_Out.h" value="HEADER;;;;;ServoD_Out" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoAB.c" value="SOURCE_C;CortexM3;;;;ServoAB" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoAB.h" value="HEADER;;;;;ServoAB" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoAB_PM.c" value="SOURCE_C;CortexM3;;;;ServoAB" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoCD.c" value="SOURCE_C;CortexM3;;;;ServoCD" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoCD.h" value="HEADER;;;;;ServoCD" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoCD_PM.c" value="SOURCE_C;CortexM3;;;;ServoCD" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoC_Out_aliases.h" value="HEADER;;;;;ServoC_Out" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoC_Out.c" value="SOURCE_C;CortexM3;;;;ServoC_Out" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\ServoC_Out.h" value="HEADER;;;;;ServoC_Out" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_QuadDec.c" value="SOURCE_C;CortexM3;;;;MotorB_QuadDec" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_QuadDec.h" value="HEADER;;;;;MotorB_QuadDec" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_QuadDec_PM.c" value="SOURCE_C;CortexM3;;;;MotorB_QuadDec" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MB_Encoder_aliases.h" value="HEADER;;;;;MB_Encoder" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MB_Encoder.c" value="SOURCE_C;CortexM3;;;;MB_Encoder" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MB_Encoder.h" value="HEADER;;;;;MB_Encoder" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_ISR.c" value="SOURCE_C;CortexM3;;;;MotorB_ISR" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_ISR.h" value="HEADER;;;;;MotorB_ISR" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_PWM.c" value="SOURCE_C;CortexM3;;;;MotorB_PWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_PWM.h" value="HEADER;;;;;MotorB_PWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_PWM_PM.c" value="SOURCE_C;CortexM3;;;;MotorB_PWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MB_PWM_aliases.h" value="HEADER;;;;;MB_PWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MB_PWM.c" value="SOURCE_C;CortexM3;;;;MB_PWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MB_PWM.h" value="HEADER;;;;;MB_PWM" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Clock_4.c" value="SOURCE_C;CortexM3;;;;Clock_4" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Clock_4.h" value="HEADER;;;;;Clock_4" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCW_1_aliases.h" value="HEADER;;;;;MotorCW_1" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCW_1.c" value="SOURCE_C;CortexM3;;;;MotorCW_1" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCW_1.h" value="HEADER;;;;;MotorCW_1" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_Dir.h" value="HEADER;;;;;MotorB_Dir" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_Dir.c" value="SOURCE_C;CortexM3;;;;MotorB_Dir" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_Dir_PM.c" value="SOURCE_C;CortexM3;;;;MotorB_Dir" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCCW_1_aliases.h" value="HEADER;;;;;MotorCCW_1" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCCW_1.c" value="SOURCE_C;CortexM3;;;;MotorCCW_1" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorCCW_1.h" value="HEADER;;;;;MotorCCW_1" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_IntClock" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\UART_IntClock.h" value="HEADER;;;;;UART_IntClock" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_QuadDec_Cnt16.c" value="SOURCE_C;CortexM3;;;;MotorA_QuadDec_Cnt16" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_QuadDec_Cnt16.h" value="HEADER;;;;;MotorA_QuadDec_Cnt16" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorA_QuadDec_Cnt16_PM.c" value="SOURCE_C;CortexM3;;;;MotorA_QuadDec_Cnt16" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_QuadDec_Cnt16.c" value="SOURCE_C;CortexM3;;;;MotorB_QuadDec_Cnt16" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_QuadDec_Cnt16.h" value="HEADER;;;;;MotorB_QuadDec_Cnt16" />
+  <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\MotorB_QuadDec_Cnt16_PM.c" value="SOURCE_C;CortexM3;;;;MotorB_QuadDec_Cnt16" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Cm3RealView.scat" value="LINKER_SCRIPT;;;fdb8e1ae-f83a-46cf-9446-1d703716f38a;;cy_boot" />
   <file name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\codegentemp\Cm3Start.c" value="SOURCE_C;CortexM3;;;;cy_boot" />

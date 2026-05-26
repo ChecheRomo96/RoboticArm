@@ -1,0 +1,2335 @@
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"ServosHW.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.ServoDriver_Start,"ax",%progbits
+  20              		.align	2
+  21              		.global	ServoDriver_Start
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	ServoDriver_Start, %function
+  25              	ServoDriver_Start:
+  26              	.LFB63:
+  27              		.file 1 "ServosHW.c"
+   1:ServosHW.c    **** /* ========================================
+   2:ServosHW.c    ****  *
+   3:ServosHW.c    ****  * Copyright YOUR COMPANY, THE YEAR
+   4:ServosHW.c    ****  * All Rights Reserved
+   5:ServosHW.c    ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:ServosHW.c    ****  *
+   7:ServosHW.c    ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:ServosHW.c    ****  * WHICH IS THE PROPERTY OF your company.
+   9:ServosHW.c    ****  *
+  10:ServosHW.c    ****  * ========================================
+  11:ServosHW.c    **** */
+  12:ServosHW.c    ****     #include "project.h"
+  13:ServosHW.c    **** 
+  14:ServosHW.c    ****     void ServoDriver_Start(){
+  28              		.loc 1 14 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 08B5     		push	{r3, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  15:ServosHW.c    ****         Servo_PWM_Start();
+  36              		.loc 1 15 0
+  37 0002 FFF7FEFF 		bl	Servo_PWM_Start
+  38              	.LVL0:
+  16:ServosHW.c    ****         ServoAB_Start();
+  39              		.loc 1 16 0
+  40 0006 FFF7FEFF 		bl	ServoAB_Start
+  41              	.LVL1:
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 2
+
+
+  17:ServosHW.c    ****         ServoCD_Start();
+  42              		.loc 1 17 0
+  43 000a FFF7FEFF 		bl	ServoCD_Start
+  44              	.LVL2:
+  45 000e 08BD     		pop	{r3, pc}
+  46              		.cfi_endproc
+  47              	.LFE63:
+  48              		.size	ServoDriver_Start, .-ServoDriver_Start
+  49              		.section	.text.ServoA_SetPositionTicks,"ax",%progbits
+  50              		.align	2
+  51              		.global	ServoA_SetPositionTicks
+  52              		.thumb
+  53              		.thumb_func
+  54              		.type	ServoA_SetPositionTicks, %function
+  55              	ServoA_SetPositionTicks:
+  56              	.LFB64:
+  18:ServosHW.c    ****     }
+  19:ServosHW.c    ****     
+  20:ServosHW.c    ****     void ServoA_SetPositionTicks(uint16_t x){
+  57              		.loc 1 20 0
+  58              		.cfi_startproc
+  59              		@ args = 0, pretend = 0, frame = 0
+  60              		@ frame_needed = 0, uses_anonymous_args = 0
+  61              	.LVL3:
+  62 0000 10B5     		push	{r4, lr}
+  63              		.cfi_def_cfa_offset 8
+  64              		.cfi_offset 4, -8
+  65              		.cfi_offset 14, -4
+  66 0002 0446     		mov	r4, r0
+  21:ServosHW.c    ****         if(x > ServoAB_ReadPeriod()){
+  67              		.loc 1 21 0
+  68 0004 FFF7FEFF 		bl	ServoAB_ReadPeriod
+  69              	.LVL4:
+  70 0008 A042     		cmp	r0, r4
+  71 000a 02D3     		bcc	.L3
+  22:ServosHW.c    ****             return;
+  23:ServosHW.c    ****         }
+  24:ServosHW.c    ****         
+  25:ServosHW.c    ****         ServoAB_WriteCompare1(x);
+  72              		.loc 1 25 0
+  73 000c 2046     		mov	r0, r4
+  74 000e FFF7FEFF 		bl	ServoAB_WriteCompare1
+  75              	.LVL5:
+  76              	.L3:
+  77 0012 10BD     		pop	{r4, pc}
+  78              		.cfi_endproc
+  79              	.LFE64:
+  80              		.size	ServoA_SetPositionTicks, .-ServoA_SetPositionTicks
+  81              		.global	__aeabi_fcmpgt
+  82              		.global	__aeabi_fcmplt
+  83              		.global	__aeabi_f2d
+  84              		.global	__aeabi_dsub
+  85              		.global	__aeabi_i2d
+  86              		.global	__aeabi_dmul
+  87              		.global	__aeabi_d2uiz
+  88              		.section	.text.ServoA_SetPositionNorm,"ax",%progbits
+  89              		.align	2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 3
+
+
+  90              		.global	ServoA_SetPositionNorm
+  91              		.thumb
+  92              		.thumb_func
+  93              		.type	ServoA_SetPositionNorm, %function
+  94              	ServoA_SetPositionNorm:
+  95              	.LFB65:
+  26:ServosHW.c    ****     }
+  27:ServosHW.c    ****     
+  28:ServosHW.c    ****     void ServoA_SetPositionNorm(float x){
+  96              		.loc 1 28 0
+  97              		.cfi_startproc
+  98              		@ args = 0, pretend = 0, frame = 0
+  99              		@ frame_needed = 0, uses_anonymous_args = 0
+ 100              	.LVL6:
+ 101 0000 70B5     		push	{r4, r5, r6, lr}
+ 102              		.cfi_def_cfa_offset 16
+ 103              		.cfi_offset 4, -16
+ 104              		.cfi_offset 5, -12
+ 105              		.cfi_offset 6, -8
+ 106              		.cfi_offset 14, -4
+ 107 0002 0446     		mov	r4, r0
+  29:ServosHW.c    ****         if((x > 1.0) || (x < 0.0f)){
+ 108              		.loc 1 29 0
+ 109 0004 4FF07E51 		mov	r1, #1065353216
+ 110 0008 FFF7FEFF 		bl	__aeabi_fcmpgt
+ 111              	.LVL7:
+ 112 000c F0B9     		cbnz	r0, .L6
+ 113              		.loc 1 29 0 is_stmt 0 discriminator 1
+ 114 000e 0021     		movs	r1, #0
+ 115 0010 2046     		mov	r0, r4
+ 116 0012 FFF7FEFF 		bl	__aeabi_fcmplt
+ 117              	.LVL8:
+ 118 0016 C8B9     		cbnz	r0, .L6
+  30:ServosHW.c    ****             return;
+  31:ServosHW.c    ****         }
+  32:ServosHW.c    ****         
+  33:ServosHW.c    ****         uint16_t y = ServoAB_ReadPeriod() * (1.0 - x);
+ 119              		.loc 1 33 0 is_stmt 1
+ 120 0018 FFF7FEFF 		bl	ServoAB_ReadPeriod
+ 121              	.LVL9:
+ 122 001c 0646     		mov	r6, r0
+ 123 001e 2046     		mov	r0, r4
+ 124 0020 FFF7FEFF 		bl	__aeabi_f2d
+ 125              	.LVL10:
+ 126 0024 0246     		mov	r2, r0
+ 127 0026 0B46     		mov	r3, r1
+ 128 0028 0020     		movs	r0, #0
+ 129 002a 0949     		ldr	r1, .L9
+ 130 002c FFF7FEFF 		bl	__aeabi_dsub
+ 131              	.LVL11:
+ 132 0030 0446     		mov	r4, r0
+ 133              	.LVL12:
+ 134 0032 0D46     		mov	r5, r1
+ 135 0034 3046     		mov	r0, r6
+ 136 0036 FFF7FEFF 		bl	__aeabi_i2d
+ 137              	.LVL13:
+ 138 003a 2246     		mov	r2, r4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 4
+
+
+ 139 003c 2B46     		mov	r3, r5
+ 140 003e FFF7FEFF 		bl	__aeabi_dmul
+ 141              	.LVL14:
+ 142 0042 FFF7FEFF 		bl	__aeabi_d2uiz
+ 143              	.LVL15:
+  34:ServosHW.c    ****         
+  35:ServosHW.c    ****         ServoAB_WriteCompare1(y);
+ 144              		.loc 1 35 0
+ 145 0046 80B2     		uxth	r0, r0
+ 146 0048 FFF7FEFF 		bl	ServoAB_WriteCompare1
+ 147              	.LVL16:
+ 148              	.L6:
+ 149 004c 70BD     		pop	{r4, r5, r6, pc}
+ 150              	.L10:
+ 151 004e 00BF     		.align	2
+ 152              	.L9:
+ 153 0050 0000F03F 		.word	1072693248
+ 154              		.cfi_endproc
+ 155              	.LFE65:
+ 156              		.size	ServoA_SetPositionNorm, .-ServoA_SetPositionNorm
+ 157              		.section	.text.ServoA_GetPositionTicks,"ax",%progbits
+ 158              		.align	2
+ 159              		.global	ServoA_GetPositionTicks
+ 160              		.thumb
+ 161              		.thumb_func
+ 162              		.type	ServoA_GetPositionTicks, %function
+ 163              	ServoA_GetPositionTicks:
+ 164              	.LFB66:
+  36:ServosHW.c    ****     }
+  37:ServosHW.c    ****     
+  38:ServosHW.c    ****     uint16_t ServoA_GetPositionTicks(){
+ 165              		.loc 1 38 0
+ 166              		.cfi_startproc
+ 167              		@ args = 0, pretend = 0, frame = 0
+ 168              		@ frame_needed = 0, uses_anonymous_args = 0
+ 169 0000 08B5     		push	{r3, lr}
+ 170              		.cfi_def_cfa_offset 8
+ 171              		.cfi_offset 3, -8
+ 172              		.cfi_offset 14, -4
+  39:ServosHW.c    ****         // Implementation for getting position in ticks of ServoA
+  40:ServosHW.c    ****         return ServoAB_ReadCompare1();
+ 173              		.loc 1 40 0
+ 174 0002 FFF7FEFF 		bl	ServoAB_ReadCompare1
+ 175              	.LVL17:
+  41:ServosHW.c    ****     }
+ 176              		.loc 1 41 0
+ 177 0006 08BD     		pop	{r3, pc}
+ 178              		.cfi_endproc
+ 179              	.LFE66:
+ 180              		.size	ServoA_GetPositionTicks, .-ServoA_GetPositionTicks
+ 181              		.global	__aeabi_ui2f
+ 182              		.global	__aeabi_fdiv
+ 183              		.global	__aeabi_fsub
+ 184              		.section	.text.ServoA_GetPositionNorm,"ax",%progbits
+ 185              		.align	2
+ 186              		.global	ServoA_GetPositionNorm
+ 187              		.thumb
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 5
+
+
+ 188              		.thumb_func
+ 189              		.type	ServoA_GetPositionNorm, %function
+ 190              	ServoA_GetPositionNorm:
+ 191              	.LFB67:
+  42:ServosHW.c    ****     
+  43:ServosHW.c    ****     float ServoA_GetPositionNorm(){
+ 192              		.loc 1 43 0
+ 193              		.cfi_startproc
+ 194              		@ args = 0, pretend = 0, frame = 0
+ 195              		@ frame_needed = 0, uses_anonymous_args = 0
+ 196 0000 10B5     		push	{r4, lr}
+ 197              		.cfi_def_cfa_offset 8
+ 198              		.cfi_offset 4, -8
+ 199              		.cfi_offset 14, -4
+  44:ServosHW.c    ****         // Implementation for getting normalized position of ServoA
+  45:ServosHW.c    ****         return 1.0 - ((float)ServoAB_ReadCompare1() / (float)ServoAB_ReadPeriod());
+ 200              		.loc 1 45 0
+ 201 0002 FFF7FEFF 		bl	ServoAB_ReadCompare1
+ 202              	.LVL18:
+ 203 0006 FFF7FEFF 		bl	__aeabi_ui2f
+ 204              	.LVL19:
+ 205 000a 0446     		mov	r4, r0
+ 206 000c FFF7FEFF 		bl	ServoAB_ReadPeriod
+ 207              	.LVL20:
+ 208 0010 FFF7FEFF 		bl	__aeabi_ui2f
+ 209              	.LVL21:
+ 210 0014 0146     		mov	r1, r0
+ 211 0016 2046     		mov	r0, r4
+ 212 0018 FFF7FEFF 		bl	__aeabi_fdiv
+ 213              	.LVL22:
+ 214 001c 0146     		mov	r1, r0
+ 215 001e 4FF07E50 		mov	r0, #1065353216
+ 216 0022 FFF7FEFF 		bl	__aeabi_fsub
+ 217              	.LVL23:
+  46:ServosHW.c    ****     }
+ 218              		.loc 1 46 0
+ 219 0026 10BD     		pop	{r4, pc}
+ 220              		.cfi_endproc
+ 221              	.LFE67:
+ 222              		.size	ServoA_GetPositionNorm, .-ServoA_GetPositionNorm
+ 223              		.section	.text.ServoB_SetPositionTicks,"ax",%progbits
+ 224              		.align	2
+ 225              		.global	ServoB_SetPositionTicks
+ 226              		.thumb
+ 227              		.thumb_func
+ 228              		.type	ServoB_SetPositionTicks, %function
+ 229              	ServoB_SetPositionTicks:
+ 230              	.LFB68:
+  47:ServosHW.c    ****     
+  48:ServosHW.c    ****     
+  49:ServosHW.c    ****     void ServoB_SetPositionTicks(uint16_t x){
+ 231              		.loc 1 49 0
+ 232              		.cfi_startproc
+ 233              		@ args = 0, pretend = 0, frame = 0
+ 234              		@ frame_needed = 0, uses_anonymous_args = 0
+ 235              	.LVL24:
+ 236 0000 10B5     		push	{r4, lr}
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 6
+
+
+ 237              		.cfi_def_cfa_offset 8
+ 238              		.cfi_offset 4, -8
+ 239              		.cfi_offset 14, -4
+ 240 0002 0446     		mov	r4, r0
+  50:ServosHW.c    ****         if(x > ServoAB_ReadPeriod()){
+ 241              		.loc 1 50 0
+ 242 0004 FFF7FEFF 		bl	ServoAB_ReadPeriod
+ 243              	.LVL25:
+ 244 0008 A042     		cmp	r0, r4
+ 245 000a 02D3     		bcc	.L15
+  51:ServosHW.c    ****             return;
+  52:ServosHW.c    ****         }
+  53:ServosHW.c    ****         
+  54:ServosHW.c    ****         ServoAB_WriteCompare2(x);
+ 246              		.loc 1 54 0
+ 247 000c 2046     		mov	r0, r4
+ 248 000e FFF7FEFF 		bl	ServoAB_WriteCompare2
+ 249              	.LVL26:
+ 250              	.L15:
+ 251 0012 10BD     		pop	{r4, pc}
+ 252              		.cfi_endproc
+ 253              	.LFE68:
+ 254              		.size	ServoB_SetPositionTicks, .-ServoB_SetPositionTicks
+ 255              		.section	.text.ServoB_SetPositionNorm,"ax",%progbits
+ 256              		.align	2
+ 257              		.global	ServoB_SetPositionNorm
+ 258              		.thumb
+ 259              		.thumb_func
+ 260              		.type	ServoB_SetPositionNorm, %function
+ 261              	ServoB_SetPositionNorm:
+ 262              	.LFB69:
+  55:ServosHW.c    ****     }
+  56:ServosHW.c    ****     
+  57:ServosHW.c    ****     void ServoB_SetPositionNorm(float x){
+ 263              		.loc 1 57 0
+ 264              		.cfi_startproc
+ 265              		@ args = 0, pretend = 0, frame = 0
+ 266              		@ frame_needed = 0, uses_anonymous_args = 0
+ 267              	.LVL27:
+ 268 0000 70B5     		push	{r4, r5, r6, lr}
+ 269              		.cfi_def_cfa_offset 16
+ 270              		.cfi_offset 4, -16
+ 271              		.cfi_offset 5, -12
+ 272              		.cfi_offset 6, -8
+ 273              		.cfi_offset 14, -4
+ 274 0002 0446     		mov	r4, r0
+  58:ServosHW.c    ****         if((x > 1.0) || (x < 0.0f)){
+ 275              		.loc 1 58 0
+ 276 0004 4FF07E51 		mov	r1, #1065353216
+ 277 0008 FFF7FEFF 		bl	__aeabi_fcmpgt
+ 278              	.LVL28:
+ 279 000c F0B9     		cbnz	r0, .L18
+ 280              		.loc 1 58 0 is_stmt 0 discriminator 1
+ 281 000e 0021     		movs	r1, #0
+ 282 0010 2046     		mov	r0, r4
+ 283 0012 FFF7FEFF 		bl	__aeabi_fcmplt
+ 284              	.LVL29:
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 7
+
+
+ 285 0016 C8B9     		cbnz	r0, .L18
+  59:ServosHW.c    ****             return;
+  60:ServosHW.c    ****         }
+  61:ServosHW.c    ****         
+  62:ServosHW.c    ****         uint16_t y = ServoAB_ReadPeriod() * (1.0 - x);
+ 286              		.loc 1 62 0 is_stmt 1
+ 287 0018 FFF7FEFF 		bl	ServoAB_ReadPeriod
+ 288              	.LVL30:
+ 289 001c 0646     		mov	r6, r0
+ 290 001e 2046     		mov	r0, r4
+ 291 0020 FFF7FEFF 		bl	__aeabi_f2d
+ 292              	.LVL31:
+ 293 0024 0246     		mov	r2, r0
+ 294 0026 0B46     		mov	r3, r1
+ 295 0028 0020     		movs	r0, #0
+ 296 002a 0949     		ldr	r1, .L21
+ 297 002c FFF7FEFF 		bl	__aeabi_dsub
+ 298              	.LVL32:
+ 299 0030 0446     		mov	r4, r0
+ 300              	.LVL33:
+ 301 0032 0D46     		mov	r5, r1
+ 302 0034 3046     		mov	r0, r6
+ 303 0036 FFF7FEFF 		bl	__aeabi_i2d
+ 304              	.LVL34:
+ 305 003a 2246     		mov	r2, r4
+ 306 003c 2B46     		mov	r3, r5
+ 307 003e FFF7FEFF 		bl	__aeabi_dmul
+ 308              	.LVL35:
+ 309 0042 FFF7FEFF 		bl	__aeabi_d2uiz
+ 310              	.LVL36:
+  63:ServosHW.c    ****         
+  64:ServosHW.c    ****         ServoAB_WriteCompare2(y);
+ 311              		.loc 1 64 0
+ 312 0046 80B2     		uxth	r0, r0
+ 313 0048 FFF7FEFF 		bl	ServoAB_WriteCompare2
+ 314              	.LVL37:
+ 315              	.L18:
+ 316 004c 70BD     		pop	{r4, r5, r6, pc}
+ 317              	.L22:
+ 318 004e 00BF     		.align	2
+ 319              	.L21:
+ 320 0050 0000F03F 		.word	1072693248
+ 321              		.cfi_endproc
+ 322              	.LFE69:
+ 323              		.size	ServoB_SetPositionNorm, .-ServoB_SetPositionNorm
+ 324              		.section	.text.ServoB_GetPositionTicks,"ax",%progbits
+ 325              		.align	2
+ 326              		.global	ServoB_GetPositionTicks
+ 327              		.thumb
+ 328              		.thumb_func
+ 329              		.type	ServoB_GetPositionTicks, %function
+ 330              	ServoB_GetPositionTicks:
+ 331              	.LFB70:
+  65:ServosHW.c    ****     }
+  66:ServosHW.c    ****     
+  67:ServosHW.c    ****     uint16_t ServoB_GetPositionTicks(){
+ 332              		.loc 1 67 0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 8
+
+
+ 333              		.cfi_startproc
+ 334              		@ args = 0, pretend = 0, frame = 0
+ 335              		@ frame_needed = 0, uses_anonymous_args = 0
+ 336 0000 08B5     		push	{r3, lr}
+ 337              		.cfi_def_cfa_offset 8
+ 338              		.cfi_offset 3, -8
+ 339              		.cfi_offset 14, -4
+  68:ServosHW.c    ****         // Implementation for getting position in ticks of ServoB
+  69:ServosHW.c    ****         return ServoAB_ReadCompare2();
+ 340              		.loc 1 69 0
+ 341 0002 FFF7FEFF 		bl	ServoAB_ReadCompare2
+ 342              	.LVL38:
+  70:ServosHW.c    ****     }
+ 343              		.loc 1 70 0
+ 344 0006 08BD     		pop	{r3, pc}
+ 345              		.cfi_endproc
+ 346              	.LFE70:
+ 347              		.size	ServoB_GetPositionTicks, .-ServoB_GetPositionTicks
+ 348              		.section	.text.ServoB_GetPositionNorm,"ax",%progbits
+ 349              		.align	2
+ 350              		.global	ServoB_GetPositionNorm
+ 351              		.thumb
+ 352              		.thumb_func
+ 353              		.type	ServoB_GetPositionNorm, %function
+ 354              	ServoB_GetPositionNorm:
+ 355              	.LFB71:
+  71:ServosHW.c    ****     
+  72:ServosHW.c    ****     float ServoB_GetPositionNorm(){
+ 356              		.loc 1 72 0
+ 357              		.cfi_startproc
+ 358              		@ args = 0, pretend = 0, frame = 0
+ 359              		@ frame_needed = 0, uses_anonymous_args = 0
+ 360 0000 10B5     		push	{r4, lr}
+ 361              		.cfi_def_cfa_offset 8
+ 362              		.cfi_offset 4, -8
+ 363              		.cfi_offset 14, -4
+  73:ServosHW.c    ****         // Implementation for getting normalized position of ServoB
+  74:ServosHW.c    ****         return 1.0 - ((float)ServoAB_ReadCompare2() / (float)ServoAB_ReadPeriod());
+ 364              		.loc 1 74 0
+ 365 0002 FFF7FEFF 		bl	ServoAB_ReadCompare2
+ 366              	.LVL39:
+ 367 0006 FFF7FEFF 		bl	__aeabi_ui2f
+ 368              	.LVL40:
+ 369 000a 0446     		mov	r4, r0
+ 370 000c FFF7FEFF 		bl	ServoAB_ReadPeriod
+ 371              	.LVL41:
+ 372 0010 FFF7FEFF 		bl	__aeabi_ui2f
+ 373              	.LVL42:
+ 374 0014 0146     		mov	r1, r0
+ 375 0016 2046     		mov	r0, r4
+ 376 0018 FFF7FEFF 		bl	__aeabi_fdiv
+ 377              	.LVL43:
+ 378 001c 0146     		mov	r1, r0
+ 379 001e 4FF07E50 		mov	r0, #1065353216
+ 380 0022 FFF7FEFF 		bl	__aeabi_fsub
+ 381              	.LVL44:
+  75:ServosHW.c    ****     }
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 9
+
+
+ 382              		.loc 1 75 0
+ 383 0026 10BD     		pop	{r4, pc}
+ 384              		.cfi_endproc
+ 385              	.LFE71:
+ 386              		.size	ServoB_GetPositionNorm, .-ServoB_GetPositionNorm
+ 387              		.section	.text.ServoC_SetPositionTicks,"ax",%progbits
+ 388              		.align	2
+ 389              		.global	ServoC_SetPositionTicks
+ 390              		.thumb
+ 391              		.thumb_func
+ 392              		.type	ServoC_SetPositionTicks, %function
+ 393              	ServoC_SetPositionTicks:
+ 394              	.LFB72:
+  76:ServosHW.c    **** 
+  77:ServosHW.c    ****     
+  78:ServosHW.c    ****     void ServoC_SetPositionTicks(uint16_t x){
+ 395              		.loc 1 78 0
+ 396              		.cfi_startproc
+ 397              		@ args = 0, pretend = 0, frame = 0
+ 398              		@ frame_needed = 0, uses_anonymous_args = 0
+ 399              	.LVL45:
+ 400 0000 10B5     		push	{r4, lr}
+ 401              		.cfi_def_cfa_offset 8
+ 402              		.cfi_offset 4, -8
+ 403              		.cfi_offset 14, -4
+ 404 0002 0446     		mov	r4, r0
+  79:ServosHW.c    ****         if(x > ServoCD_ReadPeriod()){
+ 405              		.loc 1 79 0
+ 406 0004 FFF7FEFF 		bl	ServoCD_ReadPeriod
+ 407              	.LVL46:
+ 408 0008 A042     		cmp	r0, r4
+ 409 000a 02D3     		bcc	.L27
+  80:ServosHW.c    ****             return;
+  81:ServosHW.c    ****         }
+  82:ServosHW.c    ****         
+  83:ServosHW.c    ****         ServoCD_WriteCompare1(x);
+ 410              		.loc 1 83 0
+ 411 000c 2046     		mov	r0, r4
+ 412 000e FFF7FEFF 		bl	ServoCD_WriteCompare1
+ 413              	.LVL47:
+ 414              	.L27:
+ 415 0012 10BD     		pop	{r4, pc}
+ 416              		.cfi_endproc
+ 417              	.LFE72:
+ 418              		.size	ServoC_SetPositionTicks, .-ServoC_SetPositionTicks
+ 419              		.section	.text.ServoC_SetPositionNorm,"ax",%progbits
+ 420              		.align	2
+ 421              		.global	ServoC_SetPositionNorm
+ 422              		.thumb
+ 423              		.thumb_func
+ 424              		.type	ServoC_SetPositionNorm, %function
+ 425              	ServoC_SetPositionNorm:
+ 426              	.LFB73:
+  84:ServosHW.c    ****     }
+  85:ServosHW.c    ****     
+  86:ServosHW.c    ****     void ServoC_SetPositionNorm(float x){
+ 427              		.loc 1 86 0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 10
+
+
+ 428              		.cfi_startproc
+ 429              		@ args = 0, pretend = 0, frame = 0
+ 430              		@ frame_needed = 0, uses_anonymous_args = 0
+ 431              	.LVL48:
+ 432 0000 70B5     		push	{r4, r5, r6, lr}
+ 433              		.cfi_def_cfa_offset 16
+ 434              		.cfi_offset 4, -16
+ 435              		.cfi_offset 5, -12
+ 436              		.cfi_offset 6, -8
+ 437              		.cfi_offset 14, -4
+ 438 0002 0446     		mov	r4, r0
+  87:ServosHW.c    ****         if((x > 1.0) || (x < 0.0f)){
+ 439              		.loc 1 87 0
+ 440 0004 4FF07E51 		mov	r1, #1065353216
+ 441 0008 FFF7FEFF 		bl	__aeabi_fcmpgt
+ 442              	.LVL49:
+ 443 000c F0B9     		cbnz	r0, .L30
+ 444              		.loc 1 87 0 is_stmt 0 discriminator 1
+ 445 000e 0021     		movs	r1, #0
+ 446 0010 2046     		mov	r0, r4
+ 447 0012 FFF7FEFF 		bl	__aeabi_fcmplt
+ 448              	.LVL50:
+ 449 0016 C8B9     		cbnz	r0, .L30
+  88:ServosHW.c    ****             return;
+  89:ServosHW.c    ****         }
+  90:ServosHW.c    ****         
+  91:ServosHW.c    ****         uint16_t y = ServoCD_ReadPeriod() * (1.0 - x);
+ 450              		.loc 1 91 0 is_stmt 1
+ 451 0018 FFF7FEFF 		bl	ServoCD_ReadPeriod
+ 452              	.LVL51:
+ 453 001c 0646     		mov	r6, r0
+ 454 001e 2046     		mov	r0, r4
+ 455 0020 FFF7FEFF 		bl	__aeabi_f2d
+ 456              	.LVL52:
+ 457 0024 0246     		mov	r2, r0
+ 458 0026 0B46     		mov	r3, r1
+ 459 0028 0020     		movs	r0, #0
+ 460 002a 0949     		ldr	r1, .L33
+ 461 002c FFF7FEFF 		bl	__aeabi_dsub
+ 462              	.LVL53:
+ 463 0030 0446     		mov	r4, r0
+ 464              	.LVL54:
+ 465 0032 0D46     		mov	r5, r1
+ 466 0034 3046     		mov	r0, r6
+ 467 0036 FFF7FEFF 		bl	__aeabi_i2d
+ 468              	.LVL55:
+ 469 003a 2246     		mov	r2, r4
+ 470 003c 2B46     		mov	r3, r5
+ 471 003e FFF7FEFF 		bl	__aeabi_dmul
+ 472              	.LVL56:
+ 473 0042 FFF7FEFF 		bl	__aeabi_d2uiz
+ 474              	.LVL57:
+  92:ServosHW.c    ****         
+  93:ServosHW.c    ****         ServoCD_WriteCompare1(y);
+ 475              		.loc 1 93 0
+ 476 0046 80B2     		uxth	r0, r0
+ 477 0048 FFF7FEFF 		bl	ServoCD_WriteCompare1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 11
+
+
+ 478              	.LVL58:
+ 479              	.L30:
+ 480 004c 70BD     		pop	{r4, r5, r6, pc}
+ 481              	.L34:
+ 482 004e 00BF     		.align	2
+ 483              	.L33:
+ 484 0050 0000F03F 		.word	1072693248
+ 485              		.cfi_endproc
+ 486              	.LFE73:
+ 487              		.size	ServoC_SetPositionNorm, .-ServoC_SetPositionNorm
+ 488              		.section	.text.ServoC_GetPositionTicks,"ax",%progbits
+ 489              		.align	2
+ 490              		.global	ServoC_GetPositionTicks
+ 491              		.thumb
+ 492              		.thumb_func
+ 493              		.type	ServoC_GetPositionTicks, %function
+ 494              	ServoC_GetPositionTicks:
+ 495              	.LFB74:
+  94:ServosHW.c    ****     }
+  95:ServosHW.c    ****     
+  96:ServosHW.c    ****     uint16_t ServoC_GetPositionTicks(){
+ 496              		.loc 1 96 0
+ 497              		.cfi_startproc
+ 498              		@ args = 0, pretend = 0, frame = 0
+ 499              		@ frame_needed = 0, uses_anonymous_args = 0
+ 500 0000 08B5     		push	{r3, lr}
+ 501              		.cfi_def_cfa_offset 8
+ 502              		.cfi_offset 3, -8
+ 503              		.cfi_offset 14, -4
+  97:ServosHW.c    ****         // Implementation for getting position in ticks of ServoC
+  98:ServosHW.c    ****         return ServoCD_ReadCompare1();
+ 504              		.loc 1 98 0
+ 505 0002 FFF7FEFF 		bl	ServoCD_ReadCompare1
+ 506              	.LVL59:
+  99:ServosHW.c    ****     }
+ 507              		.loc 1 99 0
+ 508 0006 08BD     		pop	{r3, pc}
+ 509              		.cfi_endproc
+ 510              	.LFE74:
+ 511              		.size	ServoC_GetPositionTicks, .-ServoC_GetPositionTicks
+ 512              		.section	.text.ServoC_GetPositionNorm,"ax",%progbits
+ 513              		.align	2
+ 514              		.global	ServoC_GetPositionNorm
+ 515              		.thumb
+ 516              		.thumb_func
+ 517              		.type	ServoC_GetPositionNorm, %function
+ 518              	ServoC_GetPositionNorm:
+ 519              	.LFB75:
+ 100:ServosHW.c    ****     
+ 101:ServosHW.c    ****     float ServoC_GetPositionNorm(){
+ 520              		.loc 1 101 0
+ 521              		.cfi_startproc
+ 522              		@ args = 0, pretend = 0, frame = 0
+ 523              		@ frame_needed = 0, uses_anonymous_args = 0
+ 524 0000 10B5     		push	{r4, lr}
+ 525              		.cfi_def_cfa_offset 8
+ 526              		.cfi_offset 4, -8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 12
+
+
+ 527              		.cfi_offset 14, -4
+ 102:ServosHW.c    ****         // Implementation for getting normalized position of ServoC
+ 103:ServosHW.c    ****         return 1.0 - ((float)ServoCD_ReadCompare1() / (float)ServoCD_ReadPeriod());
+ 528              		.loc 1 103 0
+ 529 0002 FFF7FEFF 		bl	ServoCD_ReadCompare1
+ 530              	.LVL60:
+ 531 0006 FFF7FEFF 		bl	__aeabi_ui2f
+ 532              	.LVL61:
+ 533 000a 0446     		mov	r4, r0
+ 534 000c FFF7FEFF 		bl	ServoCD_ReadPeriod
+ 535              	.LVL62:
+ 536 0010 FFF7FEFF 		bl	__aeabi_ui2f
+ 537              	.LVL63:
+ 538 0014 0146     		mov	r1, r0
+ 539 0016 2046     		mov	r0, r4
+ 540 0018 FFF7FEFF 		bl	__aeabi_fdiv
+ 541              	.LVL64:
+ 542 001c 0146     		mov	r1, r0
+ 543 001e 4FF07E50 		mov	r0, #1065353216
+ 544 0022 FFF7FEFF 		bl	__aeabi_fsub
+ 545              	.LVL65:
+ 104:ServosHW.c    ****     }
+ 546              		.loc 1 104 0
+ 547 0026 10BD     		pop	{r4, pc}
+ 548              		.cfi_endproc
+ 549              	.LFE75:
+ 550              		.size	ServoC_GetPositionNorm, .-ServoC_GetPositionNorm
+ 551              		.section	.text.ServoD_SetPositionTicks,"ax",%progbits
+ 552              		.align	2
+ 553              		.global	ServoD_SetPositionTicks
+ 554              		.thumb
+ 555              		.thumb_func
+ 556              		.type	ServoD_SetPositionTicks, %function
+ 557              	ServoD_SetPositionTicks:
+ 558              	.LFB76:
+ 105:ServosHW.c    **** 
+ 106:ServosHW.c    ****     
+ 107:ServosHW.c    ****     
+ 108:ServosHW.c    ****     void ServoD_SetPositionTicks(uint16_t x){
+ 559              		.loc 1 108 0
+ 560              		.cfi_startproc
+ 561              		@ args = 0, pretend = 0, frame = 0
+ 562              		@ frame_needed = 0, uses_anonymous_args = 0
+ 563              	.LVL66:
+ 564 0000 10B5     		push	{r4, lr}
+ 565              		.cfi_def_cfa_offset 8
+ 566              		.cfi_offset 4, -8
+ 567              		.cfi_offset 14, -4
+ 568 0002 0446     		mov	r4, r0
+ 109:ServosHW.c    ****         if(x > ServoCD_ReadPeriod()){
+ 569              		.loc 1 109 0
+ 570 0004 FFF7FEFF 		bl	ServoCD_ReadPeriod
+ 571              	.LVL67:
+ 572 0008 A042     		cmp	r0, r4
+ 573 000a 02D3     		bcc	.L39
+ 110:ServosHW.c    ****             return;
+ 111:ServosHW.c    ****         }
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 13
+
+
+ 112:ServosHW.c    ****         
+ 113:ServosHW.c    ****         ServoCD_WriteCompare2(x);
+ 574              		.loc 1 113 0
+ 575 000c 2046     		mov	r0, r4
+ 576 000e FFF7FEFF 		bl	ServoCD_WriteCompare2
+ 577              	.LVL68:
+ 578              	.L39:
+ 579 0012 10BD     		pop	{r4, pc}
+ 580              		.cfi_endproc
+ 581              	.LFE76:
+ 582              		.size	ServoD_SetPositionTicks, .-ServoD_SetPositionTicks
+ 583              		.section	.text.ServoD_SetPositionNorm,"ax",%progbits
+ 584              		.align	2
+ 585              		.global	ServoD_SetPositionNorm
+ 586              		.thumb
+ 587              		.thumb_func
+ 588              		.type	ServoD_SetPositionNorm, %function
+ 589              	ServoD_SetPositionNorm:
+ 590              	.LFB77:
+ 114:ServosHW.c    ****     }
+ 115:ServosHW.c    ****     
+ 116:ServosHW.c    ****     void ServoD_SetPositionNorm(float x){
+ 591              		.loc 1 116 0
+ 592              		.cfi_startproc
+ 593              		@ args = 0, pretend = 0, frame = 0
+ 594              		@ frame_needed = 0, uses_anonymous_args = 0
+ 595              	.LVL69:
+ 596 0000 70B5     		push	{r4, r5, r6, lr}
+ 597              		.cfi_def_cfa_offset 16
+ 598              		.cfi_offset 4, -16
+ 599              		.cfi_offset 5, -12
+ 600              		.cfi_offset 6, -8
+ 601              		.cfi_offset 14, -4
+ 602 0002 0446     		mov	r4, r0
+ 117:ServosHW.c    ****         if((x > 1.0) || (x < 0.0f)){
+ 603              		.loc 1 117 0
+ 604 0004 4FF07E51 		mov	r1, #1065353216
+ 605 0008 FFF7FEFF 		bl	__aeabi_fcmpgt
+ 606              	.LVL70:
+ 607 000c F0B9     		cbnz	r0, .L42
+ 608              		.loc 1 117 0 is_stmt 0 discriminator 1
+ 609 000e 0021     		movs	r1, #0
+ 610 0010 2046     		mov	r0, r4
+ 611 0012 FFF7FEFF 		bl	__aeabi_fcmplt
+ 612              	.LVL71:
+ 613 0016 C8B9     		cbnz	r0, .L42
+ 118:ServosHW.c    ****             return;
+ 119:ServosHW.c    ****         }
+ 120:ServosHW.c    ****         
+ 121:ServosHW.c    ****         uint16_t y = ServoCD_ReadPeriod() * (1.0 - x);
+ 614              		.loc 1 121 0 is_stmt 1
+ 615 0018 FFF7FEFF 		bl	ServoCD_ReadPeriod
+ 616              	.LVL72:
+ 617 001c 0646     		mov	r6, r0
+ 618 001e 2046     		mov	r0, r4
+ 619 0020 FFF7FEFF 		bl	__aeabi_f2d
+ 620              	.LVL73:
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 14
+
+
+ 621 0024 0246     		mov	r2, r0
+ 622 0026 0B46     		mov	r3, r1
+ 623 0028 0020     		movs	r0, #0
+ 624 002a 0949     		ldr	r1, .L45
+ 625 002c FFF7FEFF 		bl	__aeabi_dsub
+ 626              	.LVL74:
+ 627 0030 0446     		mov	r4, r0
+ 628              	.LVL75:
+ 629 0032 0D46     		mov	r5, r1
+ 630 0034 3046     		mov	r0, r6
+ 631 0036 FFF7FEFF 		bl	__aeabi_i2d
+ 632              	.LVL76:
+ 633 003a 2246     		mov	r2, r4
+ 634 003c 2B46     		mov	r3, r5
+ 635 003e FFF7FEFF 		bl	__aeabi_dmul
+ 636              	.LVL77:
+ 637 0042 FFF7FEFF 		bl	__aeabi_d2uiz
+ 638              	.LVL78:
+ 122:ServosHW.c    ****         
+ 123:ServosHW.c    ****         ServoCD_WriteCompare2(y);
+ 639              		.loc 1 123 0
+ 640 0046 80B2     		uxth	r0, r0
+ 641 0048 FFF7FEFF 		bl	ServoCD_WriteCompare2
+ 642              	.LVL79:
+ 643              	.L42:
+ 644 004c 70BD     		pop	{r4, r5, r6, pc}
+ 645              	.L46:
+ 646 004e 00BF     		.align	2
+ 647              	.L45:
+ 648 0050 0000F03F 		.word	1072693248
+ 649              		.cfi_endproc
+ 650              	.LFE77:
+ 651              		.size	ServoD_SetPositionNorm, .-ServoD_SetPositionNorm
+ 652              		.section	.text.ServoD_GetPositionTicks,"ax",%progbits
+ 653              		.align	2
+ 654              		.global	ServoD_GetPositionTicks
+ 655              		.thumb
+ 656              		.thumb_func
+ 657              		.type	ServoD_GetPositionTicks, %function
+ 658              	ServoD_GetPositionTicks:
+ 659              	.LFB78:
+ 124:ServosHW.c    ****     }
+ 125:ServosHW.c    ****     
+ 126:ServosHW.c    ****     uint16_t ServoD_GetPositionTicks(){
+ 660              		.loc 1 126 0
+ 661              		.cfi_startproc
+ 662              		@ args = 0, pretend = 0, frame = 0
+ 663              		@ frame_needed = 0, uses_anonymous_args = 0
+ 664 0000 08B5     		push	{r3, lr}
+ 665              		.cfi_def_cfa_offset 8
+ 666              		.cfi_offset 3, -8
+ 667              		.cfi_offset 14, -4
+ 127:ServosHW.c    ****         // Implementation for getting position in ticks of ServoD
+ 128:ServosHW.c    ****         return ServoCD_ReadCompare2();
+ 668              		.loc 1 128 0
+ 669 0002 FFF7FEFF 		bl	ServoCD_ReadCompare2
+ 670              	.LVL80:
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 15
+
+
+ 129:ServosHW.c    ****     }
+ 671              		.loc 1 129 0
+ 672 0006 08BD     		pop	{r3, pc}
+ 673              		.cfi_endproc
+ 674              	.LFE78:
+ 675              		.size	ServoD_GetPositionTicks, .-ServoD_GetPositionTicks
+ 676              		.section	.text.ServoD_GetPositionNorm,"ax",%progbits
+ 677              		.align	2
+ 678              		.global	ServoD_GetPositionNorm
+ 679              		.thumb
+ 680              		.thumb_func
+ 681              		.type	ServoD_GetPositionNorm, %function
+ 682              	ServoD_GetPositionNorm:
+ 683              	.LFB79:
+ 130:ServosHW.c    ****     
+ 131:ServosHW.c    ****     float ServoD_GetPositionNorm(){
+ 684              		.loc 1 131 0
+ 685              		.cfi_startproc
+ 686              		@ args = 0, pretend = 0, frame = 0
+ 687              		@ frame_needed = 0, uses_anonymous_args = 0
+ 688 0000 10B5     		push	{r4, lr}
+ 689              		.cfi_def_cfa_offset 8
+ 690              		.cfi_offset 4, -8
+ 691              		.cfi_offset 14, -4
+ 132:ServosHW.c    ****         // Implementation for getting normalized position of ServoD
+ 133:ServosHW.c    ****         return 1.0 - ((float)ServoCD_ReadCompare2() / (float)ServoCD_ReadPeriod());
+ 692              		.loc 1 133 0
+ 693 0002 FFF7FEFF 		bl	ServoCD_ReadCompare2
+ 694              	.LVL81:
+ 695 0006 FFF7FEFF 		bl	__aeabi_ui2f
+ 696              	.LVL82:
+ 697 000a 0446     		mov	r4, r0
+ 698 000c FFF7FEFF 		bl	ServoCD_ReadPeriod
+ 699              	.LVL83:
+ 700 0010 FFF7FEFF 		bl	__aeabi_ui2f
+ 701              	.LVL84:
+ 702 0014 0146     		mov	r1, r0
+ 703 0016 2046     		mov	r0, r4
+ 704 0018 FFF7FEFF 		bl	__aeabi_fdiv
+ 705              	.LVL85:
+ 706 001c 0146     		mov	r1, r0
+ 707 001e 4FF07E50 		mov	r0, #1065353216
+ 708 0022 FFF7FEFF 		bl	__aeabi_fsub
+ 709              	.LVL86:
+ 134:ServosHW.c    ****     }
+ 710              		.loc 1 134 0
+ 711 0026 10BD     		pop	{r4, pc}
+ 712              		.cfi_endproc
+ 713              	.LFE79:
+ 714              		.size	ServoD_GetPositionNorm, .-ServoD_GetPositionNorm
+ 715              		.text
+ 716              	.Letext0:
+ 717              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 718              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 719              		.file 4 "Generated_Source\\PSoC5/Servo_PWM.h"
+ 720              		.file 5 "Generated_Source\\PSoC5/ServoAB.h"
+ 721              		.file 6 "Generated_Source\\PSoC5/ServoCD.h"
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 16
+
+
+ 722              		.file 7 "Generated_Source\\PSoC5/core_cm3.h"
+ 723              		.section	.debug_info,"",%progbits
+ 724              	.Ldebug_info0:
+ 725 0000 BC040000 		.4byte	0x4bc
+ 726 0004 0400     		.2byte	0x4
+ 727 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 728 000a 04       		.byte	0x4
+ 729 000b 01       		.uleb128 0x1
+ 730 000c EF000000 		.4byte	.LASF47
+ 731 0010 0C       		.byte	0xc
+ 732 0011 45020000 		.4byte	.LASF48
+ 733 0015 E8010000 		.4byte	.LASF49
+ 734 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 735 001d 00000000 		.4byte	0
+ 736 0021 00000000 		.4byte	.Ldebug_line0
+ 737 0025 02       		.uleb128 0x2
+ 738 0026 04       		.byte	0x4
+ 739 0027 04       		.byte	0x4
+ 740 0028 C4000000 		.4byte	.LASF0
+ 741 002c 02       		.uleb128 0x2
+ 742 002d 01       		.byte	0x1
+ 743 002e 06       		.byte	0x6
+ 744 002f F8030000 		.4byte	.LASF1
+ 745 0033 02       		.uleb128 0x2
+ 746 0034 01       		.byte	0x1
+ 747 0035 08       		.byte	0x8
+ 748 0036 E1000000 		.4byte	.LASF2
+ 749 003a 02       		.uleb128 0x2
+ 750 003b 02       		.byte	0x2
+ 751 003c 05       		.byte	0x5
+ 752 003d 91030000 		.4byte	.LASF3
+ 753 0041 03       		.uleb128 0x3
+ 754 0042 33020000 		.4byte	.LASF5
+ 755 0046 02       		.byte	0x2
+ 756 0047 2B       		.byte	0x2b
+ 757 0048 4C000000 		.4byte	0x4c
+ 758 004c 02       		.uleb128 0x2
+ 759 004d 02       		.byte	0x2
+ 760 004e 07       		.byte	0x7
+ 761 004f A6010000 		.4byte	.LASF4
+ 762 0053 03       		.uleb128 0x3
+ 763 0054 64000000 		.4byte	.LASF6
+ 764 0058 02       		.byte	0x2
+ 765 0059 3F       		.byte	0x3f
+ 766 005a 5E000000 		.4byte	0x5e
+ 767 005e 02       		.uleb128 0x2
+ 768 005f 04       		.byte	0x4
+ 769 0060 05       		.byte	0x5
+ 770 0061 E3030000 		.4byte	.LASF7
+ 771 0065 02       		.uleb128 0x2
+ 772 0066 04       		.byte	0x4
+ 773 0067 07       		.byte	0x7
+ 774 0068 94010000 		.4byte	.LASF8
+ 775 006c 02       		.uleb128 0x2
+ 776 006d 08       		.byte	0x8
+ 777 006e 05       		.byte	0x5
+ 778 006f 2A030000 		.4byte	.LASF9
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 17
+
+
+ 779 0073 02       		.uleb128 0x2
+ 780 0074 08       		.byte	0x8
+ 781 0075 07       		.byte	0x7
+ 782 0076 94020000 		.4byte	.LASF10
+ 783 007a 04       		.uleb128 0x4
+ 784 007b 04       		.byte	0x4
+ 785 007c 05       		.byte	0x5
+ 786 007d 696E7400 		.ascii	"int\000"
+ 787 0081 02       		.uleb128 0x2
+ 788 0082 04       		.byte	0x4
+ 789 0083 07       		.byte	0x7
+ 790 0084 6F020000 		.4byte	.LASF11
+ 791 0088 03       		.uleb128 0x3
+ 792 0089 9B030000 		.4byte	.LASF12
+ 793 008d 03       		.byte	0x3
+ 794 008e 24       		.byte	0x24
+ 795 008f 41000000 		.4byte	0x41
+ 796 0093 03       		.uleb128 0x3
+ 797 0094 BC000000 		.4byte	.LASF13
+ 798 0098 03       		.byte	0x3
+ 799 0099 2C       		.byte	0x2c
+ 800 009a 53000000 		.4byte	0x53
+ 801 009e 02       		.uleb128 0x2
+ 802 009f 08       		.byte	0x8
+ 803 00a0 04       		.byte	0x4
+ 804 00a1 3E020000 		.4byte	.LASF14
+ 805 00a5 02       		.uleb128 0x2
+ 806 00a6 01       		.byte	0x1
+ 807 00a7 08       		.byte	0x8
+ 808 00a8 4B030000 		.4byte	.LASF15
+ 809 00ac 02       		.uleb128 0x2
+ 810 00ad 08       		.byte	0x8
+ 811 00ae 04       		.byte	0x4
+ 812 00af EC030000 		.4byte	.LASF16
+ 813 00b3 02       		.uleb128 0x2
+ 814 00b4 04       		.byte	0x4
+ 815 00b5 07       		.byte	0x7
+ 816 00b6 09030000 		.4byte	.LASF17
+ 817 00ba 05       		.uleb128 0x5
+ 818 00bb 5D020000 		.4byte	.LASF50
+ 819 00bf 01       		.byte	0x1
+ 820 00c0 0E       		.byte	0xe
+ 821 00c1 00000000 		.4byte	.LFB63
+ 822 00c5 10000000 		.4byte	.LFE63-.LFB63
+ 823 00c9 01       		.uleb128 0x1
+ 824 00ca 9C       		.byte	0x9c
+ 825 00cb EB000000 		.4byte	0xeb
+ 826 00cf 06       		.uleb128 0x6
+ 827 00d0 06000000 		.4byte	.LVL0
+ 828 00d4 30040000 		.4byte	0x430
+ 829 00d8 06       		.uleb128 0x6
+ 830 00d9 0A000000 		.4byte	.LVL1
+ 831 00dd 3B040000 		.4byte	0x43b
+ 832 00e1 06       		.uleb128 0x6
+ 833 00e2 0E000000 		.4byte	.LVL2
+ 834 00e6 46040000 		.4byte	0x446
+ 835 00ea 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 18
+
+
+ 836 00eb 07       		.uleb128 0x7
+ 837 00ec C2020000 		.4byte	.LASF18
+ 838 00f0 01       		.byte	0x1
+ 839 00f1 14       		.byte	0x14
+ 840 00f2 00000000 		.4byte	.LFB64
+ 841 00f6 14000000 		.4byte	.LFE64-.LFB64
+ 842 00fa 01       		.uleb128 0x1
+ 843 00fb 9C       		.byte	0x9c
+ 844 00fc 27010000 		.4byte	0x127
+ 845 0100 08       		.uleb128 0x8
+ 846 0101 7800     		.ascii	"x\000"
+ 847 0103 01       		.byte	0x1
+ 848 0104 14       		.byte	0x14
+ 849 0105 88000000 		.4byte	0x88
+ 850 0109 00000000 		.4byte	.LLST0
+ 851 010d 06       		.uleb128 0x6
+ 852 010e 08000000 		.4byte	.LVL4
+ 853 0112 51040000 		.4byte	0x451
+ 854 0116 09       		.uleb128 0x9
+ 855 0117 12000000 		.4byte	.LVL5
+ 856 011b 5C040000 		.4byte	0x45c
+ 857 011f 0A       		.uleb128 0xa
+ 858 0120 01       		.uleb128 0x1
+ 859 0121 50       		.byte	0x50
+ 860 0122 02       		.uleb128 0x2
+ 861 0123 74       		.byte	0x74
+ 862 0124 00       		.sleb128 0
+ 863 0125 00       		.byte	0
+ 864 0126 00       		.byte	0
+ 865 0127 0B       		.uleb128 0xb
+ 866 0128 DA020000 		.4byte	.LASF19
+ 867 012c 01       		.byte	0x1
+ 868 012d 1C       		.byte	0x1c
+ 869 012e 00000000 		.4byte	.LFB65
+ 870 0132 54000000 		.4byte	.LFE65-.LFB65
+ 871 0136 01       		.uleb128 0x1
+ 872 0137 9C       		.byte	0x9c
+ 873 0138 69010000 		.4byte	0x169
+ 874 013c 08       		.uleb128 0x8
+ 875 013d 7800     		.ascii	"x\000"
+ 876 013f 01       		.byte	0x1
+ 877 0140 1C       		.byte	0x1c
+ 878 0141 25000000 		.4byte	0x25
+ 879 0145 21000000 		.4byte	.LLST1
+ 880 0149 0C       		.uleb128 0xc
+ 881 014a 7900     		.ascii	"y\000"
+ 882 014c 01       		.byte	0x1
+ 883 014d 21       		.byte	0x21
+ 884 014e 88000000 		.4byte	0x88
+ 885 0152 4F000000 		.4byte	.LLST2
+ 886 0156 06       		.uleb128 0x6
+ 887 0157 1C000000 		.4byte	.LVL9
+ 888 015b 51040000 		.4byte	0x451
+ 889 015f 06       		.uleb128 0x6
+ 890 0160 4C000000 		.4byte	.LVL16
+ 891 0164 5C040000 		.4byte	0x45c
+ 892 0168 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 19
+
+
+ 893 0169 0D       		.uleb128 0xd
+ 894 016a F1020000 		.4byte	.LASF20
+ 895 016e 01       		.byte	0x1
+ 896 016f 26       		.byte	0x26
+ 897 0170 88000000 		.4byte	0x88
+ 898 0174 00000000 		.4byte	.LFB66
+ 899 0178 08000000 		.4byte	.LFE66-.LFB66
+ 900 017c 01       		.uleb128 0x1
+ 901 017d 9C       		.byte	0x9c
+ 902 017e 8C010000 		.4byte	0x18c
+ 903 0182 06       		.uleb128 0x6
+ 904 0183 06000000 		.4byte	.LVL17
+ 905 0187 67040000 		.4byte	0x467
+ 906 018b 00       		.byte	0
+ 907 018c 0E       		.uleb128 0xe
+ 908 018d AB020000 		.4byte	.LASF21
+ 909 0191 01       		.byte	0x1
+ 910 0192 2B       		.byte	0x2b
+ 911 0193 25000000 		.4byte	0x25
+ 912 0197 00000000 		.4byte	.LFB67
+ 913 019b 28000000 		.4byte	.LFE67-.LFB67
+ 914 019f 01       		.uleb128 0x1
+ 915 01a0 9C       		.byte	0x9c
+ 916 01a1 B8010000 		.4byte	0x1b8
+ 917 01a5 06       		.uleb128 0x6
+ 918 01a6 06000000 		.4byte	.LVL18
+ 919 01aa 67040000 		.4byte	0x467
+ 920 01ae 06       		.uleb128 0x6
+ 921 01af 10000000 		.4byte	.LVL20
+ 922 01b3 51040000 		.4byte	0x451
+ 923 01b7 00       		.byte	0
+ 924 01b8 07       		.uleb128 0x7
+ 925 01b9 94000000 		.4byte	.LASF22
+ 926 01bd 01       		.byte	0x1
+ 927 01be 31       		.byte	0x31
+ 928 01bf 00000000 		.4byte	.LFB68
+ 929 01c3 14000000 		.4byte	.LFE68-.LFB68
+ 930 01c7 01       		.uleb128 0x1
+ 931 01c8 9C       		.byte	0x9c
+ 932 01c9 F4010000 		.4byte	0x1f4
+ 933 01cd 08       		.uleb128 0x8
+ 934 01ce 7800     		.ascii	"x\000"
+ 935 01d0 01       		.byte	0x1
+ 936 01d1 31       		.byte	0x31
+ 937 01d2 88000000 		.4byte	0x88
+ 938 01d6 62000000 		.4byte	.LLST3
+ 939 01da 06       		.uleb128 0x6
+ 940 01db 08000000 		.4byte	.LVL25
+ 941 01df 51040000 		.4byte	0x451
+ 942 01e3 09       		.uleb128 0x9
+ 943 01e4 12000000 		.4byte	.LVL26
+ 944 01e8 72040000 		.4byte	0x472
+ 945 01ec 0A       		.uleb128 0xa
+ 946 01ed 01       		.uleb128 0x1
+ 947 01ee 50       		.byte	0x50
+ 948 01ef 02       		.uleb128 0x2
+ 949 01f0 74       		.byte	0x74
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 20
+
+
+ 950 01f1 00       		.sleb128 0
+ 951 01f2 00       		.byte	0
+ 952 01f3 00       		.byte	0
+ 953 01f4 0B       		.uleb128 0xb
+ 954 01f5 B9010000 		.4byte	.LASF23
+ 955 01f9 01       		.byte	0x1
+ 956 01fa 39       		.byte	0x39
+ 957 01fb 00000000 		.4byte	.LFB69
+ 958 01ff 54000000 		.4byte	.LFE69-.LFB69
+ 959 0203 01       		.uleb128 0x1
+ 960 0204 9C       		.byte	0x9c
+ 961 0205 36020000 		.4byte	0x236
+ 962 0209 08       		.uleb128 0x8
+ 963 020a 7800     		.ascii	"x\000"
+ 964 020c 01       		.byte	0x1
+ 965 020d 39       		.byte	0x39
+ 966 020e 25000000 		.4byte	0x25
+ 967 0212 83000000 		.4byte	.LLST4
+ 968 0216 0C       		.uleb128 0xc
+ 969 0217 7900     		.ascii	"y\000"
+ 970 0219 01       		.byte	0x1
+ 971 021a 3E       		.byte	0x3e
+ 972 021b 88000000 		.4byte	0x88
+ 973 021f B1000000 		.4byte	.LLST5
+ 974 0223 06       		.uleb128 0x6
+ 975 0224 1C000000 		.4byte	.LVL30
+ 976 0228 51040000 		.4byte	0x451
+ 977 022c 06       		.uleb128 0x6
+ 978 022d 4C000000 		.4byte	.LVL37
+ 979 0231 72040000 		.4byte	0x472
+ 980 0235 00       		.byte	0
+ 981 0236 0D       		.uleb128 0xd
+ 982 0237 1B040000 		.4byte	.LASF24
+ 983 023b 01       		.byte	0x1
+ 984 023c 43       		.byte	0x43
+ 985 023d 88000000 		.4byte	0x88
+ 986 0241 00000000 		.4byte	.LFB70
+ 987 0245 08000000 		.4byte	.LFE70-.LFB70
+ 988 0249 01       		.uleb128 0x1
+ 989 024a 9C       		.byte	0x9c
+ 990 024b 59020000 		.4byte	0x259
+ 991 024f 06       		.uleb128 0x6
+ 992 0250 06000000 		.4byte	.LVL38
+ 993 0254 7D040000 		.4byte	0x47d
+ 994 0258 00       		.byte	0
+ 995 0259 0E       		.uleb128 0xe
+ 996 025a 7D010000 		.4byte	.LASF25
+ 997 025e 01       		.byte	0x1
+ 998 025f 48       		.byte	0x48
+ 999 0260 25000000 		.4byte	0x25
+ 1000 0264 00000000 		.4byte	.LFB71
+ 1001 0268 28000000 		.4byte	.LFE71-.LFB71
+ 1002 026c 01       		.uleb128 0x1
+ 1003 026d 9C       		.byte	0x9c
+ 1004 026e 85020000 		.4byte	0x285
+ 1005 0272 06       		.uleb128 0x6
+ 1006 0273 06000000 		.4byte	.LVL39
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 21
+
+
+ 1007 0277 7D040000 		.4byte	0x47d
+ 1008 027b 06       		.uleb128 0x6
+ 1009 027c 10000000 		.4byte	.LVL41
+ 1010 0280 51040000 		.4byte	0x451
+ 1011 0284 00       		.byte	0
+ 1012 0285 07       		.uleb128 0x7
+ 1013 0286 6E000000 		.4byte	.LASF26
+ 1014 028a 01       		.byte	0x1
+ 1015 028b 4E       		.byte	0x4e
+ 1016 028c 00000000 		.4byte	.LFB72
+ 1017 0290 14000000 		.4byte	.LFE72-.LFB72
+ 1018 0294 01       		.uleb128 0x1
+ 1019 0295 9C       		.byte	0x9c
+ 1020 0296 C1020000 		.4byte	0x2c1
+ 1021 029a 08       		.uleb128 0x8
+ 1022 029b 7800     		.ascii	"x\000"
+ 1023 029d 01       		.byte	0x1
+ 1024 029e 4E       		.byte	0x4e
+ 1025 029f 88000000 		.4byte	0x88
+ 1026 02a3 C4000000 		.4byte	.LLST6
+ 1027 02a7 06       		.uleb128 0x6
+ 1028 02a8 08000000 		.4byte	.LVL46
+ 1029 02ac 88040000 		.4byte	0x488
+ 1030 02b0 09       		.uleb128 0x9
+ 1031 02b1 12000000 		.4byte	.LVL47
+ 1032 02b5 93040000 		.4byte	0x493
+ 1033 02b9 0A       		.uleb128 0xa
+ 1034 02ba 01       		.uleb128 0x1
+ 1035 02bb 50       		.byte	0x50
+ 1036 02bc 02       		.uleb128 0x2
+ 1037 02bd 74       		.byte	0x74
+ 1038 02be 00       		.sleb128 0
+ 1039 02bf 00       		.byte	0
+ 1040 02c0 00       		.byte	0
+ 1041 02c1 0B       		.uleb128 0xb
+ 1042 02c2 33040000 		.4byte	.LASF27
+ 1043 02c6 01       		.byte	0x1
+ 1044 02c7 56       		.byte	0x56
+ 1045 02c8 00000000 		.4byte	.LFB73
+ 1046 02cc 54000000 		.4byte	.LFE73-.LFB73
+ 1047 02d0 01       		.uleb128 0x1
+ 1048 02d1 9C       		.byte	0x9c
+ 1049 02d2 03030000 		.4byte	0x303
+ 1050 02d6 08       		.uleb128 0x8
+ 1051 02d7 7800     		.ascii	"x\000"
+ 1052 02d9 01       		.byte	0x1
+ 1053 02da 56       		.byte	0x56
+ 1054 02db 25000000 		.4byte	0x25
+ 1055 02df E5000000 		.4byte	.LLST7
+ 1056 02e3 0C       		.uleb128 0xc
+ 1057 02e4 7900     		.ascii	"y\000"
+ 1058 02e6 01       		.byte	0x1
+ 1059 02e7 5B       		.byte	0x5b
+ 1060 02e8 88000000 		.4byte	0x88
+ 1061 02ec 13010000 		.4byte	.LLST8
+ 1062 02f0 06       		.uleb128 0x6
+ 1063 02f1 1C000000 		.4byte	.LVL51
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 22
+
+
+ 1064 02f5 88040000 		.4byte	0x488
+ 1065 02f9 06       		.uleb128 0x6
+ 1066 02fa 4C000000 		.4byte	.LVL58
+ 1067 02fe 93040000 		.4byte	0x493
+ 1068 0302 00       		.byte	0
+ 1069 0303 0D       		.uleb128 0xd
+ 1070 0304 D0010000 		.4byte	.LASF28
+ 1071 0308 01       		.byte	0x1
+ 1072 0309 60       		.byte	0x60
+ 1073 030a 88000000 		.4byte	0x88
+ 1074 030e 00000000 		.4byte	.LFB74
+ 1075 0312 08000000 		.4byte	.LFE74-.LFB74
+ 1076 0316 01       		.uleb128 0x1
+ 1077 0317 9C       		.byte	0x9c
+ 1078 0318 26030000 		.4byte	0x326
+ 1079 031c 06       		.uleb128 0x6
+ 1080 031d 06000000 		.4byte	.LVL59
+ 1081 0321 9E040000 		.4byte	0x49e
+ 1082 0325 00       		.byte	0
+ 1083 0326 0E       		.uleb128 0xe
+ 1084 0327 04040000 		.4byte	.LASF29
+ 1085 032b 01       		.byte	0x1
+ 1086 032c 65       		.byte	0x65
+ 1087 032d 25000000 		.4byte	0x25
+ 1088 0331 00000000 		.4byte	.LFB75
+ 1089 0335 28000000 		.4byte	.LFE75-.LFB75
+ 1090 0339 01       		.uleb128 0x1
+ 1091 033a 9C       		.byte	0x9c
+ 1092 033b 52030000 		.4byte	0x352
+ 1093 033f 06       		.uleb128 0x6
+ 1094 0340 06000000 		.4byte	.LVL60
+ 1095 0344 9E040000 		.4byte	0x49e
+ 1096 0348 06       		.uleb128 0x6
+ 1097 0349 10000000 		.4byte	.LVL62
+ 1098 034d 88040000 		.4byte	0x488
+ 1099 0351 00       		.byte	0
+ 1100 0352 07       		.uleb128 0x7
+ 1101 0353 7C020000 		.4byte	.LASF30
+ 1102 0357 01       		.byte	0x1
+ 1103 0358 6C       		.byte	0x6c
+ 1104 0359 00000000 		.4byte	.LFB76
+ 1105 035d 14000000 		.4byte	.LFE76-.LFB76
+ 1106 0361 01       		.uleb128 0x1
+ 1107 0362 9C       		.byte	0x9c
+ 1108 0363 8E030000 		.4byte	0x38e
+ 1109 0367 08       		.uleb128 0x8
+ 1110 0368 7800     		.ascii	"x\000"
+ 1111 036a 01       		.byte	0x1
+ 1112 036b 6C       		.byte	0x6c
+ 1113 036c 88000000 		.4byte	0x88
+ 1114 0370 26010000 		.4byte	.LLST9
+ 1115 0374 06       		.uleb128 0x6
+ 1116 0375 08000000 		.4byte	.LVL67
+ 1117 0379 88040000 		.4byte	0x488
+ 1118 037d 09       		.uleb128 0x9
+ 1119 037e 12000000 		.4byte	.LVL68
+ 1120 0382 A9040000 		.4byte	0x4a9
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 23
+
+
+ 1121 0386 0A       		.uleb128 0xa
+ 1122 0387 01       		.uleb128 0x1
+ 1123 0388 50       		.byte	0x50
+ 1124 0389 02       		.uleb128 0x2
+ 1125 038a 74       		.byte	0x74
+ 1126 038b 00       		.sleb128 0
+ 1127 038c 00       		.byte	0
+ 1128 038d 00       		.byte	0
+ 1129 038e 0B       		.uleb128 0xb
+ 1130 038f CA000000 		.4byte	.LASF31
+ 1131 0393 01       		.byte	0x1
+ 1132 0394 74       		.byte	0x74
+ 1133 0395 00000000 		.4byte	.LFB77
+ 1134 0399 54000000 		.4byte	.LFE77-.LFB77
+ 1135 039d 01       		.uleb128 0x1
+ 1136 039e 9C       		.byte	0x9c
+ 1137 039f D0030000 		.4byte	0x3d0
+ 1138 03a3 08       		.uleb128 0x8
+ 1139 03a4 7800     		.ascii	"x\000"
+ 1140 03a6 01       		.byte	0x1
+ 1141 03a7 74       		.byte	0x74
+ 1142 03a8 25000000 		.4byte	0x25
+ 1143 03ac 47010000 		.4byte	.LLST10
+ 1144 03b0 0C       		.uleb128 0xc
+ 1145 03b1 7900     		.ascii	"y\000"
+ 1146 03b3 01       		.byte	0x1
+ 1147 03b4 79       		.byte	0x79
+ 1148 03b5 88000000 		.4byte	0x88
+ 1149 03b9 75010000 		.4byte	.LLST11
+ 1150 03bd 06       		.uleb128 0x6
+ 1151 03be 1C000000 		.4byte	.LVL72
+ 1152 03c2 88040000 		.4byte	0x488
+ 1153 03c6 06       		.uleb128 0x6
+ 1154 03c7 4C000000 		.4byte	.LVL79
+ 1155 03cb A9040000 		.4byte	0x4a9
+ 1156 03cf 00       		.byte	0
+ 1157 03d0 0D       		.uleb128 0xd
+ 1158 03d1 12030000 		.4byte	.LASF32
+ 1159 03d5 01       		.byte	0x1
+ 1160 03d6 7E       		.byte	0x7e
+ 1161 03d7 88000000 		.4byte	0x88
+ 1162 03db 00000000 		.4byte	.LFB78
+ 1163 03df 08000000 		.4byte	.LFE78-.LFB78
+ 1164 03e3 01       		.uleb128 0x1
+ 1165 03e4 9C       		.byte	0x9c
+ 1166 03e5 F3030000 		.4byte	0x3f3
+ 1167 03e9 06       		.uleb128 0x6
+ 1168 03ea 06000000 		.4byte	.LVL80
+ 1169 03ee B4040000 		.4byte	0x4b4
+ 1170 03f2 00       		.byte	0
+ 1171 03f3 0E       		.uleb128 0xe
+ 1172 03f4 3A000000 		.4byte	.LASF33
+ 1173 03f8 01       		.byte	0x1
+ 1174 03f9 83       		.byte	0x83
+ 1175 03fa 25000000 		.4byte	0x25
+ 1176 03fe 00000000 		.4byte	.LFB79
+ 1177 0402 28000000 		.4byte	.LFE79-.LFB79
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 24
+
+
+ 1178 0406 01       		.uleb128 0x1
+ 1179 0407 9C       		.byte	0x9c
+ 1180 0408 1F040000 		.4byte	0x41f
+ 1181 040c 06       		.uleb128 0x6
+ 1182 040d 06000000 		.4byte	.LVL81
+ 1183 0411 B4040000 		.4byte	0x4b4
+ 1184 0415 06       		.uleb128 0x6
+ 1185 0416 10000000 		.4byte	.LVL83
+ 1186 041a 88040000 		.4byte	0x488
+ 1187 041e 00       		.byte	0
+ 1188 041f 0F       		.uleb128 0xf
+ 1189 0420 50020000 		.4byte	.LASF51
+ 1190 0424 07       		.byte	0x7
+ 1191 0425 1207     		.2byte	0x712
+ 1192 0427 2B040000 		.4byte	0x42b
+ 1193 042b 10       		.uleb128 0x10
+ 1194 042c 93000000 		.4byte	0x93
+ 1195 0430 11       		.uleb128 0x11
+ 1196 0431 AC000000 		.4byte	.LASF34
+ 1197 0435 AC000000 		.4byte	.LASF34
+ 1198 0439 04       		.byte	0x4
+ 1199 043a 92       		.byte	0x92
+ 1200 043b 11       		.uleb128 0x11
+ 1201 043c 86000000 		.4byte	.LASF35
+ 1202 0440 86000000 		.4byte	.LASF35
+ 1203 0444 05       		.byte	0x5
+ 1204 0445 92       		.byte	0x92
+ 1205 0446 11       		.uleb128 0x11
+ 1206 0447 16000000 		.4byte	.LASF36
+ 1207 044b 16000000 		.4byte	.LASF36
+ 1208 044f 06       		.byte	0x6
+ 1209 0450 92       		.byte	0x92
+ 1210 0451 11       		.uleb128 0x11
+ 1211 0452 51000000 		.4byte	.LASF37
+ 1212 0456 51000000 		.4byte	.LASF37
+ 1213 045a 05       		.byte	0x5
+ 1214 045b C0       		.byte	0xc0
+ 1215 045c 11       		.uleb128 0x11
+ 1216 045d 65030000 		.4byte	.LASF38
+ 1217 0461 65030000 		.4byte	.LASF38
+ 1218 0465 05       		.byte	0x5
+ 1219 0466 C7       		.byte	0xc7
+ 1220 0467 11       		.uleb128 0x11
+ 1221 0468 A4030000 		.4byte	.LASF39
+ 1222 046c A4030000 		.4byte	.LASF39
+ 1223 0470 05       		.byte	0x5
+ 1224 0471 C9       		.byte	0xc9
+ 1225 0472 11       		.uleb128 0x11
+ 1226 0473 7B030000 		.4byte	.LASF40
+ 1227 0477 7B030000 		.4byte	.LASF40
+ 1228 047b 05       		.byte	0x5
+ 1229 047c CA       		.byte	0xca
+ 1230 047d 11       		.uleb128 0x11
+ 1231 047e 50030000 		.4byte	.LASF41
+ 1232 0482 50030000 		.4byte	.LASF41
+ 1233 0486 05       		.byte	0x5
+ 1234 0487 CC       		.byte	0xcc
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 25
+
+
+ 1235 0488 11       		.uleb128 0x11
+ 1236 0489 38030000 		.4byte	.LASF42
+ 1237 048d 38030000 		.4byte	.LASF42
+ 1238 0491 06       		.byte	0x6
+ 1239 0492 C0       		.byte	0xc0
+ 1240 0493 11       		.uleb128 0x11
+ 1241 0494 00000000 		.4byte	.LASF43
+ 1242 0498 00000000 		.4byte	.LASF43
+ 1243 049c 06       		.byte	0x6
+ 1244 049d C7       		.byte	0xc7
+ 1245 049e 11       		.uleb128 0x11
+ 1246 049f B9030000 		.4byte	.LASF44
+ 1247 04a3 B9030000 		.4byte	.LASF44
+ 1248 04a7 06       		.byte	0x6
+ 1249 04a8 C9       		.byte	0xc9
+ 1250 04a9 11       		.uleb128 0x11
+ 1251 04aa 24000000 		.4byte	.LASF45
+ 1252 04ae 24000000 		.4byte	.LASF45
+ 1253 04b2 06       		.byte	0x6
+ 1254 04b3 CA       		.byte	0xca
+ 1255 04b4 11       		.uleb128 0x11
+ 1256 04b5 CE030000 		.4byte	.LASF46
+ 1257 04b9 CE030000 		.4byte	.LASF46
+ 1258 04bd 06       		.byte	0x6
+ 1259 04be CC       		.byte	0xcc
+ 1260 04bf 00       		.byte	0
+ 1261              		.section	.debug_abbrev,"",%progbits
+ 1262              	.Ldebug_abbrev0:
+ 1263 0000 01       		.uleb128 0x1
+ 1264 0001 11       		.uleb128 0x11
+ 1265 0002 01       		.byte	0x1
+ 1266 0003 25       		.uleb128 0x25
+ 1267 0004 0E       		.uleb128 0xe
+ 1268 0005 13       		.uleb128 0x13
+ 1269 0006 0B       		.uleb128 0xb
+ 1270 0007 03       		.uleb128 0x3
+ 1271 0008 0E       		.uleb128 0xe
+ 1272 0009 1B       		.uleb128 0x1b
+ 1273 000a 0E       		.uleb128 0xe
+ 1274 000b 55       		.uleb128 0x55
+ 1275 000c 17       		.uleb128 0x17
+ 1276 000d 11       		.uleb128 0x11
+ 1277 000e 01       		.uleb128 0x1
+ 1278 000f 10       		.uleb128 0x10
+ 1279 0010 17       		.uleb128 0x17
+ 1280 0011 00       		.byte	0
+ 1281 0012 00       		.byte	0
+ 1282 0013 02       		.uleb128 0x2
+ 1283 0014 24       		.uleb128 0x24
+ 1284 0015 00       		.byte	0
+ 1285 0016 0B       		.uleb128 0xb
+ 1286 0017 0B       		.uleb128 0xb
+ 1287 0018 3E       		.uleb128 0x3e
+ 1288 0019 0B       		.uleb128 0xb
+ 1289 001a 03       		.uleb128 0x3
+ 1290 001b 0E       		.uleb128 0xe
+ 1291 001c 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 26
+
+
+ 1292 001d 00       		.byte	0
+ 1293 001e 03       		.uleb128 0x3
+ 1294 001f 16       		.uleb128 0x16
+ 1295 0020 00       		.byte	0
+ 1296 0021 03       		.uleb128 0x3
+ 1297 0022 0E       		.uleb128 0xe
+ 1298 0023 3A       		.uleb128 0x3a
+ 1299 0024 0B       		.uleb128 0xb
+ 1300 0025 3B       		.uleb128 0x3b
+ 1301 0026 0B       		.uleb128 0xb
+ 1302 0027 49       		.uleb128 0x49
+ 1303 0028 13       		.uleb128 0x13
+ 1304 0029 00       		.byte	0
+ 1305 002a 00       		.byte	0
+ 1306 002b 04       		.uleb128 0x4
+ 1307 002c 24       		.uleb128 0x24
+ 1308 002d 00       		.byte	0
+ 1309 002e 0B       		.uleb128 0xb
+ 1310 002f 0B       		.uleb128 0xb
+ 1311 0030 3E       		.uleb128 0x3e
+ 1312 0031 0B       		.uleb128 0xb
+ 1313 0032 03       		.uleb128 0x3
+ 1314 0033 08       		.uleb128 0x8
+ 1315 0034 00       		.byte	0
+ 1316 0035 00       		.byte	0
+ 1317 0036 05       		.uleb128 0x5
+ 1318 0037 2E       		.uleb128 0x2e
+ 1319 0038 01       		.byte	0x1
+ 1320 0039 3F       		.uleb128 0x3f
+ 1321 003a 19       		.uleb128 0x19
+ 1322 003b 03       		.uleb128 0x3
+ 1323 003c 0E       		.uleb128 0xe
+ 1324 003d 3A       		.uleb128 0x3a
+ 1325 003e 0B       		.uleb128 0xb
+ 1326 003f 3B       		.uleb128 0x3b
+ 1327 0040 0B       		.uleb128 0xb
+ 1328 0041 11       		.uleb128 0x11
+ 1329 0042 01       		.uleb128 0x1
+ 1330 0043 12       		.uleb128 0x12
+ 1331 0044 06       		.uleb128 0x6
+ 1332 0045 40       		.uleb128 0x40
+ 1333 0046 18       		.uleb128 0x18
+ 1334 0047 9742     		.uleb128 0x2117
+ 1335 0049 19       		.uleb128 0x19
+ 1336 004a 01       		.uleb128 0x1
+ 1337 004b 13       		.uleb128 0x13
+ 1338 004c 00       		.byte	0
+ 1339 004d 00       		.byte	0
+ 1340 004e 06       		.uleb128 0x6
+ 1341 004f 898201   		.uleb128 0x4109
+ 1342 0052 00       		.byte	0
+ 1343 0053 11       		.uleb128 0x11
+ 1344 0054 01       		.uleb128 0x1
+ 1345 0055 31       		.uleb128 0x31
+ 1346 0056 13       		.uleb128 0x13
+ 1347 0057 00       		.byte	0
+ 1348 0058 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 27
+
+
+ 1349 0059 07       		.uleb128 0x7
+ 1350 005a 2E       		.uleb128 0x2e
+ 1351 005b 01       		.byte	0x1
+ 1352 005c 3F       		.uleb128 0x3f
+ 1353 005d 19       		.uleb128 0x19
+ 1354 005e 03       		.uleb128 0x3
+ 1355 005f 0E       		.uleb128 0xe
+ 1356 0060 3A       		.uleb128 0x3a
+ 1357 0061 0B       		.uleb128 0xb
+ 1358 0062 3B       		.uleb128 0x3b
+ 1359 0063 0B       		.uleb128 0xb
+ 1360 0064 27       		.uleb128 0x27
+ 1361 0065 19       		.uleb128 0x19
+ 1362 0066 11       		.uleb128 0x11
+ 1363 0067 01       		.uleb128 0x1
+ 1364 0068 12       		.uleb128 0x12
+ 1365 0069 06       		.uleb128 0x6
+ 1366 006a 40       		.uleb128 0x40
+ 1367 006b 18       		.uleb128 0x18
+ 1368 006c 9742     		.uleb128 0x2117
+ 1369 006e 19       		.uleb128 0x19
+ 1370 006f 01       		.uleb128 0x1
+ 1371 0070 13       		.uleb128 0x13
+ 1372 0071 00       		.byte	0
+ 1373 0072 00       		.byte	0
+ 1374 0073 08       		.uleb128 0x8
+ 1375 0074 05       		.uleb128 0x5
+ 1376 0075 00       		.byte	0
+ 1377 0076 03       		.uleb128 0x3
+ 1378 0077 08       		.uleb128 0x8
+ 1379 0078 3A       		.uleb128 0x3a
+ 1380 0079 0B       		.uleb128 0xb
+ 1381 007a 3B       		.uleb128 0x3b
+ 1382 007b 0B       		.uleb128 0xb
+ 1383 007c 49       		.uleb128 0x49
+ 1384 007d 13       		.uleb128 0x13
+ 1385 007e 02       		.uleb128 0x2
+ 1386 007f 17       		.uleb128 0x17
+ 1387 0080 00       		.byte	0
+ 1388 0081 00       		.byte	0
+ 1389 0082 09       		.uleb128 0x9
+ 1390 0083 898201   		.uleb128 0x4109
+ 1391 0086 01       		.byte	0x1
+ 1392 0087 11       		.uleb128 0x11
+ 1393 0088 01       		.uleb128 0x1
+ 1394 0089 31       		.uleb128 0x31
+ 1395 008a 13       		.uleb128 0x13
+ 1396 008b 00       		.byte	0
+ 1397 008c 00       		.byte	0
+ 1398 008d 0A       		.uleb128 0xa
+ 1399 008e 8A8201   		.uleb128 0x410a
+ 1400 0091 00       		.byte	0
+ 1401 0092 02       		.uleb128 0x2
+ 1402 0093 18       		.uleb128 0x18
+ 1403 0094 9142     		.uleb128 0x2111
+ 1404 0096 18       		.uleb128 0x18
+ 1405 0097 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 28
+
+
+ 1406 0098 00       		.byte	0
+ 1407 0099 0B       		.uleb128 0xb
+ 1408 009a 2E       		.uleb128 0x2e
+ 1409 009b 01       		.byte	0x1
+ 1410 009c 3F       		.uleb128 0x3f
+ 1411 009d 19       		.uleb128 0x19
+ 1412 009e 03       		.uleb128 0x3
+ 1413 009f 0E       		.uleb128 0xe
+ 1414 00a0 3A       		.uleb128 0x3a
+ 1415 00a1 0B       		.uleb128 0xb
+ 1416 00a2 3B       		.uleb128 0x3b
+ 1417 00a3 0B       		.uleb128 0xb
+ 1418 00a4 27       		.uleb128 0x27
+ 1419 00a5 19       		.uleb128 0x19
+ 1420 00a6 11       		.uleb128 0x11
+ 1421 00a7 01       		.uleb128 0x1
+ 1422 00a8 12       		.uleb128 0x12
+ 1423 00a9 06       		.uleb128 0x6
+ 1424 00aa 40       		.uleb128 0x40
+ 1425 00ab 18       		.uleb128 0x18
+ 1426 00ac 9642     		.uleb128 0x2116
+ 1427 00ae 19       		.uleb128 0x19
+ 1428 00af 01       		.uleb128 0x1
+ 1429 00b0 13       		.uleb128 0x13
+ 1430 00b1 00       		.byte	0
+ 1431 00b2 00       		.byte	0
+ 1432 00b3 0C       		.uleb128 0xc
+ 1433 00b4 34       		.uleb128 0x34
+ 1434 00b5 00       		.byte	0
+ 1435 00b6 03       		.uleb128 0x3
+ 1436 00b7 08       		.uleb128 0x8
+ 1437 00b8 3A       		.uleb128 0x3a
+ 1438 00b9 0B       		.uleb128 0xb
+ 1439 00ba 3B       		.uleb128 0x3b
+ 1440 00bb 0B       		.uleb128 0xb
+ 1441 00bc 49       		.uleb128 0x49
+ 1442 00bd 13       		.uleb128 0x13
+ 1443 00be 02       		.uleb128 0x2
+ 1444 00bf 17       		.uleb128 0x17
+ 1445 00c0 00       		.byte	0
+ 1446 00c1 00       		.byte	0
+ 1447 00c2 0D       		.uleb128 0xd
+ 1448 00c3 2E       		.uleb128 0x2e
+ 1449 00c4 01       		.byte	0x1
+ 1450 00c5 3F       		.uleb128 0x3f
+ 1451 00c6 19       		.uleb128 0x19
+ 1452 00c7 03       		.uleb128 0x3
+ 1453 00c8 0E       		.uleb128 0xe
+ 1454 00c9 3A       		.uleb128 0x3a
+ 1455 00ca 0B       		.uleb128 0xb
+ 1456 00cb 3B       		.uleb128 0x3b
+ 1457 00cc 0B       		.uleb128 0xb
+ 1458 00cd 49       		.uleb128 0x49
+ 1459 00ce 13       		.uleb128 0x13
+ 1460 00cf 11       		.uleb128 0x11
+ 1461 00d0 01       		.uleb128 0x1
+ 1462 00d1 12       		.uleb128 0x12
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 29
+
+
+ 1463 00d2 06       		.uleb128 0x6
+ 1464 00d3 40       		.uleb128 0x40
+ 1465 00d4 18       		.uleb128 0x18
+ 1466 00d5 9742     		.uleb128 0x2117
+ 1467 00d7 19       		.uleb128 0x19
+ 1468 00d8 01       		.uleb128 0x1
+ 1469 00d9 13       		.uleb128 0x13
+ 1470 00da 00       		.byte	0
+ 1471 00db 00       		.byte	0
+ 1472 00dc 0E       		.uleb128 0xe
+ 1473 00dd 2E       		.uleb128 0x2e
+ 1474 00de 01       		.byte	0x1
+ 1475 00df 3F       		.uleb128 0x3f
+ 1476 00e0 19       		.uleb128 0x19
+ 1477 00e1 03       		.uleb128 0x3
+ 1478 00e2 0E       		.uleb128 0xe
+ 1479 00e3 3A       		.uleb128 0x3a
+ 1480 00e4 0B       		.uleb128 0xb
+ 1481 00e5 3B       		.uleb128 0x3b
+ 1482 00e6 0B       		.uleb128 0xb
+ 1483 00e7 49       		.uleb128 0x49
+ 1484 00e8 13       		.uleb128 0x13
+ 1485 00e9 11       		.uleb128 0x11
+ 1486 00ea 01       		.uleb128 0x1
+ 1487 00eb 12       		.uleb128 0x12
+ 1488 00ec 06       		.uleb128 0x6
+ 1489 00ed 40       		.uleb128 0x40
+ 1490 00ee 18       		.uleb128 0x18
+ 1491 00ef 9642     		.uleb128 0x2116
+ 1492 00f1 19       		.uleb128 0x19
+ 1493 00f2 01       		.uleb128 0x1
+ 1494 00f3 13       		.uleb128 0x13
+ 1495 00f4 00       		.byte	0
+ 1496 00f5 00       		.byte	0
+ 1497 00f6 0F       		.uleb128 0xf
+ 1498 00f7 34       		.uleb128 0x34
+ 1499 00f8 00       		.byte	0
+ 1500 00f9 03       		.uleb128 0x3
+ 1501 00fa 0E       		.uleb128 0xe
+ 1502 00fb 3A       		.uleb128 0x3a
+ 1503 00fc 0B       		.uleb128 0xb
+ 1504 00fd 3B       		.uleb128 0x3b
+ 1505 00fe 05       		.uleb128 0x5
+ 1506 00ff 49       		.uleb128 0x49
+ 1507 0100 13       		.uleb128 0x13
+ 1508 0101 3F       		.uleb128 0x3f
+ 1509 0102 19       		.uleb128 0x19
+ 1510 0103 3C       		.uleb128 0x3c
+ 1511 0104 19       		.uleb128 0x19
+ 1512 0105 00       		.byte	0
+ 1513 0106 00       		.byte	0
+ 1514 0107 10       		.uleb128 0x10
+ 1515 0108 35       		.uleb128 0x35
+ 1516 0109 00       		.byte	0
+ 1517 010a 49       		.uleb128 0x49
+ 1518 010b 13       		.uleb128 0x13
+ 1519 010c 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 30
+
+
+ 1520 010d 00       		.byte	0
+ 1521 010e 11       		.uleb128 0x11
+ 1522 010f 2E       		.uleb128 0x2e
+ 1523 0110 00       		.byte	0
+ 1524 0111 3F       		.uleb128 0x3f
+ 1525 0112 19       		.uleb128 0x19
+ 1526 0113 3C       		.uleb128 0x3c
+ 1527 0114 19       		.uleb128 0x19
+ 1528 0115 6E       		.uleb128 0x6e
+ 1529 0116 0E       		.uleb128 0xe
+ 1530 0117 03       		.uleb128 0x3
+ 1531 0118 0E       		.uleb128 0xe
+ 1532 0119 3A       		.uleb128 0x3a
+ 1533 011a 0B       		.uleb128 0xb
+ 1534 011b 3B       		.uleb128 0x3b
+ 1535 011c 0B       		.uleb128 0xb
+ 1536 011d 00       		.byte	0
+ 1537 011e 00       		.byte	0
+ 1538 011f 00       		.byte	0
+ 1539              		.section	.debug_loc,"",%progbits
+ 1540              	.Ldebug_loc0:
+ 1541              	.LLST0:
+ 1542 0000 00000000 		.4byte	.LVL3
+ 1543 0004 07000000 		.4byte	.LVL4-1
+ 1544 0008 0100     		.2byte	0x1
+ 1545 000a 50       		.byte	0x50
+ 1546 000b 07000000 		.4byte	.LVL4-1
+ 1547 000f 14000000 		.4byte	.LFE64
+ 1548 0013 0400     		.2byte	0x4
+ 1549 0015 F3       		.byte	0xf3
+ 1550 0016 01       		.uleb128 0x1
+ 1551 0017 50       		.byte	0x50
+ 1552 0018 9F       		.byte	0x9f
+ 1553 0019 00000000 		.4byte	0
+ 1554 001d 00000000 		.4byte	0
+ 1555              	.LLST1:
+ 1556 0021 00000000 		.4byte	.LVL6
+ 1557 0025 0B000000 		.4byte	.LVL7-1
+ 1558 0029 0100     		.2byte	0x1
+ 1559 002b 50       		.byte	0x50
+ 1560 002c 0B000000 		.4byte	.LVL7-1
+ 1561 0030 32000000 		.4byte	.LVL12
+ 1562 0034 0100     		.2byte	0x1
+ 1563 0036 54       		.byte	0x54
+ 1564 0037 32000000 		.4byte	.LVL12
+ 1565 003b 54000000 		.4byte	.LFE65
+ 1566 003f 0600     		.2byte	0x6
+ 1567 0041 F3       		.byte	0xf3
+ 1568 0042 03       		.uleb128 0x3
+ 1569 0043 F5       		.byte	0xf5
+ 1570 0044 00       		.uleb128 0
+ 1571 0045 25       		.uleb128 0x25
+ 1572 0046 9F       		.byte	0x9f
+ 1573 0047 00000000 		.4byte	0
+ 1574 004b 00000000 		.4byte	0
+ 1575              	.LLST2:
+ 1576 004f 46000000 		.4byte	.LVL15
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 31
+
+
+ 1577 0053 4B000000 		.4byte	.LVL16-1
+ 1578 0057 0100     		.2byte	0x1
+ 1579 0059 50       		.byte	0x50
+ 1580 005a 00000000 		.4byte	0
+ 1581 005e 00000000 		.4byte	0
+ 1582              	.LLST3:
+ 1583 0062 00000000 		.4byte	.LVL24
+ 1584 0066 07000000 		.4byte	.LVL25-1
+ 1585 006a 0100     		.2byte	0x1
+ 1586 006c 50       		.byte	0x50
+ 1587 006d 07000000 		.4byte	.LVL25-1
+ 1588 0071 14000000 		.4byte	.LFE68
+ 1589 0075 0400     		.2byte	0x4
+ 1590 0077 F3       		.byte	0xf3
+ 1591 0078 01       		.uleb128 0x1
+ 1592 0079 50       		.byte	0x50
+ 1593 007a 9F       		.byte	0x9f
+ 1594 007b 00000000 		.4byte	0
+ 1595 007f 00000000 		.4byte	0
+ 1596              	.LLST4:
+ 1597 0083 00000000 		.4byte	.LVL27
+ 1598 0087 0B000000 		.4byte	.LVL28-1
+ 1599 008b 0100     		.2byte	0x1
+ 1600 008d 50       		.byte	0x50
+ 1601 008e 0B000000 		.4byte	.LVL28-1
+ 1602 0092 32000000 		.4byte	.LVL33
+ 1603 0096 0100     		.2byte	0x1
+ 1604 0098 54       		.byte	0x54
+ 1605 0099 32000000 		.4byte	.LVL33
+ 1606 009d 54000000 		.4byte	.LFE69
+ 1607 00a1 0600     		.2byte	0x6
+ 1608 00a3 F3       		.byte	0xf3
+ 1609 00a4 03       		.uleb128 0x3
+ 1610 00a5 F5       		.byte	0xf5
+ 1611 00a6 00       		.uleb128 0
+ 1612 00a7 25       		.uleb128 0x25
+ 1613 00a8 9F       		.byte	0x9f
+ 1614 00a9 00000000 		.4byte	0
+ 1615 00ad 00000000 		.4byte	0
+ 1616              	.LLST5:
+ 1617 00b1 46000000 		.4byte	.LVL36
+ 1618 00b5 4B000000 		.4byte	.LVL37-1
+ 1619 00b9 0100     		.2byte	0x1
+ 1620 00bb 50       		.byte	0x50
+ 1621 00bc 00000000 		.4byte	0
+ 1622 00c0 00000000 		.4byte	0
+ 1623              	.LLST6:
+ 1624 00c4 00000000 		.4byte	.LVL45
+ 1625 00c8 07000000 		.4byte	.LVL46-1
+ 1626 00cc 0100     		.2byte	0x1
+ 1627 00ce 50       		.byte	0x50
+ 1628 00cf 07000000 		.4byte	.LVL46-1
+ 1629 00d3 14000000 		.4byte	.LFE72
+ 1630 00d7 0400     		.2byte	0x4
+ 1631 00d9 F3       		.byte	0xf3
+ 1632 00da 01       		.uleb128 0x1
+ 1633 00db 50       		.byte	0x50
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 32
+
+
+ 1634 00dc 9F       		.byte	0x9f
+ 1635 00dd 00000000 		.4byte	0
+ 1636 00e1 00000000 		.4byte	0
+ 1637              	.LLST7:
+ 1638 00e5 00000000 		.4byte	.LVL48
+ 1639 00e9 0B000000 		.4byte	.LVL49-1
+ 1640 00ed 0100     		.2byte	0x1
+ 1641 00ef 50       		.byte	0x50
+ 1642 00f0 0B000000 		.4byte	.LVL49-1
+ 1643 00f4 32000000 		.4byte	.LVL54
+ 1644 00f8 0100     		.2byte	0x1
+ 1645 00fa 54       		.byte	0x54
+ 1646 00fb 32000000 		.4byte	.LVL54
+ 1647 00ff 54000000 		.4byte	.LFE73
+ 1648 0103 0600     		.2byte	0x6
+ 1649 0105 F3       		.byte	0xf3
+ 1650 0106 03       		.uleb128 0x3
+ 1651 0107 F5       		.byte	0xf5
+ 1652 0108 00       		.uleb128 0
+ 1653 0109 25       		.uleb128 0x25
+ 1654 010a 9F       		.byte	0x9f
+ 1655 010b 00000000 		.4byte	0
+ 1656 010f 00000000 		.4byte	0
+ 1657              	.LLST8:
+ 1658 0113 46000000 		.4byte	.LVL57
+ 1659 0117 4B000000 		.4byte	.LVL58-1
+ 1660 011b 0100     		.2byte	0x1
+ 1661 011d 50       		.byte	0x50
+ 1662 011e 00000000 		.4byte	0
+ 1663 0122 00000000 		.4byte	0
+ 1664              	.LLST9:
+ 1665 0126 00000000 		.4byte	.LVL66
+ 1666 012a 07000000 		.4byte	.LVL67-1
+ 1667 012e 0100     		.2byte	0x1
+ 1668 0130 50       		.byte	0x50
+ 1669 0131 07000000 		.4byte	.LVL67-1
+ 1670 0135 14000000 		.4byte	.LFE76
+ 1671 0139 0400     		.2byte	0x4
+ 1672 013b F3       		.byte	0xf3
+ 1673 013c 01       		.uleb128 0x1
+ 1674 013d 50       		.byte	0x50
+ 1675 013e 9F       		.byte	0x9f
+ 1676 013f 00000000 		.4byte	0
+ 1677 0143 00000000 		.4byte	0
+ 1678              	.LLST10:
+ 1679 0147 00000000 		.4byte	.LVL69
+ 1680 014b 0B000000 		.4byte	.LVL70-1
+ 1681 014f 0100     		.2byte	0x1
+ 1682 0151 50       		.byte	0x50
+ 1683 0152 0B000000 		.4byte	.LVL70-1
+ 1684 0156 32000000 		.4byte	.LVL75
+ 1685 015a 0100     		.2byte	0x1
+ 1686 015c 54       		.byte	0x54
+ 1687 015d 32000000 		.4byte	.LVL75
+ 1688 0161 54000000 		.4byte	.LFE77
+ 1689 0165 0600     		.2byte	0x6
+ 1690 0167 F3       		.byte	0xf3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 33
+
+
+ 1691 0168 03       		.uleb128 0x3
+ 1692 0169 F5       		.byte	0xf5
+ 1693 016a 00       		.uleb128 0
+ 1694 016b 25       		.uleb128 0x25
+ 1695 016c 9F       		.byte	0x9f
+ 1696 016d 00000000 		.4byte	0
+ 1697 0171 00000000 		.4byte	0
+ 1698              	.LLST11:
+ 1699 0175 46000000 		.4byte	.LVL78
+ 1700 0179 4B000000 		.4byte	.LVL79-1
+ 1701 017d 0100     		.2byte	0x1
+ 1702 017f 50       		.byte	0x50
+ 1703 0180 00000000 		.4byte	0
+ 1704 0184 00000000 		.4byte	0
+ 1705              		.section	.debug_aranges,"",%progbits
+ 1706 0000 9C000000 		.4byte	0x9c
+ 1707 0004 0200     		.2byte	0x2
+ 1708 0006 00000000 		.4byte	.Ldebug_info0
+ 1709 000a 04       		.byte	0x4
+ 1710 000b 00       		.byte	0
+ 1711 000c 0000     		.2byte	0
+ 1712 000e 0000     		.2byte	0
+ 1713 0010 00000000 		.4byte	.LFB63
+ 1714 0014 10000000 		.4byte	.LFE63-.LFB63
+ 1715 0018 00000000 		.4byte	.LFB64
+ 1716 001c 14000000 		.4byte	.LFE64-.LFB64
+ 1717 0020 00000000 		.4byte	.LFB65
+ 1718 0024 54000000 		.4byte	.LFE65-.LFB65
+ 1719 0028 00000000 		.4byte	.LFB66
+ 1720 002c 08000000 		.4byte	.LFE66-.LFB66
+ 1721 0030 00000000 		.4byte	.LFB67
+ 1722 0034 28000000 		.4byte	.LFE67-.LFB67
+ 1723 0038 00000000 		.4byte	.LFB68
+ 1724 003c 14000000 		.4byte	.LFE68-.LFB68
+ 1725 0040 00000000 		.4byte	.LFB69
+ 1726 0044 54000000 		.4byte	.LFE69-.LFB69
+ 1727 0048 00000000 		.4byte	.LFB70
+ 1728 004c 08000000 		.4byte	.LFE70-.LFB70
+ 1729 0050 00000000 		.4byte	.LFB71
+ 1730 0054 28000000 		.4byte	.LFE71-.LFB71
+ 1731 0058 00000000 		.4byte	.LFB72
+ 1732 005c 14000000 		.4byte	.LFE72-.LFB72
+ 1733 0060 00000000 		.4byte	.LFB73
+ 1734 0064 54000000 		.4byte	.LFE73-.LFB73
+ 1735 0068 00000000 		.4byte	.LFB74
+ 1736 006c 08000000 		.4byte	.LFE74-.LFB74
+ 1737 0070 00000000 		.4byte	.LFB75
+ 1738 0074 28000000 		.4byte	.LFE75-.LFB75
+ 1739 0078 00000000 		.4byte	.LFB76
+ 1740 007c 14000000 		.4byte	.LFE76-.LFB76
+ 1741 0080 00000000 		.4byte	.LFB77
+ 1742 0084 54000000 		.4byte	.LFE77-.LFB77
+ 1743 0088 00000000 		.4byte	.LFB78
+ 1744 008c 08000000 		.4byte	.LFE78-.LFB78
+ 1745 0090 00000000 		.4byte	.LFB79
+ 1746 0094 28000000 		.4byte	.LFE79-.LFB79
+ 1747 0098 00000000 		.4byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 34
+
+
+ 1748 009c 00000000 		.4byte	0
+ 1749              		.section	.debug_ranges,"",%progbits
+ 1750              	.Ldebug_ranges0:
+ 1751 0000 00000000 		.4byte	.LFB63
+ 1752 0004 10000000 		.4byte	.LFE63
+ 1753 0008 00000000 		.4byte	.LFB64
+ 1754 000c 14000000 		.4byte	.LFE64
+ 1755 0010 00000000 		.4byte	.LFB65
+ 1756 0014 54000000 		.4byte	.LFE65
+ 1757 0018 00000000 		.4byte	.LFB66
+ 1758 001c 08000000 		.4byte	.LFE66
+ 1759 0020 00000000 		.4byte	.LFB67
+ 1760 0024 28000000 		.4byte	.LFE67
+ 1761 0028 00000000 		.4byte	.LFB68
+ 1762 002c 14000000 		.4byte	.LFE68
+ 1763 0030 00000000 		.4byte	.LFB69
+ 1764 0034 54000000 		.4byte	.LFE69
+ 1765 0038 00000000 		.4byte	.LFB70
+ 1766 003c 08000000 		.4byte	.LFE70
+ 1767 0040 00000000 		.4byte	.LFB71
+ 1768 0044 28000000 		.4byte	.LFE71
+ 1769 0048 00000000 		.4byte	.LFB72
+ 1770 004c 14000000 		.4byte	.LFE72
+ 1771 0050 00000000 		.4byte	.LFB73
+ 1772 0054 54000000 		.4byte	.LFE73
+ 1773 0058 00000000 		.4byte	.LFB74
+ 1774 005c 08000000 		.4byte	.LFE74
+ 1775 0060 00000000 		.4byte	.LFB75
+ 1776 0064 28000000 		.4byte	.LFE75
+ 1777 0068 00000000 		.4byte	.LFB76
+ 1778 006c 14000000 		.4byte	.LFE76
+ 1779 0070 00000000 		.4byte	.LFB77
+ 1780 0074 54000000 		.4byte	.LFE77
+ 1781 0078 00000000 		.4byte	.LFB78
+ 1782 007c 08000000 		.4byte	.LFE78
+ 1783 0080 00000000 		.4byte	.LFB79
+ 1784 0084 28000000 		.4byte	.LFE79
+ 1785 0088 00000000 		.4byte	0
+ 1786 008c 00000000 		.4byte	0
+ 1787              		.section	.debug_line,"",%progbits
+ 1788              	.Ldebug_line0:
+ 1789 0000 C6020000 		.section	.debug_str,"MS",%progbits,1
+ 1789      02006C01 
+ 1789      00000201 
+ 1789      FB0E0D00 
+ 1789      01010101 
+ 1790              	.LASF43:
+ 1791 0000 53657276 		.ascii	"ServoCD_WriteCompare1\000"
+ 1791      6F43445F 
+ 1791      57726974 
+ 1791      65436F6D 
+ 1791      70617265 
+ 1792              	.LASF36:
+ 1793 0016 53657276 		.ascii	"ServoCD_Start\000"
+ 1793      6F43445F 
+ 1793      53746172 
+ 1793      7400
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 35
+
+
+ 1794              	.LASF45:
+ 1795 0024 53657276 		.ascii	"ServoCD_WriteCompare2\000"
+ 1795      6F43445F 
+ 1795      57726974 
+ 1795      65436F6D 
+ 1795      70617265 
+ 1796              	.LASF33:
+ 1797 003a 53657276 		.ascii	"ServoD_GetPositionNorm\000"
+ 1797      6F445F47 
+ 1797      6574506F 
+ 1797      73697469 
+ 1797      6F6E4E6F 
+ 1798              	.LASF37:
+ 1799 0051 53657276 		.ascii	"ServoAB_ReadPeriod\000"
+ 1799      6F41425F 
+ 1799      52656164 
+ 1799      50657269 
+ 1799      6F6400
+ 1800              	.LASF6:
+ 1801 0064 5F5F696E 		.ascii	"__int32_t\000"
+ 1801      7433325F 
+ 1801      7400
+ 1802              	.LASF26:
+ 1803 006e 53657276 		.ascii	"ServoC_SetPositionTicks\000"
+ 1803      6F435F53 
+ 1803      6574506F 
+ 1803      73697469 
+ 1803      6F6E5469 
+ 1804              	.LASF35:
+ 1805 0086 53657276 		.ascii	"ServoAB_Start\000"
+ 1805      6F41425F 
+ 1805      53746172 
+ 1805      7400
+ 1806              	.LASF22:
+ 1807 0094 53657276 		.ascii	"ServoB_SetPositionTicks\000"
+ 1807      6F425F53 
+ 1807      6574506F 
+ 1807      73697469 
+ 1807      6F6E5469 
+ 1808              	.LASF34:
+ 1809 00ac 53657276 		.ascii	"Servo_PWM_Start\000"
+ 1809      6F5F5057 
+ 1809      4D5F5374 
+ 1809      61727400 
+ 1810              	.LASF13:
+ 1811 00bc 696E7433 		.ascii	"int32_t\000"
+ 1811      325F7400 
+ 1812              	.LASF0:
+ 1813 00c4 666C6F61 		.ascii	"float\000"
+ 1813      7400
+ 1814              	.LASF31:
+ 1815 00ca 53657276 		.ascii	"ServoD_SetPositionNorm\000"
+ 1815      6F445F53 
+ 1815      6574506F 
+ 1815      73697469 
+ 1815      6F6E4E6F 
+ 1816              	.LASF2:
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 36
+
+
+ 1817 00e1 756E7369 		.ascii	"unsigned char\000"
+ 1817      676E6564 
+ 1817      20636861 
+ 1817      7200
+ 1818              	.LASF47:
+ 1819 00ef 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1819      43313120 
+ 1819      352E342E 
+ 1819      31203230 
+ 1819      31363036 
+ 1820 0122 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1820      20726576 
+ 1820      6973696F 
+ 1820      6E203233 
+ 1820      37373135 
+ 1821 0155 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1821      66756E63 
+ 1821      74696F6E 
+ 1821      2D736563 
+ 1821      74696F6E 
+ 1822              	.LASF25:
+ 1823 017d 53657276 		.ascii	"ServoB_GetPositionNorm\000"
+ 1823      6F425F47 
+ 1823      6574506F 
+ 1823      73697469 
+ 1823      6F6E4E6F 
+ 1824              	.LASF8:
+ 1825 0194 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1825      20756E73 
+ 1825      69676E65 
+ 1825      6420696E 
+ 1825      7400
+ 1826              	.LASF4:
+ 1827 01a6 73686F72 		.ascii	"short unsigned int\000"
+ 1827      7420756E 
+ 1827      7369676E 
+ 1827      65642069 
+ 1827      6E7400
+ 1828              	.LASF23:
+ 1829 01b9 53657276 		.ascii	"ServoB_SetPositionNorm\000"
+ 1829      6F425F53 
+ 1829      6574506F 
+ 1829      73697469 
+ 1829      6F6E4E6F 
+ 1830              	.LASF28:
+ 1831 01d0 53657276 		.ascii	"ServoC_GetPositionTicks\000"
+ 1831      6F435F47 
+ 1831      6574506F 
+ 1831      73697469 
+ 1831      6F6E5469 
+ 1832              	.LASF49:
+ 1833 01e8 433A5C55 		.ascii	"C:\\Users\\PC\\Dropbox\\CodeSpaces\\PSoC\\RoboticAr"
+ 1833      73657273 
+ 1833      5C50435C 
+ 1833      44726F70 
+ 1833      626F785C 
+ 1834 0215 6D5C5053 		.ascii	"m\\PSoC_Creator\\MotorPID.cydsn\000"
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 37
+
+
+ 1834      6F435F43 
+ 1834      72656174 
+ 1834      6F725C4D 
+ 1834      6F746F72 
+ 1835              	.LASF5:
+ 1836 0233 5F5F7569 		.ascii	"__uint16_t\000"
+ 1836      6E743136 
+ 1836      5F7400
+ 1837              	.LASF14:
+ 1838 023e 646F7562 		.ascii	"double\000"
+ 1838      6C6500
+ 1839              	.LASF48:
+ 1840 0245 53657276 		.ascii	"ServosHW.c\000"
+ 1840      6F734857 
+ 1840      2E6300
+ 1841              	.LASF51:
+ 1842 0250 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1842      52784275 
+ 1842      66666572 
+ 1842      00
+ 1843              	.LASF50:
+ 1844 025d 53657276 		.ascii	"ServoDriver_Start\000"
+ 1844      6F447269 
+ 1844      7665725F 
+ 1844      53746172 
+ 1844      7400
+ 1845              	.LASF11:
+ 1846 026f 756E7369 		.ascii	"unsigned int\000"
+ 1846      676E6564 
+ 1846      20696E74 
+ 1846      00
+ 1847              	.LASF30:
+ 1848 027c 53657276 		.ascii	"ServoD_SetPositionTicks\000"
+ 1848      6F445F53 
+ 1848      6574506F 
+ 1848      73697469 
+ 1848      6F6E5469 
+ 1849              	.LASF10:
+ 1850 0294 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1850      206C6F6E 
+ 1850      6720756E 
+ 1850      7369676E 
+ 1850      65642069 
+ 1851              	.LASF21:
+ 1852 02ab 53657276 		.ascii	"ServoA_GetPositionNorm\000"
+ 1852      6F415F47 
+ 1852      6574506F 
+ 1852      73697469 
+ 1852      6F6E4E6F 
+ 1853              	.LASF18:
+ 1854 02c2 53657276 		.ascii	"ServoA_SetPositionTicks\000"
+ 1854      6F415F53 
+ 1854      6574506F 
+ 1854      73697469 
+ 1854      6F6E5469 
+ 1855              	.LASF19:
+ 1856 02da 53657276 		.ascii	"ServoA_SetPositionNorm\000"
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 38
+
+
+ 1856      6F415F53 
+ 1856      6574506F 
+ 1856      73697469 
+ 1856      6F6E4E6F 
+ 1857              	.LASF20:
+ 1858 02f1 53657276 		.ascii	"ServoA_GetPositionTicks\000"
+ 1858      6F415F47 
+ 1858      6574506F 
+ 1858      73697469 
+ 1858      6F6E5469 
+ 1859              	.LASF17:
+ 1860 0309 73697A65 		.ascii	"sizetype\000"
+ 1860      74797065 
+ 1860      00
+ 1861              	.LASF32:
+ 1862 0312 53657276 		.ascii	"ServoD_GetPositionTicks\000"
+ 1862      6F445F47 
+ 1862      6574506F 
+ 1862      73697469 
+ 1862      6F6E5469 
+ 1863              	.LASF9:
+ 1864 032a 6C6F6E67 		.ascii	"long long int\000"
+ 1864      206C6F6E 
+ 1864      6720696E 
+ 1864      7400
+ 1865              	.LASF42:
+ 1866 0338 53657276 		.ascii	"ServoCD_ReadPeriod\000"
+ 1866      6F43445F 
+ 1866      52656164 
+ 1866      50657269 
+ 1866      6F6400
+ 1867              	.LASF15:
+ 1868 034b 63686172 		.ascii	"char\000"
+ 1868      00
+ 1869              	.LASF41:
+ 1870 0350 53657276 		.ascii	"ServoAB_ReadCompare2\000"
+ 1870      6F41425F 
+ 1870      52656164 
+ 1870      436F6D70 
+ 1870      61726532 
+ 1871              	.LASF38:
+ 1872 0365 53657276 		.ascii	"ServoAB_WriteCompare1\000"
+ 1872      6F41425F 
+ 1872      57726974 
+ 1872      65436F6D 
+ 1872      70617265 
+ 1873              	.LASF40:
+ 1874 037b 53657276 		.ascii	"ServoAB_WriteCompare2\000"
+ 1874      6F41425F 
+ 1874      57726974 
+ 1874      65436F6D 
+ 1874      70617265 
+ 1875              	.LASF3:
+ 1876 0391 73686F72 		.ascii	"short int\000"
+ 1876      7420696E 
+ 1876      7400
+ 1877              	.LASF12:
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccGpJEkk.s 			page 39
+
+
+ 1878 039b 75696E74 		.ascii	"uint16_t\000"
+ 1878      31365F74 
+ 1878      00
+ 1879              	.LASF39:
+ 1880 03a4 53657276 		.ascii	"ServoAB_ReadCompare1\000"
+ 1880      6F41425F 
+ 1880      52656164 
+ 1880      436F6D70 
+ 1880      61726531 
+ 1881              	.LASF44:
+ 1882 03b9 53657276 		.ascii	"ServoCD_ReadCompare1\000"
+ 1882      6F43445F 
+ 1882      52656164 
+ 1882      436F6D70 
+ 1882      61726531 
+ 1883              	.LASF46:
+ 1884 03ce 53657276 		.ascii	"ServoCD_ReadCompare2\000"
+ 1884      6F43445F 
+ 1884      52656164 
+ 1884      436F6D70 
+ 1884      61726532 
+ 1885              	.LASF7:
+ 1886 03e3 6C6F6E67 		.ascii	"long int\000"
+ 1886      20696E74 
+ 1886      00
+ 1887              	.LASF16:
+ 1888 03ec 6C6F6E67 		.ascii	"long double\000"
+ 1888      20646F75 
+ 1888      626C6500 
+ 1889              	.LASF1:
+ 1890 03f8 7369676E 		.ascii	"signed char\000"
+ 1890      65642063 
+ 1890      68617200 
+ 1891              	.LASF29:
+ 1892 0404 53657276 		.ascii	"ServoC_GetPositionNorm\000"
+ 1892      6F435F47 
+ 1892      6574506F 
+ 1892      73697469 
+ 1892      6F6E4E6F 
+ 1893              	.LASF24:
+ 1894 041b 53657276 		.ascii	"ServoB_GetPositionTicks\000"
+ 1894      6F425F47 
+ 1894      6574506F 
+ 1894      73697469 
+ 1894      6F6E5469 
+ 1895              	.LASF27:
+ 1896 0433 53657276 		.ascii	"ServoC_SetPositionNorm\000"
+ 1896      6F435F53 
+ 1896      6574506F 
+ 1896      73697469 
+ 1896      6F6E4E6F 
+ 1897              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -1,0 +1,1824 @@
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"Motors.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text._ZN8Hardware6MotorA5StartEv,"ax",%progbits
+  20              		.align	2
+  21              		.global	_ZN8Hardware6MotorA5StartEv
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	_ZN8Hardware6MotorA5StartEv, %function
+  25              	_ZN8Hardware6MotorA5StartEv:
+  26              	.LFB63:
+  27              		.file 1 "Motors.cpp"
+   1:Motors.cpp    **** /* ========================================
+   2:Motors.cpp    ****  *
+   3:Motors.cpp    ****  * Copyright YOUR COMPANY, THE YEAR
+   4:Motors.cpp    ****  * All Rights Reserved
+   5:Motors.cpp    ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:Motors.cpp    ****  *
+   7:Motors.cpp    ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:Motors.cpp    ****  * WHICH IS THE PROPERTY OF your company.
+   9:Motors.cpp    ****  *
+  10:Motors.cpp    ****  * ========================================
+  11:Motors.cpp    **** */
+  12:Motors.cpp    ****   
+  13:Motors.cpp    ****     extern "C"{
+  14:Motors.cpp    ****         #include "project.h"
+  15:Motors.cpp    ****         #include "MotorsHW.h"
+  16:Motors.cpp    ****     }
+  17:Motors.cpp    ****     
+  18:Motors.cpp    ****     namespace Hardware{
+  19:Motors.cpp    ****     
+  20:Motors.cpp    ****         namespace MotorA{
+  21:Motors.cpp    ****     
+  22:Motors.cpp    ****             void Start(){
+  28              		.loc 1 22 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 08B5     		push	{r3, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 2
+
+
+  23:Motors.cpp    ****                 MotorA_Start();
+  36              		.loc 1 23 0
+  37 0002 FFF7FEFF 		bl	MotorA_Start
+  38              	.LVL0:
+  39 0006 08BD     		pop	{r3, pc}
+  40              		.cfi_endproc
+  41              	.LFE63:
+  42              		.size	_ZN8Hardware6MotorA5StartEv, .-_ZN8Hardware6MotorA5StartEv
+  43              		.section	.text._ZN8Hardware6MotorA11GetPositionEv,"ax",%progbits
+  44              		.align	2
+  45              		.global	_ZN8Hardware6MotorA11GetPositionEv
+  46              		.thumb
+  47              		.thumb_func
+  48              		.type	_ZN8Hardware6MotorA11GetPositionEv, %function
+  49              	_ZN8Hardware6MotorA11GetPositionEv:
+  50              	.LFB64:
+  24:Motors.cpp    ****             }
+  25:Motors.cpp    ****             
+  26:Motors.cpp    ****             uint16_t GetPosition(){
+  51              		.loc 1 26 0
+  52              		.cfi_startproc
+  53              		@ args = 0, pretend = 0, frame = 0
+  54              		@ frame_needed = 0, uses_anonymous_args = 0
+  55 0000 08B5     		push	{r3, lr}
+  56              		.cfi_def_cfa_offset 8
+  57              		.cfi_offset 3, -8
+  58              		.cfi_offset 14, -4
+  27:Motors.cpp    ****                 return MotorA_GetPosition();
+  59              		.loc 1 27 0
+  60 0002 FFF7FEFF 		bl	MotorA_GetPosition
+  61              	.LVL1:
+  28:Motors.cpp    ****             }
+  62              		.loc 1 28 0
+  63 0006 08BD     		pop	{r3, pc}
+  64              		.cfi_endproc
+  65              	.LFE64:
+  66              		.size	_ZN8Hardware6MotorA11GetPositionEv, .-_ZN8Hardware6MotorA11GetPositionEv
+  67              		.section	.text._ZN8Hardware6MotorA6SetPWMEt,"ax",%progbits
+  68              		.align	2
+  69              		.global	_ZN8Hardware6MotorA6SetPWMEt
+  70              		.thumb
+  71              		.thumb_func
+  72              		.type	_ZN8Hardware6MotorA6SetPWMEt, %function
+  73              	_ZN8Hardware6MotorA6SetPWMEt:
+  74              	.LFB65:
+  29:Motors.cpp    ****             
+  30:Motors.cpp    ****             void SetPWM(uint16_t value){
+  75              		.loc 1 30 0
+  76              		.cfi_startproc
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79              	.LVL2:
+  80 0000 08B5     		push	{r3, lr}
+  81              		.cfi_def_cfa_offset 8
+  82              		.cfi_offset 3, -8
+  83              		.cfi_offset 14, -4
+  31:Motors.cpp    ****                 MotorA_SetPWM(value);
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 3
+
+
+  84              		.loc 1 31 0
+  85 0002 FFF7FEFF 		bl	MotorA_SetPWM
+  86              	.LVL3:
+  87 0006 08BD     		pop	{r3, pc}
+  88              		.cfi_endproc
+  89              	.LFE65:
+  90              		.size	_ZN8Hardware6MotorA6SetPWMEt, .-_ZN8Hardware6MotorA6SetPWMEt
+  91              		.section	.text._ZN8Hardware6MotorA7ReadPWMEv,"ax",%progbits
+  92              		.align	2
+  93              		.global	_ZN8Hardware6MotorA7ReadPWMEv
+  94              		.thumb
+  95              		.thumb_func
+  96              		.type	_ZN8Hardware6MotorA7ReadPWMEv, %function
+  97              	_ZN8Hardware6MotorA7ReadPWMEv:
+  98              	.LFB66:
+  32:Motors.cpp    ****             }
+  33:Motors.cpp    **** 
+  34:Motors.cpp    ****             uint16_t ReadPWM(){
+  99              		.loc 1 34 0
+ 100              		.cfi_startproc
+ 101              		@ args = 0, pretend = 0, frame = 0
+ 102              		@ frame_needed = 0, uses_anonymous_args = 0
+ 103 0000 08B5     		push	{r3, lr}
+ 104              		.cfi_def_cfa_offset 8
+ 105              		.cfi_offset 3, -8
+ 106              		.cfi_offset 14, -4
+  35:Motors.cpp    ****                 return MotorA_ReadPWM();
+ 107              		.loc 1 35 0
+ 108 0002 FFF7FEFF 		bl	MotorA_ReadPWM
+ 109              	.LVL4:
+  36:Motors.cpp    ****             }
+ 110              		.loc 1 36 0
+ 111 0006 08BD     		pop	{r3, pc}
+ 112              		.cfi_endproc
+ 113              	.LFE66:
+ 114              		.size	_ZN8Hardware6MotorA7ReadPWMEv, .-_ZN8Hardware6MotorA7ReadPWMEv
+ 115              		.section	.text._ZN8Hardware6MotorA12SetDirectionEb,"ax",%progbits
+ 116              		.align	2
+ 117              		.global	_ZN8Hardware6MotorA12SetDirectionEb
+ 118              		.thumb
+ 119              		.thumb_func
+ 120              		.type	_ZN8Hardware6MotorA12SetDirectionEb, %function
+ 121              	_ZN8Hardware6MotorA12SetDirectionEb:
+ 122              	.LFB67:
+  37:Motors.cpp    ****             void SetDirection(bool dir){
+ 123              		.loc 1 37 0
+ 124              		.cfi_startproc
+ 125              		@ args = 0, pretend = 0, frame = 0
+ 126              		@ frame_needed = 0, uses_anonymous_args = 0
+ 127              	.LVL5:
+ 128 0000 08B5     		push	{r3, lr}
+ 129              		.cfi_def_cfa_offset 8
+ 130              		.cfi_offset 3, -8
+ 131              		.cfi_offset 14, -4
+  38:Motors.cpp    ****                 MotorA_SetDirection(dir);
+ 132              		.loc 1 38 0
+ 133 0002 FFF7FEFF 		bl	MotorA_SetDirection
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 4
+
+
+ 134              	.LVL6:
+ 135 0006 08BD     		pop	{r3, pc}
+ 136              		.cfi_endproc
+ 137              	.LFE67:
+ 138              		.size	_ZN8Hardware6MotorA12SetDirectionEb, .-_ZN8Hardware6MotorA12SetDirectionEb
+ 139              		.section	.text._ZN8Hardware6MotorA6StatusEv,"ax",%progbits
+ 140              		.align	2
+ 141              		.global	_ZN8Hardware6MotorA6StatusEv
+ 142              		.thumb
+ 143              		.thumb_func
+ 144              		.type	_ZN8Hardware6MotorA6StatusEv, %function
+ 145              	_ZN8Hardware6MotorA6StatusEv:
+ 146              	.LFB68:
+  39:Motors.cpp    ****             }
+  40:Motors.cpp    ****             
+  41:Motors.cpp    ****             MotorStatus Status(){
+ 147              		.loc 1 41 0
+ 148              		.cfi_startproc
+ 149              		@ args = 0, pretend = 0, frame = 0
+ 150              		@ frame_needed = 0, uses_anonymous_args = 0
+ 151              	.LVL7:
+ 152 0000 10B5     		push	{r4, lr}
+ 153              		.cfi_def_cfa_offset 8
+ 154              		.cfi_offset 4, -8
+ 155              		.cfi_offset 14, -4
+ 156 0002 0446     		mov	r4, r0
+  42:Motors.cpp    ****                 return MotorA_GetStatus();
+ 157              		.loc 1 42 0
+ 158 0004 FFF7FEFF 		bl	MotorA_GetStatus
+ 159              	.LVL8:
+  43:Motors.cpp    ****             }
+ 160              		.loc 1 43 0
+ 161 0008 2046     		mov	r0, r4
+ 162 000a 10BD     		pop	{r4, pc}
+ 163              		.cfi_endproc
+ 164              	.LFE68:
+ 165              		.size	_ZN8Hardware6MotorA6StatusEv, .-_ZN8Hardware6MotorA6StatusEv
+ 166              		.section	.text._ZN8Hardware6MotorB5StartEv,"ax",%progbits
+ 167              		.align	2
+ 168              		.global	_ZN8Hardware6MotorB5StartEv
+ 169              		.thumb
+ 170              		.thumb_func
+ 171              		.type	_ZN8Hardware6MotorB5StartEv, %function
+ 172              	_ZN8Hardware6MotorB5StartEv:
+ 173              	.LFB69:
+  44:Motors.cpp    ****         }
+  45:Motors.cpp    ****         
+  46:Motors.cpp    ****         namespace MotorB{
+  47:Motors.cpp    ****     
+  48:Motors.cpp    ****             void Start(){
+ 174              		.loc 1 48 0
+ 175              		.cfi_startproc
+ 176              		@ args = 0, pretend = 0, frame = 0
+ 177              		@ frame_needed = 0, uses_anonymous_args = 0
+ 178 0000 08B5     		push	{r3, lr}
+ 179              		.cfi_def_cfa_offset 8
+ 180              		.cfi_offset 3, -8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 5
+
+
+ 181              		.cfi_offset 14, -4
+  49:Motors.cpp    ****                 MotorB_Start();
+ 182              		.loc 1 49 0
+ 183 0002 FFF7FEFF 		bl	MotorB_Start
+ 184              	.LVL9:
+ 185 0006 08BD     		pop	{r3, pc}
+ 186              		.cfi_endproc
+ 187              	.LFE69:
+ 188              		.size	_ZN8Hardware6MotorB5StartEv, .-_ZN8Hardware6MotorB5StartEv
+ 189              		.section	.text._ZN8Hardware6MotorB11GetPositionEv,"ax",%progbits
+ 190              		.align	2
+ 191              		.global	_ZN8Hardware6MotorB11GetPositionEv
+ 192              		.thumb
+ 193              		.thumb_func
+ 194              		.type	_ZN8Hardware6MotorB11GetPositionEv, %function
+ 195              	_ZN8Hardware6MotorB11GetPositionEv:
+ 196              	.LFB70:
+  50:Motors.cpp    ****             }
+  51:Motors.cpp    ****             
+  52:Motors.cpp    ****             uint16_t GetPosition(){
+ 197              		.loc 1 52 0
+ 198              		.cfi_startproc
+ 199              		@ args = 0, pretend = 0, frame = 0
+ 200              		@ frame_needed = 0, uses_anonymous_args = 0
+ 201 0000 08B5     		push	{r3, lr}
+ 202              		.cfi_def_cfa_offset 8
+ 203              		.cfi_offset 3, -8
+ 204              		.cfi_offset 14, -4
+  53:Motors.cpp    ****                 return MotorB_GetPosition();
+ 205              		.loc 1 53 0
+ 206 0002 FFF7FEFF 		bl	MotorB_GetPosition
+ 207              	.LVL10:
+  54:Motors.cpp    ****             }
+ 208              		.loc 1 54 0
+ 209 0006 08BD     		pop	{r3, pc}
+ 210              		.cfi_endproc
+ 211              	.LFE70:
+ 212              		.size	_ZN8Hardware6MotorB11GetPositionEv, .-_ZN8Hardware6MotorB11GetPositionEv
+ 213              		.section	.text._ZN8Hardware6MotorB6SetPWMEt,"ax",%progbits
+ 214              		.align	2
+ 215              		.global	_ZN8Hardware6MotorB6SetPWMEt
+ 216              		.thumb
+ 217              		.thumb_func
+ 218              		.type	_ZN8Hardware6MotorB6SetPWMEt, %function
+ 219              	_ZN8Hardware6MotorB6SetPWMEt:
+ 220              	.LFB71:
+  55:Motors.cpp    ****             
+  56:Motors.cpp    ****             void SetPWM(uint16_t value){
+ 221              		.loc 1 56 0
+ 222              		.cfi_startproc
+ 223              		@ args = 0, pretend = 0, frame = 0
+ 224              		@ frame_needed = 0, uses_anonymous_args = 0
+ 225              	.LVL11:
+ 226 0000 08B5     		push	{r3, lr}
+ 227              		.cfi_def_cfa_offset 8
+ 228              		.cfi_offset 3, -8
+ 229              		.cfi_offset 14, -4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 6
+
+
+  57:Motors.cpp    ****                 MotorB_SetPWM(value);
+ 230              		.loc 1 57 0
+ 231 0002 FFF7FEFF 		bl	MotorB_SetPWM
+ 232              	.LVL12:
+ 233 0006 08BD     		pop	{r3, pc}
+ 234              		.cfi_endproc
+ 235              	.LFE71:
+ 236              		.size	_ZN8Hardware6MotorB6SetPWMEt, .-_ZN8Hardware6MotorB6SetPWMEt
+ 237              		.section	.text._ZN8Hardware6MotorB7ReadPWMEv,"ax",%progbits
+ 238              		.align	2
+ 239              		.global	_ZN8Hardware6MotorB7ReadPWMEv
+ 240              		.thumb
+ 241              		.thumb_func
+ 242              		.type	_ZN8Hardware6MotorB7ReadPWMEv, %function
+ 243              	_ZN8Hardware6MotorB7ReadPWMEv:
+ 244              	.LFB72:
+  58:Motors.cpp    ****             }
+  59:Motors.cpp    **** 
+  60:Motors.cpp    ****             uint16_t ReadPWM(){
+ 245              		.loc 1 60 0
+ 246              		.cfi_startproc
+ 247              		@ args = 0, pretend = 0, frame = 0
+ 248              		@ frame_needed = 0, uses_anonymous_args = 0
+ 249 0000 08B5     		push	{r3, lr}
+ 250              		.cfi_def_cfa_offset 8
+ 251              		.cfi_offset 3, -8
+ 252              		.cfi_offset 14, -4
+  61:Motors.cpp    ****                 return MotorB_ReadPWM();
+ 253              		.loc 1 61 0
+ 254 0002 FFF7FEFF 		bl	MotorB_ReadPWM
+ 255              	.LVL13:
+  62:Motors.cpp    ****             }
+ 256              		.loc 1 62 0
+ 257 0006 08BD     		pop	{r3, pc}
+ 258              		.cfi_endproc
+ 259              	.LFE72:
+ 260              		.size	_ZN8Hardware6MotorB7ReadPWMEv, .-_ZN8Hardware6MotorB7ReadPWMEv
+ 261              		.section	.text._ZN8Hardware6MotorB12SetDirectionEb,"ax",%progbits
+ 262              		.align	2
+ 263              		.global	_ZN8Hardware6MotorB12SetDirectionEb
+ 264              		.thumb
+ 265              		.thumb_func
+ 266              		.type	_ZN8Hardware6MotorB12SetDirectionEb, %function
+ 267              	_ZN8Hardware6MotorB12SetDirectionEb:
+ 268              	.LFB73:
+  63:Motors.cpp    ****             void SetDirection(bool dir){
+ 269              		.loc 1 63 0
+ 270              		.cfi_startproc
+ 271              		@ args = 0, pretend = 0, frame = 0
+ 272              		@ frame_needed = 0, uses_anonymous_args = 0
+ 273              	.LVL14:
+ 274 0000 08B5     		push	{r3, lr}
+ 275              		.cfi_def_cfa_offset 8
+ 276              		.cfi_offset 3, -8
+ 277              		.cfi_offset 14, -4
+  64:Motors.cpp    ****                 MotorB_SetDirection(dir);
+ 278              		.loc 1 64 0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 7
+
+
+ 279 0002 FFF7FEFF 		bl	MotorB_SetDirection
+ 280              	.LVL15:
+ 281 0006 08BD     		pop	{r3, pc}
+ 282              		.cfi_endproc
+ 283              	.LFE73:
+ 284              		.size	_ZN8Hardware6MotorB12SetDirectionEb, .-_ZN8Hardware6MotorB12SetDirectionEb
+ 285              		.section	.text._ZN8Hardware6MotorB6StatusEv,"ax",%progbits
+ 286              		.align	2
+ 287              		.global	_ZN8Hardware6MotorB6StatusEv
+ 288              		.thumb
+ 289              		.thumb_func
+ 290              		.type	_ZN8Hardware6MotorB6StatusEv, %function
+ 291              	_ZN8Hardware6MotorB6StatusEv:
+ 292              	.LFB74:
+  65:Motors.cpp    ****             }
+  66:Motors.cpp    ****             
+  67:Motors.cpp    ****             MotorStatus Status(){
+ 293              		.loc 1 67 0
+ 294              		.cfi_startproc
+ 295              		@ args = 0, pretend = 0, frame = 0
+ 296              		@ frame_needed = 0, uses_anonymous_args = 0
+ 297              	.LVL16:
+ 298 0000 10B5     		push	{r4, lr}
+ 299              		.cfi_def_cfa_offset 8
+ 300              		.cfi_offset 4, -8
+ 301              		.cfi_offset 14, -4
+ 302 0002 0446     		mov	r4, r0
+  68:Motors.cpp    ****                 return MotorB_GetStatus();
+ 303              		.loc 1 68 0
+ 304 0004 FFF7FEFF 		bl	MotorB_GetStatus
+ 305              	.LVL17:
+  69:Motors.cpp    ****             }
+ 306              		.loc 1 69 0
+ 307 0008 2046     		mov	r0, r4
+ 308 000a 10BD     		pop	{r4, pc}
+ 309              		.cfi_endproc
+ 310              	.LFE74:
+ 311              		.size	_ZN8Hardware6MotorB6StatusEv, .-_ZN8Hardware6MotorB6StatusEv
+ 312              		.section	.text._ZN8Hardware12Motors_StartEv,"ax",%progbits
+ 313              		.align	2
+ 314              		.global	_ZN8Hardware12Motors_StartEv
+ 315              		.thumb
+ 316              		.thumb_func
+ 317              		.type	_ZN8Hardware12Motors_StartEv, %function
+ 318              	_ZN8Hardware12Motors_StartEv:
+ 319              	.LFB75:
+  70:Motors.cpp    ****         }
+  71:Motors.cpp    ****         
+  72:Motors.cpp    ****         void Motors_Start(){
+ 320              		.loc 1 72 0
+ 321              		.cfi_startproc
+ 322              		@ args = 0, pretend = 0, frame = 0
+ 323              		@ frame_needed = 0, uses_anonymous_args = 0
+ 324 0000 08B5     		push	{r3, lr}
+ 325              		.cfi_def_cfa_offset 8
+ 326              		.cfi_offset 3, -8
+ 327              		.cfi_offset 14, -4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 8
+
+
+  73:Motors.cpp    ****             MotorA::Start();
+ 328              		.loc 1 73 0
+ 329 0002 FFF7FEFF 		bl	_ZN8Hardware6MotorA5StartEv
+ 330              	.LVL18:
+  74:Motors.cpp    ****             MotorB::Start();
+ 331              		.loc 1 74 0
+ 332 0006 FFF7FEFF 		bl	_ZN8Hardware6MotorB5StartEv
+ 333              	.LVL19:
+ 334 000a 08BD     		pop	{r3, pc}
+ 335              		.cfi_endproc
+ 336              	.LFE75:
+ 337              		.size	_ZN8Hardware12Motors_StartEv, .-_ZN8Hardware12Motors_StartEv
+ 338              		.text
+ 339              	.Letext0:
+ 340              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 341              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 342              		.file 4 "MotorTypes.h"
+ 343              		.file 5 "MotorsHW.h"
+ 344              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+ 345              		.section	.debug_info,"",%progbits
+ 346              	.Ldebug_info0:
+ 347 0000 7B040000 		.4byte	0x47b
+ 348 0004 0400     		.2byte	0x4
+ 349 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 350 000a 04       		.byte	0x4
+ 351 000b 01       		.uleb128 0x1
+ 352 000c B9020000 		.4byte	.LASF61
+ 353 0010 04       		.byte	0x4
+ 354 0011 F3000000 		.4byte	.LASF62
+ 355 0015 3B000000 		.4byte	.LASF63
+ 356 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 357 001d 00000000 		.4byte	0
+ 358 0021 00000000 		.4byte	.Ldebug_line0
+ 359 0025 02       		.uleb128 0x2
+ 360 0026 01       		.byte	0x1
+ 361 0027 06       		.byte	0x6
+ 362 0028 2B020000 		.4byte	.LASF0
+ 363 002c 02       		.uleb128 0x2
+ 364 002d 01       		.byte	0x1
+ 365 002e 08       		.byte	0x8
+ 366 002f 08020000 		.4byte	.LASF1
+ 367 0033 02       		.uleb128 0x2
+ 368 0034 02       		.byte	0x2
+ 369 0035 05       		.byte	0x5
+ 370 0036 E9000000 		.4byte	.LASF2
+ 371 003a 03       		.uleb128 0x3
+ 372 003b 2E010000 		.4byte	.LASF4
+ 373 003f 02       		.byte	0x2
+ 374 0040 2B       		.byte	0x2b
+ 375 0041 45000000 		.4byte	0x45
+ 376 0045 02       		.uleb128 0x2
+ 377 0046 02       		.byte	0x2
+ 378 0047 07       		.byte	0x7
+ 379 0048 A6020000 		.4byte	.LASF3
+ 380 004c 03       		.uleb128 0x3
+ 381 004d 30040000 		.4byte	.LASF5
+ 382 0051 02       		.byte	0x2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 9
+
+
+ 383 0052 3F       		.byte	0x3f
+ 384 0053 57000000 		.4byte	0x57
+ 385 0057 02       		.uleb128 0x2
+ 386 0058 04       		.byte	0x4
+ 387 0059 05       		.byte	0x5
+ 388 005a D3010000 		.4byte	.LASF6
+ 389 005e 02       		.uleb128 0x2
+ 390 005f 04       		.byte	0x4
+ 391 0060 07       		.byte	0x7
+ 392 0061 EB030000 		.4byte	.LASF7
+ 393 0065 02       		.uleb128 0x2
+ 394 0066 08       		.byte	0x8
+ 395 0067 05       		.byte	0x5
+ 396 0068 B8010000 		.4byte	.LASF8
+ 397 006c 02       		.uleb128 0x2
+ 398 006d 08       		.byte	0x8
+ 399 006e 07       		.byte	0x7
+ 400 006f 37020000 		.4byte	.LASF9
+ 401 0073 04       		.uleb128 0x4
+ 402 0074 04       		.byte	0x4
+ 403 0075 05       		.byte	0x5
+ 404 0076 696E7400 		.ascii	"int\000"
+ 405 007a 02       		.uleb128 0x2
+ 406 007b 04       		.byte	0x4
+ 407 007c 07       		.byte	0x7
+ 408 007d 62020000 		.4byte	.LASF10
+ 409 0081 03       		.uleb128 0x3
+ 410 0082 6F020000 		.4byte	.LASF11
+ 411 0086 03       		.byte	0x3
+ 412 0087 24       		.byte	0x24
+ 413 0088 3A000000 		.4byte	0x3a
+ 414 008c 03       		.uleb128 0x3
+ 415 008d 96030000 		.4byte	.LASF12
+ 416 0091 03       		.byte	0x3
+ 417 0092 2C       		.byte	0x2c
+ 418 0093 4C000000 		.4byte	0x4c
+ 419 0097 02       		.uleb128 0x2
+ 420 0098 04       		.byte	0x4
+ 421 0099 04       		.byte	0x4
+ 422 009a B2010000 		.4byte	.LASF13
+ 423 009e 02       		.uleb128 0x2
+ 424 009f 08       		.byte	0x8
+ 425 00a0 04       		.byte	0x4
+ 426 00a1 FD030000 		.4byte	.LASF14
+ 427 00a5 02       		.uleb128 0x2
+ 428 00a6 01       		.byte	0x1
+ 429 00a7 08       		.byte	0x8
+ 430 00a8 75030000 		.4byte	.LASF15
+ 431 00ac 02       		.uleb128 0x2
+ 432 00ad 08       		.byte	0x8
+ 433 00ae 04       		.byte	0x4
+ 434 00af FC010000 		.4byte	.LASF16
+ 435 00b3 05       		.uleb128 0x5
+ 436 00b4 D7000000 		.4byte	.LASF64
+ 437 00b8 02       		.uleb128 0x2
+ 438 00b9 04       		.byte	0x4
+ 439 00ba 07       		.byte	0x7
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 10
+
+
+ 440 00bb FE000000 		.4byte	.LASF17
+ 441 00bf 06       		.uleb128 0x6
+ 442 00c0 01       		.byte	0x1
+ 443 00c1 2C000000 		.4byte	0x2c
+ 444 00c5 04       		.byte	0x4
+ 445 00c6 12       		.byte	0x12
+ 446 00c7 78020000 		.4byte	.LASF65
+ 447 00cb DC000000 		.4byte	0xdc
+ 448 00cf 07       		.uleb128 0x7
+ 449 00d0 17050000 		.4byte	.LASF18
+ 450 00d4 00       		.byte	0
+ 451 00d5 07       		.uleb128 0x7
+ 452 00d6 E6040000 		.4byte	.LASF19
+ 453 00da 01       		.byte	0x1
+ 454 00db 00       		.byte	0
+ 455 00dc 03       		.uleb128 0x3
+ 456 00dd 90040000 		.4byte	.LASF20
+ 457 00e1 04       		.byte	0x4
+ 458 00e2 15       		.byte	0x15
+ 459 00e3 BF000000 		.4byte	0xbf
+ 460 00e7 08       		.uleb128 0x8
+ 461 00e8 08       		.byte	0x8
+ 462 00e9 04       		.byte	0x4
+ 463 00ea 1E       		.byte	0x1e
+ 464 00eb DD030000 		.4byte	.LASF66
+ 465 00ef 18010000 		.4byte	0x118
+ 466 00f3 09       		.uleb128 0x9
+ 467 00f4 70776D00 		.ascii	"pwm\000"
+ 468 00f8 04       		.byte	0x4
+ 469 00f9 1F       		.byte	0x1f
+ 470 00fa 81000000 		.4byte	0x81
+ 471 00fe 00       		.byte	0
+ 472 00ff 0A       		.uleb128 0xa
+ 473 0100 24010000 		.4byte	.LASF21
+ 474 0104 04       		.byte	0x4
+ 475 0105 20       		.byte	0x20
+ 476 0106 DC000000 		.4byte	0xdc
+ 477 010a 02       		.byte	0x2
+ 478 010b 0A       		.uleb128 0xa
+ 479 010c 9F040000 		.4byte	.LASF22
+ 480 0110 04       		.byte	0x4
+ 481 0111 21       		.byte	0x21
+ 482 0112 8C000000 		.4byte	0x8c
+ 483 0116 04       		.byte	0x4
+ 484 0117 00       		.byte	0
+ 485 0118 03       		.uleb128 0x3
+ 486 0119 DA040000 		.4byte	.LASF23
+ 487 011d 04       		.byte	0x4
+ 488 011e 22       		.byte	0x22
+ 489 011f E7000000 		.4byte	0xe7
+ 490 0123 0B       		.uleb128 0xb
+ 491 0124 27040000 		.4byte	.LASF24
+ 492 0128 01       		.byte	0x1
+ 493 0129 12       		.byte	0x12
+ 494 012a 16020000 		.4byte	0x216
+ 495 012e 0B       		.uleb128 0xb
+ 496 012f 6E030000 		.4byte	.LASF25
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 11
+
+
+ 497 0133 01       		.byte	0x1
+ 498 0134 14       		.byte	0x14
+ 499 0135 9C010000 		.4byte	0x19c
+ 500 0139 0C       		.uleb128 0xc
+ 501 013a 6D040000 		.4byte	.LASF37
+ 502 013e 01       		.byte	0x1
+ 503 013f 16       		.byte	0x16
+ 504 0140 7A030000 		.4byte	.LASF38
+ 505 0144 0D       		.uleb128 0xd
+ 506 0145 8E010000 		.4byte	.LASF26
+ 507 0149 01       		.byte	0x1
+ 508 014a 1A       		.byte	0x1a
+ 509 014b 9E030000 		.4byte	.LASF28
+ 510 014f 81000000 		.4byte	0x81
+ 511 0153 0E       		.uleb128 0xe
+ 512 0154 16020000 		.4byte	.LASF30
+ 513 0158 01       		.byte	0x1
+ 514 0159 1E       		.byte	0x1e
+ 515 015a 39010000 		.4byte	.LASF32
+ 516 015e 68010000 		.4byte	0x168
+ 517 0162 0F       		.uleb128 0xf
+ 518 0163 81000000 		.4byte	0x81
+ 519 0167 00       		.byte	0
+ 520 0168 0D       		.uleb128 0xd
+ 521 0169 33000000 		.4byte	.LASF27
+ 522 016d 01       		.byte	0x1
+ 523 016e 22       		.byte	0x22
+ 524 016f 3A040000 		.4byte	.LASF29
+ 525 0173 81000000 		.4byte	0x81
+ 526 0177 0E       		.uleb128 0xe
+ 527 0178 C6010000 		.4byte	.LASF31
+ 528 017c 01       		.byte	0x1
+ 529 017d 25       		.byte	0x25
+ 530 017e 0F000000 		.4byte	.LASF33
+ 531 0182 8C010000 		.4byte	0x18c
+ 532 0186 0F       		.uleb128 0xf
+ 533 0187 99020000 		.4byte	0x299
+ 534 018b 00       		.byte	0
+ 535 018c 0D       		.uleb128 0xd
+ 536 018d 58040000 		.4byte	.LASF34
+ 537 0191 01       		.byte	0x1
+ 538 0192 29       		.byte	0x29
+ 539 0193 FA040000 		.4byte	.LASF35
+ 540 0197 18010000 		.4byte	0x118
+ 541 019b 00       		.byte	0
+ 542 019c 0B       		.uleb128 0xb
+ 543 019d D3040000 		.4byte	.LASF36
+ 544 01a1 01       		.byte	0x1
+ 545 01a2 2E       		.byte	0x2e
+ 546 01a3 0A020000 		.4byte	0x20a
+ 547 01a7 0C       		.uleb128 0xc
+ 548 01a8 6D040000 		.4byte	.LASF37
+ 549 01ac 01       		.byte	0x1
+ 550 01ad 30       		.byte	0x30
+ 551 01ae C1030000 		.4byte	.LASF39
+ 552 01b2 0D       		.uleb128 0xd
+ 553 01b3 8E010000 		.4byte	.LASF26
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 12
+
+
+ 554 01b7 01       		.byte	0x1
+ 555 01b8 34       		.byte	0x34
+ 556 01b9 04040000 		.4byte	.LASF40
+ 557 01bd 81000000 		.4byte	0x81
+ 558 01c1 0E       		.uleb128 0xe
+ 559 01c2 16020000 		.4byte	.LASF30
+ 560 01c6 01       		.byte	0x1
+ 561 01c7 38       		.byte	0x38
+ 562 01c8 89020000 		.4byte	.LASF41
+ 563 01cc D6010000 		.4byte	0x1d6
+ 564 01d0 0F       		.uleb128 0xf
+ 565 01d1 81000000 		.4byte	0x81
+ 566 01d5 00       		.byte	0
+ 567 01d6 0D       		.uleb128 0xd
+ 568 01d7 33000000 		.4byte	.LASF27
+ 569 01db 01       		.byte	0x1
+ 570 01dc 3C       		.byte	0x3c
+ 571 01dd 70010000 		.4byte	.LASF42
+ 572 01e1 81000000 		.4byte	0x81
+ 573 01e5 0E       		.uleb128 0xe
+ 574 01e6 C6010000 		.4byte	.LASF31
+ 575 01ea 01       		.byte	0x1
+ 576 01eb 3F       		.byte	0x3f
+ 577 01ec B3000000 		.4byte	.LASF43
+ 578 01f0 FA010000 		.4byte	0x1fa
+ 579 01f4 0F       		.uleb128 0xf
+ 580 01f5 99020000 		.4byte	0x299
+ 581 01f9 00       		.byte	0
+ 582 01fa 0D       		.uleb128 0xd
+ 583 01fb 58040000 		.4byte	.LASF34
+ 584 01ff 01       		.byte	0x1
+ 585 0200 43       		.byte	0x43
+ 586 0201 73040000 		.4byte	.LASF44
+ 587 0205 18010000 		.4byte	0x118
+ 588 0209 00       		.byte	0
+ 589 020a 0C       		.uleb128 0xc
+ 590 020b 86000000 		.4byte	.LASF45
+ 591 020f 01       		.byte	0x1
+ 592 0210 48       		.byte	0x48
+ 593 0211 07010000 		.4byte	.LASF46
+ 594 0215 00       		.byte	0
+ 595 0216 10       		.uleb128 0x10
+ 596 0217 39010000 		.4byte	0x139
+ 597 021b 00000000 		.4byte	.LFB63
+ 598 021f 08000000 		.4byte	.LFE63-.LFB63
+ 599 0223 01       		.uleb128 0x1
+ 600 0224 9C       		.byte	0x9c
+ 601 0225 33020000 		.4byte	0x233
+ 602 0229 11       		.uleb128 0x11
+ 603 022a 06000000 		.4byte	.LVL0
+ 604 022e FA030000 		.4byte	0x3fa
+ 605 0232 00       		.byte	0
+ 606 0233 10       		.uleb128 0x10
+ 607 0234 44010000 		.4byte	0x144
+ 608 0238 00000000 		.4byte	.LFB64
+ 609 023c 08000000 		.4byte	.LFE64-.LFB64
+ 610 0240 01       		.uleb128 0x1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 13
+
+
+ 611 0241 9C       		.byte	0x9c
+ 612 0242 50020000 		.4byte	0x250
+ 613 0246 11       		.uleb128 0x11
+ 614 0247 06000000 		.4byte	.LVL1
+ 615 024b 05040000 		.4byte	0x405
+ 616 024f 00       		.byte	0
+ 617 0250 10       		.uleb128 0x10
+ 618 0251 53010000 		.4byte	0x153
+ 619 0255 00000000 		.4byte	.LFB65
+ 620 0259 08000000 		.4byte	.LFE65-.LFB65
+ 621 025d 01       		.uleb128 0x1
+ 622 025e 9C       		.byte	0x9c
+ 623 025f 7C020000 		.4byte	0x27c
+ 624 0263 12       		.uleb128 0x12
+ 625 0264 56010000 		.4byte	.LASF48
+ 626 0268 01       		.byte	0x1
+ 627 0269 1E       		.byte	0x1e
+ 628 026a 81000000 		.4byte	0x81
+ 629 026e 00000000 		.4byte	.LLST0
+ 630 0272 11       		.uleb128 0x11
+ 631 0273 06000000 		.4byte	.LVL3
+ 632 0277 10040000 		.4byte	0x410
+ 633 027b 00       		.byte	0
+ 634 027c 10       		.uleb128 0x10
+ 635 027d 68010000 		.4byte	0x168
+ 636 0281 00000000 		.4byte	.LFB66
+ 637 0285 08000000 		.4byte	.LFE66-.LFB66
+ 638 0289 01       		.uleb128 0x1
+ 639 028a 9C       		.byte	0x9c
+ 640 028b 99020000 		.4byte	0x299
+ 641 028f 11       		.uleb128 0x11
+ 642 0290 06000000 		.4byte	.LVL4
+ 643 0294 1B040000 		.4byte	0x41b
+ 644 0298 00       		.byte	0
+ 645 0299 02       		.uleb128 0x2
+ 646 029a 01       		.byte	0x1
+ 647 029b 02       		.byte	0x2
+ 648 029c AD010000 		.4byte	.LASF47
+ 649 02a0 10       		.uleb128 0x10
+ 650 02a1 77010000 		.4byte	0x177
+ 651 02a5 00000000 		.4byte	.LFB67
+ 652 02a9 08000000 		.4byte	.LFE67-.LFB67
+ 653 02ad 01       		.uleb128 0x1
+ 654 02ae 9C       		.byte	0x9c
+ 655 02af CC020000 		.4byte	0x2cc
+ 656 02b3 13       		.uleb128 0x13
+ 657 02b4 64697200 		.ascii	"dir\000"
+ 658 02b8 01       		.byte	0x1
+ 659 02b9 25       		.byte	0x25
+ 660 02ba 99020000 		.4byte	0x299
+ 661 02be 21000000 		.4byte	.LLST1
+ 662 02c2 11       		.uleb128 0x11
+ 663 02c3 06000000 		.4byte	.LVL6
+ 664 02c7 26040000 		.4byte	0x426
+ 665 02cb 00       		.byte	0
+ 666 02cc 10       		.uleb128 0x10
+ 667 02cd 8C010000 		.4byte	0x18c
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 14
+
+
+ 668 02d1 00000000 		.4byte	.LFB68
+ 669 02d5 0C000000 		.4byte	.LFE68-.LFB68
+ 670 02d9 01       		.uleb128 0x1
+ 671 02da 9C       		.byte	0x9c
+ 672 02db F0020000 		.4byte	0x2f0
+ 673 02df 14       		.uleb128 0x14
+ 674 02e0 08000000 		.4byte	.LVL8
+ 675 02e4 31040000 		.4byte	0x431
+ 676 02e8 15       		.uleb128 0x15
+ 677 02e9 01       		.uleb128 0x1
+ 678 02ea 50       		.byte	0x50
+ 679 02eb 02       		.uleb128 0x2
+ 680 02ec 74       		.byte	0x74
+ 681 02ed 00       		.sleb128 0
+ 682 02ee 00       		.byte	0
+ 683 02ef 00       		.byte	0
+ 684 02f0 10       		.uleb128 0x10
+ 685 02f1 A7010000 		.4byte	0x1a7
+ 686 02f5 00000000 		.4byte	.LFB69
+ 687 02f9 08000000 		.4byte	.LFE69-.LFB69
+ 688 02fd 01       		.uleb128 0x1
+ 689 02fe 9C       		.byte	0x9c
+ 690 02ff 0D030000 		.4byte	0x30d
+ 691 0303 11       		.uleb128 0x11
+ 692 0304 06000000 		.4byte	.LVL9
+ 693 0308 3C040000 		.4byte	0x43c
+ 694 030c 00       		.byte	0
+ 695 030d 10       		.uleb128 0x10
+ 696 030e B2010000 		.4byte	0x1b2
+ 697 0312 00000000 		.4byte	.LFB70
+ 698 0316 08000000 		.4byte	.LFE70-.LFB70
+ 699 031a 01       		.uleb128 0x1
+ 700 031b 9C       		.byte	0x9c
+ 701 031c 2A030000 		.4byte	0x32a
+ 702 0320 11       		.uleb128 0x11
+ 703 0321 06000000 		.4byte	.LVL10
+ 704 0325 47040000 		.4byte	0x447
+ 705 0329 00       		.byte	0
+ 706 032a 10       		.uleb128 0x10
+ 707 032b C1010000 		.4byte	0x1c1
+ 708 032f 00000000 		.4byte	.LFB71
+ 709 0333 08000000 		.4byte	.LFE71-.LFB71
+ 710 0337 01       		.uleb128 0x1
+ 711 0338 9C       		.byte	0x9c
+ 712 0339 56030000 		.4byte	0x356
+ 713 033d 12       		.uleb128 0x12
+ 714 033e 56010000 		.4byte	.LASF48
+ 715 0342 01       		.byte	0x1
+ 716 0343 38       		.byte	0x38
+ 717 0344 81000000 		.4byte	0x81
+ 718 0348 42000000 		.4byte	.LLST2
+ 719 034c 11       		.uleb128 0x11
+ 720 034d 06000000 		.4byte	.LVL12
+ 721 0351 52040000 		.4byte	0x452
+ 722 0355 00       		.byte	0
+ 723 0356 10       		.uleb128 0x10
+ 724 0357 D6010000 		.4byte	0x1d6
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 15
+
+
+ 725 035b 00000000 		.4byte	.LFB72
+ 726 035f 08000000 		.4byte	.LFE72-.LFB72
+ 727 0363 01       		.uleb128 0x1
+ 728 0364 9C       		.byte	0x9c
+ 729 0365 73030000 		.4byte	0x373
+ 730 0369 11       		.uleb128 0x11
+ 731 036a 06000000 		.4byte	.LVL13
+ 732 036e 5D040000 		.4byte	0x45d
+ 733 0372 00       		.byte	0
+ 734 0373 10       		.uleb128 0x10
+ 735 0374 E5010000 		.4byte	0x1e5
+ 736 0378 00000000 		.4byte	.LFB73
+ 737 037c 08000000 		.4byte	.LFE73-.LFB73
+ 738 0380 01       		.uleb128 0x1
+ 739 0381 9C       		.byte	0x9c
+ 740 0382 9F030000 		.4byte	0x39f
+ 741 0386 13       		.uleb128 0x13
+ 742 0387 64697200 		.ascii	"dir\000"
+ 743 038b 01       		.byte	0x1
+ 744 038c 3F       		.byte	0x3f
+ 745 038d 99020000 		.4byte	0x299
+ 746 0391 63000000 		.4byte	.LLST3
+ 747 0395 11       		.uleb128 0x11
+ 748 0396 06000000 		.4byte	.LVL15
+ 749 039a 68040000 		.4byte	0x468
+ 750 039e 00       		.byte	0
+ 751 039f 10       		.uleb128 0x10
+ 752 03a0 FA010000 		.4byte	0x1fa
+ 753 03a4 00000000 		.4byte	.LFB74
+ 754 03a8 0C000000 		.4byte	.LFE74-.LFB74
+ 755 03ac 01       		.uleb128 0x1
+ 756 03ad 9C       		.byte	0x9c
+ 757 03ae C3030000 		.4byte	0x3c3
+ 758 03b2 14       		.uleb128 0x14
+ 759 03b3 08000000 		.4byte	.LVL17
+ 760 03b7 73040000 		.4byte	0x473
+ 761 03bb 15       		.uleb128 0x15
+ 762 03bc 01       		.uleb128 0x1
+ 763 03bd 50       		.byte	0x50
+ 764 03be 02       		.uleb128 0x2
+ 765 03bf 74       		.byte	0x74
+ 766 03c0 00       		.sleb128 0
+ 767 03c1 00       		.byte	0
+ 768 03c2 00       		.byte	0
+ 769 03c3 10       		.uleb128 0x10
+ 770 03c4 0A020000 		.4byte	0x20a
+ 771 03c8 00000000 		.4byte	.LFB75
+ 772 03cc 0C000000 		.4byte	.LFE75-.LFB75
+ 773 03d0 01       		.uleb128 0x1
+ 774 03d1 9C       		.byte	0x9c
+ 775 03d2 E9030000 		.4byte	0x3e9
+ 776 03d6 11       		.uleb128 0x11
+ 777 03d7 06000000 		.4byte	.LVL18
+ 778 03db 16020000 		.4byte	0x216
+ 779 03df 11       		.uleb128 0x11
+ 780 03e0 0A000000 		.4byte	.LVL19
+ 781 03e4 F0020000 		.4byte	0x2f0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 16
+
+
+ 782 03e8 00       		.byte	0
+ 783 03e9 16       		.uleb128 0x16
+ 784 03ea A8040000 		.4byte	.LASF67
+ 785 03ee 06       		.byte	0x6
+ 786 03ef 1207     		.2byte	0x712
+ 787 03f1 F5030000 		.4byte	0x3f5
+ 788 03f5 17       		.uleb128 0x17
+ 789 03f6 8C000000 		.4byte	0x8c
+ 790 03fa 18       		.uleb128 0x18
+ 791 03fb DC010000 		.4byte	.LASF49
+ 792 03ff DC010000 		.4byte	.LASF49
+ 793 0403 05       		.byte	0x5
+ 794 0404 15       		.byte	0x15
+ 795 0405 18       		.uleb128 0x18
+ 796 0406 9A010000 		.4byte	.LASF50
+ 797 040a 9A010000 		.4byte	.LASF50
+ 798 040e 05       		.byte	0x5
+ 799 040f 16       		.byte	0x16
+ 800 0410 18       		.uleb128 0x18
+ 801 0411 1D020000 		.4byte	.LASF51
+ 802 0415 1D020000 		.4byte	.LASF51
+ 803 0419 05       		.byte	0x5
+ 804 041a 17       		.byte	0x17
+ 805 041b 18       		.uleb128 0x18
+ 806 041c 00000000 		.4byte	.LASF52
+ 807 0420 00000000 		.4byte	.LASF52
+ 808 0424 05       		.byte	0x5
+ 809 0425 18       		.byte	0x18
+ 810 0426 18       		.uleb128 0x18
+ 811 0427 5C010000 		.4byte	.LASF53
+ 812 042b 5C010000 		.4byte	.LASF53
+ 813 042f 05       		.byte	0x5
+ 814 0430 19       		.byte	0x19
+ 815 0431 18       		.uleb128 0x18
+ 816 0432 A2000000 		.4byte	.LASF54
+ 817 0436 A2000000 		.4byte	.LASF54
+ 818 043a 05       		.byte	0x5
+ 819 043b 1A       		.byte	0x1a
+ 820 043c 18       		.uleb128 0x18
+ 821 043d C6040000 		.4byte	.LASF55
+ 822 0441 C6040000 		.4byte	.LASF55
+ 823 0445 05       		.byte	0x5
+ 824 0446 1E       		.byte	0x1e
+ 825 0447 18       		.uleb128 0x18
+ 826 0448 E9010000 		.4byte	.LASF56
+ 827 044c E9010000 		.4byte	.LASF56
+ 828 0450 05       		.byte	0x5
+ 829 0451 1F       		.byte	0x1f
+ 830 0452 18       		.uleb128 0x18
+ 831 0453 5F040000 		.4byte	.LASF57
+ 832 0457 5F040000 		.4byte	.LASF57
+ 833 045b 05       		.byte	0x5
+ 834 045c 20       		.byte	0x20
+ 835 045d 18       		.uleb128 0x18
+ 836 045e 93000000 		.4byte	.LASF58
+ 837 0462 93000000 		.4byte	.LASF58
+ 838 0466 05       		.byte	0x5
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 17
+
+
+ 839 0467 21       		.byte	0x21
+ 840 0468 18       		.uleb128 0x18
+ 841 0469 4E020000 		.4byte	.LASF59
+ 842 046d 4E020000 		.4byte	.LASF59
+ 843 0471 05       		.byte	0x5
+ 844 0472 22       		.byte	0x22
+ 845 0473 18       		.uleb128 0x18
+ 846 0474 B5040000 		.4byte	.LASF60
+ 847 0478 B5040000 		.4byte	.LASF60
+ 848 047c 05       		.byte	0x5
+ 849 047d 23       		.byte	0x23
+ 850 047e 00       		.byte	0
+ 851              		.section	.debug_abbrev,"",%progbits
+ 852              	.Ldebug_abbrev0:
+ 853 0000 01       		.uleb128 0x1
+ 854 0001 11       		.uleb128 0x11
+ 855 0002 01       		.byte	0x1
+ 856 0003 25       		.uleb128 0x25
+ 857 0004 0E       		.uleb128 0xe
+ 858 0005 13       		.uleb128 0x13
+ 859 0006 0B       		.uleb128 0xb
+ 860 0007 03       		.uleb128 0x3
+ 861 0008 0E       		.uleb128 0xe
+ 862 0009 1B       		.uleb128 0x1b
+ 863 000a 0E       		.uleb128 0xe
+ 864 000b 55       		.uleb128 0x55
+ 865 000c 17       		.uleb128 0x17
+ 866 000d 11       		.uleb128 0x11
+ 867 000e 01       		.uleb128 0x1
+ 868 000f 10       		.uleb128 0x10
+ 869 0010 17       		.uleb128 0x17
+ 870 0011 00       		.byte	0
+ 871 0012 00       		.byte	0
+ 872 0013 02       		.uleb128 0x2
+ 873 0014 24       		.uleb128 0x24
+ 874 0015 00       		.byte	0
+ 875 0016 0B       		.uleb128 0xb
+ 876 0017 0B       		.uleb128 0xb
+ 877 0018 3E       		.uleb128 0x3e
+ 878 0019 0B       		.uleb128 0xb
+ 879 001a 03       		.uleb128 0x3
+ 880 001b 0E       		.uleb128 0xe
+ 881 001c 00       		.byte	0
+ 882 001d 00       		.byte	0
+ 883 001e 03       		.uleb128 0x3
+ 884 001f 16       		.uleb128 0x16
+ 885 0020 00       		.byte	0
+ 886 0021 03       		.uleb128 0x3
+ 887 0022 0E       		.uleb128 0xe
+ 888 0023 3A       		.uleb128 0x3a
+ 889 0024 0B       		.uleb128 0xb
+ 890 0025 3B       		.uleb128 0x3b
+ 891 0026 0B       		.uleb128 0xb
+ 892 0027 49       		.uleb128 0x49
+ 893 0028 13       		.uleb128 0x13
+ 894 0029 00       		.byte	0
+ 895 002a 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 18
+
+
+ 896 002b 04       		.uleb128 0x4
+ 897 002c 24       		.uleb128 0x24
+ 898 002d 00       		.byte	0
+ 899 002e 0B       		.uleb128 0xb
+ 900 002f 0B       		.uleb128 0xb
+ 901 0030 3E       		.uleb128 0x3e
+ 902 0031 0B       		.uleb128 0xb
+ 903 0032 03       		.uleb128 0x3
+ 904 0033 08       		.uleb128 0x8
+ 905 0034 00       		.byte	0
+ 906 0035 00       		.byte	0
+ 907 0036 05       		.uleb128 0x5
+ 908 0037 3B       		.uleb128 0x3b
+ 909 0038 00       		.byte	0
+ 910 0039 03       		.uleb128 0x3
+ 911 003a 0E       		.uleb128 0xe
+ 912 003b 00       		.byte	0
+ 913 003c 00       		.byte	0
+ 914 003d 06       		.uleb128 0x6
+ 915 003e 04       		.uleb128 0x4
+ 916 003f 01       		.byte	0x1
+ 917 0040 0B       		.uleb128 0xb
+ 918 0041 0B       		.uleb128 0xb
+ 919 0042 49       		.uleb128 0x49
+ 920 0043 13       		.uleb128 0x13
+ 921 0044 3A       		.uleb128 0x3a
+ 922 0045 0B       		.uleb128 0xb
+ 923 0046 3B       		.uleb128 0x3b
+ 924 0047 0B       		.uleb128 0xb
+ 925 0048 6E       		.uleb128 0x6e
+ 926 0049 0E       		.uleb128 0xe
+ 927 004a 01       		.uleb128 0x1
+ 928 004b 13       		.uleb128 0x13
+ 929 004c 00       		.byte	0
+ 930 004d 00       		.byte	0
+ 931 004e 07       		.uleb128 0x7
+ 932 004f 28       		.uleb128 0x28
+ 933 0050 00       		.byte	0
+ 934 0051 03       		.uleb128 0x3
+ 935 0052 0E       		.uleb128 0xe
+ 936 0053 1C       		.uleb128 0x1c
+ 937 0054 0B       		.uleb128 0xb
+ 938 0055 00       		.byte	0
+ 939 0056 00       		.byte	0
+ 940 0057 08       		.uleb128 0x8
+ 941 0058 13       		.uleb128 0x13
+ 942 0059 01       		.byte	0x1
+ 943 005a 0B       		.uleb128 0xb
+ 944 005b 0B       		.uleb128 0xb
+ 945 005c 3A       		.uleb128 0x3a
+ 946 005d 0B       		.uleb128 0xb
+ 947 005e 3B       		.uleb128 0x3b
+ 948 005f 0B       		.uleb128 0xb
+ 949 0060 6E       		.uleb128 0x6e
+ 950 0061 0E       		.uleb128 0xe
+ 951 0062 01       		.uleb128 0x1
+ 952 0063 13       		.uleb128 0x13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 19
+
+
+ 953 0064 00       		.byte	0
+ 954 0065 00       		.byte	0
+ 955 0066 09       		.uleb128 0x9
+ 956 0067 0D       		.uleb128 0xd
+ 957 0068 00       		.byte	0
+ 958 0069 03       		.uleb128 0x3
+ 959 006a 08       		.uleb128 0x8
+ 960 006b 3A       		.uleb128 0x3a
+ 961 006c 0B       		.uleb128 0xb
+ 962 006d 3B       		.uleb128 0x3b
+ 963 006e 0B       		.uleb128 0xb
+ 964 006f 49       		.uleb128 0x49
+ 965 0070 13       		.uleb128 0x13
+ 966 0071 38       		.uleb128 0x38
+ 967 0072 0B       		.uleb128 0xb
+ 968 0073 00       		.byte	0
+ 969 0074 00       		.byte	0
+ 970 0075 0A       		.uleb128 0xa
+ 971 0076 0D       		.uleb128 0xd
+ 972 0077 00       		.byte	0
+ 973 0078 03       		.uleb128 0x3
+ 974 0079 0E       		.uleb128 0xe
+ 975 007a 3A       		.uleb128 0x3a
+ 976 007b 0B       		.uleb128 0xb
+ 977 007c 3B       		.uleb128 0x3b
+ 978 007d 0B       		.uleb128 0xb
+ 979 007e 49       		.uleb128 0x49
+ 980 007f 13       		.uleb128 0x13
+ 981 0080 38       		.uleb128 0x38
+ 982 0081 0B       		.uleb128 0xb
+ 983 0082 00       		.byte	0
+ 984 0083 00       		.byte	0
+ 985 0084 0B       		.uleb128 0xb
+ 986 0085 39       		.uleb128 0x39
+ 987 0086 01       		.byte	0x1
+ 988 0087 03       		.uleb128 0x3
+ 989 0088 0E       		.uleb128 0xe
+ 990 0089 3A       		.uleb128 0x3a
+ 991 008a 0B       		.uleb128 0xb
+ 992 008b 3B       		.uleb128 0x3b
+ 993 008c 0B       		.uleb128 0xb
+ 994 008d 01       		.uleb128 0x1
+ 995 008e 13       		.uleb128 0x13
+ 996 008f 00       		.byte	0
+ 997 0090 00       		.byte	0
+ 998 0091 0C       		.uleb128 0xc
+ 999 0092 2E       		.uleb128 0x2e
+ 1000 0093 00       		.byte	0
+ 1001 0094 3F       		.uleb128 0x3f
+ 1002 0095 19       		.uleb128 0x19
+ 1003 0096 03       		.uleb128 0x3
+ 1004 0097 0E       		.uleb128 0xe
+ 1005 0098 3A       		.uleb128 0x3a
+ 1006 0099 0B       		.uleb128 0xb
+ 1007 009a 3B       		.uleb128 0x3b
+ 1008 009b 0B       		.uleb128 0xb
+ 1009 009c 6E       		.uleb128 0x6e
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 20
+
+
+ 1010 009d 0E       		.uleb128 0xe
+ 1011 009e 3C       		.uleb128 0x3c
+ 1012 009f 19       		.uleb128 0x19
+ 1013 00a0 00       		.byte	0
+ 1014 00a1 00       		.byte	0
+ 1015 00a2 0D       		.uleb128 0xd
+ 1016 00a3 2E       		.uleb128 0x2e
+ 1017 00a4 00       		.byte	0
+ 1018 00a5 3F       		.uleb128 0x3f
+ 1019 00a6 19       		.uleb128 0x19
+ 1020 00a7 03       		.uleb128 0x3
+ 1021 00a8 0E       		.uleb128 0xe
+ 1022 00a9 3A       		.uleb128 0x3a
+ 1023 00aa 0B       		.uleb128 0xb
+ 1024 00ab 3B       		.uleb128 0x3b
+ 1025 00ac 0B       		.uleb128 0xb
+ 1026 00ad 6E       		.uleb128 0x6e
+ 1027 00ae 0E       		.uleb128 0xe
+ 1028 00af 49       		.uleb128 0x49
+ 1029 00b0 13       		.uleb128 0x13
+ 1030 00b1 3C       		.uleb128 0x3c
+ 1031 00b2 19       		.uleb128 0x19
+ 1032 00b3 00       		.byte	0
+ 1033 00b4 00       		.byte	0
+ 1034 00b5 0E       		.uleb128 0xe
+ 1035 00b6 2E       		.uleb128 0x2e
+ 1036 00b7 01       		.byte	0x1
+ 1037 00b8 3F       		.uleb128 0x3f
+ 1038 00b9 19       		.uleb128 0x19
+ 1039 00ba 03       		.uleb128 0x3
+ 1040 00bb 0E       		.uleb128 0xe
+ 1041 00bc 3A       		.uleb128 0x3a
+ 1042 00bd 0B       		.uleb128 0xb
+ 1043 00be 3B       		.uleb128 0x3b
+ 1044 00bf 0B       		.uleb128 0xb
+ 1045 00c0 6E       		.uleb128 0x6e
+ 1046 00c1 0E       		.uleb128 0xe
+ 1047 00c2 3C       		.uleb128 0x3c
+ 1048 00c3 19       		.uleb128 0x19
+ 1049 00c4 01       		.uleb128 0x1
+ 1050 00c5 13       		.uleb128 0x13
+ 1051 00c6 00       		.byte	0
+ 1052 00c7 00       		.byte	0
+ 1053 00c8 0F       		.uleb128 0xf
+ 1054 00c9 05       		.uleb128 0x5
+ 1055 00ca 00       		.byte	0
+ 1056 00cb 49       		.uleb128 0x49
+ 1057 00cc 13       		.uleb128 0x13
+ 1058 00cd 00       		.byte	0
+ 1059 00ce 00       		.byte	0
+ 1060 00cf 10       		.uleb128 0x10
+ 1061 00d0 2E       		.uleb128 0x2e
+ 1062 00d1 01       		.byte	0x1
+ 1063 00d2 47       		.uleb128 0x47
+ 1064 00d3 13       		.uleb128 0x13
+ 1065 00d4 11       		.uleb128 0x11
+ 1066 00d5 01       		.uleb128 0x1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 21
+
+
+ 1067 00d6 12       		.uleb128 0x12
+ 1068 00d7 06       		.uleb128 0x6
+ 1069 00d8 40       		.uleb128 0x40
+ 1070 00d9 18       		.uleb128 0x18
+ 1071 00da 9742     		.uleb128 0x2117
+ 1072 00dc 19       		.uleb128 0x19
+ 1073 00dd 01       		.uleb128 0x1
+ 1074 00de 13       		.uleb128 0x13
+ 1075 00df 00       		.byte	0
+ 1076 00e0 00       		.byte	0
+ 1077 00e1 11       		.uleb128 0x11
+ 1078 00e2 898201   		.uleb128 0x4109
+ 1079 00e5 00       		.byte	0
+ 1080 00e6 11       		.uleb128 0x11
+ 1081 00e7 01       		.uleb128 0x1
+ 1082 00e8 31       		.uleb128 0x31
+ 1083 00e9 13       		.uleb128 0x13
+ 1084 00ea 00       		.byte	0
+ 1085 00eb 00       		.byte	0
+ 1086 00ec 12       		.uleb128 0x12
+ 1087 00ed 05       		.uleb128 0x5
+ 1088 00ee 00       		.byte	0
+ 1089 00ef 03       		.uleb128 0x3
+ 1090 00f0 0E       		.uleb128 0xe
+ 1091 00f1 3A       		.uleb128 0x3a
+ 1092 00f2 0B       		.uleb128 0xb
+ 1093 00f3 3B       		.uleb128 0x3b
+ 1094 00f4 0B       		.uleb128 0xb
+ 1095 00f5 49       		.uleb128 0x49
+ 1096 00f6 13       		.uleb128 0x13
+ 1097 00f7 02       		.uleb128 0x2
+ 1098 00f8 17       		.uleb128 0x17
+ 1099 00f9 00       		.byte	0
+ 1100 00fa 00       		.byte	0
+ 1101 00fb 13       		.uleb128 0x13
+ 1102 00fc 05       		.uleb128 0x5
+ 1103 00fd 00       		.byte	0
+ 1104 00fe 03       		.uleb128 0x3
+ 1105 00ff 08       		.uleb128 0x8
+ 1106 0100 3A       		.uleb128 0x3a
+ 1107 0101 0B       		.uleb128 0xb
+ 1108 0102 3B       		.uleb128 0x3b
+ 1109 0103 0B       		.uleb128 0xb
+ 1110 0104 49       		.uleb128 0x49
+ 1111 0105 13       		.uleb128 0x13
+ 1112 0106 02       		.uleb128 0x2
+ 1113 0107 17       		.uleb128 0x17
+ 1114 0108 00       		.byte	0
+ 1115 0109 00       		.byte	0
+ 1116 010a 14       		.uleb128 0x14
+ 1117 010b 898201   		.uleb128 0x4109
+ 1118 010e 01       		.byte	0x1
+ 1119 010f 11       		.uleb128 0x11
+ 1120 0110 01       		.uleb128 0x1
+ 1121 0111 31       		.uleb128 0x31
+ 1122 0112 13       		.uleb128 0x13
+ 1123 0113 00       		.byte	0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 22
+
+
+ 1124 0114 00       		.byte	0
+ 1125 0115 15       		.uleb128 0x15
+ 1126 0116 8A8201   		.uleb128 0x410a
+ 1127 0119 00       		.byte	0
+ 1128 011a 02       		.uleb128 0x2
+ 1129 011b 18       		.uleb128 0x18
+ 1130 011c 9142     		.uleb128 0x2111
+ 1131 011e 18       		.uleb128 0x18
+ 1132 011f 00       		.byte	0
+ 1133 0120 00       		.byte	0
+ 1134 0121 16       		.uleb128 0x16
+ 1135 0122 34       		.uleb128 0x34
+ 1136 0123 00       		.byte	0
+ 1137 0124 03       		.uleb128 0x3
+ 1138 0125 0E       		.uleb128 0xe
+ 1139 0126 3A       		.uleb128 0x3a
+ 1140 0127 0B       		.uleb128 0xb
+ 1141 0128 3B       		.uleb128 0x3b
+ 1142 0129 05       		.uleb128 0x5
+ 1143 012a 49       		.uleb128 0x49
+ 1144 012b 13       		.uleb128 0x13
+ 1145 012c 3F       		.uleb128 0x3f
+ 1146 012d 19       		.uleb128 0x19
+ 1147 012e 3C       		.uleb128 0x3c
+ 1148 012f 19       		.uleb128 0x19
+ 1149 0130 00       		.byte	0
+ 1150 0131 00       		.byte	0
+ 1151 0132 17       		.uleb128 0x17
+ 1152 0133 35       		.uleb128 0x35
+ 1153 0134 00       		.byte	0
+ 1154 0135 49       		.uleb128 0x49
+ 1155 0136 13       		.uleb128 0x13
+ 1156 0137 00       		.byte	0
+ 1157 0138 00       		.byte	0
+ 1158 0139 18       		.uleb128 0x18
+ 1159 013a 2E       		.uleb128 0x2e
+ 1160 013b 00       		.byte	0
+ 1161 013c 3F       		.uleb128 0x3f
+ 1162 013d 19       		.uleb128 0x19
+ 1163 013e 3C       		.uleb128 0x3c
+ 1164 013f 19       		.uleb128 0x19
+ 1165 0140 6E       		.uleb128 0x6e
+ 1166 0141 0E       		.uleb128 0xe
+ 1167 0142 03       		.uleb128 0x3
+ 1168 0143 0E       		.uleb128 0xe
+ 1169 0144 3A       		.uleb128 0x3a
+ 1170 0145 0B       		.uleb128 0xb
+ 1171 0146 3B       		.uleb128 0x3b
+ 1172 0147 0B       		.uleb128 0xb
+ 1173 0148 00       		.byte	0
+ 1174 0149 00       		.byte	0
+ 1175 014a 00       		.byte	0
+ 1176              		.section	.debug_loc,"",%progbits
+ 1177              	.Ldebug_loc0:
+ 1178              	.LLST0:
+ 1179 0000 00000000 		.4byte	.LVL2
+ 1180 0004 05000000 		.4byte	.LVL3-1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 23
+
+
+ 1181 0008 0100     		.2byte	0x1
+ 1182 000a 50       		.byte	0x50
+ 1183 000b 05000000 		.4byte	.LVL3-1
+ 1184 000f 08000000 		.4byte	.LFE65
+ 1185 0013 0400     		.2byte	0x4
+ 1186 0015 F3       		.byte	0xf3
+ 1187 0016 01       		.uleb128 0x1
+ 1188 0017 50       		.byte	0x50
+ 1189 0018 9F       		.byte	0x9f
+ 1190 0019 00000000 		.4byte	0
+ 1191 001d 00000000 		.4byte	0
+ 1192              	.LLST1:
+ 1193 0021 00000000 		.4byte	.LVL5
+ 1194 0025 05000000 		.4byte	.LVL6-1
+ 1195 0029 0100     		.2byte	0x1
+ 1196 002b 50       		.byte	0x50
+ 1197 002c 05000000 		.4byte	.LVL6-1
+ 1198 0030 08000000 		.4byte	.LFE67
+ 1199 0034 0400     		.2byte	0x4
+ 1200 0036 F3       		.byte	0xf3
+ 1201 0037 01       		.uleb128 0x1
+ 1202 0038 50       		.byte	0x50
+ 1203 0039 9F       		.byte	0x9f
+ 1204 003a 00000000 		.4byte	0
+ 1205 003e 00000000 		.4byte	0
+ 1206              	.LLST2:
+ 1207 0042 00000000 		.4byte	.LVL11
+ 1208 0046 05000000 		.4byte	.LVL12-1
+ 1209 004a 0100     		.2byte	0x1
+ 1210 004c 50       		.byte	0x50
+ 1211 004d 05000000 		.4byte	.LVL12-1
+ 1212 0051 08000000 		.4byte	.LFE71
+ 1213 0055 0400     		.2byte	0x4
+ 1214 0057 F3       		.byte	0xf3
+ 1215 0058 01       		.uleb128 0x1
+ 1216 0059 50       		.byte	0x50
+ 1217 005a 9F       		.byte	0x9f
+ 1218 005b 00000000 		.4byte	0
+ 1219 005f 00000000 		.4byte	0
+ 1220              	.LLST3:
+ 1221 0063 00000000 		.4byte	.LVL14
+ 1222 0067 05000000 		.4byte	.LVL15-1
+ 1223 006b 0100     		.2byte	0x1
+ 1224 006d 50       		.byte	0x50
+ 1225 006e 05000000 		.4byte	.LVL15-1
+ 1226 0072 08000000 		.4byte	.LFE73
+ 1227 0076 0400     		.2byte	0x4
+ 1228 0078 F3       		.byte	0xf3
+ 1229 0079 01       		.uleb128 0x1
+ 1230 007a 50       		.byte	0x50
+ 1231 007b 9F       		.byte	0x9f
+ 1232 007c 00000000 		.4byte	0
+ 1233 0080 00000000 		.4byte	0
+ 1234              		.section	.debug_aranges,"",%progbits
+ 1235 0000 7C000000 		.4byte	0x7c
+ 1236 0004 0200     		.2byte	0x2
+ 1237 0006 00000000 		.4byte	.Ldebug_info0
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 24
+
+
+ 1238 000a 04       		.byte	0x4
+ 1239 000b 00       		.byte	0
+ 1240 000c 0000     		.2byte	0
+ 1241 000e 0000     		.2byte	0
+ 1242 0010 00000000 		.4byte	.LFB63
+ 1243 0014 08000000 		.4byte	.LFE63-.LFB63
+ 1244 0018 00000000 		.4byte	.LFB64
+ 1245 001c 08000000 		.4byte	.LFE64-.LFB64
+ 1246 0020 00000000 		.4byte	.LFB65
+ 1247 0024 08000000 		.4byte	.LFE65-.LFB65
+ 1248 0028 00000000 		.4byte	.LFB66
+ 1249 002c 08000000 		.4byte	.LFE66-.LFB66
+ 1250 0030 00000000 		.4byte	.LFB67
+ 1251 0034 08000000 		.4byte	.LFE67-.LFB67
+ 1252 0038 00000000 		.4byte	.LFB68
+ 1253 003c 0C000000 		.4byte	.LFE68-.LFB68
+ 1254 0040 00000000 		.4byte	.LFB69
+ 1255 0044 08000000 		.4byte	.LFE69-.LFB69
+ 1256 0048 00000000 		.4byte	.LFB70
+ 1257 004c 08000000 		.4byte	.LFE70-.LFB70
+ 1258 0050 00000000 		.4byte	.LFB71
+ 1259 0054 08000000 		.4byte	.LFE71-.LFB71
+ 1260 0058 00000000 		.4byte	.LFB72
+ 1261 005c 08000000 		.4byte	.LFE72-.LFB72
+ 1262 0060 00000000 		.4byte	.LFB73
+ 1263 0064 08000000 		.4byte	.LFE73-.LFB73
+ 1264 0068 00000000 		.4byte	.LFB74
+ 1265 006c 0C000000 		.4byte	.LFE74-.LFB74
+ 1266 0070 00000000 		.4byte	.LFB75
+ 1267 0074 0C000000 		.4byte	.LFE75-.LFB75
+ 1268 0078 00000000 		.4byte	0
+ 1269 007c 00000000 		.4byte	0
+ 1270              		.section	.debug_ranges,"",%progbits
+ 1271              	.Ldebug_ranges0:
+ 1272 0000 00000000 		.4byte	.LFB63
+ 1273 0004 08000000 		.4byte	.LFE63
+ 1274 0008 00000000 		.4byte	.LFB64
+ 1275 000c 08000000 		.4byte	.LFE64
+ 1276 0010 00000000 		.4byte	.LFB65
+ 1277 0014 08000000 		.4byte	.LFE65
+ 1278 0018 00000000 		.4byte	.LFB66
+ 1279 001c 08000000 		.4byte	.LFE66
+ 1280 0020 00000000 		.4byte	.LFB67
+ 1281 0024 08000000 		.4byte	.LFE67
+ 1282 0028 00000000 		.4byte	.LFB68
+ 1283 002c 0C000000 		.4byte	.LFE68
+ 1284 0030 00000000 		.4byte	.LFB69
+ 1285 0034 08000000 		.4byte	.LFE69
+ 1286 0038 00000000 		.4byte	.LFB70
+ 1287 003c 08000000 		.4byte	.LFE70
+ 1288 0040 00000000 		.4byte	.LFB71
+ 1289 0044 08000000 		.4byte	.LFE71
+ 1290 0048 00000000 		.4byte	.LFB72
+ 1291 004c 08000000 		.4byte	.LFE72
+ 1292 0050 00000000 		.4byte	.LFB73
+ 1293 0054 08000000 		.4byte	.LFE73
+ 1294 0058 00000000 		.4byte	.LFB74
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 25
+
+
+ 1295 005c 0C000000 		.4byte	.LFE74
+ 1296 0060 00000000 		.4byte	.LFB75
+ 1297 0064 0C000000 		.4byte	.LFE75
+ 1298 0068 00000000 		.4byte	0
+ 1299 006c 00000000 		.4byte	0
+ 1300              		.section	.debug_line,"",%progbits
+ 1301              	.Ldebug_line0:
+ 1302 0000 40020000 		.section	.debug_str,"MS",%progbits,1
+ 1302      02006101 
+ 1302      00000201 
+ 1302      FB0E0D00 
+ 1302      01010101 
+ 1303              	.LASF52:
+ 1304 0000 4D6F746F 		.ascii	"MotorA_ReadPWM\000"
+ 1304      72415F52 
+ 1304      65616450 
+ 1304      574D00
+ 1305              	.LASF33:
+ 1306 000f 5F5A4E38 		.ascii	"_ZN8Hardware6MotorA12SetDirectionEb\000"
+ 1306      48617264 
+ 1306      77617265 
+ 1306      364D6F74 
+ 1306      6F724131 
+ 1307              	.LASF27:
+ 1308 0033 52656164 		.ascii	"ReadPWM\000"
+ 1308      50574D00 
+ 1309              	.LASF63:
+ 1310 003b 433A5C55 		.ascii	"C:\\Users\\PC\\Dropbox\\CodeSpaces\\PSoC\\RoboticAr"
+ 1310      73657273 
+ 1310      5C50435C 
+ 1310      44726F70 
+ 1310      626F785C 
+ 1311 0068 6D5C5053 		.ascii	"m\\PSoC_Creator\\MotorPID.cydsn\000"
+ 1311      6F435F43 
+ 1311      72656174 
+ 1311      6F725C4D 
+ 1311      6F746F72 
+ 1312              	.LASF45:
+ 1313 0086 4D6F746F 		.ascii	"Motors_Start\000"
+ 1313      72735F53 
+ 1313      74617274 
+ 1313      00
+ 1314              	.LASF58:
+ 1315 0093 4D6F746F 		.ascii	"MotorB_ReadPWM\000"
+ 1315      72425F52 
+ 1315      65616450 
+ 1315      574D00
+ 1316              	.LASF54:
+ 1317 00a2 4D6F746F 		.ascii	"MotorA_GetStatus\000"
+ 1317      72415F47 
+ 1317      65745374 
+ 1317      61747573 
+ 1317      00
+ 1318              	.LASF43:
+ 1319 00b3 5F5A4E38 		.ascii	"_ZN8Hardware6MotorB12SetDirectionEb\000"
+ 1319      48617264 
+ 1319      77617265 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 26
+
+
+ 1319      364D6F74 
+ 1319      6F724231 
+ 1320              	.LASF64:
+ 1321 00d7 6465636C 		.ascii	"decltype(nullptr)\000"
+ 1321      74797065 
+ 1321      286E756C 
+ 1321      6C707472 
+ 1321      2900
+ 1322              	.LASF2:
+ 1323 00e9 73686F72 		.ascii	"short int\000"
+ 1323      7420696E 
+ 1323      7400
+ 1324              	.LASF62:
+ 1325 00f3 4D6F746F 		.ascii	"Motors.cpp\000"
+ 1325      72732E63 
+ 1325      707000
+ 1326              	.LASF17:
+ 1327 00fe 73697A65 		.ascii	"sizetype\000"
+ 1327      74797065 
+ 1327      00
+ 1328              	.LASF46:
+ 1329 0107 5F5A4E38 		.ascii	"_ZN8Hardware12Motors_StartEv\000"
+ 1329      48617264 
+ 1329      77617265 
+ 1329      31324D6F 
+ 1329      746F7273 
+ 1330              	.LASF21:
+ 1331 0124 64697265 		.ascii	"direction\000"
+ 1331      6374696F 
+ 1331      6E00
+ 1332              	.LASF4:
+ 1333 012e 5F5F7569 		.ascii	"__uint16_t\000"
+ 1333      6E743136 
+ 1333      5F7400
+ 1334              	.LASF32:
+ 1335 0139 5F5A4E38 		.ascii	"_ZN8Hardware6MotorA6SetPWMEt\000"
+ 1335      48617264 
+ 1335      77617265 
+ 1335      364D6F74 
+ 1335      6F724136 
+ 1336              	.LASF48:
+ 1337 0156 76616C75 		.ascii	"value\000"
+ 1337      6500
+ 1338              	.LASF53:
+ 1339 015c 4D6F746F 		.ascii	"MotorA_SetDirection\000"
+ 1339      72415F53 
+ 1339      65744469 
+ 1339      72656374 
+ 1339      696F6E00 
+ 1340              	.LASF42:
+ 1341 0170 5F5A4E38 		.ascii	"_ZN8Hardware6MotorB7ReadPWMEv\000"
+ 1341      48617264 
+ 1341      77617265 
+ 1341      364D6F74 
+ 1341      6F724237 
+ 1342              	.LASF26:
+ 1343 018e 47657450 		.ascii	"GetPosition\000"
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 27
+
+
+ 1343      6F736974 
+ 1343      696F6E00 
+ 1344              	.LASF50:
+ 1345 019a 4D6F746F 		.ascii	"MotorA_GetPosition\000"
+ 1345      72415F47 
+ 1345      6574506F 
+ 1345      73697469 
+ 1345      6F6E00
+ 1346              	.LASF47:
+ 1347 01ad 626F6F6C 		.ascii	"bool\000"
+ 1347      00
+ 1348              	.LASF13:
+ 1349 01b2 666C6F61 		.ascii	"float\000"
+ 1349      7400
+ 1350              	.LASF8:
+ 1351 01b8 6C6F6E67 		.ascii	"long long int\000"
+ 1351      206C6F6E 
+ 1351      6720696E 
+ 1351      7400
+ 1352              	.LASF31:
+ 1353 01c6 53657444 		.ascii	"SetDirection\000"
+ 1353      69726563 
+ 1353      74696F6E 
+ 1353      00
+ 1354              	.LASF6:
+ 1355 01d3 6C6F6E67 		.ascii	"long int\000"
+ 1355      20696E74 
+ 1355      00
+ 1356              	.LASF49:
+ 1357 01dc 4D6F746F 		.ascii	"MotorA_Start\000"
+ 1357      72415F53 
+ 1357      74617274 
+ 1357      00
+ 1358              	.LASF56:
+ 1359 01e9 4D6F746F 		.ascii	"MotorB_GetPosition\000"
+ 1359      72425F47 
+ 1359      6574506F 
+ 1359      73697469 
+ 1359      6F6E00
+ 1360              	.LASF16:
+ 1361 01fc 6C6F6E67 		.ascii	"long double\000"
+ 1361      20646F75 
+ 1361      626C6500 
+ 1362              	.LASF1:
+ 1363 0208 756E7369 		.ascii	"unsigned char\000"
+ 1363      676E6564 
+ 1363      20636861 
+ 1363      7200
+ 1364              	.LASF30:
+ 1365 0216 53657450 		.ascii	"SetPWM\000"
+ 1365      574D00
+ 1366              	.LASF51:
+ 1367 021d 4D6F746F 		.ascii	"MotorA_SetPWM\000"
+ 1367      72415F53 
+ 1367      65745057 
+ 1367      4D00
+ 1368              	.LASF0:
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 28
+
+
+ 1369 022b 7369676E 		.ascii	"signed char\000"
+ 1369      65642063 
+ 1369      68617200 
+ 1370              	.LASF9:
+ 1371 0237 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1371      206C6F6E 
+ 1371      6720756E 
+ 1371      7369676E 
+ 1371      65642069 
+ 1372              	.LASF59:
+ 1373 024e 4D6F746F 		.ascii	"MotorB_SetDirection\000"
+ 1373      72425F53 
+ 1373      65744469 
+ 1373      72656374 
+ 1373      696F6E00 
+ 1374              	.LASF10:
+ 1375 0262 756E7369 		.ascii	"unsigned int\000"
+ 1375      676E6564 
+ 1375      20696E74 
+ 1375      00
+ 1376              	.LASF11:
+ 1377 026f 75696E74 		.ascii	"uint16_t\000"
+ 1377      31365F74 
+ 1377      00
+ 1378              	.LASF65:
+ 1379 0278 31344D6F 		.ascii	"14MotorDirection\000"
+ 1379      746F7244 
+ 1379      69726563 
+ 1379      74696F6E 
+ 1379      00
+ 1380              	.LASF41:
+ 1381 0289 5F5A4E38 		.ascii	"_ZN8Hardware6MotorB6SetPWMEt\000"
+ 1381      48617264 
+ 1381      77617265 
+ 1381      364D6F74 
+ 1381      6F724236 
+ 1382              	.LASF3:
+ 1383 02a6 73686F72 		.ascii	"short unsigned int\000"
+ 1383      7420756E 
+ 1383      7369676E 
+ 1383      65642069 
+ 1383      6E7400
+ 1384              	.LASF61:
+ 1385 02b9 474E5520 		.ascii	"GNU C++14 5.4.1 20160609 (release) [ARM/embedded-5-"
+ 1385      432B2B31 
+ 1385      3420352E 
+ 1385      342E3120 
+ 1385      32303136 
+ 1386 02ec 6272616E 		.ascii	"branch revision 237715] -mcpu=cortex-m3 -mthumb -g "
+ 1386      63682072 
+ 1386      65766973 
+ 1386      696F6E20 
+ 1386      32333737 
+ 1387 031f 2D4F6720 		.ascii	"-Og -std=c++1z -ffunction-sections -ffat-lto-object"
+ 1387      2D737464 
+ 1387      3D632B2B 
+ 1387      317A202D 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 29
+
+
+ 1387      6666756E 
+ 1388 0352 73202D66 		.ascii	"s -fno-exceptions -fno-rtti\000"
+ 1388      6E6F2D65 
+ 1388      78636570 
+ 1388      74696F6E 
+ 1388      73202D66 
+ 1389              	.LASF25:
+ 1390 036e 4D6F746F 		.ascii	"MotorA\000"
+ 1390      724100
+ 1391              	.LASF15:
+ 1392 0375 63686172 		.ascii	"char\000"
+ 1392      00
+ 1393              	.LASF38:
+ 1394 037a 5F5A4E38 		.ascii	"_ZN8Hardware6MotorA5StartEv\000"
+ 1394      48617264 
+ 1394      77617265 
+ 1394      364D6F74 
+ 1394      6F724135 
+ 1395              	.LASF12:
+ 1396 0396 696E7433 		.ascii	"int32_t\000"
+ 1396      325F7400 
+ 1397              	.LASF28:
+ 1398 039e 5F5A4E38 		.ascii	"_ZN8Hardware6MotorA11GetPositionEv\000"
+ 1398      48617264 
+ 1398      77617265 
+ 1398      364D6F74 
+ 1398      6F724131 
+ 1399              	.LASF39:
+ 1400 03c1 5F5A4E38 		.ascii	"_ZN8Hardware6MotorB5StartEv\000"
+ 1400      48617264 
+ 1400      77617265 
+ 1400      364D6F74 
+ 1400      6F724235 
+ 1401              	.LASF66:
+ 1402 03dd 31314D6F 		.ascii	"11MotorStatus\000"
+ 1402      746F7253 
+ 1402      74617475 
+ 1402      7300
+ 1403              	.LASF7:
+ 1404 03eb 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1404      20756E73 
+ 1404      69676E65 
+ 1404      6420696E 
+ 1404      7400
+ 1405              	.LASF14:
+ 1406 03fd 646F7562 		.ascii	"double\000"
+ 1406      6C6500
+ 1407              	.LASF40:
+ 1408 0404 5F5A4E38 		.ascii	"_ZN8Hardware6MotorB11GetPositionEv\000"
+ 1408      48617264 
+ 1408      77617265 
+ 1408      364D6F74 
+ 1408      6F724231 
+ 1409              	.LASF24:
+ 1410 0427 48617264 		.ascii	"Hardware\000"
+ 1410      77617265 
+ 1410      00
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 30
+
+
+ 1411              	.LASF5:
+ 1412 0430 5F5F696E 		.ascii	"__int32_t\000"
+ 1412      7433325F 
+ 1412      7400
+ 1413              	.LASF29:
+ 1414 043a 5F5A4E38 		.ascii	"_ZN8Hardware6MotorA7ReadPWMEv\000"
+ 1414      48617264 
+ 1414      77617265 
+ 1414      364D6F74 
+ 1414      6F724137 
+ 1415              	.LASF34:
+ 1416 0458 53746174 		.ascii	"Status\000"
+ 1416      757300
+ 1417              	.LASF57:
+ 1418 045f 4D6F746F 		.ascii	"MotorB_SetPWM\000"
+ 1418      72425F53 
+ 1418      65745057 
+ 1418      4D00
+ 1419              	.LASF37:
+ 1420 046d 53746172 		.ascii	"Start\000"
+ 1420      7400
+ 1421              	.LASF44:
+ 1422 0473 5F5A4E38 		.ascii	"_ZN8Hardware6MotorB6StatusEv\000"
+ 1422      48617264 
+ 1422      77617265 
+ 1422      364D6F74 
+ 1422      6F724236 
+ 1423              	.LASF20:
+ 1424 0490 4D6F746F 		.ascii	"MotorDirection\000"
+ 1424      72446972 
+ 1424      65637469 
+ 1424      6F6E00
+ 1425              	.LASF22:
+ 1426 049f 706F7369 		.ascii	"position\000"
+ 1426      74696F6E 
+ 1426      00
+ 1427              	.LASF67:
+ 1428 04a8 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1428      52784275 
+ 1428      66666572 
+ 1428      00
+ 1429              	.LASF60:
+ 1430 04b5 4D6F746F 		.ascii	"MotorB_GetStatus\000"
+ 1430      72425F47 
+ 1430      65745374 
+ 1430      61747573 
+ 1430      00
+ 1431              	.LASF55:
+ 1432 04c6 4D6F746F 		.ascii	"MotorB_Start\000"
+ 1432      72425F53 
+ 1432      74617274 
+ 1432      00
+ 1433              	.LASF36:
+ 1434 04d3 4D6F746F 		.ascii	"MotorB\000"
+ 1434      724200
+ 1435              	.LASF23:
+ 1436 04da 4D6F746F 		.ascii	"MotorStatus\000"
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccexnVr9.s 			page 31
+
+
+ 1436      72537461 
+ 1436      74757300 
+ 1437              	.LASF19:
+ 1438 04e6 4D4F544F 		.ascii	"MOTOR_DIRECTION_CCW\000"
+ 1438      525F4449 
+ 1438      52454354 
+ 1438      494F4E5F 
+ 1438      43435700 
+ 1439              	.LASF35:
+ 1440 04fa 5F5A4E38 		.ascii	"_ZN8Hardware6MotorA6StatusEv\000"
+ 1440      48617264 
+ 1440      77617265 
+ 1440      364D6F74 
+ 1440      6F724136 
+ 1441              	.LASF18:
+ 1442 0517 4D4F544F 		.ascii	"MOTOR_DIRECTION_CW\000"
+ 1442      525F4449 
+ 1442      52454354 
+ 1442      494F4E5F 
+ 1442      435700
+ 1443              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
