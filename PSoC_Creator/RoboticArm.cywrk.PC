@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="RoboticArm\MotorPID\Source Files\main.cpp">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="RoboticArm\MotorPID\Hardware">
 <ExpandedNodeIds>
 <v>RoboticArm</v>
 <v>RoboticArm\MotorPID</v>
@@ -28,18 +28,16 @@
 <v>RoboticArm\MotorPID\MotorPID.cydwr\Directives</v>
 <v>RoboticArm\MotorPID\MotorPID.cydwr\Flash Security</v>
 <v>RoboticArm\MotorPID\MotorPID.cydwr\EEPROM</v>
-<v>RoboticArm\MotorPID\Hardware</v>
-<v>RoboticArm\MotorPID\Hardware\Motor</v>
 <v>RoboticArm\MotorPID\Hardware\Motor\Motors.cpp</v>
 <v>RoboticArm\MotorPID\Hardware\Motor\Motors.hpp</v>
 <v>RoboticArm\MotorPID\Hardware\Motor\MotorsHW.c</v>
 <v>RoboticArm\MotorPID\Hardware\Motor\MotorsHW.h</v>
 <v>RoboticArm\MotorPID\Hardware\Motor\MotorTypes.h</v>
-<v>RoboticArm\MotorPID\Hardware\Servo</v>
 <v>RoboticArm\MotorPID\Hardware\Servo\Servos.cpp</v>
 <v>RoboticArm\MotorPID\Hardware\Servo\Servos.hpp</v>
 <v>RoboticArm\MotorPID\Hardware\Servo\ServosHW.c</v>
 <v>RoboticArm\MotorPID\Hardware\Servo\ServosHW.h</v>
+<v>RoboticArm\MotorPID\Hardware\Hardware.hpp</v>
 <v>RoboticArm\MotorPID\Header Files</v>
 <v>RoboticArm\MotorPID\Header Files\cyapicallbacks.h</v>
 <v>RoboticArm\MotorPID\Source Files</v>
@@ -63,17 +61,6 @@
 <v>RoboticArm\MotorPID\MotorPID.cydwr\Flash Security</v>
 <v>RoboticArm\MotorPID\MotorPID.cydwr\EEPROM</v>
 <v>RoboticArm\MotorPID\Hardware</v>
-<v>RoboticArm\MotorPID\Hardware\Motor</v>
-<v>RoboticArm\MotorPID\Hardware\Motor\Motors.cpp</v>
-<v>RoboticArm\MotorPID\Hardware\Motor\Motors.hpp</v>
-<v>RoboticArm\MotorPID\Hardware\Motor\MotorsHW.c</v>
-<v>RoboticArm\MotorPID\Hardware\Motor\MotorsHW.h</v>
-<v>RoboticArm\MotorPID\Hardware\Motor\MotorTypes.h</v>
-<v>RoboticArm\MotorPID\Hardware\Servo</v>
-<v>RoboticArm\MotorPID\Hardware\Servo\Servos.cpp</v>
-<v>RoboticArm\MotorPID\Hardware\Servo\Servos.hpp</v>
-<v>RoboticArm\MotorPID\Hardware\Servo\ServosHW.c</v>
-<v>RoboticArm\MotorPID\Hardware\Servo\ServosHW.h</v>
 <v>RoboticArm\MotorPID\Header Files</v>
 <v>RoboticArm\MotorPID\Header Files\cyapicallbacks.h</v>
 <v>RoboticArm\MotorPID\Source Files</v>

@@ -1,5 +1,5 @@
 # DO NOT DELETE
-main.o:  \
+Servos.o:  \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/Clock_3.h \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/Clock_4.h \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/CyDmac.h \
@@ -61,9 +61,5 @@ main.o:  \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/cytypes.h \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/project.h \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/usCounter.h \
-   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc/include/Foundation-/Foundation/Math/Arithmetic.h \
-   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc/include/Foundation-/Foundation/Math/Ratio.h \
-   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/MotorTypes.h \
-   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Motors.hpp \
-   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Servos.hpp \
-   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/main.cpp
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Servos.cpp \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/ServosHW.h

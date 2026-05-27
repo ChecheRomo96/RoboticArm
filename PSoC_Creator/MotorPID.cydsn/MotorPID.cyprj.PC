@@ -73,8 +73,9 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\project.h" />
 <dep name=".\Generated_Source\PSoC5\usCounter.h" />
-<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Arithmetic.h" />
-<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Math.h" />
+<dep name=".\Hardware.hpp" />
 <dep name=".\MotorTypes.h" />
 <dep name=".\Motors.hpp" />
 <dep name=".\Servos.hpp" />
@@ -141,8 +142,9 @@
 <file name=".\Generated_Source\PSoC5\cytypes.h" />
 <file name=".\Generated_Source\PSoC5\project.h" />
 <file name=".\Generated_Source\PSoC5\usCounter.h" />
-<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Arithmetic.h" />
-<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Math.h" />
+<file name=".\Hardware.hpp" />
 <file name=".\MotorTypes.h" />
 <file name=".\Motors.hpp" />
 <file name=".\Servos.hpp" />
@@ -214,6 +216,8 @@
 </file>
 <file name=".\Servos.cpp" />
 <file name=".\ServosHW.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Arithmetic.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Clock_3.o">
 <dep name=".\Generated_Source\PSoC5\Clock_3.c" />
 <dep name=".\Generated_Source\PSoC5\Clock_3.h" />
@@ -2105,7 +2109,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="134242945455977856" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="134243752963247057" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

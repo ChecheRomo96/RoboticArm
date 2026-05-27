@@ -19,11 +19,11 @@
     
         namespace ServoA{
     
-            void SetPosition(float pos){
+            void SetPositionNorm(float pos){
                 ServoA_SetPositionNorm(pos);
             }
             
-            void SetPosition(uint16_t pos){
+            void SetPositionTicks(uint16_t pos){
                 ServoA_SetPositionTicks(pos);
             }
             
@@ -38,11 +38,11 @@
     
         namespace ServoB{
     
-            void SetPosition(float pos){
+            void SetPositionNorm(float pos){
                 ServoB_SetPositionNorm(pos);
             }
             
-            void SetPosition(uint16_t pos){
+            void SetPositionTicks(uint16_t pos){
                 ServoB_SetPositionTicks(pos);
             }
             
@@ -57,11 +57,11 @@
     
         namespace ServoC{
     
-            void SetPosition(float pos){
+            void SetPositionNorm(float pos){
                 ServoC_SetPositionNorm(pos);
             }
             
-            void SetPosition(uint16_t pos){
+            void SetPositionTicks(uint16_t pos){
                 ServoC_SetPositionTicks(pos);
             }
             
@@ -76,11 +76,11 @@
     
         namespace ServoD{
     
-            void SetPosition(float pos){
+            void SetPositionNorm(float pos){
                 ServoD_SetPositionNorm(pos);
             }
             
-            void SetPosition(uint16_t pos){
+            void SetPositionTicks(uint16_t pos){
                 ServoD_SetPositionTicks(pos);
             }
             
@@ -96,10 +96,10 @@
         
         void Servos_Start(){
             ServoDriver_Start();
-            ServoA::SetPosition(0.5f);
-            ServoB::SetPosition(0.5f);
-            ServoC::SetPosition(0.5f);
-            ServoD::SetPosition(0.5f);
+            ServoA::SetPositionNorm(0.5f);
+            ServoB::SetPositionNorm(0.5f);
+            ServoC::SetPositionNorm(0.5f);
+            ServoD::SetPositionNorm(0.5f);
         }
     }
     

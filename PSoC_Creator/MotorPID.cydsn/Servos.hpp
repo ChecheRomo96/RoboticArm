@@ -17,29 +17,29 @@
     namespace Hardware {
 
         namespace ServoA {
-            void SetPosition(float pos);
-            void SetPosition(uint16_t pos);
+            void SetPositionNorm(float pos);
+            void SetPositionTicks(uint16_t pos);
             uint16_t GetPositionTicks();
             float GetPositionNorm();
         }
 
         namespace ServoB {
-            void SetPosition(float pos);
-            void SetPosition(uint16_t pos);
+            void SetPositionNorm(float pos);
+            void SetPositionTicks(uint16_t pos);
             uint16_t GetPositionTicks();
             float GetPositionNorm();
         }
 
         namespace ServoC {
-            void SetPosition(float pos);
-            void SetPosition(uint16_t pos);
+            void SetPositionNorm(float pos);
+            void SetPositionTicks(uint16_t pos);
             uint16_t GetPositionTicks();
             float GetPositionNorm();
         }
 
         namespace ServoD {
-            void SetPosition(float pos);
-            void SetPosition(uint16_t pos);
+            void SetPositionNorm(float pos);
+            void SetPositionTicks(uint16_t pos);
             uint16_t GetPositionTicks();
             float GetPositionNorm();
         }
