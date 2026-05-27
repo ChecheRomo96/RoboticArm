@@ -74,7 +74,19 @@
 <dep name=".\Generated_Source\PSoC5\project.h" />
 <dep name=".\Generated_Source\PSoC5\usCounter.h" />
 <dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Arithmetic.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Complex.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Complex\Complex.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Complex\Complex.tpp" />
 <dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Math.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.tpp" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.tpp" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\Matrix.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\MatrixOperations.h" />
+<dep name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
 <dep name=".\Hardware.hpp" />
 <dep name=".\MotorTypes.h" />
 <dep name=".\Motors.hpp" />
@@ -143,81 +155,24 @@
 <file name=".\Generated_Source\PSoC5\project.h" />
 <file name=".\Generated_Source\PSoC5\usCounter.h" />
 <file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Arithmetic.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Complex.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Complex\Complex.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Complex\Complex.tpp" />
 <file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Math.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.tpp" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.tpp" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\Matrix.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Matrix\MatrixOperations.h" />
+<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
 <file name=".\Hardware.hpp" />
 <file name=".\MotorTypes.h" />
 <file name=".\Motors.hpp" />
 <file name=".\Servos.hpp" />
 <file name=".\main.cpp" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Servos.o">
-<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
-<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
-<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
-<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
-<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
-<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
-<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
-<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
-<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
-<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
-<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
-<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
-<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\UART.h" />
-<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\project.h" />
-<dep name=".\Generated_Source\PSoC5\usCounter.h" />
-<dep name=".\Servos.cpp" />
-<dep name=".\ServosHW.h" />
-</file>
-<file name=".\Servos.cpp" />
-<file name=".\ServosHW.h" />
-<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Arithmetic.h" />
-<file name="..\..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Clock_3.o">
 <dep name=".\Generated_Source\PSoC5\Clock_3.c" />
 <dep name=".\Generated_Source\PSoC5\Clock_3.h" />
@@ -1011,6 +966,73 @@
 <dep name=".\MotorsHW.h" />
 </file>
 <file name=".\MotorsHW.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Servos.o">
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\UART.h" />
+<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\usCounter.h" />
+<dep name=".\Servos.cpp" />
+<dep name=".\ServosHW.h" />
+</file>
+<file name=".\Servos.cpp" />
+<file name=".\ServosHW.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\ServosHW.o">
 <dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
 <dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
@@ -2099,7 +2121,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="134242944065208297" />
+<deps_time v="134243885493113336" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -2109,7 +2131,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="134243752963247057" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="134243886222213690" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
@@ -2155,6 +2177,13 @@
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </tree_states>
 </CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b>
+</dataGuid>
+<dataGuid v="504337dd-7d07-4bc7-9057-90e60cf6c469">
+<CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469 type_name="CyDesigner.Common.Debugger.CyBreakpointList" version="1">
+<debugger_breakpoint_list>
+<CyGuid_76464711-0ae1-4583-b869-f07a0403fc6e type_name="CyDesigner.Common.Debugger.CyFileLineBreakpoint" version="1" hitcount="0" condition="" enabled="True" hardware="True" temparary="False" filename=".\main.cpp" linenumber="76" />
+</debugger_breakpoint_list>
+</CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469>
 </dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>

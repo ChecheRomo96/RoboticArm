@@ -1,90 +1,14 @@
---------------- Build Started: 05/27/2026 11:15:35 Project: MotorPID, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 05/27/2026 14:50:21 Project: MotorPID, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -x c++ -std=c++17 -fno-exceptions -fno-rtti -c main.cpp -o .\CortexM3\ARM_GCC_541\Debug\main.o
-main.cpp:26:17: error: 'FixedMatrix' in namespace 'Foundation::Math' does not name a template type
-     const Math::FixedMatrix<float, 2, 2>& m
-                 ^
-main.cpp:26:28: error: expected ',' or '...' before '<' token
-     const Math::FixedMatrix<float, 2, 2>& m
-                            ^
-main.cpp: In function 'void PrintFixedMatrix2x2(int)':
-main.cpp:35:9: error: 'm' was not declared in this scope
-         m[0][0],
-         ^
-main.cpp: At global scope:
-main.cpp:45:17: error: 'DynamicMatrix' in namespace 'Foundation::Math' does not name a template type
-The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
-     const Math::DynamicMatrix<float>& m
-                 ^
-main.cpp:45:30: error: expected ',' or '...' before '<' token
-     const Math::DynamicMatrix<float>& m
-                              ^
-main.cpp: In function 'void PrintDynamicMatrix(int)':
-main.cpp:50:29: error: 'm' was not declared in this scope
-     for(uint32_t i = 0; i < m.Rows(); i++) {
-                             ^
-main.cpp: In function 'int main()':
-main.cpp:76:5: error: 'FixedMatrix' is not a member of 'Foundation::Math'
-     Math::FixedMatrix<float, 2, 2> A;
-     ^
-main.cpp:76:23: error: expected primary-expression before 'float'
-     Math::FixedMatrix<float, 2, 2> A;
-                       ^
-main.cpp:77:5: error: 'FixedMatrix' is not a member of 'Foundation::Math'
-     Math::FixedMatrix<float, 2, 2> B;
-     ^
-main.cpp:77:23: error: expected primary-expression before 'float'
-     Math::FixedMatrix<float, 2, 2> B;
-                       ^
-main.cpp:78:5: error: 'FixedMatrix' is not a member of 'Foundation::Math'
-     Math::FixedMatrix<float, 2, 2> C;
-     ^
-main.cpp:78:23: error: expected primary-expression before 'float'
-     Math::FixedMatrix<float, 2, 2> C;
-                       ^
-main.cpp:80:5: error: 'A' was not declared in this scope
-     A[0][0] = 1.0f;
-     ^
-main.cpp:85:5: error: 'B' was not declared in this scope
-     B[0][0] = 5.0f;
-     ^
-main.cpp:90:5: error: 'Multiply' is not a member of 'Foundation::Math'
-     Math::Multiply(A, B, C);
-     ^
-main.cpp:90:26: error: 'C' was not declared in this scope
-     Math::Multiply(A, B, C);
-                          ^
-main.cpp:102:5: error: 'DynamicMatrix' is not a member of 'Foundation::Math'
-     Math::DynamicMatrix<float> D(2, 2);
-     ^
-main.cpp:102:25: error: expected primary-expression before 'float'
-     Math::DynamicMatrix<float> D(2, 2);
-                         ^
-main.cpp:103:5: error: 'DynamicMatrix' is not a member of 'Foundation::Math'
-     Math::DynamicMatrix<float> E(2, 2);
-     ^
-main.cpp:103:25: error: expected primary-expression before 'float'
-     Math::DynamicMatrix<float> E(2, 2);
-                         ^
-main.cpp:104:5: error: 'DynamicMatrix' is not a member of 'Foundation::Math'
-     Math::DynamicMatrix<float> F(2, 2);
-     ^
-main.cpp:104:25: error: expected primary-expression before 'float'
-     Math::DynamicMatrix<float> F(2, 2);
-                         ^
-main.cpp:106:5: error: 'D' was not declared in this scope
-     D[0][0] = 1.0f;
-     ^
-main.cpp:111:5: error: 'E' was not declared in this scope
-     E[0][0] = 2.0f;
-     ^
-main.cpp:116:8: error: 'Multiply' is not a member of 'Foundation::Math'
-     if(Math::Multiply(D, E, F)) {
-        ^
-main.cpp:116:29: error: 'F' was not declared in this scope
-     if(Math::Multiply(D, E, F)) {
-                             ^
-main.cpp:126:5: error: 'F' was not declared in this scope
-     F *= 2.0f;
-     ^
---------------- Build Failed: 05/27/2026 11:15:35 ---------------
+arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Debug\MotorPID.a .\CortexM3\ARM_GCC_541\Debug\MotorA_Dir.o .\CortexM3\ARM_GCC_541\Debug\MotorA_Dir_PM.o .\CortexM3\ARM_GCC_541\Debug\MotorA_PWM.o .\CortexM3\ARM_GCC_541\Debug\MotorA_PWM_PM.o .\CortexM3\ARM_GCC_541\Debug\MotorCW.o .\CortexM3\ARM_GCC_541\Debug\usCounter.o .\CortexM3\ARM_GCC_541\Debug\usCounter_PM.o .\CortexM3\ARM_GCC_541\Debug\Clock_3.o .\CortexM3\ARM_GCC_541\Debug\MotorA_ISR.o .\CortexM3\ARM_GCC_541\Debug\MotorA_QuadDec.o .\CortexM3\ARM_GCC_541\Debug\MotorA_QuadDec_PM.o .\CortexM3\ARM_GCC_541\Debug\MotorCCW.o .\CortexM3\ARM_GCC_541\Debug\ServoAB.o .\CortexM3\ARM_GCC_541\Debug\ServoAB_PM.o .\CortexM3\ARM_GCC_541\Debug\ServoA_Out.o .\CortexM3\ARM_GCC_541\Debug\Clock_4.o .\CortexM3\ARM_GCC_541\Debug\Servo_PWM.o .\CortexM3\ARM_GCC_541\Debug\Servo_PWM_PM.o .\CortexM3\ARM_GCC_541\Debug\ServoB_Out.o .\CortexM3\ARM_GCC_541\Debug\MotorA_QuadDec_Cnt16.o .\CortexM3\ARM_GCC_541\Debug\MotorA_QuadDec_Cnt16_PM.o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o .\CortexM3\ARM_GCC_541\Debug\CyLib.o .\CortexM3\ARM_GCC_541\Debug\cyPm.o .\CortexM3\ARM_GCC_541\Debug\CySpc.o .\CortexM3\ARM_GCC_541\Debug\cyutils.o .\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Debug\UART.o .\CortexM3\ARM_GCC_541\Debug\UART_PM.o .\CortexM3\ARM_GCC_541\Debug\UART_INT.o .\CortexM3\ARM_GCC_541\Debug\UART_BOOT.o .\CortexM3\ARM_GCC_541\Debug\UART_IntClock.o .\CortexM3\ARM_GCC_541\Debug\MA_PWM.o .\CortexM3\ARM_GCC_541\Debug\MA_Encoder.o .\CortexM3\ARM_GCC_541\Debug\ServoD_Out.o .\CortexM3\ARM_GCC_541\Debug\ServoCD.o .\CortexM3\ARM_GCC_541\Debug\ServoCD_PM.o .\CortexM3\ARM_GCC_541\Debug\ServoC_Out.o .\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec.o .\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec_PM.o .\CortexM3\ARM_GCC_541\Debug\MB_Encoder.o .\CortexM3\ARM_GCC_541\Debug\MotorB_ISR.o .\CortexM3\ARM_GCC_541\Debug\MotorB_PWM.o .\CortexM3\ARM_GCC_541\Debug\MotorB_PWM_PM.o .\CortexM3\ARM_GCC_541\Debug\MB_PWM.o .\CortexM3\ARM_GCC_541\Debug\MotorCW_1.o .\CortexM3\ARM_GCC_541\Debug\MotorB_Dir.o .\CortexM3\ARM_GCC_541\Debug\MotorB_Dir_PM.o .\CortexM3\ARM_GCC_541\Debug\MotorCCW_1.o .\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec_Cnt16.o .\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec_Cnt16_PM.o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o
+arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_541\Debug\MotorPID.a
+arm-none-eabi-gcc.exe -Wl,--start-group -o C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\CortexM3\ARM_GCC_541\Debug\MotorPID.elf .\CortexM3\ARM_GCC_541\Debug\main.o .\CortexM3\ARM_GCC_541\Debug\MotorsHW.o .\CortexM3\ARM_GCC_541\Debug\Motors.o .\CortexM3\ARM_GCC_541\Debug\ServosHW.o .\CortexM3\ARM_GCC_541\Debug\Servos.o .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_541\Debug\cymetadata.o .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o .\CortexM3\ARM_GCC_541\Debug\MotorPID.a "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -l Foundation_d -L Generated_Source\PSoC5 -L ..\..\libs\Foundation\dist\psoc\lib -Wl,-Map,.\CortexM3\ARM_GCC_541\Debug/MotorPID.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -u _printf_float -Wl,--gc-sections -lstdc++ -lsupc++ -lm -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
+cyelftool.exe -C C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\CortexM3\ARM_GCC_541\Debug\MotorPID.elf --flash_row_size 256 --flash_size 262144 --flash_offset 0x00000000
+No ELF section .cychecksum found, creating one
+Application checksum calculated and stored in ELF section .cychecksum
+Checksum calculated and stored in ELF section .cymeta
+cyelftool.exe -S C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\CortexM3\ARM_GCC_541\Debug\MotorPID.elf
+Flash used: 18540 of 262144 bytes (7.1 %).
+SRAM used: 12705 of 65536 bytes (19.4 %). Stack: 8192 bytes. Heap: 4096 bytes.
+--------------- Build Succeeded: 05/27/2026 14:50:22 ---------------

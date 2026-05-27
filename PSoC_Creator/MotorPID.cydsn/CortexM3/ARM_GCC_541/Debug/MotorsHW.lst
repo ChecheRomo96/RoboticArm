@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
   36              		.loc 1 19 0
   37 0002 FFF7FEFF 		bl	MotorA_QuadDec_GetEvents
   38              	.LVL0:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 2
 
 
   39 0006 08BD     		pop	{r3, pc}
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
   62:MotorsHW.c    ****             MotorA_Dir_Write(1); // CW
   63:MotorsHW.c    ****         } else {
   64:MotorsHW.c    ****             MotorA_Dir_Write(0); // CCWW
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 3
 
 
   65:MotorsHW.c    ****         }
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
   86 0006 FFF7FEFF 		bl	MotorA_QuadDec_Start
   87              	.LVL3:
   38:MotorsHW.c    ****             MotorA_QuadDec_COUNTER_OVERFLOW|
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 4
 
 
   88              		.loc 1 38 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  137              		.loc 1 52 0
  138              		.cfi_startproc
  139              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 5
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 5
 
 
  140              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  189              	.LVL10:
  190 0000 08B5     		push	{r3, lr}
  191              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 6
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 6
 
 
  192              		.cfi_offset 3, -8
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  239              		.loc 1 72 0
  240 0010 FFF7FEFF 		bl	MotorA_GetPosition
  241              	.LVL19:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 7
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 7
 
 
  242 0014 6060     		str	r0, [r4, #4]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  101:MotorsHW.c    ****             MotorB_QuadDec_COUNTER_UNDERFLOW|
  102:MotorsHW.c    ****             MotorB_QuadDec_INVALID_IN
  103:MotorsHW.c    ****         );
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 8
 
 
  104:MotorsHW.c    ****         
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  113:MotorsHW.c    ****     void MotorB_SetPWM(uint16_t value){
  320              		.loc 1 113 0
  321              		.cfi_startproc
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 9
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 9
 
 
  322              		@ args = 0, pretend = 0, frame = 0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  368              		.loc 1 121 0
  369              		.cfi_startproc
  370              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 10
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 10
 
 
  371              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  415 0004 FFF7FEFF 		bl	MotorB_GetPosition
  416              	.LVL35:
  417 0008 A070     		strb	r0, [r4, #2]
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 11
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 11
 
 
  132:MotorsHW.c    ****         state.pwm = MotorB_ReadPWM();
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  468 0032 1D       		.byte	0x1d
  469 0033 37000000 		.4byte	0x37
  470 0037 02       		.uleb128 0x2
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 12
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 12
 
 
  471 0038 01       		.byte	0x1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  525 009e 45000000 		.4byte	0x45
  526 00a2 03       		.uleb128 0x3
  527 00a3 F7020000 		.4byte	.LASF14
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 13
 
 
  528 00a7 03       		.byte	0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  582 0111 37000000 		.4byte	0x37
  583 0115 02       		.uleb128 0x2
  584 0116 04       		.byte	0x4
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 14
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 14
 
 
  585 0117 04       		.byte	0x4
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  639 018c 0E       		.uleb128 0xe
  640 018d F6010000 		.4byte	.LASF37
  641 0191 01       		.byte	0x1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 15
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 15
 
 
  642 0192 21       		.byte	0x21
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  696 020d 9C       		.byte	0x9c
  697 020e 2B020000 		.4byte	0x22b
  698 0212 13       		.uleb128 0x13
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 16
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 16
 
 
  699 0213 17010000 		.4byte	.LASF34
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  753 0291 01       		.uleb128 0x1
  754 0292 30       		.byte	0x30
  755 0293 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 17
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 17
 
 
  756 0294 00       		.byte	0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  810 0318 3B       		.byte	0x3b
  811 0319 00       		.byte	0
  812 031a 11       		.uleb128 0x11
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 18
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 18
 
 
  813 031b 16000000 		.4byte	.LVL23
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  867 0399 06000000 		.4byte	.LVL27
  868 039d EE040000 		.4byte	0x4ee
  869 03a1 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 19
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 19
 
 
  870 03a2 0B       		.uleb128 0xb
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  924 041a 0D       		.uleb128 0xd
  925 041b 0E000000 		.4byte	.LVL36
  926 041f 7F030000 		.4byte	0x37f
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 20
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 20
 
 
  927 0423 0D       		.uleb128 0xd
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  981 049f 08       		.byte	0x8
  982 04a0 C5       		.byte	0xc5
  983 04a1 19       		.uleb128 0x19
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 21
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 21
 
 
  984 04a2 9C010000 		.4byte	.LASF54
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1038 0007 03       		.uleb128 0x3
  1039 0008 0E       		.uleb128 0xe
  1040 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 22
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 22
 
 
  1041 000a 0E       		.uleb128 0xe
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1095 0040 0B       		.uleb128 0xb
  1096 0041 01       		.uleb128 0x1
  1097 0042 13       		.uleb128 0x13
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 23
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 23
 
 
  1098 0043 00       		.byte	0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1152 0079 0A       		.uleb128 0xa
  1153 007a 16       		.uleb128 0x16
  1154 007b 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 24
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 24
 
 
  1155 007c 03       		.uleb128 0x3
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1209 00b5 13       		.uleb128 0x13
  1210 00b6 00       		.byte	0
  1211 00b7 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 25
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 25
 
 
  1212 00b8 0E       		.uleb128 0xe
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1266 00f6 01       		.byte	0x1
  1267 00f7 3F       		.uleb128 0x3f
  1268 00f8 19       		.uleb128 0x19
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 26
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 26
 
 
  1269 00f9 03       		.uleb128 0x3
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1323 0130 01       		.byte	0x1
  1324 0131 3F       		.uleb128 0x3f
  1325 0132 19       		.uleb128 0x19
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 27
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 27
 
 
  1326 0133 03       		.uleb128 0x3
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1380 016a 00       		.byte	0
  1381 016b 49       		.uleb128 0x49
  1382 016c 13       		.uleb128 0x13
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 28
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 28
 
 
  1383 016d 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1437 004d 0400     		.2byte	0x4
  1438 004f F3       		.byte	0xf3
  1439 0050 01       		.uleb128 0x1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 29
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 29
 
 
  1440 0051 50       		.byte	0x50
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1494 00ce 00000000 		.4byte	0
  1495 00d2 00000000 		.4byte	0
  1496              	.LLST5:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 30
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 30
 
 
  1497 00d6 00000000 		.4byte	.LVL34
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1551 0008 00000000 		.4byte	.LFB70
  1552 000c 08000000 		.4byte	.LFE70
  1553 0010 00000000 		.4byte	.LFB64
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 31
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 31
 
 
  1554 0014 1C000000 		.4byte	.LFE64
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1589              	.LASF57:
  1590 006d 4D6F746F 		.ascii	"MotorB_QuadDec_SetInterruptMask\000"
  1590      72425F51 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 32
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 32
 
 
  1590      75616444 
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1614 011d 4D6F746F 		.ascii	"MotorB_PWM_WriteCompare\000"
  1614      72425F50 
  1614      574D5F57 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 33
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 33
 
 
  1614      72697465 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1636 01d8 6C6F6E67 		.ascii	"long int\000"
  1636      20696E74 
  1636      00
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 34
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 34
 
 
  1637              	.LASF3:
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1660 0281 756E7369 		.ascii	"unsigned int\000"
  1660      676E6564 
  1660      20696E74 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 35
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 35
 
 
  1660      00
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1683              	.LASF28:
  1684 0332 4D6F746F 		.ascii	"MotorB_ISR\000"
  1684      72425F49 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 36
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 36
 
 
  1684      535200
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 1
  1706      72425F47 
  1706      65745374 
  1706      61747573 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccah4l22.s 			page 37
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccZF0OOS.s 			page 37
 
 
  1706      00

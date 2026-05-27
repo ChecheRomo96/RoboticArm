@@ -17,6 +17,8 @@ extern "C" {
 #include "Hardware.hpp"
 
 #include <Foundation/Math.h>
+#include <Foundation/Math/Matrix.h>
+#include <Foundation/Math/Matrix/Matrix.h>
 
 #include <stdio.h>
 
@@ -47,9 +49,9 @@ static void PrintDynamicMatrix(
 
     char buffer[64];
 
-    for(uint32_t i = 0; i < m.Rows(); i++) {
+    for(uint32_t i = 0; i < m.RowsCount(); i++) {
 
-        for(uint32_t j = 0; j < m.Cols(); j++) {
+        for(uint32_t j = 0; j < m.ColsCount(); j++) {
 
             sprintf(
                 buffer,
