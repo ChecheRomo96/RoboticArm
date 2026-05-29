@@ -161,53 +161,6 @@
 <VisibleNodeIds>
 <v>RoboticArm</v>
 <v>RoboticArm\MotorPID</v>
-<v>RoboticArm\MotorPID\CortexM3</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_3.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_4.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MA_Encoder.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MA_PWM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MB_Encoder.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MB_PWM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorA_Dir.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorA_Dir_PM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorA_ISR.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorA_PWM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorA_PWM_PM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorA_QuadDec.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorA_QuadDec_Cnt16.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorA_QuadDec_Cnt16_PM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorA_QuadDec_PM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorB_Dir.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorB_Dir_PM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorB_ISR.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorB_PWM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorB_PWM_PM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorB_QuadDec.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorB_QuadDec_Cnt16.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorB_QuadDec_Cnt16_PM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorB_QuadDec_PM.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorCCW.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorCCW_1.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorCW.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorCW_1.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\Motors.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorsHW.lst</v>
-<v>RoboticArm\MotorPID\CortexM3\ARM_GCC_541\Debug\Listing Files\Servo_PWM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>

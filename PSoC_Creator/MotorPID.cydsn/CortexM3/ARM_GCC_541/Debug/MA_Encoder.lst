@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
   28:Generated_Source\PSoC5/MA_Encoder.c **** *
   29:Generated_Source\PSoC5/MA_Encoder.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/MA_Encoder.c **** *  and shifting the bits appropriately. 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 2
 
 
   31:Generated_Source\PSoC5/MA_Encoder.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
   52              		.size	MA_Encoder_Write, .-MA_Encoder_Write
   53              		.section	.text.MA_Encoder_SetDriveMode,"ax",%progbits
   54              		.align	2
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 3
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 3
 
 
   55              		.global	MA_Encoder_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
   76 0010 0132     		adds	r2, r2, #1
   77 0012 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
   78 0014 03F0F103 		and	r3, r3, #241
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 4
 
 
   79 0018 1843     		orrs	r0, r0, r3
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
  109 000a 00BF     		.align	2
  110              	.L8:
  111 000c F1510040 		.word	1073762801
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 5
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 5
 
 
  112              		.cfi_endproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
  138              		.cfi_endproc
  139              	.LFE3:
  140              		.size	MA_Encoder_ReadDataReg, .-MA_Encoder_ReadDataReg
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 6
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 6
 
 
  141              		.text
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
  195 0065 04       		.byte	0x4
  196 0066 07       		.byte	0x7
  197 0067 6A010000 		.4byte	.LASF8
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 7
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 7
 
 
  198 006b 04       		.uleb128 0x4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
  252 00df 9C       		.byte	0x9c
  253 00e0 F4000000 		.4byte	0xf4
  254 00e4 07       		.uleb128 0x7
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 8
 
 
  255 00e5 9E010000 		.4byte	.LASF17
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
  309 001b 0E       		.uleb128 0xe
  310 001c 00       		.byte	0
  311 001d 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 9
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 9
 
 
  312 001e 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
  366 0055 00       		.byte	0
  367 0056 00       		.byte	0
  368 0057 07       		.uleb128 0x7
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 10
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 10
 
 
  369 0058 05       		.uleb128 0x5
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
  423 008f 00       		.byte	0
  424              		.section	.debug_loc,"",%progbits
  425              	.Ldebug_loc0:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 11
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 11
 
 
  426              	.LLST0:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
  480 0018 00000000 		.4byte	.LFB3
  481 001c 10000000 		.4byte	.LFE3
  482 0020 00000000 		.4byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 12
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 12
 
 
  483 0024 00000000 		.4byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
  505              	.LASF5:
  506 00f3 6C6F6E67 		.ascii	"long unsigned int\000"
  506      20756E73 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 13
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 13
 
 
  506      69676E65 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 1
  527 01c2 63686172 		.ascii	"char\000"
  527      00
  528              	.LASF15:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\ccvIRYme.s 			page 14
+ARM GAS  C:\Users\PC\AppData\Local\Temp\cc4q27tv.s 			page 14
 
 
  529 01c7 4D415F45 		.ascii	"MA_Encoder_SetDriveMode\000"

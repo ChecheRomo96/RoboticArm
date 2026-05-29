@@ -20,50 +20,61 @@ extern "C" {
 #include <Foundation/Math/Matrix.h>
 #include <Foundation/Math/Matrix/Matrix.h>
 
+#include <math.h>
 #include <stdio.h>
 
 using namespace Foundation;
 
-static void PrintFixedMatrix2x2(
-    const Math::FixedMatrix<float, 2, 2>& m
+static void PrintMatrix4x4(
+    const Math::FixedMatrix<float, 4, 4>& m
 ) {
-
     char buffer[128];
 
-    sprintf(
-        buffer,
-        "[ %.2f %.2f ]\r\n"
-        "[ %.2f %.2f ]\r\n",
-        m[0][0],
-        m[0][1],
-        m[1][0],
-        m[1][1]
-    );
+    for(uint32_t i = 0; i < 4; i++) {
+        sprintf(
+            buffer,
+            "[ %8.3f %8.3f %8.3f %8.3f ]\r\n",
+            m[i][0],
+            m[i][1],
+            m[i][2],
+            m[i][3]
+        );
 
-    UART_PutString(buffer);
+        UART_PutString(buffer);
+    }
 }
 
-static void PrintDynamicMatrix(
-    const Math::DynamicMatrix<float>& m
+static void BuildDH(
+    float theta,
+    float d,
+    float a,
+    float alpha,
+    Math::FixedMatrix<float, 4, 4>& T
 ) {
+    float ct = cosf(theta);
+    float st = sinf(theta);
+    float ca = cosf(alpha);
+    float sa = sinf(alpha);
 
-    char buffer[64];
+    T[0][0] = ct;
+    T[0][1] = -st * ca;
+    T[0][2] = st * sa;
+    T[0][3] = a * ct;
 
-    for(uint32_t i = 0; i < m.RowsCount(); i++) {
+    T[1][0] = st;
+    T[1][1] = ct * ca;
+    T[1][2] = -ct * sa;
+    T[1][3] = a * st;
 
-        for(uint32_t j = 0; j < m.ColsCount(); j++) {
+    T[2][0] = 0.0f;
+    T[2][1] = sa;
+    T[2][2] = ca;
+    T[2][3] = d;
 
-            sprintf(
-                buffer,
-                "%.2f ",
-                m[i][j]
-            );
-
-            UART_PutString(buffer);
-        }
-
-        UART_PutString("\r\n");
-    }
+    T[3][0] = 0.0f;
+    T[3][1] = 0.0f;
+    T[3][2] = 0.0f;
+    T[3][3] = 1.0f;
 }
 
 int main(void)
@@ -73,62 +84,69 @@ int main(void)
     UART_Start();
     Hardware::Start();
 
-    UART_PutString("\r\n=== FIXED MATRIX TEST ===\r\n");
+    UART_PutString("\r\n=== DENAVIT-HARTENBERG TEST ===\r\n");
 
-    Math::FixedMatrix<float, 2, 2> A;
-    Math::FixedMatrix<float, 2, 2> B;
-    Math::FixedMatrix<float, 2, 2> C;
+    Math::FixedMatrix<float, 4, 4> T01;
+    Math::FixedMatrix<float, 4, 4> T12;
+    Math::FixedMatrix<float, 4, 4> T23;
 
-    A[0][0] = 1.0f;
-    A[0][1] = 2.0f;
-    A[1][0] = 3.0f;
-    A[1][1] = 4.0f;
+    Math::FixedMatrix<float, 4, 4> T02;
+    Math::FixedMatrix<float, 4, 4> T03;
 
-    B[0][0] = 5.0f;
-    B[0][1] = 6.0f;
-    B[1][0] = 7.0f;
-    B[1][1] = 8.0f;
+    /*
+     * Example 3-DOF robot arm.
+     *
+     * Units:
+     * - theta and alpha in radians
+     * - d and a in same length units, for example cm
+     */
 
-    Math::Multiply(A, B, C);
+    float theta1 = Foundation::Math::DegToRad(30.0f);
+    float theta2 = Foundation::Math::DegToRad(45.0f);
+    float theta3 = Foundation::Math::DegToRad(-20.0f);
 
-    UART_PutString("A * B:\r\n");
-    PrintFixedMatrix2x2(C);
+    float d1 = 10.0f;
+    float d2 = 0.0f;
+    float d3 = 0.0f;
 
-    C *= 0.5f;
+    float a1 = 0.0f;
+    float a2 = 12.0f;
+    float a3 = 8.0f;
 
-    UART_PutString("\r\nScaled by 0.5:\r\n");
-    PrintFixedMatrix2x2(C);
+    float alpha1 = Foundation::Math::DegToRad(90.0f);
+    float alpha2 = Foundation::Math::DegToRad(0.0f);
+    float alpha3 = Foundation::Math::DegToRad(0.0f);
 
-    UART_PutString("\r\n=== DYNAMIC MATRIX TEST ===\r\n");
+    BuildDH(theta1, d1, a1, alpha1, T01);
+    BuildDH(theta2, d2, a2, alpha2, T12);
+    BuildDH(theta3, d3, a3, alpha3, T23);
 
-    Math::DynamicMatrix<float> D(2, 2);
-    Math::DynamicMatrix<float> E(2, 2);
-    Math::DynamicMatrix<float> F(2, 2);
+    Math::Multiply(T01, T12, T02);
+    Math::Multiply(T02, T23, T03);
 
-    D[0][0] = 1.0f;
-    D[0][1] = 2.0f;
-    D[1][0] = 3.0f;
-    D[1][1] = 4.0f;
+    UART_PutString("\r\nT01:\r\n");
+    PrintMatrix4x4(T01);
 
-    E[0][0] = 2.0f;
-    E[0][1] = 0.0f;
-    E[1][0] = 1.0f;
-    E[1][1] = 2.0f;
+    UART_PutString("\r\nT12:\r\n");
+    PrintMatrix4x4(T12);
 
-    if(Math::Multiply(D, E, F)) {
+    UART_PutString("\r\nT23:\r\n");
+    PrintMatrix4x4(T23);
 
-        UART_PutString("D * E:\r\n");
-        PrintDynamicMatrix(F);
-    }
-    else {
+    UART_PutString("\r\nT03 = T01 * T12 * T23:\r\n");
+    PrintMatrix4x4(T03);
 
-        UART_PutString("Dynamic multiply failed\r\n");
-    }
+    char buffer[128];
 
-    F *= 2.0f;
+    sprintf(
+        buffer,
+        "\r\nEnd effector position:\r\nX = %.3f\r\nY = %.3f\r\nZ = %.3f\r\n",
+        T03[0][3],
+        T03[1][3],
+        T03[2][3]
+    );
 
-    UART_PutString("\r\nScaled by 2.0:\r\n");
-    PrintDynamicMatrix(F);
+    UART_PutString(buffer);
 
     for(;;) {
 

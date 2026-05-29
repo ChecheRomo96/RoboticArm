@@ -1,5 +1,5 @@
 # DO NOT DELETE
-Servos.o:  \
+main.o:  \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/Clock_3.h \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/Clock_4.h \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/CyDmac.h \
@@ -61,5 +61,23 @@ Servos.o:  \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/cytypes.h \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/project.h \
    C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Generated_Source/PSoC5/usCounter.h \
-   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Servos.cpp \
-   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/ServosHW.h
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Arithmetic.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Complex.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Complex/Complex.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Complex/Complex.tpp \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Math.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Matrix.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Matrix/DynamicMatrix/DynamicMatrix.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Matrix/DynamicMatrix/DynamicMatrix.tpp \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Matrix/Matrix.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Ratio.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/libs/Foundation/dist/psoc5lp_armgcc_cortex_m3_soft_debug/include/Foundation-1.0.0/Foundation/Math/Trigonometry.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Hardware.hpp \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/MotorTypes.h \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Motors.hpp \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/Servos.hpp \
+   C:/Users/PC/Dropbox/CodeSpaces/PSoC/RoboticArm/PSoC_Creator/MotorPID.cydsn/main.cpp
