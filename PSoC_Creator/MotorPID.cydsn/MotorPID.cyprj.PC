@@ -11,170 +11,6 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
-<file name=".\CortexM3\ARM_GCC_541\Debug\main.o">
-<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
-<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
-<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
-<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
-<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
-<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
-<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
-<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
-<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
-<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
-<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
-<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
-<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
-<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
-<dep name=".\Generated_Source\PSoC5\UART.h" />
-<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\project.h" />
-<dep name=".\Generated_Source\PSoC5\usCounter.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Arithmetic.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex\Complex.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex\Complex.tpp" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Math.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.tpp" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.tpp" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\Matrix.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\MatrixOperations.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Ratio.h" />
-<dep name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Trigonometry.h" />
-<dep name=".\Hardware.hpp" />
-<dep name=".\MotorTypes.h" />
-<dep name=".\Motors.hpp" />
-<dep name=".\Servos.hpp" />
-<dep name=".\main.cpp" />
-</file>
-<file name=".\Generated_Source\PSoC5\Clock_3.h" />
-<file name=".\Generated_Source\PSoC5\Clock_4.h" />
-<file name=".\Generated_Source\PSoC5\CyDmac.h" />
-<file name=".\Generated_Source\PSoC5\CyFlash.h" />
-<file name=".\Generated_Source\PSoC5\CyLib.h" />
-<file name=".\Generated_Source\PSoC5\CySpc.h" />
-<file name=".\Generated_Source\PSoC5\MA_Encoder.h" />
-<file name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
-<file name=".\Generated_Source\PSoC5\MA_PWM.h" />
-<file name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
-<file name=".\Generated_Source\PSoC5\MB_Encoder.h" />
-<file name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
-<file name=".\Generated_Source\PSoC5\MB_PWM.h" />
-<file name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
-<file name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
-<file name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
-<file name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
-<file name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
-<file name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
-<file name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
-<file name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
-<file name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
-<file name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
-<file name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
-<file name=".\Generated_Source\PSoC5\MotorCCW.h" />
-<file name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
-<file name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
-<file name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
-<file name=".\Generated_Source\PSoC5\MotorCW.h" />
-<file name=".\Generated_Source\PSoC5\MotorCW_1.h" />
-<file name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
-<file name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
-<file name=".\Generated_Source\PSoC5\ServoAB.h" />
-<file name=".\Generated_Source\PSoC5\ServoA_Out.h" />
-<file name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
-<file name=".\Generated_Source\PSoC5\ServoB_Out.h" />
-<file name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
-<file name=".\Generated_Source\PSoC5\ServoCD.h" />
-<file name=".\Generated_Source\PSoC5\ServoC_Out.h" />
-<file name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
-<file name=".\Generated_Source\PSoC5\ServoD_Out.h" />
-<file name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
-<file name=".\Generated_Source\PSoC5\Servo_PWM.h" />
-<file name=".\Generated_Source\PSoC5\UART.h" />
-<file name=".\Generated_Source\PSoC5\UART_IntClock.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<file name=".\Generated_Source\PSoC5\core_cm3.h" />
-<file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<file name=".\Generated_Source\PSoC5\cyPm.h" />
-<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<file name=".\Generated_Source\PSoC5\cydevice.h" />
-<file name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<file name=".\Generated_Source\PSoC5\cyfitter.h" />
-<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<file name=".\Generated_Source\PSoC5\cypins.h" />
-<file name=".\Generated_Source\PSoC5\cytypes.h" />
-<file name=".\Generated_Source\PSoC5\project.h" />
-<file name=".\Generated_Source\PSoC5\usCounter.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Arithmetic.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex\Complex.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex\Complex.tpp" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Math.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.tpp" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.tpp" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\Matrix.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\MatrixOperations.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Ratio.h" />
-<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Trigonometry.h" />
-<file name=".\Hardware.hpp" />
-<file name=".\MotorTypes.h" />
-<file name=".\Motors.hpp" />
-<file name=".\Servos.hpp" />
-<file name=".\main.cpp" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Clock_3.o">
 <dep name=".\Generated_Source\PSoC5\Clock_3.c" />
 <dep name=".\Generated_Source\PSoC5\Clock_3.h" />
@@ -184,6 +20,11 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Clock_3.c" />
+<file name=".\Generated_Source\PSoC5\Clock_3.h" />
+<file name=".\Generated_Source\PSoC5\cydevice.h" />
+<file name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter.h" />
+<file name=".\Generated_Source\PSoC5\cytypes.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Clock_4.o">
 <dep name=".\Generated_Source\PSoC5\Clock_4.c" />
 <dep name=".\Generated_Source\PSoC5\Clock_4.h" />
@@ -193,6 +34,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Clock_4.c" />
+<file name=".\Generated_Source\PSoC5\Clock_4.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o">
 <dep name=".\Generated_Source\PSoC5\Cm3Start.c" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.h" />
@@ -208,6 +50,12 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Cm3Start.c" />
+<file name=".\Generated_Source\PSoC5\CyDmac.h" />
+<file name=".\Generated_Source\PSoC5\CyFlash.h" />
+<file name=".\Generated_Source\PSoC5\CyLib.h" />
+<file name=".\Generated_Source\PSoC5\CySpc.h" />
+<file name=".\Generated_Source\PSoC5\cyPm.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
 <file name=".\cyapicallbacks.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\CyDmac.o">
 <dep name=".\Generated_Source\PSoC5\CyDmac.c" />
@@ -269,6 +117,9 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MA_Encoder.c" />
+<file name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<file name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<file name=".\Generated_Source\PSoC5\cypins.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MA_PWM.o">
 <dep name=".\Generated_Source\PSoC5\MA_PWM.c" />
 <dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
@@ -280,6 +131,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MA_PWM.c" />
+<file name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<file name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MB_Encoder.o">
 <dep name=".\Generated_Source\PSoC5\MB_Encoder.c" />
 <dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
@@ -291,6 +144,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MB_Encoder.c" />
+<file name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<file name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MB_PWM.o">
 <dep name=".\Generated_Source\PSoC5\MB_PWM.c" />
 <dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
@@ -302,6 +157,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MB_PWM.c" />
+<file name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<file name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_Dir.o">
 <dep name=".\Generated_Source\PSoC5\MotorA_Dir.c" />
 <dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
@@ -311,6 +168,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorA_Dir.c" />
+<file name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_Dir_PM.o">
 <dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
 <dep name=".\Generated_Source\PSoC5\MotorA_Dir_PM.c" />
@@ -334,6 +192,7 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorA_ISR.c" />
+<file name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_PWM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -347,6 +206,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorA_PWM.c" />
+<file name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_PWM_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -374,6 +234,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorA_QuadDec.c" />
+<file name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<file name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorA_QuadDec_Cnt16.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -423,6 +285,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorB_Dir.c" />
+<file name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_Dir_PM.o">
 <dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
 <dep name=".\Generated_Source\PSoC5\MotorB_Dir_PM.c" />
@@ -446,6 +309,7 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorB_ISR.c" />
+<file name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_PWM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -459,6 +323,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorB_PWM.c" />
+<file name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_PWM_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -486,6 +351,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorB_QuadDec.c" />
+<file name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<file name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorB_QuadDec_Cnt16.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -537,6 +404,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorCCW.c" />
+<file name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<file name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorCCW_1.o">
 <dep name=".\Generated_Source\PSoC5\MotorCCW_1.c" />
 <dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
@@ -548,6 +417,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorCCW_1.c" />
+<file name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<file name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorCW.o">
 <dep name=".\Generated_Source\PSoC5\MotorCW.c" />
 <dep name=".\Generated_Source\PSoC5\MotorCW.h" />
@@ -559,6 +430,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorCW.c" />
+<file name=".\Generated_Source\PSoC5\MotorCW.h" />
+<file name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorCW_1.o">
 <dep name=".\Generated_Source\PSoC5\MotorCW_1.c" />
 <dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
@@ -570,6 +443,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MotorCW_1.c" />
+<file name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<file name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\ServoAB.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -583,6 +458,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\ServoAB.c" />
+<file name=".\Generated_Source\PSoC5\ServoAB.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\ServoAB_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -607,6 +483,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\ServoA_Out.c" />
+<file name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<file name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\ServoB_Out.o">
 <dep name=".\Generated_Source\PSoC5\ServoB_Out.c" />
 <dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
@@ -618,6 +496,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\ServoB_Out.c" />
+<file name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<file name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\ServoCD.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -631,6 +511,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\ServoCD.c" />
+<file name=".\Generated_Source\PSoC5\ServoCD.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\ServoCD_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -655,6 +536,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\ServoC_Out.c" />
+<file name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<file name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\ServoD_Out.o">
 <dep name=".\Generated_Source\PSoC5\ServoD_Out.c" />
 <dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
@@ -666,6 +549,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\ServoD_Out.c" />
+<file name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<file name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Servo_PWM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -679,6 +564,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Servo_PWM.c" />
+<file name=".\Generated_Source\PSoC5\Servo_PWM.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Servo_PWM_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -706,6 +592,8 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\UART.c" />
+<file name=".\Generated_Source\PSoC5\UART.h" />
+<file name=".\Generated_Source\PSoC5\UART_IntClock.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\UART_BOOT.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -781,6 +669,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\cy_em_eeprom.c" />
+<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -820,6 +709,7 @@
 <dep name=".\Generated_Source\PSoC5\usCounter.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\usCounter.c" />
+<file name=".\Generated_Source\PSoC5\usCounter.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\usCounter_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -899,6 +789,14 @@
 <dep name=".\Motors.cpp" />
 <dep name=".\MotorsHW.h" />
 </file>
+<file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<file name=".\Generated_Source\PSoC5\core_cm3.h" />
+<file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<file name=".\Generated_Source\PSoC5\project.h" />
+<file name=".\MotorTypes.h" />
 <file name=".\Motors.cpp" />
 <file name=".\MotorsHW.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MotorsHW.o">
@@ -1100,6 +998,123 @@
 <dep name=".\ServosHW.c" />
 </file>
 <file name=".\ServosHW.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\main.o">
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Arithmetic.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex\Complex.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex\Complex.tpp" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Math.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.tpp" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.tpp" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\Matrix.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\MatrixOperations.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Ratio.h" />
+<dep name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Trigonometry.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MA_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MA_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder.h" />
+<dep name=".\Generated_Source\PSoC5\MB_Encoder_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MB_PWM_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_Dir.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec.h" />
+<dep name=".\Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MotorCW_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoAB.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoA_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoB_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoCD.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoC_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out.h" />
+<dep name=".\Generated_Source\PSoC5\ServoD_Out_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Servo_PWM.h" />
+<dep name=".\Generated_Source\PSoC5\UART.h" />
+<dep name=".\Generated_Source\PSoC5\UART_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\usCounter.h" />
+<dep name=".\Hardware.hpp" />
+<dep name=".\MotorTypes.h" />
+<dep name=".\Motors.hpp" />
+<dep name=".\Servos.hpp" />
+<dep name=".\main.cpp" />
+</file>
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Arithmetic.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex\Complex.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex\Complex.tpp" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Math.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.tpp" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.tpp" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\Matrix.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\MatrixOperations.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Ratio.h" />
+<file name="..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Trigonometry.h" />
+<file name=".\Hardware.hpp" />
+<file name=".\Motors.hpp" />
+<file name=".\Servos.hpp" />
+<file name=".\main.cpp" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Arithmetic.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex\Complex.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Complex\Complex.tpp" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Math.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\DynamicMatrix\DynamicMatrix.tpp" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\FixedMatrix\FixedMatrix.tpp" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\Matrix.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Matrix\MatrixOperations.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Ratio.h" />
+<file name="..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Trigonometry.h" />
 <file name="..\..\dist\Foundation_psoc\include\Foundation-1.0.0\Foundation\Math.h" />
 <file name="..\..\dist\Foundation_psoc\include\Foundation-1.0.0\Foundation\Math\Arithmetic.h" />
 <file name="..\..\dist\Foundation_psoc\include\Foundation-1.0.0\Foundation\Math\Complex.h" />
@@ -1653,85 +1668,85 @@
 <CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68 type_name="CyDesigner.Common.ProjMgmt.Common.CyCmdLineData" version="2">
 <genericCmdLineData>
 <name v="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3">
-<name_val_pair name="main.cpp" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -x c++ -std=c++17 -fno-exceptions -fno-rtti" />
+<name_val_pair name="main.cpp" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -x c++ -std=c++17 -fno-exceptions -fno-rtti" />
 <name_val_pair name="MotorA_HW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="MotorA.cpp" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -x c++ -std=c++17 -fno-exceptions -fno-rtti" />
-<name_val_pair name="Generated_Source\PSoC5\cyfitter_cfg.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\cymetadata.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorA_Dir.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorA_Dir_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\cyfitter_cfg.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\cymetadata.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorA_Dir.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorA_Dir_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\UART_1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\UART_1_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\UART_1_INT.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\UART_1_BOOT.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\MotorPWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorA_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorA_PWM_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorCW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\usCounter.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\usCounter_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\Clock_3.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorA_ISR.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorA_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorA_PWM_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorCW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\usCounter.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\usCounter_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\Clock_3.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorA_ISR.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\Encoder.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorA_QuadDec.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorA_QuadDec_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorCCW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\ServoAB.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\ServoAB_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\ServoA_Out.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\Clock_4.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\Servo_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\Servo_PWM_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\ServoB_Out.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorA_QuadDec.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorA_QuadDec_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorCCW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoAB.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoAB_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoA_Out.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\Clock_4.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\Servo_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\Servo_PWM_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoB_Out.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\UART_1_IntClock.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorA_QuadDec_Cnt16_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\Cm3Start.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorA_QuadDec_Cnt16.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorA_QuadDec_Cnt16_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\Cm3Start.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\CyBootAsmGnu.s" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
-<name_val_pair name="Generated_Source\PSoC5\CyDmac.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\CyFlash.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\CyLib.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\cyPm.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\CySpc.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\cyutils.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\cy_em_eeprom.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\CyDmac.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\CyFlash.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\CyLib.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\cyPm.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\CySpc.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\cyutils.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\cy_em_eeprom.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="C:\Users\PC\Documents\PSoC Creator\RoboticArm\MotorPID.cydsn\CortexM3\ARM_GCC_541\Debug\MotorPID.hex" v="-mcpu=cortex-m3 -mthumb -l Foundation_d -L Generated_Source\PSoC5 -L ..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\lib -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -u _printf_float -Wl,--gc-sections -lstdc++ -lsupc++ -lm -g -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name="Generated_Source\PSoC5\UART.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\UART_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\UART_INT.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\UART_BOOT.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\UART_IntClock.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\UART.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\UART_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\UART_INT.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\UART_BOOT.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\UART_IntClock.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\Pin_1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\Pin_2.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\Pin_3.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\Pin_4.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\Clock_5.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\..\Downloads\Core_base\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\CortexM3\ARM_GCC_541\Debug\MotorPID.hex" v="-mcpu=cortex-m3 -mthumb -l Foundation_d -L Generated_Source\PSoC5 -L ..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\lib -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -u _printf_float -Wl,--gc-sections -lstdc++ -lsupc++ -lm -g -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\CortexM3\ARM_GCC_541\Debug\MotorPID.hex" v="-mcpu=cortex-m3 -mthumb -l Foundation_d -L Generated_Source\PSoC5 -L ..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\lib -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -u _printf_float -Wl,--gc-sections -lstdc++ -lsupc++ -lm -g -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name="MotorHW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MA_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MA_Encoder.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\ServoD_Out.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\ServoCD.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\ServoCD_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\ServoC_Out.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MB_Encoder.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorB_ISR.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorB_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorB_PWM_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MB_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorCW_1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorB_Dir.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorB_Dir_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorCCW_1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec_Cnt16_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Motors.cpp" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -x c++ -std=c++17 -fno-exceptions -fno-rtti" />
+<name_val_pair name="Generated_Source\PSoC5\MA_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MA_Encoder.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoD_Out.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoCD.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoCD_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\ServoC_Out.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MB_Encoder.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_ISR.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_PWM_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MB_PWM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorCW_1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_Dir.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_Dir_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorCCW_1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec_Cnt16.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MotorB_QuadDec_Cnt16_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Motors.cpp" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -x c++ -std=c++17 -fno-exceptions -fno-rtti" />
 <name_val_pair name="ServoHW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc\include\Foundation- -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="MotorsHW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="ServosHW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Servos.cpp" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -x c++ -std=c++17 -fno-exceptions -fno-rtti" />
+<name_val_pair name="MotorsHW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="ServosHW.c" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Servos.cpp" v="-mcpu=cortex-m3 -mthumb -I..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -x c++ -std=c++17 -fno-exceptions -fno-rtti" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\PC\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\MotorPID.cyprj -d CY8C5888LTI-LP097 -s C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -2161,7 +2176,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="134245495598659840" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="134245647512754824" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

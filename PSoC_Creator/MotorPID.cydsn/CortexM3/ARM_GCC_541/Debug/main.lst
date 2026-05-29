@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
   35              		.cfi_offset 14, -4
   21:Hardware.hpp  ****             Hardware::Servos_Start();
   36              		.loc 1 21 0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 2
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 2
 
 
   37 0002 FFF7FEFF 		bl	_ZN8Hardware12Servos_StartEv
@@ -79,106 +79,106 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
   51              		.type	_ZNK10Foundation4Math11FixedMatrixIfLj4ELj4EEixEj, %function
   52              	_ZNK10Foundation4Math11FixedMatrixIfLj4ELj4EEixEj:
   53              	.LFB176:
-  54              		.file 2 "..\\..\\libs\\Foundation\\dist\\psoc5lp_armgcc_cortex_m3_soft_debug\\include\\Foundation-
-   1:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** #ifndef FOUNDATION_MATH_FIXED_MATRIX_TPP
-   2:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** #define FOUNDATION_MATH_FIXED_MATRIX_TPP
-   3:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-   4:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** namespace Foundation {
-   5:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** namespace Math {
-   6:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-   7:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-   8:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>::FixedMatrix() {
-   9:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     Zero();
-  10:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  11:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  12:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  13:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>::FixedMatrix(T value) {
-  14:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     Fill(value);
-  15:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  16:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  17:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  18:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>::FixedMatrix(
-  19:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const T (&values)[Rows][Cols]
-  20:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
-  21:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
-  22:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
-  23:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] = values[i][j];
-  24:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
-  25:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
-  26:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  27:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  28:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  29:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>::FixedMatrix(
-  30:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
-  31:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
-  32:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     *this = other;
-  33:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  34:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  35:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  36:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>& FixedMatrix<T, Rows, Cols>::operator=(
-  37:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
-  38:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 3
+  54              		.file 2 "..\\..\\libs\\Foundation\\psoc5lp_armgcc_cortex_m3_soft_debug\\include\\Foundation-1.0.0/
+   1:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** #ifndef FOUNDATION_MATH_FIXED_MATRIX_TPP
+   2:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** #define FOUNDATION_MATH_FIXED_MATRIX_TPP
+   3:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+   4:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** namespace Foundation {
+   5:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** namespace Math {
+   6:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+   7:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+   8:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>::FixedMatrix() {
+   9:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     Zero();
+  10:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  11:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  12:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  13:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>::FixedMatrix(T value) {
+  14:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     Fill(value);
+  15:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  16:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  17:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  18:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>::FixedMatrix(
+  19:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const T (&values)[Rows][Cols]
+  20:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
+  21:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+  22:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+  23:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] = values[i][j];
+  24:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+  25:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+  26:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  27:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  28:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  29:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>::FixedMatrix(
+  30:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
+  31:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
+  32:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     *this = other;
+  33:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  34:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  35:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  36:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>& FixedMatrix<T, Rows, Cols>::operator=(
+  37:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
+  38:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 3
 
 
-  39:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     if(this == &other) {
-  40:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         return *this;
-  41:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
-  42:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  43:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
-  44:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
-  45:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] = other._data[i][j];
-  46:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
-  47:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
-  48:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  49:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return *this;
-  50:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  51:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  52:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  53:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** unsigned int FixedMatrix<T, Rows, Cols>::RowsCount() const {
-  54:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return Rows;
-  55:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  56:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  57:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  58:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** unsigned int FixedMatrix<T, Rows, Cols>::ColsCount() const {
-  59:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return Cols;
-  60:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  61:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  62:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  63:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** T* FixedMatrix<T, Rows, Cols>::Data() {
-  64:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return &_data[0][0];
-  65:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  66:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  67:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  68:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** const T* FixedMatrix<T, Rows, Cols>::Data() const {
-  69:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return &_data[0][0];
-  70:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  71:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  72:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  73:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** T& FixedMatrix<T, Rows, Cols>::At(
-  74:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     unsigned int row,
-  75:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     unsigned int col
-  76:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
-  77:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return _data[row][col];
-  78:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  79:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  80:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  81:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** const T& FixedMatrix<T, Rows, Cols>::At(
-  82:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     unsigned int row,
-  83:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     unsigned int col
-  84:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
-  85:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return _data[row][col];
-  86:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  87:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  88:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  89:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** T* FixedMatrix<T, Rows, Cols>::operator[](unsigned int row) {
-  90:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return _data[row];
-  91:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
-  92:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  93:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  94:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** const T* FixedMatrix<T, Rows, Cols>::operator[](unsigned int row) const {
+  39:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     if(this == &other) {
+  40:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         return *this;
+  41:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+  42:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  43:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+  44:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+  45:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] = other._data[i][j];
+  46:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+  47:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+  48:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  49:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return *this;
+  50:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  51:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  52:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  53:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** unsigned int FixedMatrix<T, Rows, Cols>::RowsCount() const {
+  54:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return Rows;
+  55:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  56:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  57:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  58:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** unsigned int FixedMatrix<T, Rows, Cols>::ColsCount() const {
+  59:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return Cols;
+  60:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  61:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  62:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  63:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** T* FixedMatrix<T, Rows, Cols>::Data() {
+  64:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return &_data[0][0];
+  65:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  66:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  67:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  68:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** const T* FixedMatrix<T, Rows, Cols>::Data() const {
+  69:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return &_data[0][0];
+  70:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  71:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  72:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  73:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** T& FixedMatrix<T, Rows, Cols>::At(
+  74:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     unsigned int row,
+  75:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     unsigned int col
+  76:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
+  77:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return _data[row][col];
+  78:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  79:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  80:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  81:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** const T& FixedMatrix<T, Rows, Cols>::At(
+  82:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     unsigned int row,
+  83:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     unsigned int col
+  84:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
+  85:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return _data[row][col];
+  86:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  87:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  88:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  89:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** T* FixedMatrix<T, Rows, Cols>::operator[](unsigned int row) {
+  90:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return _data[row];
+  91:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  92:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  93:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  94:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** const T* FixedMatrix<T, Rows, Cols>::operator[](unsigned int row) const {
   55              		.loc 2 94 0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 4
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 4
 
 
   56              		.cfi_startproc
@@ -186,8 +186,8 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
   58              		@ frame_needed = 0, uses_anonymous_args = 0
   59              		@ link register save eliminated.
   60              	.LVL2:
-  95:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return _data[row];
-  96:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+  95:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return _data[row];
+  96:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
   61              		.loc 2 96 0
   62 0000 00EB0110 		add	r0, r0, r1, lsl #4
   63              	.LVL3:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
   78              		.cfi_startproc
   79              		@ args = 0, pretend = 0, frame = 136
   80              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 5
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 5
 
 
   81              	.LVL4:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  127 003e DAF80C00 		ldr	r0, [r10, #12]	@ float
  128 0042 FFF7FEFF 		bl	__aeabi_f2d
  129              	.LVL11:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 6
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 6
 
 
   38:main.cpp      ****             m[i][1],
@@ -351,17 +351,17 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  168              		.type	_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EEixEj, %function
  169              	_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EEixEj:
  170              	.LFB177:
-  89:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return _data[row];
+  89:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return _data[row];
  171              		.loc 2 89 0
  172              		.cfi_startproc
  173              		@ args = 0, pretend = 0, frame = 0
  174              		@ frame_needed = 0, uses_anonymous_args = 0
  175              		@ link register save eliminated.
  176              	.LVL16:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 7
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 7
 
 
-  91:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  91:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
  177              		.loc 2 91 0
  178 0000 00EB0110 		add	r0, r0, r1, lsl #4
  179              	.LVL17:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  220              	.LVL22:
  221 0018 8146     		mov	r9, r0
  222              	.LVL23:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 8
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 8
 
 
   56:main.cpp      ****     float ca = cosf(alpha);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  268              	.LVL36:
  269 005e 0546     		mov	r5, r0
  270 0060 C0F80090 		str	r9, [r0]	@ float
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 9
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 9
 
 
   65:main.cpp      ****     T[1][1] = ct * ca;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
   77:main.cpp      ****     T[3][3] = 1.0f;
  313              		.loc 3 77 0
  314 00a6 4FF07E53 		mov	r3, #1065353216
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 10
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 10
 
 
  315 00aa C360     		str	r3, [r0, #12]	@ float
@@ -555,23 +555,23 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  326              		.type	_ZN10Foundation4Math8MultiplyIfLj4ELj4ELj4EEEvRKNS0_11FixedMatrixIT_XT0_EXT1_EEERKNS2_IS3_XT
  327              	_ZN10Foundation4Math8MultiplyIfLj4ELj4ELj4EEEvRKNS0_11FixedMatrixIT_XT0_EXT1_EEERKNS2_IS3_XT1_EXT2_
  328              	.LFB181:
- 329              		.file 4 "..\\..\\libs\\Foundation\\dist\\psoc5lp_armgcc_cortex_m3_soft_debug\\include\\Foundation-
-   1:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** #ifndef FOUNDATION_MATH_MATRIX_OPERATIONS_H
-   2:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** #define FOUNDATION_MATH_MATRIX_OPERATIONS_H
-   3:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** 
-   4:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** #include <Foundation/Math/Matrix/FixedMatrix/FixedMatrix.h>
-   5:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** #include <Foundation/Math/Matrix/DynamicMatrix/DynamicMatrix.h>
-   6:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** 
-   7:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** namespace Foundation {
-   8:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** namespace Math {
-   9:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** 
-  10:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** template <
-  11:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     typename T,
-  12:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     unsigned int RowsA,
-  13:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     unsigned int ColsA,
-  14:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     unsigned int ColsB
-  15:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** >
-  16:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** void Multiply(
+ 329              		.file 4 "..\\..\\libs\\Foundation\\psoc5lp_armgcc_cortex_m3_soft_debug\\include\\Foundation-1.0.0/
+   1:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** #ifndef FOUNDATION_MATH_MATRIX_OPERATIONS_H
+   2:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** #define FOUNDATION_MATH_MATRIX_OPERATIONS_H
+   3:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** 
+   4:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** #include <Foundation/Math/Matrix/FixedMatrix/FixedMatrix.h>
+   5:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** #include <Foundation/Math/Matrix/DynamicMatrix/DynamicMatrix.h>
+   6:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** 
+   7:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** namespace Foundation {
+   8:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** namespace Math {
+   9:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** 
+  10:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** template <
+  11:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     typename T,
+  12:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     unsigned int RowsA,
+  13:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     unsigned int ColsA,
+  14:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     unsigned int ColsB
+  15:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** >
+  16:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** void Multiply(
  330              		.loc 4 16 0
  331              		.cfi_startproc
  332              		@ args = 0, pretend = 0, frame = 8
@@ -595,14 +595,14 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  350 000a 0192     		str	r2, [sp, #4]
  351              	.LVL44:
  352              	.LBB15:
-  17:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     const FixedMatrix<T, RowsA, ColsA>& a,
-  18:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     const FixedMatrix<T, ColsA, ColsB>& b,
-  19:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     FixedMatrix<T, RowsA, ColsB>& result
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 11
+  17:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     const FixedMatrix<T, RowsA, ColsA>& a,
+  18:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     const FixedMatrix<T, ColsA, ColsB>& b,
+  19:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     FixedMatrix<T, RowsA, ColsB>& result
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 11
 
 
-  20:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** ) {
-  21:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     for(unsigned int i = 0; i < RowsA; i++) {
+  20:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** ) {
+  21:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     for(unsigned int i = 0; i < RowsA; i++) {
  353              		.loc 4 21 0
  354 000c 4FF00008 		mov	r8, #0
  355              	.LVL45:
@@ -614,12 +614,12 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  361              	.L18:
  362              	.LVL46:
  363              	.LBB16:
-  22:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****         for(unsigned int j = 0; j < ColsB; j++) {
+  22:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****         for(unsigned int j = 0; j < ColsB; j++) {
  364              		.loc 4 22 0 is_stmt 1 discriminator 1
  365 001a B9F1030F 		cmp	r9, #3
  366 001e 24D8     		bhi	.L15
  367              	.LBB17:
-  23:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****             result[i][j] = T();
+  23:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****             result[i][j] = T();
  368              		.loc 4 23 0
  369 0020 4146     		mov	r1, r8
  370 0022 0198     		ldr	r0, [sp, #4]
@@ -631,8 +631,8 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  376 0030 40F82930 		str	r3, [r0, r9, lsl #2]	@ float
  377              	.LVL48:
  378              	.LBB18:
-  24:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** 
-  25:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****             for(unsigned int k = 0; k < ColsA; k++) {
+  24:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** 
+  25:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****             for(unsigned int k = 0; k < ColsA; k++) {
  379              		.loc 4 25 0
  380 0034 0024     		movs	r4, #0
  381              	.LVL49:
@@ -640,7 +640,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  383              		.loc 4 25 0 is_stmt 0 discriminator 3
  384 0036 032C     		cmp	r4, #3
  385 0038 14D8     		bhi	.L16
-  26:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****                 result[i][j] += a[i][k] * b[k][j];
+  26:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****                 result[i][j] += a[i][k] * b[k][j];
  386              		.loc 4 26 0 is_stmt 1 discriminator 2
  387 003a 4146     		mov	r1, r8
  388 003c 5846     		mov	r0, fp
@@ -658,12 +658,12 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  400 0056 0146     		mov	r1, r0
  401 0058 2868     		ldr	r0, [r5]	@ float
  402 005a FFF7FEFF 		bl	__aeabi_fadd
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 12
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 12
 
 
  403              	.LVL53:
  404 005e 2860     		str	r0, [r5]	@ float
-  25:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****                 result[i][j] += a[i][k] * b[k][j];
+  25:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****                 result[i][j] += a[i][k] * b[k][j];
  405              		.loc 4 25 0 discriminator 2
  406 0060 0134     		adds	r4, r4, #1
  407              	.LVL54:
@@ -671,7 +671,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  409              	.L16:
  410              	.LBE18:
  411              	.LBE17:
-  22:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****             result[i][j] = T();
+  22:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****             result[i][j] = T();
  412              		.loc 4 22 0 discriminator 2
  413 0064 09F10109 		add	r9, r9, #1
  414              	.LVL55:
@@ -679,7 +679,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  416              	.LVL56:
  417              	.L15:
  418              	.LBE16:
-  21:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****         for(unsigned int j = 0; j < ColsB; j++) {
+  21:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****         for(unsigned int j = 0; j < ColsB; j++) {
  419              		.loc 4 21 0 discriminator 2
  420 006a 08F10108 		add	r8, r8, #1
  421              	.LVL57:
@@ -687,10 +687,10 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  423              	.LVL58:
  424              	.L13:
  425              	.LBE15:
-  27:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****             }
-  28:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****         }
-  29:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     }
-  30:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** }
+  27:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****             }
+  28:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****         }
+  29:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h ****     }
+  30:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/MatrixOperations.h **** }
  426              		.loc 4 30 0
  427 0070 03B0     		add	sp, sp, #12
  428              		.cfi_def_cfa_offset 36
@@ -707,152 +707,152 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  439              		.type	_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EE4FillEf, %function
  440              	_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EE4FillEf:
  441              	.LFB183:
-  97:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-  98:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
-  99:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols> FixedMatrix<T, Rows, Cols>::operator+(
- 100:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
- 101:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
- 102:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     FixedMatrix<T, Rows, Cols> result;
- 103:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 104:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
- 105:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
- 106:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             result._data[i][j] = _data[i][j] + other._data[i][j];
- 107:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 13
+  97:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  98:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+  99:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols> FixedMatrix<T, Rows, Cols>::operator+(
+ 100:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
+ 101:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
+ 102:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     FixedMatrix<T, Rows, Cols> result;
+ 103:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 104:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 105:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 106:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             result._data[i][j] = _data[i][j] + other._data[i][j];
+ 107:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 13
 
 
- 108:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
- 109:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 110:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return result;
- 111:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
- 112:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 113:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 114:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols> FixedMatrix<T, Rows, Cols>::operator-(
- 115:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
- 116:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
- 117:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     FixedMatrix<T, Rows, Cols> result;
- 118:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 119:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
- 120:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
- 121:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             result._data[i][j] = _data[i][j] - other._data[i][j];
- 122:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
- 123:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
- 124:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 125:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return result;
- 126:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
- 127:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 128:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 129:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>& FixedMatrix<T, Rows, Cols>::operator+=(
- 130:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
- 131:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
- 132:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
- 133:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
- 134:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] += other._data[i][j];
- 135:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
- 136:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
- 137:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 138:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return *this;
- 139:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
- 140:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 141:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 142:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>& FixedMatrix<T, Rows, Cols>::operator-=(
- 143:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
- 144:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
- 145:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
- 146:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
- 147:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] -= other._data[i][j];
- 148:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
- 149:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
- 150:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 151:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return *this;
- 152:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
- 153:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 154:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 155:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols> FixedMatrix<T, Rows, Cols>::operator*(
- 156:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     T scalar
- 157:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
- 158:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     FixedMatrix<T, Rows, Cols> result;
- 159:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 160:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
- 161:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
- 162:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             result._data[i][j] = _data[i][j] * scalar;
- 163:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
- 164:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 14
+ 108:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+ 109:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 110:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return result;
+ 111:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 112:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 113:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 114:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols> FixedMatrix<T, Rows, Cols>::operator-(
+ 115:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
+ 116:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
+ 117:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     FixedMatrix<T, Rows, Cols> result;
+ 118:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 119:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 120:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 121:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             result._data[i][j] = _data[i][j] - other._data[i][j];
+ 122:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+ 123:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+ 124:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 125:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return result;
+ 126:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 127:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 128:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 129:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>& FixedMatrix<T, Rows, Cols>::operator+=(
+ 130:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
+ 131:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
+ 132:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 133:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 134:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] += other._data[i][j];
+ 135:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+ 136:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+ 137:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 138:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return *this;
+ 139:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 140:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 141:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 142:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>& FixedMatrix<T, Rows, Cols>::operator-=(
+ 143:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
+ 144:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
+ 145:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 146:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 147:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] -= other._data[i][j];
+ 148:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+ 149:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+ 150:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 151:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return *this;
+ 152:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 153:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 154:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 155:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols> FixedMatrix<T, Rows, Cols>::operator*(
+ 156:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     T scalar
+ 157:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
+ 158:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     FixedMatrix<T, Rows, Cols> result;
+ 159:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 160:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 161:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 162:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             result._data[i][j] = _data[i][j] * scalar;
+ 163:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+ 164:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 14
 
 
- 165:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 166:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return result;
- 167:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
- 168:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 169:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 170:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols> FixedMatrix<T, Rows, Cols>::operator/(
- 171:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     T scalar
- 172:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
- 173:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     FixedMatrix<T, Rows, Cols> result;
- 174:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 175:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
- 176:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
- 177:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             result._data[i][j] = _data[i][j] / scalar;
- 178:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
- 179:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
- 180:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 181:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return result;
- 182:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
- 183:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 184:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 185:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>& FixedMatrix<T, Rows, Cols>::operator*=(
- 186:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     T scalar
- 187:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
- 188:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
- 189:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
- 190:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] *= scalar;
- 191:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
- 192:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
- 193:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 194:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return *this;
- 195:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
- 196:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 197:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 198:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>& FixedMatrix<T, Rows, Cols>::operator/=(
- 199:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     T scalar
- 200:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
- 201:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
- 202:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
- 203:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] /= scalar;
- 204:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
- 205:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
- 206:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 207:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return *this;
- 208:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
- 209:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 210:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 211:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** bool FixedMatrix<T, Rows, Cols>::operator==(
- 212:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
- 213:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
- 214:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
- 215:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
- 216:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             if(_data[i][j] != other._data[i][j]) {
- 217:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****                 return false;
- 218:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             }
- 219:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
- 220:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
- 221:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 15
+ 165:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 166:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return result;
+ 167:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 168:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 169:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 170:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols> FixedMatrix<T, Rows, Cols>::operator/(
+ 171:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     T scalar
+ 172:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
+ 173:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     FixedMatrix<T, Rows, Cols> result;
+ 174:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 175:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 176:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 177:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             result._data[i][j] = _data[i][j] / scalar;
+ 178:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+ 179:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+ 180:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 181:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return result;
+ 182:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 183:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 184:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 185:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>& FixedMatrix<T, Rows, Cols>::operator*=(
+ 186:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     T scalar
+ 187:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
+ 188:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 189:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 190:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] *= scalar;
+ 191:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+ 192:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+ 193:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 194:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return *this;
+ 195:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 196:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 197:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 198:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** FixedMatrix<T, Rows, Cols>& FixedMatrix<T, Rows, Cols>::operator/=(
+ 199:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     T scalar
+ 200:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) {
+ 201:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 202:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 203:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] /= scalar;
+ 204:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+ 205:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+ 206:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 207:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return *this;
+ 208:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 209:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 210:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 211:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** bool FixedMatrix<T, Rows, Cols>::operator==(
+ 212:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
+ 213:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
+ 214:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 215:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 216:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             if(_data[i][j] != other._data[i][j]) {
+ 217:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****                 return false;
+ 218:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             }
+ 219:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+ 220:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+ 221:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 15
 
 
- 222:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return true;
- 223:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
- 224:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 225:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 226:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** bool FixedMatrix<T, Rows, Cols>::operator!=(
- 227:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
- 228:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
- 229:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return !(*this == other);
- 230:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
- 231:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 232:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 233:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** void FixedMatrix<T, Rows, Cols>::Fill(T value) {
+ 222:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return true;
+ 223:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 224:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 225:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 226:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** bool FixedMatrix<T, Rows, Cols>::operator!=(
+ 227:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     const FixedMatrix<T, Rows, Cols>& other
+ 228:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** ) const {
+ 229:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     return !(*this == other);
+ 230:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 231:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 232:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 233:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** void FixedMatrix<T, Rows, Cols>::Fill(T value) {
  442              		.loc 2 233 0
  443              		.cfi_startproc
  444              		@ args = 0, pretend = 0, frame = 0
@@ -864,7 +864,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  450              		.cfi_offset 4, -4
  451              	.LVL60:
  452              	.LBB19:
- 234:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 234:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
  453              		.loc 2 234 0
  454 0002 0024     		movs	r4, #0
  455              	.LVL61:
@@ -876,35 +876,35 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  461              	.L24:
  462              	.LVL62:
  463              	.LBB20:
- 235:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 235:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
  464              		.loc 2 235 0 is_stmt 1 discriminator 3
  465 000a 032B     		cmp	r3, #3
  466 000c 05D8     		bhi	.L23
- 236:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] = value;
+ 236:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****             _data[i][j] = value;
  467              		.loc 2 236 0 discriminator 2
  468 000e 03EB8402 		add	r2, r3, r4, lsl #2
  469 0012 40F82210 		str	r1, [r0, r2, lsl #2]	@ float
- 235:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
+ 235:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         for(unsigned int j = 0; j < Cols; j++) {
  470              		.loc 2 235 0 discriminator 2
  471 0016 0133     		adds	r3, r3, #1
  472              	.LVL63:
  473 0018 F7E7     		b	.L24
  474              	.L23:
  475              	.LBE20:
- 234:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
+ 234:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     for(unsigned int i = 0; i < Rows; i++) {
  476              		.loc 2 234 0 discriminator 2
  477 001a 0134     		adds	r4, r4, #1
  478              	.LVL64:
  479 001c F2E7     		b	.L25
  480              	.LVL65:
  481              	.L21:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 16
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 16
 
 
  482              	.LBE19:
- 237:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
- 238:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
- 239:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+ 237:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****         }
+ 238:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     }
+ 239:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
  483              		.loc 2 239 0
  484 001e 10BC     		pop	{r4}
  485              		.cfi_restore 4
@@ -922,9 +922,9 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  497              		.type	_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EE4ZeroEv, %function
  498              	_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EE4ZeroEv:
  499              	.LFB182:
- 240:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
- 241:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
- 242:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** void FixedMatrix<T, Rows, Cols>::Zero() {
+ 240:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+ 241:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** template <typename T, unsigned int Rows, unsigned int Cols>
+ 242:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** void FixedMatrix<T, Rows, Cols>::Zero() {
  500              		.loc 2 242 0
  501              		.cfi_startproc
  502              		@ args = 0, pretend = 0, frame = 0
@@ -934,7 +934,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  506              		.cfi_def_cfa_offset 8
  507              		.cfi_offset 3, -8
  508              		.cfi_offset 14, -4
- 243:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     Fill(T());
+ 243:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     Fill(T());
  509              		.loc 2 243 0
  510 0002 0021     		movs	r1, #0
  511 0004 FFF7FEFF 		bl	_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EE4FillEf
@@ -951,14 +951,14 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  522              		.type	_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EEC2Ev, %function
  523              	_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EEC2Ev:
  524              	.LFB179:
-   8:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     Zero();
+   8:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp ****     Zero();
  525              		.loc 2 8 0
  526              		.cfi_startproc
  527              		@ args = 0, pretend = 0, frame = 0
  528              		@ frame_needed = 0, uses_anonymous_args = 0
  529              	.LVL69:
  530 0000 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 17
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 17
 
 
  531              		.cfi_def_cfa_offset 8
@@ -966,12 +966,12 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  533              		.cfi_offset 14, -4
  534 0002 0446     		mov	r4, r0
  535              	.LBB21:
-   9:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
+   9:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** }
  536              		.loc 2 9 0
  537 0004 FFF7FEFF 		bl	_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EE4ZeroEv
  538              	.LVL70:
  539              	.LBE21:
-  10:..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
+  10:..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0/Foundation/Math/Matrix/FixedMatrix/FixedMatrix.tpp **** 
  540              		.loc 2 10 0
  541 0008 2046     		mov	r0, r4
  542 000a 10BD     		pop	{r4, pc}
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  576              		.syntax unified
  577 0006 FFF7FEFF 		bl	UART_Start
  578              	.LVL71:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 18
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 18
 
 
   85:main.cpp      ****     Hardware::Start();
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  109:main.cpp      ****     float d2 = 0.0f;
  110:main.cpp      ****     float d3 = 0.0f;
  111:main.cpp      **** 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 19
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 19
 
 
  112:main.cpp      ****     float a1 = 0.0f;
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  647 007a 2648     		ldr	r0, .L34+28
  648 007c FFF7FEFF 		bl	UART_PutString
  649              	.LVL84:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 20
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 20
 
 
  128:main.cpp      ****     PrintMatrix4x4(T01);
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  686              	.LVL93:
  687 00b8 0446     		mov	r4, r0
  688 00ba 0D46     		mov	r5, r1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 21
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 21
 
 
  145:main.cpp      ****         T03[1][3],
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  736 011c 5C000000 		.word	.LC4
  737 0120 68000000 		.word	.LC5
  738 0124 84000000 		.word	.LC6
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 22
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 22
 
 
  739              		.cfi_endproc
@@ -1316,17 +1316,17 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  765              	.Letext0:
  766              		.file 5 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
  767              		.file 6 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 768              		.file 7 "..\\..\\libs\\Foundation\\dist\\psoc5lp_armgcc_cortex_m3_soft_debug\\include\\Foundation-
+ 768              		.file 7 "..\\..\\libs\\Foundation\\psoc5lp_armgcc_cortex_m3_soft_debug\\include\\Foundation-1.0.0/
  769              		.file 8 "Motors.hpp"
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 23
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 23
 
 
  770              		.file 9 "Servos.hpp"
  771              		.file 10 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4
  772              		.file 11 "Generated_Source\\PSoC5/UART.h"
  773              		.file 12 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4
- 774              		.file 13 "..\\..\\libs\\Foundation\\dist\\psoc5lp_armgcc_cortex_m3_soft_debug\\include\\Foundation
- 775              		.file 14 "..\\..\\libs\\Foundation\\dist\\psoc5lp_armgcc_cortex_m3_soft_debug\\include\\Foundation
+ 774              		.file 13 "..\\..\\libs\\Foundation\\psoc5lp_armgcc_cortex_m3_soft_debug\\include\\Foundation-1.0.0
+ 775              		.file 14 "..\\..\\libs\\Foundation\\psoc5lp_armgcc_cortex_m3_soft_debug\\include\\Foundation-1.0.0
  776              		.file 15 "Generated_Source\\PSoC5/core_cm3.h"
  777              		.section	.debug_info,"",%progbits
  778              	.Ldebug_info0:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  824 0061 03       		.uleb128 0x3
  825 0062 41090000 		.4byte	.LASF8
  826 0066 05       		.byte	0x5
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 24
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 24
 
 
  827 0067 41       		.byte	0x41
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  881 00d0 07       		.byte	0x7
  882 00d1 08       		.uleb128 0x8
  883 00d2 7B020000 		.4byte	.LASF102
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 25
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 25
 
 
  884 00d6 40       		.byte	0x40
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  938 0154 04010000 		.4byte	.LASF22
  939 0158 33050000 		.4byte	0x533
  940 015c 01       		.byte	0x1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 26
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 26
 
 
  941 015d 65010000 		.4byte	0x165
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  995 01e7 0B       		.uleb128 0xb
  996 01e8 33050000 		.4byte	0x533
  997 01ec 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 27
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 27
 
 
  998 01ed 0A       		.uleb128 0xa
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1052 0272 33050000 		.4byte	0x533
  1053 0276 0C       		.uleb128 0xc
  1054 0277 88000000 		.4byte	0x88
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 28
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 28
 
 
  1055 027b 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1109 0302 0C       		.uleb128 0xc
  1110 0303 44050000 		.4byte	0x544
  1111 0307 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 29
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 29
 
 
  1112 0308 0A       		.uleb128 0xa
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1166 038f 25000000 		.4byte	0x25
  1167 0393 00       		.byte	0
  1168 0394 0A       		.uleb128 0xa
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 30
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 30
 
 
  1169 0395 89070000 		.4byte	.LASF51
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1223 041c 0E       		.uleb128 0xe
  1224 041d 39010000 		.4byte	.LASF58
  1225 0421 02       		.byte	0x2
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 31
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 31
 
 
  1226 0422 F2       		.byte	0xf2
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1280 04a6 0E       		.byte	0xe
  1281 04a7 09       		.byte	0x9
  1282 04a8 FB070000 		.4byte	.LASF108
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 32
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 32
 
 
  1283 04ac 25000000 		.4byte	0x25
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1337 0527 B8000000 		.4byte	0xb8
  1338 052b 03       		.byte	0x3
  1339 052c 19       		.uleb128 0x19
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 33
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 33
 
 
  1340 052d B8000000 		.4byte	0xb8
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1394 059f EE070000 		.4byte	.LASF74
  1395 05a3 09       		.byte	0x9
  1396 05a4 2F       		.byte	0x2f
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 34
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 34
 
 
  1397 05a5 72030000 		.4byte	.LASF72
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1451 062c 6D00     		.ascii	"m\000"
  1452 062e 03       		.byte	0x3
  1453 062f 1D       		.byte	0x1d
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 35
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 35
 
 
  1454 0630 BA060000 		.4byte	0x6ba
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1508 0697 02       		.uleb128 0x2
  1509 0698 7D       		.byte	0x7d
  1510 0699 00       		.sleb128 0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 36
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 36
 
 
  1511 069a 03       		.uleb128 0x3
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1565 0701 13       		.uleb128 0x13
  1566 0702 33050000 		.4byte	0x533
  1567 0706 25       		.uleb128 0x25
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 37
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 37
 
 
  1568 0707 00000000 		.4byte	.LASF80
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1622 077f 03       		.byte	0x3
  1623 0780 38       		.byte	0x38
  1624 0781 25000000 		.4byte	0x25
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 38
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 38
 
 
  1625 0785 62010000 		.4byte	.LLST10
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1679 07ea 00       		.byte	0
  1680 07eb 2A       		.uleb128 0x2a
  1681 07ec 32000000 		.4byte	.LVL31
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 39
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 39
 
 
  1682 07f0 CF060000 		.4byte	0x6cf
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1736 0844 50       		.byte	0x50
  1737 0845 03       		.uleb128 0x3
  1738 0846 91       		.byte	0x91
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 40
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 40
 
 
  1739 0847 00       		.sleb128 0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1793 08bf 29       		.uleb128 0x29
  1794 08c0 6900     		.ascii	"i\000"
  1795 08c2 04       		.byte	0x4
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 41
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 41
 
 
  1796 08c3 15       		.byte	0x15
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1850 092b 00       		.byte	0
  1851 092c 00       		.byte	0
  1852 092d 2C       		.uleb128 0x2c
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 42
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 42
 
 
  1853 092e 28000000 		.4byte	.LVL47
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1907 099b 28       		.uleb128 0x28
  1908 099c 0A000000 		.4byte	.LBB20
  1909 09a0 10000000 		.4byte	.LBE20-.LBB20
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 43
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 43
 
 
  1910 09a4 29       		.uleb128 0x29
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  1964 0a26 2C       		.uleb128 0x2c
  1965 0a27 08000000 		.4byte	.LVL70
  1966 0a2b B4090000 		.4byte	0x9b4
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 44
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 44
 
 
  1967 0a2f 2B       		.uleb128 0x2b
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2021 0a93 D1000000 		.4byte	0xd1
  2022 0a97 03       		.uleb128 0x3
  2023 0a98 91       		.byte	0x91
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 45
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 45
 
 
  2024 0a99 A87D     		.sleb128 -344
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2078 0b0c 72       		.byte	0x72
  2079 0b0d 25000000 		.4byte	0x25
  2080 0b11 04       		.byte	0x4
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 46
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 46
 
 
  2081 0b12 00000041 		.4byte	0x41000000
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2135 0b88 2B       		.uleb128 0x2b
  2136 0b89 01       		.uleb128 0x1
  2137 0b8a 50       		.byte	0x50
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 47
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 47
 
 
  2138 0b8b 02       		.uleb128 0x2
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2192 0bde 56000000 		.4byte	.LVL80
  2193 0be2 06070000 		.4byte	0x706
  2194 0be6 000C0000 		.4byte	0xc00
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 48
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 48
 
 
  2195 0bea 2B       		.uleb128 0x2b
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2249 0c32 50       		.byte	0x50
  2250 0c33 02       		.uleb128 0x2
  2251 0c34 77       		.byte	0x77
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 49
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 49
 
 
  2252 0c35 00       		.sleb128 0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2306 0c8c 50       		.byte	0x50
  2307 0c8d 02       		.uleb128 0x2
  2308 0c8e 77       		.byte	0x77
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 50
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 50
 
 
  2309 0c8f 00       		.sleb128 0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2363 0cf8 03       		.byte	0x3
  2364 0cf9 68000000 		.4byte	.LC5
  2365 0cfd 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 51
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 51
 
 
  2366 0cfe 2A       		.uleb128 0x2a
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2420 0d5c 2B       		.uleb128 0x2b
  2421 0d5d 01       		.uleb128 0x1
  2422 0d5e 51       		.byte	0x51
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 52
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 52
 
 
  2423 0d5f 01       		.uleb128 0x1
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2477 0dbf E7       		.byte	0xe7
  2478 0dc0 3E       		.uleb128 0x3e
  2479 0dc1 83040000 		.4byte	.LASF93
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 53
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 53
 
 
  2480 0dc5 83040000 		.4byte	.LASF93
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2534 0021 03       		.uleb128 0x3
  2535 0022 0E       		.uleb128 0xe
  2536 0023 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 54
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 54
 
 
  2537 0024 0B       		.uleb128 0xb
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2591 005a 0B       		.uleb128 0xb
  2592 005b 0B       		.uleb128 0xb
  2593 005c 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 55
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 55
 
 
  2594 005d 0B       		.uleb128 0xb
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2648 0093 00       		.byte	0
  2649 0094 00       		.byte	0
  2650 0095 0C       		.uleb128 0xc
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 56
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 56
 
 
  2651 0096 05       		.uleb128 0x5
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2705 00cc 0F       		.uleb128 0xf
  2706 00cd 2E       		.uleb128 0x2e
  2707 00ce 01       		.byte	0x1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 57
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 57
 
 
  2708 00cf 3F       		.uleb128 0x3f
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2762 0105 0E       		.uleb128 0xe
  2763 0106 49       		.uleb128 0x49
  2764 0107 13       		.uleb128 0x13
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 58
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 58
 
 
  2765 0108 1C       		.uleb128 0x1c
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2819 013e 03       		.uleb128 0x3
  2820 013f 08       		.uleb128 0x8
  2821 0140 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 59
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 59
 
 
  2822 0141 0B       		.uleb128 0xb
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2876 0177 49       		.uleb128 0x49
  2877 0178 13       		.uleb128 0x13
  2878 0179 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 60
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 60
 
 
  2879 017a 00       		.byte	0
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2933 01b0 0B       		.uleb128 0xb
  2934 01b1 3B       		.uleb128 0x3b
  2935 01b2 0B       		.uleb128 0xb
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 61
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 61
 
 
  2936 01b3 6E       		.uleb128 0x6e
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  2990 01ed 49       		.uleb128 0x49
  2991 01ee 13       		.uleb128 0x13
  2992 01ef 34       		.uleb128 0x34
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 62
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 62
 
 
  2993 01f0 19       		.uleb128 0x19
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3047 0227 00       		.byte	0
  3048 0228 00       		.byte	0
  3049 0229 27       		.uleb128 0x27
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 63
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 63
 
 
  3050 022a 34       		.uleb128 0x34
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3104 0264 9142     		.uleb128 0x2111
  3105 0266 18       		.uleb128 0x18
  3106 0267 00       		.byte	0
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 64
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 64
 
 
  3107 0268 00       		.byte	0
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3161 02a1 05       		.uleb128 0x5
  3162 02a2 00       		.byte	0
  3163 02a3 03       		.uleb128 0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 65
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 65
 
 
  3164 02a4 0E       		.uleb128 0xe
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3218 02da 0E       		.uleb128 0xe
  3219 02db 11       		.uleb128 0x11
  3220 02dc 01       		.uleb128 0x1
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 66
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 66
 
 
  3221 02dd 12       		.uleb128 0x12
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3275 0316 0B       		.uleb128 0xb
  3276 0317 3B       		.uleb128 0x3b
  3277 0318 0B       		.uleb128 0xb
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 67
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 67
 
 
  3278 0319 49       		.uleb128 0x49
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3332 0351 3F       		.uleb128 0x3f
  3333 0352 19       		.uleb128 0x19
  3334 0353 3C       		.uleb128 0x3c
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 68
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 68
 
 
  3335 0354 19       		.uleb128 0x19
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3389              		.section	.debug_loc,"",%progbits
  3390              	.Ldebug_loc0:
  3391              	.LLST0:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 69
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 69
 
 
  3392 0000 00000000 		.4byte	.LVL2
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3446 0086 00000000 		.4byte	0
  3447 008a 00000000 		.4byte	0
  3448              	.LLST4:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 70
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 70
 
 
  3449 008e 00000000 		.4byte	.LVL18
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3503 0119 03       		.uleb128 0x3
  3504 011a F5       		.byte	0xf5
  3505 011b 03       		.uleb128 0x3
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 71
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 71
 
 
  3506 011c 25       		.uleb128 0x25
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3560 01ad 76000000 		.4byte	.LFE181
  3561 01b1 0100     		.2byte	0x1
  3562 01b3 5B       		.byte	0x5b
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 72
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 72
 
 
  3563 01b4 00000000 		.4byte	0
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3617 0242 00000000 		.4byte	0
  3618 0246 00000000 		.4byte	0
  3619              	.LLST18:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 73
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 73
 
 
  3620 024a 02000000 		.4byte	.LVL60
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3674 001c 06000000 		.4byte	.LFE176-.LFB176
  3675 0020 00000000 		.4byte	.LFB173
  3676 0024 74000000 		.4byte	.LFE173-.LFB173
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 74
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 74
 
 
  3677 0028 00000000 		.4byte	.LFB177
@@ -4423,8 +4423,8 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3716 0054 00000000 		.4byte	0
  3717              		.section	.debug_line,"",%progbits
  3718              	.Ldebug_line0:
- 3719 0000 00050000 		.section	.debug_str,"MS",%progbits,1
- 3719      0200A203 
+ 3719 0000 F1040000 		.section	.debug_str,"MS",%progbits,1
+ 3719      02009303 
  3719      00000201 
  3719      FB0E0D00 
  3719      01010101 
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3725 000e 64656772 		.ascii	"degrees\000"
  3725      65657300 
  3726              	.LASF78:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 75
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 75
 
 
  3727 0016 62756666 		.ascii	"buffer\000"
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3751 0137 5F00     		.ascii	"_\000"
  3752              	.LASF58:
  3753 0139 5A65726F 		.ascii	"Zero\000"
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 76
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 76
 
 
  3753      00
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3775      7269783C 
  3775      666C6F61 
  3775      742C2034 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 77
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 77
 
 
  3776              	.LASF0:
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3801 039a 5F5A4E4B 		.ascii	"_ZNK10Foundation4Math11FixedMatrixIfLj4ELj4EE2AtEjj"
  3801      3130466F 
  3801      756E6461 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 78
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 78
 
 
  3801      74696F6E 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3824              	.LASF65:
  3825 0501 436F6C73 		.ascii	"Cols\000"
  3825      00
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 79
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 79
 
 
  3826              	.LASF75:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3852 05d3 6F706572 		.ascii	"operator/\000"
  3852      61746F72 
  3852      2F00
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 80
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 80
 
 
  3853              	.LASF110:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3873      4D617468 
  3874              	.LASF79:
  3875 0720 5072696E 		.ascii	"PrintMatrix4x4\000"
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 81
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 81
 
 
  3875      744D6174 
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3899              	.LASF108:
  3900 07fb 5F5A4E31 		.ascii	"_ZN10Foundation4Math8DegToRadEf\000"
  3900      30466F75 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 82
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 82
 
 
  3900      6E646174 
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3927 08c7 5F5A4E31 		.ascii	"_ZN10Foundation4Math11FixedMatrixIfLj4ELj4EEpLERKS2"
  3927      30466F75 
  3927      6E646174 
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 83
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 83
 
 
  3927      696F6E34 
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 1
  3948      4D617468 
  3949 0a35 00       		.ascii	"\000"
  3950              	.LASF27:
-ARM GAS  C:\Users\PC\AppData\Local\Temp\cc7mROhy.s 			page 84
+ARM GAS  C:\Users\PC\AppData\Local\Temp\ccyBAMgs.s 			page 84
 
 
  3951 0a36 436F6C73 		.ascii	"ColsCount\000"

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="RoboticArm\MotorPID\Source Files\main.cpp">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="RoboticArm\MotorPID">
 <ExpandedNodeIds>
 <v>RoboticArm</v>
 <v>RoboticArm\MotorPID</v>
@@ -233,14 +233,34 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\MotorPID.cydsn\main.cpp" />
+<name v=".\MotorPID.cydsn\Motors.hpp" />
+<name v=".\MotorPID.cydsn\MotorsHW.h" />
+<name v=".\MotorPID.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\MotorPID.cydsn\MotorsHW.c" />
+<name v=".\MotorPID.cydsn\MotorTypes.h" />
+<name v=".\MotorPID.cydsn\Generated_Source\PSoC5\MotorA_QuadDec.c" />
+<name v=".\MotorPID.cydsn\Generated_Source\PSoC5\MotorA_QuadDec.h" />
+<name v=".\MotorPID.cydsn\Generated_Source\PSoC5\MotorA_QuadDec_PM.c" />
+<name v=".\MotorPID.cydsn\Motors.cpp" />
+<name v=".\MotorPID.cydsn\ServosHW.h" />
+<name v=".\MotorPID.cydsn\ServosHW.c" />
+<name v=".\MotorPID.cydsn\Servos.hpp" />
+<name v=".\MotorPID.cydsn\Servos.cpp" />
+<name v=".\MotorPID.cydsn\MotorPID.cydwr" />
+<name v=".\MotorPID.cydsn\Hardware.hpp" />
+<name v="..\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" />
+<name v=".\MotorPID.cydsn\Generated_Source\PSoC5\cm3gcc.ld" />
+<name v="..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Math.h" />
+</OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
   Actipro Docking/MDI for WinForms
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="680, 647" SelectedTabbedMdiWindow="45021ec0-0416-4ecc-83b3-1f34f3fc05f9"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="45021ec0-0416-4ecc-83b3-1f34f3fc05f9" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="680, 647" SelectedTabbedMdiWindow="e36749c6-7a95-4ae9-8863-aed8a138ca6c"><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\main.cpp" Guid="e36749c6-7a95-4ae9-8863-aed8a138ca6c" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Motors.hpp" Guid="5b9c6e66-e7ed-4fd1-8e19-16328b81bff2" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\MotorsHW.h" Guid="8a206697-cd80-4af2-97fe-6284f0d4cdba" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\TopDesign\TopDesign.cysch" Guid="cf51b4ef-9fa0-4e7b-99a0-1b8c61f6c654" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\MotorsHW.c" Guid="60366ff1-e030-415f-b516-547526494614" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\MotorTypes.h" Guid="dda6c2a0-59e7-43e3-ad1c-30d0aa19fdbd" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Generated_Source\PSoC5\MotorA_QuadDec.c" Guid="4eb56b08-72e9-425e-ab8d-522eeb584db1" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Generated_Source\PSoC5\MotorA_QuadDec.h" Guid="4a0e7257-6689-477b-b4a8-b18e9b0a0bbd" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Generated_Source\PSoC5\MotorA_QuadDec_PM.c" Guid="7cc83018-06c9-44a5-920b-3a6d8129b65a" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Motors.cpp" Guid="6715569f-f736-49cc-9aa2-2a7f44ed43c2" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\ServosHW.h" Guid="afb37af4-0a94-401d-a323-9560db52b07f" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\ServosHW.c" Guid="c002ef02-3960-4679-98f4-e965f563e77d" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Servos.hpp" Guid="f8703fca-08b8-4647-a28a-5f608d9e568d" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Servos.cpp" Guid="b987738e-184a-4ed7-a348-9470559a34ae" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\MotorPID.cydwr" Guid="d915f8fc-8f9b-4793-97c3-82e7d1c6a152" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Hardware.hpp" Guid="f6497a46-9952-4d8d-ab29-f05122776963" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\libs\Foundation\dist\psoc\include\Foundation-\Foundation\Math\Ratio.h" Guid="4f0353ea-6c40-4d31-81e0-feb6881edd95" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="45021ec0-0416-4ecc-83b3-1f34f3fc05f9" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\PSoC_Creator\MotorPID.cydsn\Generated_Source\PSoC5\cm3gcc.ld" Guid="20d3cd18-8a1b-450e-aa2e-ab19afaa2fd8" /><DocumentWindow Key="C:\Users\PC\Dropbox\CodeSpaces\PSoC\RoboticArm\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\include\Foundation-1.0.0\Foundation\Math\Math.h" Guid="193e8b29-81be-40c6-a29a-a234cf3ad1fc" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

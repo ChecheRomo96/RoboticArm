@@ -984,7 +984,7 @@ LOAD .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
 LOAD .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
 LOAD .\CortexM3\ARM_GCC_541\Debug\MotorPID.a
 LOAD C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a
-LOAD ..\..\libs\Foundation\dist\psoc5lp_armgcc_cortex_m3_soft_debug\lib\libFoundation_d.a
+LOAD ..\..\libs\Foundation\psoc5lp_armgcc_cortex_m3_soft_debug\lib\libFoundation_d.a
 LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a
 LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libsupc++_nano.a
 LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a
@@ -2062,36 +2062,36 @@ END GROUP
  .debug_abbrev  0x0000225c      0x1a7 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(CyFlash.o)
  .debug_abbrev  0x00002403      0x194 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(CySpc.o)
 
-.debug_line     0x00000000     0x3a75
+.debug_line     0x00000000     0x3a66
  *(.debug_line)
- .debug_line    0x00000000      0x504 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_line    0x00000504      0x2ee .\CortexM3\ARM_GCC_541\Debug\MotorsHW.o
- .debug_line    0x000007f2      0x244 .\CortexM3\ARM_GCC_541\Debug\Motors.o
- .debug_line    0x00000a36      0x2ca .\CortexM3\ARM_GCC_541\Debug\ServosHW.o
- .debug_line    0x00000d00      0x27e .\CortexM3\ARM_GCC_541\Debug\Servos.o
- .debug_line    0x00000f7e      0x1fd .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_line    0x0000117b      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x000012bc      0x234 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_line    0x000014f0       0x72 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorA_Dir.o)
- .debug_line    0x00001562      0x18d .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorA_PWM.o)
- .debug_line    0x000016ef      0x137 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorA_ISR.o)
- .debug_line    0x00001826      0x128 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorA_QuadDec.o)
- .debug_line    0x0000194e      0x1ae .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(ServoAB.o)
- .debug_line    0x00001afc      0x1b0 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(Servo_PWM.o)
- .debug_line    0x00001cac      0x194 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorA_QuadDec_Cnt16.o)
- .debug_line    0x00001e40      0x816 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(CyLib.o)
- .debug_line    0x00002656      0x367 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(cyPm.o)
- .debug_line    0x000029bd      0x2bc .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(UART.o)
- .debug_line    0x00002c79      0x17c .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(UART_IntClock.o)
- .debug_line    0x00002df5      0x1ae .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(ServoCD.o)
- .debug_line    0x00002fa3      0x128 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorB_QuadDec.o)
- .debug_line    0x000030cb      0x137 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorB_ISR.o)
- .debug_line    0x00003202      0x18d .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorB_PWM.o)
- .debug_line    0x0000338f       0x72 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorB_Dir.o)
- .debug_line    0x00003401      0x194 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorB_QuadDec_Cnt16.o)
- .debug_line    0x00003595       0x66 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(CyBootAsmGnu.o)
- .debug_line    0x000035fb      0x21a .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(CyFlash.o)
- .debug_line    0x00003815      0x260 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(CySpc.o)
+ .debug_line    0x00000000      0x4f5 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_line    0x000004f5      0x2ee .\CortexM3\ARM_GCC_541\Debug\MotorsHW.o
+ .debug_line    0x000007e3      0x244 .\CortexM3\ARM_GCC_541\Debug\Motors.o
+ .debug_line    0x00000a27      0x2ca .\CortexM3\ARM_GCC_541\Debug\ServosHW.o
+ .debug_line    0x00000cf1      0x27e .\CortexM3\ARM_GCC_541\Debug\Servos.o
+ .debug_line    0x00000f6f      0x1fd .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x0000116c      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x000012ad      0x234 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x000014e1       0x72 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorA_Dir.o)
+ .debug_line    0x00001553      0x18d .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorA_PWM.o)
+ .debug_line    0x000016e0      0x137 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorA_ISR.o)
+ .debug_line    0x00001817      0x128 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorA_QuadDec.o)
+ .debug_line    0x0000193f      0x1ae .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(ServoAB.o)
+ .debug_line    0x00001aed      0x1b0 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(Servo_PWM.o)
+ .debug_line    0x00001c9d      0x194 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorA_QuadDec_Cnt16.o)
+ .debug_line    0x00001e31      0x816 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(CyLib.o)
+ .debug_line    0x00002647      0x367 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(cyPm.o)
+ .debug_line    0x000029ae      0x2bc .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(UART.o)
+ .debug_line    0x00002c6a      0x17c .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(UART_IntClock.o)
+ .debug_line    0x00002de6      0x1ae .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(ServoCD.o)
+ .debug_line    0x00002f94      0x128 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorB_QuadDec.o)
+ .debug_line    0x000030bc      0x137 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorB_ISR.o)
+ .debug_line    0x000031f3      0x18d .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorB_PWM.o)
+ .debug_line    0x00003380       0x72 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorB_Dir.o)
+ .debug_line    0x000033f2      0x194 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(MotorB_QuadDec_Cnt16.o)
+ .debug_line    0x00003586       0x66 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(CyBootAsmGnu.o)
+ .debug_line    0x000035ec      0x21a .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(CyFlash.o)
+ .debug_line    0x00003806      0x260 .\CortexM3\ARM_GCC_541\Debug\MotorPID.a(CySpc.o)
 
 .debug_frame    0x00000000     0x3080
  *(.debug_frame)
